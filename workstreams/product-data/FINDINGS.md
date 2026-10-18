@@ -251,3 +251,89 @@ High on what was observed. Low on how much any single product-data fix moves pac
 **Recommended action:**
 - Treat Shopping-pack inclusion as the metric to re-measure after C, the Q6 titles, D1, E and F land, not as a reason to rank those items above A and the tee fixes.
 - Re-check these queries in the next geo-measurement run after Merchant Center has reprocessed.
+
+## Finding 12 — Every live tee now claims "200gsm", and three also claim "220gsm cotton"
+
+**Finding:**
+All 21 live T-Shirts products were rewritten on 18 Oct, outside this workstream, for T-shirt Week:
+- Description: "200gsm, regular fit, true to size. Graphic on the chest."
+- SEO description: "… 200gsm, regular fit …"
+
+3 CLIVES, BROADCAST and MONEY CLIVE also carry `crooks.fabric` = "220gsm cotton". That contradicts their own 200gsm copy and the cotton rule.
+
+George's confirmed facts (16 Oct, unchanged in the 18 Oct owner decisions) give tees no confirmed weight, and limit the cotton claim to hoodies and joggers.
+
+**Evidence:**
+Admin read 18 Oct, 19:10–19:30 BST: `descriptionHtml`, `seo`, `crooks.fabric` on all 21 tees. The saved snapshot isn't committed (public repo).
+
+**Why it matters:**
+The figure feeds snippets, AI answers and the Shopping description on 21 live listings during the T-shirt Week launch. Two different weights on the same product line is a visible inconsistency.
+
+**Confidence:**
+High on the data. Unknown whether 200gsm (or 220gsm) is true for the blank.
+
+**Recommended action:**
+George either confirms the blank's weight and composition as a fact, and this workstream makes the 3 fabric fields match, or the figure comes out of 42 copy fields and those 3 fabric fields. Not changed without his call (QUESTIONS Q19).
+
+## Finding 13 — The Puffa's reacted-photo alt text says "metallic silver"; George says it turns white
+
+**Finding:**
+Image 2 alt on DOUBLE-AGENT PUFFA reads: "CROOKSLDN Double-Agent Puffa with heat applied: the black shell shows metallic silver". George's 18 Oct answer: the base colour is black, it turns white with heat, and it returns to black as it cools. The new description uses George's wording.
+
+**Evidence:**
+Product media alt, read 18 Oct. Owner decision #11.
+
+**Why it matters:**
+The page now says white in the copy and silver in the alt text, which image search and AI read.
+
+**Confidence:**
+High that they conflict. The photo itself couldn't be viewed from here.
+
+**Recommended action:**
+On George's yes, change the alt to "CROOKSLDN Double-Agent Puffa with heat applied: the black shell turns white" (QUESTIONS Q21).
+
+## Finding 14 — 560 tee variants and two new caps ship at 0g
+
+**Finding:**
+- The 20 new colour variants on CROOKS EXPRESS T-SHIRT (Light Grey, Charcoal, Navy, Green) are 0, while its original 10 are 250g.
+- All 30 variants on each of the other 18 tees are 0.
+- MAJOR LEAGUE CROOKS CAP (BLUE) and (BROWN) went live on 18 Oct at 0g, as did the cream cap.
+
+Still parked by George: the jorts, Puffa, socks, caps and Pink Set.
+
+**Evidence:**
+Variant weight read, 18 Oct, 20:22 BST.
+
+**Why it matters:**
+T-shirt Week orders will price and label at 0g.
+
+**Confidence:**
+High.
+
+**Recommended action:**
+Apply 250g to the 560 tee variants if George agrees the blank is the same as the Express tee (QUESTIONS Q20). The caps stay parked until measured.
+
+## Finding 15 — The ReStock "preorder" plan moved onto the 18 newly live tees, and this connector can't remove it
+
+**Finding:**
+The ReStock "preorder" selling plan group (`gid://shopify/SellingPlanGroup/78611710295`) is no longer on CROOKS EXPRESS, CRX GARMS or CRXST★RZ. It is now on all 18 tees that went live on 18 Oct, and still on PINK CONVICT SWEATS, which also keeps its CLIVE pre-order.
+
+`sellingPlanGroupRemoveProducts` is denied for this connector (it needs the `write_purchase_options` or `write_own_subscription_contracts` scope). No installed app is named ReStock. Notify Me! (handle `bestpush`) is the installed app with a PreOrder section.
+
+**Evidence:**
+- Product `sellingPlanGroups` read, 18 Oct.
+- The API error text.
+- Settings → Apps list, viewed 18 Oct.
+
+**Why it matters:**
+Owner decision #25 says remove the obsolete plan. The theme ignores it for schema (`cowork/live-site-checks` Finding 1), and the checkout notice was never reproduced, so the risk is clutter rather than a live customer issue.
+
+**Confidence:**
+High on the data. Medium that Notify Me! owns the plan.
+
+**Recommended action:**
+George removes those 19 products from the pre-order plan in Notify Me! → PreOrder, keeping the CLIVE pre-order on the Pink Sweats. Then this workstream re-reads `sellingPlanGroups`.
+
+## Observation — The store is password-protected
+
+On 18 Oct, around 20:20 BST, Online Store → Preferences showed Private mode on (password page). This is likely deliberate for the T-shirt Week drop, which owner decision #24 marks for Search Console and GEO measurement. Recorded here because it affects every crawl-based metric while it lasts. This workstream didn't touch it.

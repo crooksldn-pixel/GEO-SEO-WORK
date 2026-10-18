@@ -3,6 +3,8 @@
 **Branch:** cowork/product-data
 **Prepared:** 18 Oct 2026, 17:30 BST, from live Shopify Admin reads at 16:30–17:20 BST
 
+> **18 Oct 2026, 20:25 BST:** Q1–Q18 are answered in [ANSWERS.md](ANSWERS.md), and the approved writes are live (see [CHANGES.md](CHANGES.md)). Unanswered items are parked. Only Part 4 at the bottom is open.
+
 ## How to answer
 
 - Fill in the **Answer:** line under each question (and the Answer column in the Q10 table), on this branch, and commit. Replying in the product-data Cowork chat works too.
@@ -267,3 +269,53 @@ This session will look in both.
 - **Where:** attach them in the product-data chat rather than committing them, since the repo is public.
 
 **Answer:**
+
+---
+
+## Part 4 — Open, raised 18 Oct 2026 20:25 BST (new evidence after the answers)
+
+### Q19. Tee weight and composition claims
+
+All 21 live tees were rewritten today, outside this workstream:
+- Description: "200gsm, regular fit, true to size. Graphic on the chest."
+- SEO description: also says 200gsm.
+- 3 CLIVES, BROADCAST and MONEY CLIVE also have the fabric field "220gsm cotton".
+
+Your confirmed facts give tees no weight, and limit cotton to hoodies and joggers (FINDINGS 12).
+
+- **(a)** Confirm the tee blank's weight (200gsm?) and composition as a fact. This session then makes the 3 fabric fields match the copy.
+- **(b)** Not confirmed. This session removes "200gsm" from the 21 descriptions and 21 SEO descriptions, and clears the 3 fabric fields.
+
+**Answer:**
+
+### Q20. Shipping weight for the remaining tees
+
+560 tee variants are at 0g:
+- the 20 new colours on Crooks Express;
+- all variants on the 18 newly live tees.
+
+Set them to 250g, the same basis as CRX Garms and CRXST★RZ? YES or NO.
+
+**Answer:**
+
+### Q21. Puffa reacted-photo alt text
+
+It says "…the black shell shows metallic silver". You said it turns white. Change it to "CROOKSLDN Double-Agent Puffa with heat applied: the black shell turns white"? YES or NO.
+
+**Answer:**
+
+### For George to do (this session couldn't)
+
+- **M1. Store description (owner decision #14):**
+  1. Shopify admin → Online Store → Preferences → Meta description.
+  2. Paste: "CROOKSLDN is an independent British streetwear brand making heavyweight fleece, baggy denim, graphic tees and reactive outerwear, cut in oversized, street-led silhouettes and released in drops."
+  3. Save.
+  
+  The field didn't take input from the browser tool.
+- **M2. Old pre-order plan (owner decision #25):**
+  1. Open Notify Me! → PreOrder.
+  2. Remove these 19 products from the "preorder" plan:
+     - PINK CONVICT SWEATS;
+     - the 18 tees that went live today: 3 CLIVES, BROADCAST, COCO CROOKS, CREGGS, CROOKS DIRECT, CROOKSBURY'S, CUCCI, FERAL, GETAWAY CLIVE, MAJOR LEAGUE CROOKS T-SHIRT, MONEY CLIVE, NATIONAL CROOKS, OG CROOK, PHANTOM, SPECIAL DELIVERY, V.C.T.I.M.L, WHO NOSE?, WORLD WIDE.
+  
+  Don't uninstall. Keep the CLIVE pre-order on the Pink Sweats. The API refused this change for the connector.

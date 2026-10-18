@@ -8,7 +8,37 @@ For each item: baseline, exact change, George's approval and time, Admin read-ba
 - Re-check: 18 Oct 2026, 16:30 BST
 - Source: Shopify Admin GraphQL (API 2026-01), read-only queries
 - Store: 25 active products, of which 22 are non-tee and 3 are tees (30 tee variants). All non-tee variants carry country of origin CN; tee variants are blank on purpose.
-- Writes by this session so far: none.
+- Writes by this session: 18 Oct 2026, 20:10–20:20 BST. Full before, after and read-back are in [../CHANGES.md](../CHANGES.md).
+
+## Status at 18 Oct 2026, 20:25 BST
+
+Approval for all LIVE rows: owner decisions of 18 Oct (ANSWERS.md), "go" at 18:45 UTC, and "answered" in chat at 20:07 BST. Every LIVE row was read back in Admin.
+
+| Item | Status | Note |
+|---|---|---|
+| A. Cream Cap off Google | SKIPPED | It now has 4 photos and copy, added outside this workstream |
+| B. Store description | WITH GEORGE (M1) | Admin frame wouldn't take input; no API write exists |
+| C1 Cellblock Shorts fabric attribute | LIVE | Fleece only |
+| C2–C4 tee copy rows | NOT NEEDED | Rewritten earlier on 18 Oct without "cotton" |
+| C2–C4 tee fabric fields | LIVE | `crooks.fabric` deleted on 3; CRX `shopify.fabric` emptied |
+| C5 socks | LIVE | Copy, `crooks.fabric` and `shopify.fabric` |
+| C6–C8 OG Jeans 14oz | LIVE | |
+| C9 `cotton` tag on 3 tees | LIVE | |
+| Q6 Crewneck and Puffa titles | LIVE | |
+| D1 age group Adults | LIVE | All 45 live products |
+| D2 tee tracking off | LIVE | 540 variants here plus 90 via C-009, so all 630 |
+| D2 `made-to-order` tag | DROPPED | George: theme keys on `tee` |
+| E gender Unisex | LIVE | All 45 live products |
+| F Puffa colour Black | LIVE | |
+| G HydroCuff and Puffa descriptions | LIVE | |
+| H weights (sets, 2 tees) | LIVE | Other weights parked |
+| I ReStock plan | WITH GEORGE (M2) | API scope missing; plan now on 19 products |
+| J photos, K bag labels | PARKED / NOT NEEDED | Per ANSWERS.md |
+| New: tee 200gsm / 220gsm claims | OPEN (Q19) | FINDINGS 12 |
+| New: 560 tee variants at 0g | OPEN (Q20) | FINDINGS 14 |
+| New: Puffa alt "metallic silver" | OPEN (Q21) | FINDINGS 13 |
+
+The item sections below are the original baselines and proposals, kept as the record.
 
 ---
 
