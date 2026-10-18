@@ -1,0 +1,60 @@
+{
+  "run_date": "2026-10-16",
+  "type": "full",
+  "ip_country": "GB",
+  "ip_detail": "92.41.54.61, Hutchison 3G UK (Three), London; Gemini's footer showed 'Wooburn Green, UK - From your IP address'. No VPN.",
+  "browser": "Claude desktop app built-in browser pane on George's Mac (Chromium engine, Chrome 152), its own profile separate from George's Chrome, signed out of Google; consent banners answered with the reject/necessary-only option; viewport emulated at 1280x2400, screenshots saved at 800x1500 (top of the answer/result page, not full-page).",
+  "browser_choice": "The built-in browser was used instead of George's own Chrome because it is a separate, signed-out profile, so no personal Google, ChatGPT, Gemini or Perplexity session could influence results.",
+  "surfaces": {
+    "google_uk": {
+      "login_state": "signed out of Google",
+      "model": "n/a",
+      "url_template": "https://www.google.co.uk/search?q=<query>&gl=uk&hl=en-GB&pws=0",
+      "method": "one load per query; waited ~15s for the AI Overview and expanded it with 'Show more'; when crooksldn.com was not on page 1, page 2 (&start=10) was checked and screenshotted as <name>_p2.png",
+      "consent": "Reject all"
+    },
+    "chatgpt": {
+      "login_state": "logged out, no account",
+      "model": "not shown in the UI (header reads 'ChatGPT'); from the 'baggy jeans UK' run 1 onwards a banner read 'You're using our basic model. Log in or sign up for more intelligence.'",
+      "memory_and_custom_instructions": "not applicable (logged out)",
+      "chat_handling": "new chat for every run, no follow-ups",
+      "consent": "Reject non-essential"
+    },
+    "gemini": {
+      "login_state": "signed out",
+      "model": "Flash-Lite (label shown in the model picker)",
+      "chat_handling": "new chat for every run, no follow-ups",
+      "note": "Gemini shows sources only as chip labels without URLs, so sources_cited holds labels for Gemini rows"
+    },
+    "perplexity": {
+      "login_state": "logged out",
+      "model": "not shown (default)",
+      "chat_handling": "new thread for every run, no follow-ups",
+      "consent": "Only necessary",
+      "note": "After 5 answered runs (Crooks LDN x3, 550gsm hoodie UK x2) every later run returned 'Sign up and repeat your request.' plus a sign-in modal; those 58 rows have crooks_mentioned blank and the reason in notes"
+    }
+  },
+  "started": "2026-10-16T20:28:00+01:00",
+  "first_capture": "2026-10-16T20:30:19+01:00",
+  "finished": "2026-10-16T22:02:48+01:00",
+  "row_counts": {
+    "chatgpt_answered": 63,
+    "gemini_answered": 63,
+    "google_uk_answered": 16,
+    "google_uk_not_run": 5,
+    "perplexity_answered": 5,
+    "perplexity_blocked": 58
+  },
+  "screenshot_files": 223,
+  "problems": [
+    "Perplexity login wall: 58 of 63 Perplexity runs blocked ('Sign up and repeat your request.' plus a sign-in modal; on 'baggy jeans UK' the wall appeared in French: 'Inscrivez-vous et répétez votre demande'). Not logged in: no panel account was available and the session was research-only, so no account was created or used.",
+    "The measuring computer (Claude desktop app on George's Mac) disconnected at ~22:03 BST. 5 Google UK queries were not run: Corteiz alternatives, brands like Carsicko, brands like Broken Planet, water reactive clothing, heat reactive clothing. Their rows say NOT RUN with everything else blank.",
+    "Background tabs did not render: ChatGPT and Gemini answers stalled on 'Searching the web' until their tab was brought to the front, so each answer was collected with its tab in front.",
+    "Answers fade in after streaming. A few ChatGPT screenshots caught the fade and were retaken; the retake is the file referenced in results.csv.",
+    "Google AI Overviews took ~10-15s to finish. 'best UK streetwear brands' and 'baggy jeans UK' needed a reload to capture the finished overview (extra files _firstload, _reload, _aio).",
+    "Screenshots capture the top 1500px of an emulated 1280x2400 viewport, so long answers are cut off at the bottom. The full answer text was read from the page, and the notes say which items fall below the fold.",
+    "'Top 20' means Google pages 1 and 2. Pages showed 16-20 titled results because of video, social and forum blocks. Positions count every titled result block in order.",
+    "The emulated 1280x2400 viewport could not be reset on the four browser tabs (seed, tab-1, tab-2, tab-3) because the computer went offline first. Use 'desktop' size or close the tabs before the next run.",
+    "ChatGPT's model is not shown to logged-out users. Gemini sources have no URLs, so a label like 'Phrase Studios' is recorded as shown."
+  ]
+}
