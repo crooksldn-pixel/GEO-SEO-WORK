@@ -88,10 +88,10 @@ crooks tesco shirt / tee / tesco: 238 impressions at position 3.8–4.3, rising 
 **Why it matters:**
 Real, growing demand for a product people still remember, with no live page to receive it.
 
-**Confidence:** High for the demand and the 404s. Medium for the target: it depends on which current design people mean.
+**Confidence:** High. George confirmed on 18 Oct that the "Tesco tee" is the Crooks Express tee (owner decision #21).
 
 **Recommended action:**
-301 both URLs to /products/crooks-express-t-shirt if that's the design people call the "Tesco tee", otherwise to /collections/tees. George to confirm. Don't use "Tesco" in titles. Suggested owner: collections (redirects).
+301 both URLs to /products/crooks-express-t-shirt (approved, owner decision #21). Don't use "Tesco" in titles. Owner: collections (redirects). This workstream checks the redirects and the "tesco" queries' landing page once the store is unlocked (Finding 13).
 
 ## Finding 6 — Thin system listings now show as brand sitelinks
 
@@ -136,13 +136,13 @@ Five more 404s had impressions or Googlebot hits but **aren't on the collections
 
 | URL | Live | Search Console evidence | Suggested target |
 |---|---|---|---|
-| /products/white-tesco-tshirt | 404 | 7 impressions, 1 click; 238 impressions of "tesco" queries (Finding 5) | see Finding 5 |
-| /products/black-tesco-tshirt | 404 | 9 impressions | see Finding 5 |
+| /products/white-tesco-tshirt | 404 | 7 impressions, 1 click; 238 impressions of "tesco" queries (Finding 5) | /products/crooks-express-t-shirt (approved) |
+| /products/black-tesco-tshirt | 404 | 9 impressions | /products/crooks-express-t-shirt (approved) |
 | /products/joggas-1 | 404 | Googlebot got 404 on 19 and 23 Jul | /collections/sweats |
 | /collections/2005-drop/products/pink-crsdr-joggas | 404 | 7 impressions | /products/pink-crsdr-joggers (200) |
 | /collections/2005-drop/products/pink-crsdr-hoody | 404 | 1 impression | /products/pink-crsdr-hoodie (200) |
 
-One weak hint on the CB1/CB2 wash question: the only "grey wash jorts" impressions (2) showed /products/cb2-wash-jorts, which suggests CB2 was the grey wash.
+(An earlier version of this finding offered a hint about which wash CB2 was. It's withdrawn: George decided on 18 Oct that CB1/CB2 were placeholder names, so nothing should be derived from them; owner decision #27.)
 
 **Evidence:**
 `gsc_uk_16m_pages.csv`, `gsc_uk_16m_query_page_breakdowns.csv`, Crawl stats 404 drill-down, URL Inspection, `curl` on 16 and 18 Oct. Archived list: `cowork/collections` → `workstreams/collections/artifacts/index-hygiene-audit.md`.
@@ -150,10 +150,10 @@ One weak hint on the CB1/CB2 wash question: the only "grey wash jorts" impressio
 **Why it matters:**
 It gives collections task F its go-ahead evidence. The Tesco pair carries real, growing demand; the rest are small but are lost visits and crawl noise.
 
-**Confidence:** High for status codes and impressions. Low for the CB2 hint (2 impressions).
+**Confidence:** High.
 
 **Recommended action:**
-Go ahead with collections F: redirect the five archived URLs, and add the five URLs above to the list. Suggested owner: collections (redirects).
+Go ahead with collections F: redirect the five archived URLs, and add the five URLs above to the list (approved as "other legacy redirects as proposed", owner decision #21). Owner: collections (redirects).
 
 ## Finding 9 — Structured data: GBP confirmed, but currency URLs leak other currencies and shipping is overstated
 
@@ -226,3 +226,22 @@ It avoids two sessions editing the same theme snippet, and it unblocks collectio
 
 **Recommended action:**
 The orchestrator routes Findings 3 and 9 to the theme route in live-site-checks' NEXT.md, and Findings 5–8 to collections.
+
+## Finding 13 — The whole store has been password-locked since the evening of 18 Oct
+
+**Finding:**
+At 20:09 and 20:11 BST on 18 Oct, every storefront URL tested returned 302 → /password, with or without a Googlebot user agent: /, /collections/tees, /collections/outerwear, /blogs/news/convict-vs-cellblock-fit, /products/crooks-express-t-shirt, every archived product URL and /collections/frontpage. `/sitemap.xml` returns 404. The password page has the title "CROOKSLDN" and no robots meta. The live theme is now named "CROOKSLDN — live 18 Oct + evening fixes". Between 16:30 and 17:05 BST the same day, the same URLs returned their normal pages, so the lock started after about 17:05 BST. Nothing in the programme records (change log, owner decisions, workstream branches) mentions it.
+
+**Evidence:**
+`curl` status checks on 18 Oct (16:30–17:05 BST open; 20:09 and 20:11 BST locked). Earlier pattern from `gsc_uk_16m_dates.csv` and the project's `10-measurement.md`: the store was locked before the May and July drops, and /password then collected brand-search impressions.
+
+**Why it matters:**
+- Brand searches now land on a password page, as on the May and July drop days.
+- Google can't crawl anything: not the new /collections/outerwear, not the fit article, not the approved redirects or the hidden /collections/frontpage. The next sitemap fetch will fail.
+- If the lock lasts more than a few days, already-indexed pages can start dropping out.
+- It falls inside the first post-deploy measurement window (16–22 Oct), so that window can't be read as an SEO before/after.
+
+**Confidence:** High for the lock and its timing window. Unknown whether it's intentional; probably the T-shirt Week launch, but not confirmed.
+
+**Recommended action:**
+George confirms it's intentional and when the store reopens. Leave lock days out of every like-for-like comparison and label them in each read. After reopening, re-run URL Inspection on the new and redirected URLs; don't request indexing while the store is locked. Checked again by the scheduled run on 20 Oct.

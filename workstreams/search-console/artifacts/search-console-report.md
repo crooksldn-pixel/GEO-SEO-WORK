@@ -1,6 +1,6 @@
 # 05 — Search Console (crooksldn.com)
 
-Research only. First pass 16 Oct 2026; refreshed 18 Oct 2026. Nothing was changed in Shopify, the theme, Merchant Center or Search Console. No "Request indexing", no sitemap submitted. URL Inspection was used read-only (indexed view plus one "Test live URL").
+Research only. First pass 16 Oct 2026; refreshed 18 Oct 2026 (17:05 BST, plus answers and lock note at 20:15 BST). Nothing was changed in Shopify, the theme, Merchant Center or Search Console. No "Request indexing", no sitemap submitted. URL Inspection was used read-only (indexed view plus one "Test live URL").
 
 Raw exports: `/mnt/project-files/seo/measurements/gsc/` (mirrored on GitHub branch `cowork/search-console` under `workstreams/search-console/artifacts/gsc-exports/`).
 
@@ -13,6 +13,8 @@ Raw exports: `/mnt/project-files/seo/measurements/gsc/` (mirrored on GitHub bran
 - Indexing > Pages still says "Processing data, please check again in a day or so" (checked 16 and 18 Oct). Core Web Vitals, Shopping reports and Crawl stats stop at 23 Jul.
 - Most likely explanation (not confirmed): an earlier verification of the domain lapsed around 22 Jul, and the 16 Oct re-verification restarted collection. Shopify reported organic search sessions and orders through the gap, so Google traffic continued; GSC just didn't record it.
 - **Use Jan–Jul as a reference period, not the baseline.** It is pre-relaunch and pre-deploy, and page-level rows reflect the old site's URLs.
+- **Store password-locked from the evening of 18 Oct** (after ~17:05 BST; seen at 20:09 and 20:11 BST): every URL 302s to /password, Googlebot included, and /sitemap.xml returns 404. Probably the T-shirt Week launch, but not confirmed. Lock days must be labelled and left out of like-for-like comparisons.
+- **T-shirt Week** runs Monday to Sunday (owner decision #24). Presumed 19–25 Oct; the main chat says its 14 tees went live 18 Oct. Expect a branded and tee-query spike that isn't an SEO result.
 - **Baseline anchors:** 15 Oct is the only full pre-deploy day on record; 16 Oct is deploy day. First usable post-deploy read: 7 days, 16–22 Oct (in GSC around 24 Oct). 28-day read: 16 Oct – 12 Nov (around 14 Nov).
 
 ## 2. Baseline totals
@@ -70,7 +72,7 @@ UK, 21 Jan – 22 Jul 2026 unless stated. "Best URL" follows the one-URL-per-int
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **crooks** | / | 11,990 | 7.0 (5.4 → 8.7) | 17.3% | A third of all impressions, 60% of the click loss. Entity markup is already live (16 Oct live test: Organization with alternateName "Crooks London" and "Crooks", sameAs Instagram + TikTok), so don't redo schema. Remaining levers: the homepage H1 is just "CROOKSLDN" — show "CROOKSLDN (Crooks LDN)" near the top (the brand's own disambiguation form, and the top query "crooks ldn"); make sure the Instagram and TikTok bios link to crooksldn.com. Measure from the 16 Oct anchor. | P1 | Medium (cause of slide unknown) | entity-about |
 | 2 | crooks joggers, crooks ldn joggers, crooks london joggers, crooksldn joggers, ldn joggers | /collections/sweats | 1,561 | 1.2–1.8 (ldn joggers 9.7) | 35–46% | Largest product cluster, falling (crooks joggers 571 → 325 impr). Homepage got 1,560 of the impressions; /products/black-joggers 40. Link /collections/sweats from home and nav with "joggers" anchor; say "joggers" in its intro (title already does since 16 Oct). "ldn joggers" is the only non-branded query near page 1. | P1 | Medium | collections |
-| 3 | crooks tesco shirt, crooks tesco tee, crooks tesco | /products/crooks-express-t-shirt if that is the design people call the "Tesco tee" — otherwise /collections/tees | 238 | 3.8–4.3 | 17–19% | **Rising** (52 → 186 impr). Homepage took 239 impressions, Crooks Express PDP 18. The two old URLs, /products/white-tesco-tshirt and black-tesco-tshirt, are **404** — 301 both to the chosen URL once George confirms the design match. Don't put "Tesco" in titles. | P1 | Medium | collections (redirects) |
+| 3 | crooks tesco shirt, crooks tesco tee, crooks tesco | /products/crooks-express-t-shirt (George confirmed 18 Oct: the Tesco tee is the Crooks Express tee) | 238 | 3.8–4.3 | 17–19% | **Rising** (52 → 186 impr). Homepage took 239 impressions, Crooks Express PDP 18. The two old URLs, /products/white-tesco-tshirt and black-tesco-tshirt, are **404**: 301 both to /products/crooks-express-t-shirt (approved, owner decision #21). Don't put "Tesco" in titles. | P1 | High | collections (redirects) |
 | 4 | Brand sitelinks (15–16 Oct) | — | see §4 | ~1.0 | 0% | Brand searches now show sitelinks, and two of them are thin system listings: /collections/frontpage (title "PRODUCTS \| CROOKSLDN", 76 impr) and /collections/all (51). Noindex /collections/frontpage (or unpublish it and 301 to /collections/new) so a real collection can take its slot. /collections/tees-1, /search and /cart also appear but already redirect or are noindexed, so they will drop on recrawl. | P1 | Medium | collections |
 | 5 | crooks t shirt, crooks tshirt, crooks shirt, crooks tee, crooks shirts | /collections/tees (indexed) | 169 | 5.9–9.9 | 0–14% | Pos 5–20 **and rising** (crooks t shirt 22 → 72 impr, pos 7.8 → 5.9; crooks tee new at 17). Homepage was the result. Link /collections/tees from home with "T-shirts" anchor. | P2 | Medium | collections |
 | 6 | crooks jorts, crooks ldn jorts, crooks london jorts, ldn jorts, grey wash jorts | /collections/denim (indexed) | 278 | 2.0–2.4 | 25–30% | **Rising** (crooks ldn jorts 2 → 62, crooks jorts 83 → 124). Homepage 278 impr vs old jorts PDP 32 (that PDP got 31% CTR). Old /products/cb2-wash-jorts now 301s to /products/grey-wash-yard-jorts — keep. "Jorts" anchor link to /collections/denim. | P2 | Medium | collections |
@@ -147,9 +149,9 @@ Indexing > Pages is still processing, so its "why pages aren't indexed" list can
 
 **The five archived products** (from the collections workstream's Shopify Admin read) are og-crook-tee, 3-clives-tee, broadcast-tee, evil-clive-tee and large-duffle-bag. **Two of the five had impressions**: 3-clives-tee and evil-clive-tee (table above). og-crook-tee, broadcast-tee and large-duffle-bag had none in Jan–Jul.
 
-**Five more 404s** had impressions or Googlebot hits but aren't archived products, so they aren't on the collections redirect list yet: white-tesco-tshirt and black-tesco-tshirt (with live "tesco" query demand, see #3), joggas-1 (→ /collections/sweats), and the two 2005-drop pink CRSDR URLs (→ /products/pink-crsdr-joggers and -hoodie).
+**Five more 404s** had impressions or Googlebot hits but aren't archived products, so they aren't on the collections redirect list yet: white-tesco-tshirt and black-tesco-tshirt (with live "tesco" query demand, see #3; approved target /products/crooks-express-t-shirt), joggas-1 (→ /collections/sweats), and the two 2005-drop pink CRSDR URLs (→ /products/pink-crsdr-joggers and -hoodie).
 
-Weak hint for the CB1/CB2 wash question: the only "grey wash jorts" impressions (2) showed /products/cb2-wash-jorts, which suggests CB2 was the grey wash.
+(A hint about CB1/CB2 washes was withdrawn on 18 Oct: George confirmed CB1/CB2 were placeholder names, so nothing should be derived from them.)
 
 New 16 Oct pages:
 
