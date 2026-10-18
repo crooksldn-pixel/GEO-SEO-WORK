@@ -59,7 +59,7 @@ See FINDINGS Finding 6, and screenshot `artifacts/runs/2026-10-16/shots/perplexi
 
 ## Q3 — This repo is public. Keep the measuring network's IP address in it?
 
-**Why:** The run `meta.json` files record the IP the panel ran from: 92.41.54.61, Three UK mobile, London. The 16 Oct file also notes Gemini's location footer, "Wooburn Green, UK". The method only needs the country (GB).
+**Why:** The run `meta.json` files record the IP address and network the panel ran from, plus a location footer from Gemini (removed 18 Oct per owner decision #16). The method only needs the country (GB).
 
 **Options:**
 - **A. Keep as is.**
