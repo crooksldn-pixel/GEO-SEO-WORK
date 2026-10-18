@@ -2,28 +2,20 @@
 
 ## Do next
 
-1. **Get George's answers to the two Merchant Center questions** in `artifacts/04-merchant-center.md`, sections P1 and P2:
-   - delete the 10 `CROOKSRELEASESEPT` duplicates?
-   - business name "Crooks LDN"?
-   
-   Make each change only after his "yes" in chat. Log before, after, time and approval in `CHANGES.md`.
-2. **Task D, once George gives the tee print-on-demand time:**
-   - In Settings > Data sources > Add product source, check whether a supplemental source (Google Sheet) can be linked to the "Shopify App API" Merchant API sources, and whether its values override Shopify's item-level `shipping` handling time.
-   - If yes, prepare a sheet for the 30 tee variants with `min_handling_time`, `max_handling_time` and `shipping_label` = `print-on-demand`, keyed on the `shopify_ZZ_…` IDs. Start with feed label GB.
-   - Show George before linking.
-   - If no, record that the fix has to come from the Shopify side, which needs a decision on who owns Shopify shipping settings.
-3. **29 Oct (task E), before the 1 Nov opt-out deadline:**
-   - Download Products > All products and Needs attention > all issues.
-   - Run `artifacts/gmc_summary.py` on the new files and compare with `artifacts/baseline-2026-10-16.md`.
-   - Check the "Found by Google" count and the account issues.
-   - Send George one line: stay opted in, or opt out before 1 Nov, with the evidence.
-   - A reminder is scheduled in the Cowork chat for 29 Oct 09:00 GMT.
-4. **When product-data's item A goes live** (Cream Cap off Google & YouTube), confirm the cap's 76 disapprovals clear within 1–3 days.
-5. **Task F:** pass the title proposals to `cowork/product-data` through the orchestrator. Titles can only change from Shopify (FINDINGS 6).
+1. **When George types yes in this chat** to the two writes (STATUS Blocker 2):
+   - Products → filter "Data source: Merchant Center" → select all 10 (`G-65230983` to `G-65230992`) → **Archive** (not delete). Read back. Log it in CHANGES.md.
+   - Data sources → Add product source → supplemental → upload `artifacts/gmc-supplemental-tee-handling-GB.tsv` (a copy is in George's Downloads). Link it to the **GB** "Shopify App API" source only. Check the link and the row match. Log it.
+2. **After the store reopens:** re-export products and issues within 24 hours. Run `gmc_summary.py` and confirm:
+   - every GB offer has a `link`
+   - "Missing product page" and "Invalid checkout URL" are gone
+   - the tee supplemental has applied (handling 2–3, label print-on-demand)
+3. **When the 14 T-shirt Week tees appear in the GB feed:** add their variant IDs to the supplemental file and re-upload.
+4. **29 Oct (task E):** re-export, compare with the baseline, and apply George's Q4 rule. Stay in if the UK is clean, otherwise opt out by 1 Nov. The reminder is set for 09:00 GMT.
 
 ## Do not do yet
 
-- **Opting out.** That's George's call on 29–30 Oct, and only if core items are still disapproved, or he decides auto-add is too risky (FINDINGS 7).
+- **Opting out.** George's rule (Q4): decide on 29 Oct. Stay in only if the UK is clean.
+- **Hard-deleting the 10 duplicates.** Archive them; a permanent delete is George's own action from the archive.
 - **Anything for the GTIN issue.** No GTIN issue is live (FINDINGS 2), and attribute rules don't exist on these sources.
 - **Editing Shopify-created shipping policies or the 76 Shopify sources in Merchant Center.** The Shopify app is likely to overwrite them. Fix shipping times in Shopify instead.
 - **Liechtenstein, Bulgaria, Croatia, Malta or South Korea gaps.** These have low value and belong in Shopify Markets (FINDINGS 5).
@@ -31,33 +23,18 @@
 
 ## Decisions still required
 
-All of these are in [QUESTIONS.md](QUESTIONS.md), with answer lines:
-- Q1 (delete the duplicates)
-- Q2 (business name)
-- Q4 (auto-add stance)
-- Q7 (small markets)
-- O1 (who owns Shopify shipping settings; for the orchestrator)
+- George: is the password lock deliberate, and when does it lift?
+- George: a typed yes in this chat for the archive and the tee supplemental. Both are already approved in ANSWERS.md, but this session's permission check needs it in chat.
 
 ## Data still required
 
-These are in QUESTIONS.md too:
-- Q3 (tee print-on-demand time)
-- Q5 (the `03-merchant-feed` files)
-- Q6 (source of the "112" figure)
-
-## When George says "answered"
-
-1. Pull this branch and read QUESTIONS.md.
-2. Q1 yes: show the 10 products in Merchant Center, delete them, then log the change in CHANGES.md.
-3. Q2: say exactly what will be saved, save it, then log it.
-4. Q3: run NEXT step 2 (task D) with the number.
-5. Q5: map FINDINGS against the 11 findings and add the comparison to `artifacts/04-merchant-center.md`.
-6. Update STATUS.md, then commit and push.
+- None. All answers are in ANSWERS.md.
 
 ## Recommended follow-up date
 
 **Thu 29 Oct 2026**, for the export and the opt-in call. A final check on Sat 31 Oct if anything is still processing. The opt-out deadline is Sun 1 Nov and auto-add starts Mon 2 Nov.
 
-Baseline raw files on George's Mac, in Downloads (not committed, because the repository is public):
-- `products_2026-10-16_12-28-38.zip`
-- `product_issues_2026-10-18_08-35-43.csv`
+Raw downloads on George's Mac, in Downloads (not committed, because the repository is public):
+- `products_2026-10-16_12-28-38.zip`: the 16 Oct baseline
+- `product_issues_2026-10-18_08-35-43.csv`: before the lock
+- `products_2026-10-18_12-22-35.zip` and `product_issues_2026-10-18_12-13-25.csv`: during the lock

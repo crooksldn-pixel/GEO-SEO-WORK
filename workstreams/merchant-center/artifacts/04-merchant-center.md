@@ -8,10 +8,10 @@ Session: Merchant Center only. Nothing changed in Shopify. Nothing saved in Merc
 
 | Task | State | Detail |
 |---|---|---|
-| A. Export and summarise | Done; one part open | Products 16 Oct and issues 18 Oct: [baseline-2026-10-16.md](baseline-2026-10-16.md). The comparison against the 11 findings in `03-merchant-feed.md` is open, because that file isn't available here. |
+| A. Export and summarise | Done | [baseline-2026-10-16.md](baseline-2026-10-16.md); the 11-findings comparison is in [findings-map-03.md](findings-map-03.md). |
 | B. Invalid-GTIN attribute rules | Can't be done as written; not needed now | No Attribute rules on Shopify's Merchant API sources, and no GTIN issue live. See FINDINGS 2. |
 | C. Shipping check | Done | £3 and free from £30 match. Handling is 0 days; free tiers say 2–4 days; cut-off is 12:00 AM. See FINDINGS 3. |
-| D. Tee handling time and shipping_label | Waiting on George | Needs the print-on-demand time. The route is still to be confirmed (NEXT 2). |
+| D. Tee handling time and shipping_label | Approved; waiting on George's yes in chat | 2–3 days (owner decision #1). The file `gmc-supplemental-tee-handling-GB.tsv` is ready, for 90 GB tee variants. |
 | E. Re-check and opt-in call | Scheduled | 29 Oct 09:00 GMT reminder in the Cowork chat. |
 | F. Titles and is_bundle | Proposals below | is_bundle is already "yes" on all 4 sets. |
 
@@ -86,11 +86,11 @@ The crewneck title follows the existing "Charcoal Cellblock Shorts — 450gsm Fl
 
 ## Changes made
 
-None.
-
 | Time | Change | Before | After | George's yes |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| 18 Oct 20:12 BST | Business name | CROOKSLDN (rejected; seller shown as crooksldn.com) | Crooks LDN | Q2, ANSWERS.md; "answered" in chat 20:08 |
+
+The archive of the 10 duplicates and the tee supplemental are approved, but this session's permission check refused them. They're waiting on George's yes typed in this chat. See CHANGES.md.
 
 ## Next check
 

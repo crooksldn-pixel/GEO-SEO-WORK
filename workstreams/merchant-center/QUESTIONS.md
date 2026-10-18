@@ -1,5 +1,7 @@
 # Questions for George — Merchant Center
 
+> **18 Oct: answered.** See [ANSWERS.md](ANSWERS.md). Two things are still open, in STATUS.md: whether the password lock is deliberate, and a typed yes in this chat for the archive and the tee supplemental.
+
 Everything this workstream needs from George is in this one file. Nothing is needed from George that isn't listed here.
 
 **How to answer:** write each answer on the **Answer:** line under its question and commit it to `cowork/merchant-center`. This workstream gives the orchestrator permission to edit this file only. Then tell this Cowork session "answered". It will read this file and carry on. A question left blank is treated as unanswered, and the work that depends on it stays on hold.

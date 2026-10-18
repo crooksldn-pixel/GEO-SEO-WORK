@@ -174,3 +174,61 @@ Medium. The 30 products couldn't be identified without adding them. The cap outc
 
 **Recommended action:**
 Raise it with George now, and decide on 29 Oct with the fresh export.
+
+## Finding 8 — Since about 20:05 BST on 18 Oct, the password lock has stripped product links from the whole feed
+
+**Finding:**
+The Online Store is password-protected. Recorded by `cowork/theme-editor` (Admin API `passwordProtection.enabled = true`, 20:14 BST) and by `cowork/search-console` and `cowork/live-site-checks`, where every public URL ends at `/password`.
+
+Merchant Center's next Shopify sync (data stamped 12:05 PM account time, which is 20:05 BST) arrived without links. The products export at 20:22 BST shows:
+- only **47 of 17,452 offers** carry a `link`
+- **0 of 306** GB offers carry one
+
+"Not showing on Google" went from 76 to 6.11K at 20:05, 7.04K at 20:19 and **17.4K** at 20:24. The issues export at 20:13 had already disapproved, in the UK, all 90 tee variants, the Puffa, the HydroCuff and all 3 caps for "Missing product page", plus "Invalid checkout URL" on the tees. The rest followed as the sync was processed.
+
+Product pages load normally in George's browser, but only because he's logged in as the store owner.
+
+**Evidence:**
+- Products export `products_2026-10-18_12-22-35` (`link` column).
+- Issues export `product_issues_2026-10-18_12-13-25`, 49,638 rows:
+  - Missing product page: 43,698
+  - Invalid checkout URL: 2,466
+  - Generic landing page: 336
+- Products page counters read at 20:05, 20:19 and 20:24.
+- Other workstreams' records of the lock.
+
+**Why it matters:**
+While the lock is on, CROOKSLDN has effectively no Shopping or free listings. If it's still on at the 29 Oct check, the feed isn't clean in the UK, and George's Q4 rule means opting out by 1 Nov.
+
+**Confidence:**
+High on the effect. High that the lock is the cause: timing matches, it hit every product at once, and pages and data are otherwise unchanged. Not known whether the lock is deliberate (T-shirt Week is presumed to run 19–25 Oct).
+
+**Recommended action:**
+George decides when the lock comes off. Nothing to change in Merchant Center: links come back on the next Shopify sync after the store reopens. Re-export within 24 hours of reopening and confirm links on every GB offer.
+
+## Finding 9 — The feed changed on 18 Oct: gender, age group and colour landed; tees are now 30 variants at £20; three caps are live
+
+**Finding:**
+Comparing the 18 Oct 20:22 export with 16 Oct:
+- **GB offers:** 244 → 306.
+- **Gender and age group:** "unisex" / "adult" on 303 of 306. One Puffa variant is blank.
+- **Puffa colour:** Black.
+- **Tees:** each of the 3 tees has 30 variants (Black, Charcoal, Green, Light Grey, Navy, White × XS–XL) at £20.00, up from 10 variants at £25.
+- **Caps:** Major League Crooks Cap in Cream, Brown and Blue are all in the feed, with images and descriptions. Brown and Blue have no colour.
+- **Feed labels:** 77 → 58, with a new `EUR_116163477847` label. Shopify Markets were reorganised.
+- **Hand-added duplicates:** the 10 `CROOKSRELEASESEPT` products are unchanged.
+- **GTIN:** the same 8 variants.
+
+**Evidence:**
+`gmc_summary.py` on both exports; `artifacts/findings-map-03.md`.
+
+**Why it matters:**
+The tee handling-time file must use the current variant IDs; the 16 Oct ones are out of date. The 14 T-shirt Week tees aren't in the feed yet. When they're published to the Google channel, they need adding to that file. Brown and Blue cap colour is a gap for product-data.
+
+**Confidence:**
+High.
+
+**Recommended action:**
+- Use `artifacts/gmc-supplemental-tee-handling-GB.tsv`, built from the 20:22 export: 90 GB tee variants, handling 2–3 days, transit per owner decision #3, label `print-on-demand`.
+- Re-build it when new tees join the feed.
+- Pass the cap-colour gap to product-data.
