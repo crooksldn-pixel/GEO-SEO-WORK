@@ -18,3 +18,18 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **Q12 Search Console data:** on `cowork/search-console` (`artifacts/search-console-report.md`, FINDINGS 5–8).
 - **Contact page:** "run out of London" → "an independent British streetwear brand" is approved (decision #13). This workstream owns it.
 - Sweats copy (task A) was approved on 16 Oct; use confirmed weights, no origin.
+
+## Update 18 Oct 2026, 18:50 UTC: George's go, and who does what now
+
+George typed **go** at 18:45 UTC for the approved store batch. The project thread's store writes are still refused by its own permission check, so **this Cowork chat now carries out the items below**. George's reply "answered" in this chat is his go for them. Re-read live values before each write, change one thing at a time, read it back, and log it in `project-files/seo/change-log.md` (or this branch's CHANGES.md).
+
+**Do now**
+1. Sweats and Denim cleanup ("Made in Portugal" out), via admin UI (the API can't see these two).
+2. Add the Cellblock Set to Sweats.
+3. Contact page: "independent British streetwear brand".
+4. Tracksuits fit-guide link, and the improved 550gsm section in the fit article.
+5. Outerwear copy and the reactive guide (durability wording with no cycle figures; Puffa: "avoid washing where possible"; turns white with heat, back to black as it cools).
+6. Redirects: the 2 old Tesco tee URLs → /products/crooks-express-t-shirt; old tees → /collections/tees; duffle → /collections/accessories. Hide /collections/frontpage from search (seo.hidden).
+7. CB1/CB2: derive nothing; leave existing CB redirects alone.
+
+**No decision outstanding for this chat.**
