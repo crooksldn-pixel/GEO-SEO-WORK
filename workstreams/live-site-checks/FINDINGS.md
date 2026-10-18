@@ -114,8 +114,8 @@ INP is a ranking signal and the homepage carries most branded traffic. It's the 
 High on the measurements. Medium that Mida is the main INP cause: lab TBT is low (40 ms), and INP comes from real interactions, which the lab doesn't exercise.
 
 **Recommended action:**
-1. Sample Mida recording or exclude the homepage.
-2. Scope the Shopify Forms app embed to pages that use it, or remove it if Omnisend owns signup.
+1. Switch the Mida app embed off, and turn it on only for short recording windows. Mida has no sampling or page-exclusion setting (its docs list only IP and country exclusion), so the choice is on or off ([MIDA docs](https://docs.mida-app.io/recordings/settings/settings/)).
+2. Shopify Forms: Shopify Forms powers the homepage early-access signup and the password page (form 923202), so it stays (`templates/index.json` → `crooks_informant` → `forms_inline` block). If no Forms popups run, test on a copy theme whether that block still works with the Forms *app embed* off, which would drop 262 KiB from every other page.
 3. Re-check homepage INP in CrUX 28 days after the change.
 
 This is the **baseline ("before") measurement** for any performance workstream.

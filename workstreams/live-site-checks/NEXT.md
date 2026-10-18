@@ -13,13 +13,13 @@
    - Apply it to: shipping, refund and contact policies; FAQ (`templates/page.faq.json`); Terms (`templates/page.terms.json`); the PDP custody blocks (`templates/product.json`, `templates/product.crooks.json`); and the status bar.
    - Set schema `transitTime` to 2–3 for Tracked 48 in `snippets/crooks-schema-shipping.liquid`.
    - The exact place list is in the report, section 3.
-4. **Performance (apps).** Sample Mida recording or exclude the homepage. Limit the Shopify Forms embed to pages that use it, or remove it.
-5. **Pre-order cancellation policy.** Draft and add it under Settings → Policies, after George approves the wording.
+4. **Performance (apps).** Mida: embed off per Q4. Mida has no sampling or page-exclusion setting (its docs list only IP and country exclusion), so the choice is on or off. Shopify Forms: keep the homepage/password signup block (form 923202). If Q5 says there are no Forms popups, test the Forms app embed off on a copy theme and confirm the homepage signup still submits.
+5. **Pre-order cancellation policy.** Draft is in `artifacts/proposed-copy.md` §B. Add it under Settings → Policies → Cancellation policy once George approves it (Q6).
 6. **Theme code, small fixes:**
    - `sections/crooks-exhibit-record.liquid`: no `label_low` when `inventory_policy == 'continue'`.
    - `snippets/crooks-schema-product.liquid`: print `size` once when a product has two size options (sets).
    - Tee `handlingTime` from the POD lead time.
-   - Set-panel line (`set_shipping_text`): "The set ships free by Tracked 24 (orders £80+)".
+   - Set-panel line (`set_shipping_text`): "The set ships free by Tracked 24" (`artifacts/proposed-copy.md` A4).
 
 ## Do not do yet
 
@@ -35,13 +35,26 @@
 - **Don't add `aggregateRating`.** There is one 1.0★ Judge.me review on one tee.
 - **Don't write products, variants or inventory from this workstream.** `cowork/product-data` owns them.
 
+## When George says "answered"
+
+1. Read the answers in `QUESTIONS.md` (or as relayed from the main chat).
+2. Finalise `artifacts/proposed-copy.md`:
+   - put the Q1 lead time into every `{TEE LEAD TIME}`
+   - use the Q2 delivery times
+   - apply any edits from Q6 and Q7
+   - mark it "approved" with the date
+3. Put the finished tee wording and the made-to-order tag ask into `NEXT.md` for `cowork/product-data`. Put the copy and schema values in for whichever workstream implements the theme.
+4. Verify anything George has already done:
+   - **Q3:** checkout box starts unticked.
+   - **Q4:** Mida script gone from the homepage; re-run homepage PageSpeed.
+   - **Q8:** if published, the 390 px popup now arrives as a bottom sheet after 10 s or more, and the Rich Results Test passes on home, hoodie, tee and outerwear.
+5. **Q9:** if yes, confirm in chat, then run the tee-only cart test and record the result against Finding 8.
+6. Update `STATUS.md`, `FINDINGS.md` and `CHANGES.md` (only for anything this session actually did), commit and push.
+
 ## Decisions still required
 
-- POD lead time for tees (George).
-- Mida: keep full recording, sample it, or drop it (George — app spend).
-- Shopify Forms vs Omnisend as the single signup stack (George).
-- Cancellation policy wording for pre-orders (George).
-- When to lift the hold on "Claude P1 fixes" (George).
+All owner decisions are in `QUESTIONS.md` (Q1–Q9).
+
 - **Repository (orchestrator):** this branch is rebased onto `main` (3905e37, the README commit). `cowork/geo-measurement` and `cowork/product-data` were pushed before `main` existed. Check whether they still need rebasing, and whether the repo's default branch is set to `main`.
 
 ## Data still required

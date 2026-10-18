@@ -2,7 +2,7 @@
 
 **Branch:** cowork/live-site-checks  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:42 BST  
+**Last updated:** 18 Oct 2026, 17:16 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -45,7 +45,7 @@ The held theme is a full copy of live as of 16 Oct, so publishing it after any l
 
 ## Currently working on
 
-Nothing currently running.
+Nothing currently running. Waiting for George's answers in `QUESTIONS.md`; he'll say "answered" in this session's chat.
 
 ## Blockers
 
@@ -60,12 +60,19 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Tell us the tee print-on-demand lead time (order to dispatch).
-2. Turn off the pre-ticked email box: Shopify admin → Settings → Checkout → Marketing options → stop preselecting the sign-up.
-3. Decide on Mida recording: sample sessions or exclude the homepage. It's the heaviest script on every page.
-4. Say whether Shopify Forms is used anywhere. If Omnisend owns signup, its app embed can go (262 KiB per page).
-5. Approve a short pre-order cancellation policy. Checkout currently asks shoppers to agree to one that doesn't exist.
-6. Decide when the hold on the "Claude P1 fixes" theme lifts. It holds the popup fix and the Organization schema update, and its timing decides whether theme fixes go on live directly or into both themes.
+All nine questions, with context, options and answer slots, are in [`QUESTIONS.md`](QUESTIONS.md). Proposed wording for Q6 and Q7 is in [`artifacts/proposed-copy.md`](artifacts/proposed-copy.md).
+
+1. Q1 — Tee print-on-demand lead time (order to dispatch).
+2. Q2 — Confirm UK delivery times: Tracked 48 2–3 working days, Tracked 24 1–2 (as checkout states).
+3. Q3 — Untick "Preselect the sign-up option" in Settings → Checkout → Marketing options (George's action).
+4. Q4 — Mida: embed off, keep, or uninstall. It has no sampling or page exclusion.
+5. Q5 — Any Shopify Forms popups besides the homepage/password signup (form 923202)?
+6. Q6 — Approve the pre-order cancellation policy (draft in `artifacts/proposed-copy.md` §B).
+7. Q7 — Approve the shipping and delivery wording (`artifacts/proposed-copy.md` §A).
+8. Q8 — Lift the hold and publish "Claude P1 fixes", or keep holding.
+9. Q9 — OK to run one tee-only test cart (confirmed in chat before running).
+
+Already asked elsewhere, not repeated here: George's yes on turning off tee inventory tracking (`cowork/product-data`, item D2).
 
 ## Waiting on external systems
 
@@ -77,9 +84,9 @@ Nothing currently running.
 1. Tag all 17 tees (3 live, 14 draft) `made-to-order` and untrack POD inventory, before the T-shirt week drafts publish. Owner: `cowork/product-data` (extends its D2). George's yes on D2 is already requested there.
 2. Turn off checkout marketing preselect (George, Shopify settings).
 3. Align UK delivery time to Tracked 48 = 2–3 working days and Tracked 24 = 1–2, across policies, FAQ, Terms, the PDP custody block and schema `transitTime` (theme editor, Shopify policies, theme code).
-4. Cut Mida's load (sample or exclude the homepage) and scope the Shopify Forms embed; re-measure homepage INP in 28 days (apps).
+4. Mida embed off if George agrees (Q4). If there are no Forms popups (Q5), test the Shopify Forms app embed off on a copy theme. Re-measure homepage INP 28 days later.
 5. Publish the staged popup fix when the hold lifts; compare `ctc_*` events and signups against this baseline (09-performance).
-6. Add a pre-order cancellation policy (Shopify settings).
+6. Add the pre-order cancellation policy once approved (Q6; draft ready in `artifacts/proposed-copy.md` §B).
 7. Theme code: no low-stock line on `continue` variants; tee `handlingTime` from the POD lead time; set products print `size` once; set-panel shipping line reworded.
 8. Performance headroom: critical CSS, `font-display: swap`, hero `fetchpriority` (theme/performance).
 
