@@ -1,96 +1,102 @@
 # Questions for George
 
-Answer under each one. Say "answered" in the chat and this session picks it up.
+Answers given in the workstream chat on 18 Oct 2026 are recorded under each question. Open questions are Q3b and Q12–Q16.
 
 ## Q1. Tiers and mechanism
 
-Tier 1 fixed prices for the US (USD) and the Eurozone (EUR); Channel Islands stay GBP. Everything else stays automatic with Shopify rounding, no adjustment.
-
-- A) Approve (recommended)
-- B) Also give Japan a fixed JPY list
-- C) Other
-
-Answer:
+**Answer: A — APPROVE.** Tier 1 fixed USD (US) and EUR (Eurozone); Channel Islands GBP; everything else automatic.
 
 ## Q2. The USD and EUR lists
 
-See [artifacts/PROPOSAL.md](artifacts/PROPOSAL.md). One line rounds down: the £25 tee at €30 (1.9% under UK net) because €35 would sit 14.6% above.
-
-- A) Approve as listed (recommended)
-- B) Approve with changes (list them)
-
-Answer:
+**Answer: A — APPROVE as listed.**
 
 ## Q3. US duties
 
-- A) Collect at checkout as a line item, ship Royal Mail PDDP. Shelf price stays $85; buyer sees about $31 duty at checkout. (recommended)
-- B) Duties included in price. To keep UK-level net: hoodie ~$140, Convict Set ~$275, Puffa ~$375.
-- C) Leave as now: buyer billed on delivery (courier) or CROOKS invoiced (Royal Mail).
-
-Answer:
+**Answer: NOT SURE.** Re-asked as Q3b with the new cost facts.
 
 ## Q4. How do international parcels ship now?
 
-- Carrier and service for US, EU and rest-of-world parcels (Royal Mail Click & Drop? FedEx/UPS through which account or broker?)
-- Label cost on your last few international parcels
-- Has Royal Mail invoiced you US duties?
-
-Answer:
+**Answer:** "Use CROOKS Shipping to find the prices — we use a mix of Easyship API + Parcel2Go." Parcel2Go quotes pulled from George's account (F8). Easyship needs a login I can't enter.
 
 ## Q5. Shipping rates
 
-Weight-banded rates near cost (see the shipping matrix). Australia goes from A$38 to A$59 / A$79; Japan from ¥4,100 to ¥5,600 / ¥6,900.
+Superseded by Q13 (rebuilt on real costs).
 
-- A) Approve — stop subsidising overseas parcels (recommended)
-- B) Approve US and Eurozone only; keep £18.99 for the rest
-- C) Other
+## Q6. Channel Islands free Tracked 48 from £30
 
-Answer:
-
-## Q6. Channel Islands free Tracked 48 from £30, same as UK
-
-Costs about £220 a year in shipping income at last year's volume. Guernsey is your second-biggest market.
-
-- A) Yes
-- B) No
-
-Answer:
+**Answer: A — YES.** Live (IMP-4). See Q14.
 
 ## Q7. International free shipping and unit costs
 
-Recommended: none for now. A US threshold at $250 would cost 11–18% of order value in postage; EU at €150 about 13–15%. To decide properly I need unit cost per product line.
-
-- A) No international threshold (recommended)
-- B) US $250 and EU €150
-- Unit costs:
-
-Answer:
+Not answered — parked. No international threshold.
 
 ## Q8. EU VAT
 
-- A) Keep as now (buyer pays VAT, €3 duty and handling on delivery); add clear wording on product pages and checkout (recommended until the accountant has looked)
-- B) Ask the accountant about IOSS so VAT is collected at checkout. The EUR list would then need rebuilding about 20% higher if shown VAT-inclusive.
-
-Answer:
+Not answered — parked. Kept as now (buyer pays on delivery).
 
 ## Q9. VAT registration
 
-No tax shows on any order, UK included. Confirm CROOKS isn't VAT-registered.
-
-Answer:
+**Answer: CROOKS IS VAT-registered.** Consequences and accountant points in F9.
 
 ## Q10. Tee blanks
 
-Where are the print-on-demand tee blanks made? Needed for country of origin and duty.
-
-Answer:
+**Answer: printed in-house at the office.** Follow-up in Q15.
 
 ## Q11. Country selector
 
-OK for the theme workstream to turn on Horizon's selector in header and footer?
+Not answered here; the theme workstream owns it. It decides whether local prices show before checkout.
 
-- A) Yes (recommended)
-- B) Yes, plus a geolocation popup app
-- C) No
+---
+
+## Q3b. US duties — collect at checkout? (open)
+
+New facts: Royal Mail to the US via Parcel2Go is duty-prepaid by the sender. If US orders go that way and nothing is collected, CROOKS pays ~£23 duty on an $85 hoodie (~36% of value), leaving ~£37 against £48.73 on a UK sale.
+
+- **A) Yes (recommended):** Shopify collects US duty at checkout as a line item, US only, switched on once every product has an HS code. Shelf price stays $85; buyer sees ~$31 duty.
+- **B) No — duties included in price:** tee $40, crewneck/jorts $90, hoodie $110, Cellblock Set $160, Convict Set $200, Puffa $325.
+- **C) No change** (accept the duty cost on Royal Mail parcels).
+
+Answer:
+
+## Q12. Eurozone catalog — non-euro EU (open)
+
+- **A) Split (recommended):** new "Eurozone" market (21 euro states + MC, AD, SM, VA, ME, XK) with the EUR list; PL, DK, SE, CZ, HU, RO stay on automatic conversion from £, as approved.
+- **B) One EU market in EUR:** non-euro countries get the EUR price converted; Poland's hoodie goes from 318 zł to about 335 zł (~+5%).
+
+Answer:
+
+## Q13. International shipping rates on real costs (open)
+
+Bands by order value, because 31 of 45 products have no weight (one fleece piece or jeans stays under the threshold; a set or two pieces goes over). Margins in F8.
+
+| Zone | Under threshold | From threshold |
+|---|---:|---:|
+| United States (fixed USD) | $25 under $100 | $30 |
+| Eurozone (fixed EUR) | €15 under €90 | €18 |
+| Japan, Canada, rest of world | £22.99 under £75 | £30.99 |
+| Australia / New Zealand | £20.99 under £75 | £26.99 |
+| Rest of Europe | £12.99 (no quotes yet) | £12.99 |
+
+- **A) Approve (recommended).** Light Eurozone parcels to France/Italy run £0.25–£1.00 under cost; everything else covers cost.
+- **B) Flat, no loss at any quoted weight:** US $30, Eurozone €18, rest of world £30.99, AU/NZ £26.99.
+- **C) Other.**
+
+Answer:
+
+## Q14. Channel Islands carrier (open)
+
+CROOKS Shipping quoted Guernsey order CROOKS-2202 as Parcelforce £16.71. Earlier CI parcels went Royal Mail Tracked 48. Confirm CI will ship Royal Mail Tracked 48 and fix the rule in CROOKS Shipping; on Parcelforce, free CI shipping costs ~£17 an order.
+
+Answer:
+
+## Q15. Tee blanks (open)
+
+Which blank brand and style do you print on? Customs origin is where the blank was made, not where it's printed, so it can't be GB.
+
+Answer:
+
+## Q16. Go for the USD prices (open)
+
+Type **go** and I load the USD list into the US catalog, activate it and run the test script. Or import [artifacts/catalog-prices-USD.csv](artifacts/catalog-prices-USD.csv) yourself.
 
 Answer:

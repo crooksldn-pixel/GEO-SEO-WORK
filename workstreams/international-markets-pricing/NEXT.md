@@ -1,32 +1,29 @@
 # Next
 
-## On George's go (no price impact — can go first)
+## Waiting on George's "go" (in this order)
 
-1. Theme workstream: turn on Horizon's country/region selector in header and footer. Optional: a geolocation popup app (e.g. Selecty, free plan) to suggest the right country on arrival, because the Grow plan has no automatic detection.
-2. Delete the draft duplicate "United Kingdom" market.
-3. Take GB, GG, JE, US, CA, AU, NZ and the EU states out of "all world" so it's genuinely rest of world. Must happen before any fixed-price catalog: overlapping catalogs that aren't nested resolve to the lower price.
-4. Product-data workstream: HS codes on the 17 products without one, origin CN on China-made products, weights on the 11 at 0g, HydroCuff HS to 6201.40.
+1. **USD prices.** Load 44 products by product (USD column of the approved list) and the 8 sock packs by variant, set the US catalog ACTIVE, then test (see the script below). Sock packs, both colours: 1pc $9, 3pc $22, 6pc $35, 12pc $65 (EUR: €8, €20, €30, €55). Manual route: Markets → Catalogs → Import → [artifacts/catalog-prices-USD.csv](artifacts/catalog-prices-USD.csv), then set the sock packs in the catalog by hand.
+2. **Eurozone (Q12, option A).** New market "Eurozone": the 21 euro states plus MC, AD, SM, VA, ME, XK; base EUR. Take the 21 out of "European Union" and rename it "European Union (non-euro)". Add a EUR catalog "Eurozone — EUR fixed prices" with [artifacts/catalog-prices-EUR.csv](artifacts/catalog-prices-EUR.csv) + sock packs. Test DE, IT, FR, IE, BG.
+3. **Shipping zones (Q13).** Split "International" into United States (fixed USD), Australia/New Zealand and rest of world; split "EU (European Union)" into Eurozone (fixed EUR) and Rest of Europe; value-band rates per Q13; move the Isle of Man to the Channel Islands zone.
+4. **US duties (Q3b).** Only after every product has an HS code.
 
-## On approval of the price architecture (Q1, Q2)
+## Other workstreams
 
-5. Create a single-country "United States" market; take US out of "United States and Canada" and rename it "Canada".
-6. Build the USD catalog (fixed prices, CSV import) and assign it to United States.
-7. Build the EUR catalog and assign it to European Union. Optional: move MC, AD, SM, VA, ME, XK into it.
-8. Preview each market with Products → View as, then check the storefront with the selector.
+- **Theme:** Horizon country/region selector in header and footer. Without it, local prices only show at checkout.
+- **Product-data:** weights on 31 products, HS codes on 37, origin CN on the Blue and Brown caps, HydroCuff HS to 6201.40, tee origin once the blank is known (F5).
+- **Ops / CROOKS Shipping:** Channel Islands parcels must route Royal Mail Tracked 48, not Parcelforce (F10).
+- **Accountant:** the three VAT points in F9.
 
-## On approval of shipping and duties (Q3, Q5–Q7)
+## Tier 1 test script (after each go-live)
 
-9. Split zones: United States (fixed USD), Eurozone (fixed EUR), Rest of Europe, World Zone 1, World Zone 2; move Isle of Man next to the Channel Islands.
-10. Channel Islands free Tracked 48 from £30, if approved.
-11. US duties: enable collection for the US only, line item; ship US on Royal Mail PDDP; compare the first 3 Royal Mail duty invoices with what Shopify collected.
-
-## Tier 1 test script (after go-live)
-
-For US, Eurozone (DE, IT) and Channel Islands, using the selector: homepage, collection, product page, cart, checkout. Pass = same currency and same price at every step; shipping matches the matrix; tax line absent (US, EU) or correct; US duty line present and plausible. Screenshot each step into `artifacts/tests/`.
+1. contextualPricing for every price point in US / DE / IT / FR / GG; must match the list exactly.
+2. With the selector (once live): homepage, collection, product page, cart, checkout for US, DE, IT and GG. Pass = same currency and price at every step; shipping matches the matrix; no tax line in US/EU; US duty line present and plausible once enabled.
+3. One checkout to the payment step per Tier 1 market with a real address — George, or with his OK.
+4. Screenshots into `artifacts/tests/`.
 
 ## Measurement
 
-Baseline is F1 (checkout completion by country, 18 Oct 2026). Re-pull at 30 and 60 days after go-live. Nothing is recorded as an improvement without that re-pull.
+Baseline is F1 (checkout completion by country, 18 Oct 2026). Re-pull at 30 and 60 days after the US and Eurozone prices go live. Nothing is recorded as an improvement without that re-pull.
 
 ## Ongoing
 
