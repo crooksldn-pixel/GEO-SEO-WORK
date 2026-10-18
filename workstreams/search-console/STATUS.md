@@ -28,7 +28,7 @@ Overlaps (FINDINGS 12): collections was blocked waiting for this report, which i
 - **Measured:** UK Performance (queries, pages, daily) for 21 Jan – 22 Jul 2026 and 15–16 Oct 2026; first-half vs second-half comparison; query → page breakdowns for every product cluster. `artifacts/gsc-exports/`
 - **Measured:** branded vs non-branded baseline. Jan–Jul UK: 14,312 clicks, 35,948 impressions; branded 12,303 clicks; genuinely non-branded 1 click and 187 impressions. Anchor 15–16 Oct UK: 86 clicks, 295 impressions, CTR 29.2%, position 4.6.
 - **Researched:** ranked opportunity list, 14 rows with suggested owner workstreams. `artifacts/opportunities.csv`
-- **Audited:** URL Inspection (indexed view) on 14 URLs; live status and redirects of every in-scope URL; Sitemaps, Core Web Vitals, HTTPS, Shopping and Crawl stats reports.
+- **Audited:** URL Inspection (indexed view) on 13 URLs, 15 inspections across 16 and 18 Oct; live status and redirects of every in-scope URL; Sitemaps, Core Web Vitals, HTTPS, Shopping and Crawl stats reports.
 - **Tested:** live URL test on /products/convict-hoodie-1. Rendered Product JSON-LD shows priceCurrency GBP, and the 5 merchant items are valid.
 - **Written:** full report `artifacts/search-console-report.md` and `FINDINGS.md` (12 findings, including overlaps with collections, live-site-checks, product-data and geo-measurement).
 
