@@ -59,7 +59,7 @@ Nothing currently running.
 **From:** George / orchestrator  
 **Severity:** P3  
 **Can work around it?:** Yes  
-**Workaround:** this branch starts from its own root commit. Rebase onto `main` once it exists. If this was the first branch pushed, GitHub may have made it the default; set the default back to `main` once `main` exists.
+**Workaround:** this branch starts from its own root commit. Rebase onto `main` once it exists. As of 18 Oct 16:50 BST, GitHub reports `cowork/geo-measurement` as the repo's default branch (HEAD), because it was the first branch pushed. Set the default to `main` once `main` exists.
 
 ## Waiting on George
 
@@ -100,7 +100,7 @@ Nothing currently running.
 **GEO:** Medium  
 **Confidence:** Medium
 
-Commercial is high because gender, age group and colour gate apparel eligibility in UK Shopping. Wrong weights and copied size charts also cost money directly, through shipping charges and wrong-size swaps.
+Commercial is high because gender, age group and colour gate apparel eligibility in UK Shopping. Google UK showed a Shopping pack on all seven core product and specialist queries measured on 16 Oct, with no Crooks product in any of them (Finding 11). Wrong weights and copied size charts also cost money directly, through shipping charges and wrong-size swaps.
 
 SEO and GEO are medium because the copy is mostly sound already. The fixes take unconfirmed claims out of what search engines and AI answers quote, rather than adding new ranking content.
 

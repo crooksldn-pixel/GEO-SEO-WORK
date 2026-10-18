@@ -207,3 +207,33 @@ High.
 - Socks alt: rewrite from the actual image.
 - Puffa: clean up the HTML in the G rewrite.
 - HydroCuff: covered by J.
+
+## Finding 11 — Google UK shows Shopping packs on every core product query, with no Crooks product in them
+
+**Finding:**
+In the geo-measurement baseline run (16 Oct 2026, UK IP, signed out), Google UK showed a Shopping pack on seven product and specialist queries:
+- 550gsm hoodie UK
+- heavyweight hoodie UK
+- baggy hoodie UK
+- baggy jeans UK
+- heavyweight tracksuit UK
+- water reactive jacket
+- heat reactive puffer
+
+No pack contained a Crooks product. crooksldn.com wasn't in the top 20 organic results for any of them either.
+
+**Evidence:**
+On branch `cowork/geo-measurement`:
+- `workstreams/geo-measurement/artifacts/runs/2026-10-16/results.csv`, `google_uk` rows, notes column `shopping_pack=Y … no Crooks`
+- `workstreams/geo-measurement/artifacts/runs/2026-10-16/summary.md`
+
+Read-only here; that workstream's files are not edited.
+
+**Why it matters:**
+For these queries, the Shopping pack is a way onto page one that doesn't depend on organic ranking. Getting into it depends on clean, eligible product data. Gender, age group and colour are required for UK apparel (Finding 8), and the Cream Cap image disapproval sits on the same feed.
+
+**Confidence:**
+High on what was observed. Whether Crooks items are currently limited or disapproved in Merchant Center belongs to the merchant-feed workstream and isn't verified here.
+
+**Recommended action:**
+Do D1, E and F (age group, gender, Puffa colour) first among the approvals. Re-check these queries in the next geo-measurement run after Merchant Center has reprocessed.
