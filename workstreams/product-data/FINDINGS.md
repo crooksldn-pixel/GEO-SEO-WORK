@@ -15,7 +15,9 @@ George's confirmed rule (16 Oct) limits the cotton claim to hoodies and joggers.
 The claims sit across descriptions, SEO titles, SEO descriptions, alt text, `crooks.fabric` and `shopify.fabric`.
 
 **Evidence:**
-Product reads on both dates, with no change between them. The field-by-field list is in [artifacts/c-fabric-claim-fixes.md](artifacts/c-fabric-claim-fixes.md).
+- Product reads on both dates, with no change between them. The field-by-field list is in [artifacts/c-fabric-claim-fixes.md](artifacts/c-fabric-claim-fixes.md).
+- The 3 live tees also carry the product tag `cotton`. No collection rule uses that tag (collections read 18 Oct).
+- `cowork/merchant-center` Finding 6 confirms the three tee SEO titles go out as the Google Shopping titles, "cotton" included.
 
 **Why it matters:**
 `shopify.fabric` feeds Google's material attribute, and SEO titles and descriptions are what search snippets and AI answers quote. An unconfirmed composition claim can end up repeated as fact in Shopping listings and in generated answers about the brand.
@@ -78,7 +80,9 @@ Google disapproves items without an image. While no photo exists, there's nothin
 High.
 
 **Recommended action:**
-Item A (unpublish from Google & YouTube only) as soon as George says yes in chat. Then J: photo first, then description and alt text, then republish to Google.
+- Item A (unpublish from Google & YouTube only) as soon as George says yes.
+- Then J: photo first, then description, alt text and an SEO title, then republish to Google.
+- Get the photo in before 2 Nov if possible. Once the cap is off the channel, Google's auto-add may pick it up from the site crawl and disapprove it again (`cowork/merchant-center` Finding 7).
 
 ## Finding 5 — 11 products ship at 0g, including every set
 
@@ -139,13 +143,18 @@ The ReStock "preorder" selling plan is on all three tees and on PINK CONVICT SWE
 Variant `inventoryQuantity`, `inventoryPolicy` and `inventoryItem.tracked`, plus product `sellingPlanGroups`, read on both dates.
 
 **Why it matters:**
-Print-on-demand tees should never show negative stock or read as preorder. Brief item D says the theme marks them PreOrder in product schema. The ReStock plan triggers a "recurring/deferred purchase" notice at checkout.
+Print-on-demand tees should never show negative stock or imply stock. `cowork/live-site-checks` Finding 1 (P1) shows the live tee pages say "IN STOCK" and "Ordered now — leaves tomorrow", and one shows a false "1 LEFT". The theme only switches to its made-to-order line when the product carries the tag `made-to-order`, and no tee has it. The 14 draft T-shirt week tees (420 variants) are set up the same way and would launch with the same lines.
+
+Correction to the brief: tee product schema is already InStock on all 30 live variants, per live-site-checks' Rich Results Test on 16 Oct. The theme only emits PreOrder for the CLIVE pre-order plan. The ReStock "recurring/deferred purchase" checkout notice comes from the brief; live-site-checks didn't reproduce it with a tee in the cart.
 
 **Confidence:**
-High on the data. Medium on the checkout notice, which comes from the brief and hasn't been re-tested here.
+High on the data and the page claims. Low on the checkout notice.
 
 **Recommended action:**
-D2: switch tracking off on all 30 tee variants. I: remove the ReStock plan in the app (not by uninstalling), with George deciding whether the Pink Sweats are included.
+- D2, extended: switch tracking off on all 450 tee variants (30 live, 420 draft).
+- New: tag all 17 tees `made-to-order`.
+- Do both before any T-shirt week tee is published.
+- I: remove the ReStock plan in the app as cleanup (not by uninstalling). George decides whether the Pink Sweats are included.
 
 ## Finding 8 — No product has gender or age group, and the Puffa has no colour
 
@@ -155,11 +164,15 @@ No active product has a target gender or age group, and neither `shopify.target-
 **Evidence:**
 The product metafield definitions list (shopify namespace) and the 18 Oct product metafield reads.
 
+The Merchant Center baseline (`cowork/merchant-center`, artifacts/baseline-2026-10-16.md, GB label) shows two feed gaps:
+- No colour reaches Google for the Puffa or for either MotionTec sock, even though both socks carry two `shopify.color-pattern` values.
+- The Shopping titles of 2 products are all caps.
+
 **Why it matters:**
-For apparel in the UK, Google Shopping requires gender, age group and colour. Missing them limits or blocks the items in Shopping.
+Google lists gender, age group and colour as attributes for UK apparel. Merchant Center currently raises no issue for them, though: all 25 Shopify products are approved for the UK apart from the Cream Cap, and the 18 Oct issues export contains only 4 issue types, none of them these attributes. So the gain is completeness and matching (Shopping filters by gender and colour), not removing disapprovals.
 
 **Confidence:**
-High on the data.
+High on the data. Low on how much completing these attributes changes Shopping visibility.
 
 **Recommended action:**
 - D1: age group "adult" on all 25.
@@ -203,7 +216,7 @@ Small snippet-quality and accessibility losses. The HydroCuff gap means its main
 High.
 
 **Recommended action:**
-- Crewneck SEO title in the style of the other products, for example "Charcoal Cellblock Crewneck — 450gsm Fleece | CROOKSLDN", on George's yes.
+- Crewneck and Puffa SEO titles as proposed by `cowork/merchant-center` task F (QUESTIONS Q6). These are also their Shopping titles.
 - Socks alt: rewrite from the actual image.
 - Puffa: clean up the HTML in the G rewrite.
 - HydroCuff: covered by J.
@@ -230,10 +243,11 @@ On branch `cowork/geo-measurement`:
 Read-only here; that workstream's files are not edited.
 
 **Why it matters:**
-For these queries, the Shopping pack is a way onto page one that doesn't depend on organic ranking. Getting into it depends on clean, eligible product data. Gender, age group and colour are required for UK apparel (Finding 8), and the Cream Cap image disapproval sits on the same feed.
+For these queries, the Shopping pack is a way onto page one that doesn't depend on organic ranking. `cowork/merchant-center` shows every Crooks product except the cap is approved for the UK, so eligibility isn't what keeps them out. The levers product data controls are feed titles, attributes and images. Titles carrying unconfirmed "cotton" (Finding 1), two all-caps titles, missing colour, and single-image products like the HydroCuff all fall in that group.
 
 **Confidence:**
-High on what was observed. Whether Crooks items are currently limited or disapproved in Merchant Center belongs to the merchant-feed workstream and isn't verified here.
+High on what was observed. Low on how much any single product-data fix moves pack inclusion, which also depends on price, relevance and ranking signals outside this workstream.
 
 **Recommended action:**
-Do D1, E and F (age group, gender, Puffa colour) first among the approvals. Re-check these queries in the next geo-measurement run after Merchant Center has reprocessed.
+- Treat Shopping-pack inclusion as the metric to re-measure after C, the Q6 titles, D1, E and F land, not as a reason to rank those items above A and the tee fixes.
+- Re-check these queries in the next geo-measurement run after Merchant Center has reprocessed.

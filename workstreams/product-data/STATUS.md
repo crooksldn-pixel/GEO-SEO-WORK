@@ -2,97 +2,100 @@
 
 **Branch:** cowork/product-data  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:55 BST  
+**Last updated:** 18 Oct 2026, 17:35 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
 ## Objective
 
-Make the Shopify product data for every active CROOKSLDN product match George's confirmed facts of 16 Oct 2026. That covers copy, SEO fields, alt text, fabric attributes, variant weights, inventory settings, channel publishing and the store description. The aim is that Google Shopping, product schema and AI answers describe the range correctly and the items are eligible to show.
+Make the Shopify product data for every CROOKSLDN product match George's confirmed facts of 16 Oct 2026. That covers copy, SEO and Shopping titles, alt text, fabric attributes, tags, variant weights, inventory settings, channel publishing and the store description. The aim is that Google Shopping, product pages, product schema and AI answers describe the range correctly and make no false stock or composition claims.
 
 This session is the only one allowed to change products, variants, inventory items, product media, product channel publishing and Settings > Store details. Collections, theme, Merchant Center and outreach belong to other workstreams.
 
 ## Current state
 
-The audit is finished and was re-checked against live Admin on 18 Oct. Nothing audited has changed since 16 Oct, apart from two variant weights set from outside this session (Finding 6).
+The audit is finished and was re-checked live on 18 Oct. This session hasn't written anything to Shopify.
 
-This session hasn't written anything to Shopify. The one pre-approved change, taking the Cream Cap off Google & YouTube, was refused by the connector's permission check. The approval sits in the brief, not in the chat, so it needs George's "yes" there.
+Every question for George is in **[QUESTIONS.md](QUESTIONS.md)**, with an answer line under each. When George says "answered" in the product-data chat, this session will:
+1. read the file;
+2. take each YES as approval for exactly that change;
+3. make the writes, reading each product live first and back afterwards.
 
-Every other change is prepared with exact before/after values. Each one is waiting on a George approval or a fact only he has.
+Several other workstreams have reported, and that changed this plan:
+- **`cowork/live-site-checks`:** the tee fix now also covers the `made-to-order` tag and the 14 draft T-shirt week tees.
+- **`cowork/merchant-center`:** all 25 products are already approved for the UK apart from the Cream Cap. So gender, age group and colour are completeness work, not a disapproval fix, and they moved down the order. Its two title proposals were added as Q6.
 
 ## Completed
 
-- **Audited** (16 Oct 20:31 BST, re-checked 18 Oct 16:30 BST): title, description, SEO title and description, every image alt, `crooks.fabric` and `shopify.fabric` on all 25 active products, against the confirmed facts. 6 products carry cotton claims outside hoodies and joggers. OG Jeans lacks 14oz. Nothing else conflicts. See FINDINGS 1 and 2.
-- **Audited**: size charts. The three jeans charts are copies of the Convict Sweats chart (Finding 3).
-- **Audited**: channel publishing on the Cream Cap, variant weights on all 25 products, tee inventory tracking and stock, and selling-plan groups. Also gender, age group and colour attribute coverage, and the store description. See FINDINGS 4–9.
-- **Prepared**: exact before/after for A, B, C1–C8, D2, F and the derived H weights, a suggested gender list for E, and the list of weights still missing. See [artifacts/01-product-data.md](artifacts/01-product-data.md) and [artifacts/c-fabric-claim-fixes.md](artifacts/c-fabric-claim-fixes.md).
-- **Live**: nothing yet.
+- **Audited** (16 Oct 20:31 BST, re-checked 18 Oct 16:30 BST): title, description, SEO title and description, every image alt, `crooks.fabric` and `shopify.fabric` on all 25 active products, against the confirmed facts. 6 products carry cotton claims outside hoodies and joggers, and OG Jeans lacks 14oz. See FINDINGS 1–2.
+- **Audited:**
+  - size charts: the three jeans charts are copies of the sweats chart (FINDINGS 3);
+  - channel publishing, variant weights, tee tracking and stock, and selling plans;
+  - gender, age group and colour coverage, and the store description (FINDINGS 4–9).
+- **Audited** (18 Oct): all 17 tees, 3 live and 14 draft. None is tagged `made-to-order`, and all track inventory. The tag `cotton` isn't used by any collection rule.
+- **Cross-checked** against `cowork/merchant-center`, `cowork/live-site-checks`, `cowork/geo-measurement`, `cowork/search-console`, `cowork/collections` and `cowork/programme-records` (18 Oct). Overlaps are recorded in FINDINGS 4, 6, 7, 8 and 11.
+- **Prepared:**
+  - exact before/after for every proposed write ([artifacts/c-fabric-claim-fixes.md](artifacts/c-fabric-claim-fixes.md), [artifacts/01-product-data.md](artifacts/01-product-data.md));
+  - George's answer sheet ([QUESTIONS.md](QUESTIONS.md)).
+- **Live:** nothing yet.
 
 ## Currently working on
 
-Nothing currently running.
+Nothing currently running. Waiting for "answered".
 
 ## Blockers
 
-### Blocker 1 — Shopify writes need George's yes in this chat
+### Blocker 1 — Every Shopify write needs George's yes
 
-**Blocking:** every write, starting with A (Cream Cap off Google & YouTube)  
-**Needs:** George replies "yes" to each item, or to a batch, in this Cowork chat  
+**Blocking:** every write  
+**Needs:** YES or NO on QUESTIONS Q1–Q9, then "answered" in the product-data chat  
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
-**Workaround:** None. The connector refuses writes whose approval exists only in a file.
+**Workaround:** None. The connector refuses writes whose approval exists only in the brief.
 
-### Blocker 2 — SEO project files not reachable
+### Blocker 2 — SEO project files and photos not in reach
 
-**Blocking:** G (HydroCuff and Puffa descriptions), J (photo inbox)  
-**Needs:** the `seo` folder connected to this session, or `workstreams/05-reactive-drafts.md`, `assets/README.md` and the incoming photos attached here or committed to this repo  
+**Blocking:** G (HydroCuff and Puffa descriptions), J (photos)  
+**Needs:** the files listed in QUESTIONS Q16 and the photos in Q17  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Partly  
-**Workaround:** the results file the brief asked for is kept on this branch at `artifacts/01-product-data.md`, where `cowork/programme-records` can read it
+**Workaround:** the brief's results file is kept on this branch at `artifacts/01-product-data.md`, where `cowork/programme-records` can read it. GitHub issue #1 tracks the Project-files import for all workstreams.
 
 ## Waiting on George
 
-1. Say yes to A: Cream Cap off Google & YouTube only.
-2. Say yes to B: the store description, using the exact sentence from the brief.
-3. Say yes to C: remove "cotton" from the tees, socks and Cellblock Shorts, and add 14oz to OG Jeans (exact strings in artifacts).
-4. Age group "adult" on all 25 products: yes, or name the one to leave out.
-5. Say yes to turning off inventory tracking on the 30 tee variants.
-6. Correct the gender list: which items are women's, which are men's, which are unisex.
-7. Puffa base colour, one word.
-8. Say yes to the derived weights: sets as the sum of their parts, CRX Garms and CRXST★RZ at 250g.
-9. Weights for the Yard jorts, Puffa, cap and each White/Red sock pack.
-10. Is Pink Convict Sweats 700g right, or should it be 800g like the Black and Grey?
-11. ReStock preorder plan: remove from the tees only, or from the Pink Convict Sweats too?
-12. Real size charts for both Yard Jeans and the OG Jeans.
-13. Connect the `seo` folder, or attach the reactive drafts and photos.
-14. Bag-label photos, one per product, denim first.
+Everything is in [QUESTIONS.md](QUESTIONS.md):
+- **Q1–Q9:** yes/no approvals.
+- **Q10–Q14:** gender per product, Puffa colour, weights, the 17 Oct weight changes, jeans measurements.
+- **Q15–Q18:** reactive-copy wording calls, Project files, product photos, bag-label photos.
 
 ## Waiting on external systems
 
-- None until writes land. After A, D, E and F go live, Merchant Center needs to reprocess the feed, typically 1–3 days.
+- Merchant Center reprocesses after the Shopify writes, typically 1–3 days. `cowork/merchant-center` re-exports on 29 Oct for the auto-add call.
 
 ## Next actions
 
-1. A: unpublish the Cream Cap from Google & YouTube. Stops a live disapproval and needs one word from George.
-2. D1, E and F: age group, gender and Puffa colour. These attributes are required for UK apparel in Shopping, so they matter most for feed eligibility.
-3. C1–C8: fabric fixes and 14oz. Removes unconfirmed claims from feed attributes and snippets.
-4. D2 and I: tee tracking and the ReStock plan. Fixes negative stock, PreOrder schema and the checkout notice.
-5. H: shipping weights. Correct shipping rates and labels.
-6. B: store description, via the browser.
-7. The jeans size charts, once George sends measurements.
-8. G, J and K once the files and photos arrive.
+Once answered, in this order:
+
+1. **A:** Cream Cap off Google & YouTube. Clears the only UK disapproval.
+2. **Tees:** untrack all 450 tee variants and tag all 17 tees `made-to-order` (Q5). Removes the false "IN STOCK", "leaves tomorrow" and "1 LEFT" claims before the T-shirt week drafts publish.
+3. **C1–C8 and the `cotton` tag:** removes unconfirmed composition from copy, attributes and the three tee Shopping titles.
+4. **Q6:** Crewneck and Puffa SEO and Shopping titles.
+5. **H:** shipping weights. Sets and two tees first, the rest as George gives them.
+6. **D1, E, F:** age group, gender per product, Puffa colour.
+7. **I:** remove the ReStock plan in the app.
+8. **B:** store description, via the browser.
+9. The jeans size charts, once the measurements arrive.
+10. G, J and K, once the files and photos arrive.
 
 ## Expected impact
 
-**Commercial:** High  
+**Commercial:** Medium  
 **SEO:** Medium  
 **GEO:** Medium  
 **Confidence:** Medium
 
-Commercial is high because gender, age group and colour gate apparel eligibility in UK Shopping. Google UK showed a Shopping pack on all seven core product and specialist queries measured on 16 Oct, with no Crooks product in any of them (Finding 11). Wrong weights and copied size charts also cost money directly, through shipping charges and wrong-size swaps.
-
-SEO and GEO are medium because the copy is mostly sound already. The fixes take unconfirmed claims out of what search engines and AI answers quote, rather than adding new ranking content.
-
-Confidence is medium because results depend on Merchant Center reprocessing, and several items depend on facts George hasn't supplied yet.
+- **Commercial:** the biggest concrete wins are stopping false dispatch and stock claims on tees across 17 products, fixing copied size charts, and putting real weights on the sets.
+- **SEO and GEO:** the copy is mostly sound. The fixes take unconfirmed claims out of what Shopping, search snippets and AI answers quote, and fix two all-caps Shopping titles.
+- **Gender, age group and colour:** these don't affect eligibility today, so their effect on Shopping-pack inclusion is uncertain. That's measured by the next geo-measurement run, not assumed.

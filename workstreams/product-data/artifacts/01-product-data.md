@@ -18,9 +18,10 @@ For each item: baseline, exact change, George's approval and time, Admin read-ba
 - Baseline (unchanged on 18 Oct): ACTIVE, 0 media, empty description, no SEO title or description. Published on Online Store, Shop, Point of Sale, Click & Drop, Facebook & Instagram, TikTok and Google & YouTube (`gid://shopify/Publication/333206487383`).
 - Change: `publishableUnpublish` from Google & YouTube only. Every other channel stays as it is.
 - 16 Oct, 20:29 BST: the connector's permission check refused the write before it reached Shopify. The pre-approval is in the brief file rather than in chat.
-- Approval: pending George's "yes" in chat
+- Approval: pending (QUESTIONS Q1)
 - Admin read-back: pending
 - Metric: the Cap leaves the Google & YouTube feed, and its Merchant Center image disapproval clears.
+- Risk: Google's auto-add from the site crawl starts on 2 Nov and may re-add the cap, still without an image (`cowork/merchant-center` Finding 7).
 
 ## B. Store description
 
@@ -56,7 +57,16 @@ OG Jeans, 14oz added where it reads naturally: C6 crooks.fabric, C7 description,
 
 Exact before/after strings for C1–C8 are in [c-fabric-claim-fixes.md](c-fabric-claim-fixes.md).
 
-- Approval: pending, one yes covers C1–C8
+C9, added 18 Oct: remove the product tag `cotton` from the 3 live tees (tags today: black, cotton, tee, white). No collection rule uses it.
+
+Titles, added 18 Oct from `cowork/merchant-center` task F (QUESTIONS Q6). The SEO title is also the Google Shopping title.
+
+| Product | Before | After |
+|---|---|---|
+| CHARCOAL CELLBLOCK CREWNECK | no SEO title (Shopping shows "CHARCOAL CELLBLOCK CREWNECK") | Charcoal Cellblock Crewneck — 450gsm Fleece \| CROOKSLDN |
+| DOUBLE-AGENT PUFFA | Double-Agent Puffa \| Heat-Reactive Puffer Jacket | Double-Agent Puffa — Heat-Reactive Puffer Jacket \| CROOKSLDN |
+
+- Approval: pending (C1–C8 = QUESTIONS Q3, C9 = Q4, titles = Q6)
 - Admin read-back: pending
 - Metric: Google's material attribute on the tees, socks and Cellblock Shorts; the OG Jeans page and search snippet.
 
@@ -69,9 +79,16 @@ Exact before/after strings for C1–C8 are in [c-fabric-claim-fixes.md](c-fabric
   - CRX GARMS T-SHIRT: all ten variants at 0.
   - CRXST★RZ T-SHIRT: Black S −2, the other nine at 0.
 - D2 change: `inventoryItem.tracked = false` on all 30. Barcodes untouched.
-- Approval: pending (D1 and D2 separately)
+- D2 extended on 18 Oct at `cowork/live-site-checks`' request (QUESTIONS Q5):
+  - also untrack the 420 variants on the 14 draft T-shirt week tees (tag `t-shirt-week`, 30 variants each, all tracked);
+  - add the tag `made-to-order` to all 17 T-Shirts products. None has it today. The theme switches the product page from "IN STOCK / leaves tomorrow" to its made-to-order line only when that tag is present.
+- Correction: tee product schema is already InStock, not PreOrder (`cowork/live-site-checks` Rich Results Test, 16 Oct).
+- Approval: pending (D1 = QUESTIONS Q7, D2 = Q5)
 - Admin read-back: pending
-- Metric: no negative tee stock in Admin; tee pages emit InStock rather than PreOrder in product schema; Merchant Center availability for tees.
+- Metric:
+  - no negative tee stock in Admin;
+  - live tee pages no longer show "IN STOCK", "Ordered now — leaves tomorrow" or "1 LEFT";
+  - Merchant Center availability for tees.
 
 ## E. Target gender
 
