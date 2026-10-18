@@ -2,6 +2,27 @@
 
 Only live changes are logged here. Reviewer names are left out (public repo, decision #16).
 
+## 18 Oct 2026, ~19:00–19:10 BST — Profile: display name, description and address
+
+**State:** DONE
+
+**Authorisation:** George's typed "Go: rename to CROOKSLDN, replace the description, tidy the address, flag both model reviews", session chat, 18 Oct 2026 18:59 BST.
+
+**Where:** Trustpilot Business → Settings → Profile page ("About your business", "Company description", "Contact info"). Each saved with "Save and publish".
+
+| Field | Before | After |
+|---|---|---|
+| Company name | Crooks ldn | CROOKSLDN |
+| Description | "Streetwear Brand" / "Similiar to: Corteiz - Supreme - Ultralight - Poser - Upinflames - Protect" | "CROOKSLDN is an independent British streetwear brand making heavyweight fleece, baggy denim, graphic tees and reactive outerwear, cut in oversized, street-led silhouettes and released in drops." + "Order questions: team@crooksldn.com. We reply within 1–2 working days (Mon–Sat)." |
+| Address | oairo offices, unit m, Bourne end Business park | Unit M, Oairo UK Office, Bourne End Business Park |
+| City | Bourne end | Bourne End |
+
+Unchanged: domain (https://crooksldn.com), email (team@crooksldn.com), postcode (SL8 5AS), country, category, logo.
+
+**Validation:** public page re-read in Chrome after saving. Page title is now "CROOKSLDN Reviews | Read Customer Service Reviews of crooksldn.com"; sidebar shows the new description and "Unit M, Oairo UK Office, Bourne End Business Park, SL8 5AS, Bourne End, United Kingdom".
+
+**Expected metric:** Google's Trustpilot snippet and AI Overviews showing "CROOKSLDN" and no competitor names (check at day 7 and day 28).
+
 ## 18 Oct 2026, ~18:40–18:55 BST — 12 replies posted to unanswered low-star reviews
 
 **State:** DONE
