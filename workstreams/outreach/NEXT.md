@@ -2,60 +2,52 @@
 
 ## Do next
 
-1. **Pull this branch and read `QUESTIONS.md`.** The answers and the files in `artifacts/inputs/` arrive there. Steps 2–6 depend on Q1–Q2.
-2. **Streetwear Directory.** Open https://tally.so/r/vGXPdQ.
-   - Fill it from the pack. The field map is in `artifacts/directory-form-fields.md`: Owner, George Hinxman, team@crooksldn.com, https://crooksldn.com, and the pack text in "Anything Else?".
-   - Show George the filled form and submit only on his explicit OK for this submission.
-   - Log it in `CHANGES.md` and in 07-authority.md "Submission log". Re-read the file just before editing and keep the edit small.
-3. **Disco.** Open https://discobrands.co/submit and fill it from the pack.
-   - Leave "Company (leave this empty)", City and Year founded blank.
-   - Upload George's square logo and 4:5 image.
+1. **Streetwear Directory: submit on George's go.**
+   - The form is filled in the built-in browser pane at https://tally.so/r/vGXPdQ, with the values in `artifacts/pitch-drafts.md` §4.
+   - If the pane was closed, refill it from §4.
+   - Re-read the form just before clicking Submit.
+   - Log the action:
+     - in `CHANGES.md`;
+     - in 07-authority.md "Submission log". The working copy is on `cowork/project-files-import`; until the orchestrator says where edits land, put a small edit on this branch.
+2. **GUAP: submit on George's go.**
+   - The form is filled at https://forms.monday.com/forms/f4948510435202938b342deea80ec3b6?r=use1, with the values in §3.
+   - Submit, then log it the same way.
+3. **Disco: when George sends the images.**
+   - Fill https://discobrands.co/submit from §5.
+   - Leave "Company (leave this empty)" empty.
    - If a payment step appears, stop.
-   - Show George, submit on his OK, then log it.
-4. **Pitch drafts.** Fact-check 07-authority.md "Draft pitch angles" against the 16 Oct facts:
-   - Always write "CROOKSLDN (Crooks LDN)".
-   - Describe it as an "independent British streetwear brand". Never "London-based", and never name the town the business operates from.
-   - Fabric weights are 550gsm, 450gsm and 14oz.
-   - Products are made in China. Never imply the UK or Portugal.
-   - Make no durability claims for HydroCuff or the Puffa.
-   - Link the homepage and product pages, not the About page.
-   - Use founder age and the sales figure only in founder or business-press pitches.
-
-   Then point each draft at its route in `artifacts/pitch-routes.md` and show George the list.
-5. **Approved outlets.** For each outlet George approves:
-   - Create a Gmail draft from the brand inbox and never send it. Check the From address first (FINDINGS 5).
-   - For form routes (GUAP, and FashionBeans or Ape to Gentleman if chosen), fill the form and stop for his OK.
-6. **Merge.** Merge `cowork/authority-research` `artifacts/authority-targets-second-pass.csv` into 07-authority.md, deduped by domain. GUAP appears in both lists; treat it as one target.
+   - Show George, submit on his go, then log it.
+4. **After George sends the Gmail drafts.** Record the send date for each, then check for replies 7 days later.
+5. **Merge into 07.** Merge `cowork/authority-research` `artifacts/authority-targets-second-pass.csv` into 07-authority.md, deduped by domain. GUAP is one target.
+6. **Any new Gmail draft.** Fix the connector's google.com link wrappers in Gmail before handing it to George (FINDINGS 6).
 
 ## Do not do yet
 
-- **Creator seeding, sample offers and product gifting.** Paused or declined on 16 Oct.
-- **Design or Hypebeast pitches.** They need a reactive demo video George hasn't supplied.
+- **Creator seeding, sample offers and product gifting.** Parked.
+- **Design or Hypebeast pitches.** They need a reactive demo video.
 - **Any paid route.** This covers:
   - GUAP's paid promotion form;
   - Menswear Style's paid features;
   - FashionBeans's Partner page;
   - Ape to Gentleman's sponsored posts;
   - The Sole Supplier and OPUMO advertising.
+- **FashionBeans, Ape to Gentleman, The Sole Supplier, OPUMO and WMTV LDN.** George picked only PAUSE, GUAP and Menswear Style on 18 Oct.
 - **IG feature pages, Reddit or poll seeding.**
 - **Linking the About page.** It isn't approved.
-- **"Best London streetwear" list placements.** Phrase Studios' list is the top AI-cited source in the 16 Oct panel. Asking to be included in a London-titled list cuts against the "never London-based" rule, so George would have to decide it explicitly.
+- **"Best London streetwear" list placements.** They cut against the "never London-based" rule, so they need an explicit decision from George.
 
 ## Decisions still required
 
-- Disco's "Who is it for?" (Menswear, Womenswear or Unisex), unless the pack already sets it.
-- Which Task B outlets to pitch.
-- Which From address pitch drafts use.
-- Whether to tick Disco's marketing opt-in. The default is unticked.
+- George's go on each form submission. Only he can give it, in the outreach chat.
+- Whether to restock Black Convict, or swap the pitch links to the Grey Set before sending (FINDINGS 7).
 
 ## Data still required
 
-- `07-directory-submission-pack.md` and `07-authority.md`.
-- The square logo and the 4:5 campaign image with no text overlay.
+- The square logo and the 4:5 campaign image, with no text, for Disco.
 
 ## Recommended follow-up date
 
-- **Disco:** 7 days after submission. Review usually takes 5–7 days.
-- **Streetwear Directory:** one month after submission. New brands are reviewed monthly.
-- **Pitches:** check for replies 7 days after George sends each one.
-- **GEO panel:** re-run about a month after either listing goes live, to see whether streetwear.directory or Disco starts carrying Crooks into AI answers.
+- **Pitches:** 7 days after George sends them.
+- **Disco:** 7 days after submission.
+- **Streetwear Directory:** one month after submission.
+- **GEO panel:** re-run about a month after either listing goes live.

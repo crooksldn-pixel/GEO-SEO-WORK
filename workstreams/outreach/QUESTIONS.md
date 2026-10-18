@@ -1,5 +1,7 @@
 # Questions for George: outreach workstream
 
+> **Answered 18 Oct 2026.** See [ANSWERS.md](ANSWERS.md) and `owner-decisions-2026-10-18.md` on `cowork/project-files-import`. The files went to that branch, not to `artifacts/inputs/`. Q3–Q4 (Disco images) are still open.
+
 **Written:** 18 Oct 2026, 17:15 UK.
 
 **How to answer:**

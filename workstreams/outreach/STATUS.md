@@ -1,12 +1,10 @@
 # Workstream: Outreach (07): directory submissions and editorial pitches
 
-> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
-
 **Branch:** cowork/outreach  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:15 UK  
+**Last updated:** 18 Oct 2026, 20:25 UK  
 **Priority:** P1  
-**Overall status:** BLOCKED
+**Overall status:** STAGED
 
 ## Objective
 
@@ -25,88 +23,80 @@ Every external action needs George's explicit OK in that session, given just bef
 
 ## Current state
 
-**No external action has been taken.** Nothing is submitted, no profile exists and no email draft has been created.
+**Nothing has been sent or submitted.** Everything George approved on 18 Oct is staged and waiting on his go:
+- the outlets: PAUSE, GUAP and Menswear Style Podcast;
+- Unisex on Disco;
+- team@crooksldn.com as the sender;
+- Black Convict as the lead piece;
+- trading since March 2024.
 
-Both directory forms have been inspected and are free. Field maps are in `artifacts/directory-form-fields.md`.
+The approved items are in [ANSWERS.md](ANSWERS.md) and `owner-decisions-2026-10-18.md`.
 
-Pitch routes for all eight Task B outlets are verified on the outlets' own pages:
-- three are usable;
-- two are weak;
-- three should be skipped.
+What is staged:
+- **Gmail drafts** for PAUSE and Menswear Style Podcast, from team@crooksldn.com, with links checked clean. George sends these himself.
+- **The GUAP free Editorial Submission form**, filled in George's built-in browser pane and not submitted.
+- **The Streetwear Directory form**, filled in George's built-in browser pane and not submitted.
+- **Disco values**, all decided. The form waits only on the logo and the campaign image.
 
-The full list is in `artifacts/pitch-routes.md`.
-
-Two files in the Project folder (`/mnt/project-files/seo/workstreams/`) block the work, and no Cowork session can reach that folder:
-- `07-directory-submission-pack.md` holds the exact form values;
-- `07-authority.md` holds the pitch drafts to fact-check and the Submission log.
+Exact text and values are in [`artifacts/pitch-drafts.md`](artifacts/pitch-drafts.md).
 
 ## Completed
 
 **Researched**
-- Disco form: fields, cost (free) and review time.
-- Streetwear Directory form: fields, cost (free) and review cadence.
-- Public pitch routes for PAUSE, GUAP, The Sole Supplier, WMTV LDN, Menswear Style Podcast, FashionBeans, Ape to Gentleman and OPUMO.
-- The paid routes to avoid at each outlet.
+- Both directory forms.
+- Pitch routes for eight outlets.
+- Paid routes to avoid.
 
-**Audited**
-- Sender address on the connected brand mailbox (FINDINGS 5).
+**Prepared**
+- Three pitches, checked against the 16 Oct facts and the 18 Oct decisions.
+- Disco values.
 
-**Cross-checked**
-- `cowork/geo-measurement` citation data: streetwear.directory is cited in 9 AI runs (FINDINGS 2).
-- `cowork/authority-research` handoff: no conflict. That workstream is research-only and leaves Disco, Streetwear Directory and the 07 merge to this one.
+**Staged**
+- Gmail draft `r-216980404927500130` (PAUSE).
+- Gmail draft `r-3536417652796743101` (Menswear Style Podcast).
+- GUAP form filled.
+- Streetwear Directory form filled.
+
+**Fixed**
+- The Gmail connector had rewritten the links in both drafts as google.com redirects. They were corrected in Gmail and read back clean (FINDINGS 6).
 
 ## Currently working on
 
-Nothing currently running.
+Nothing currently running. Waiting on George's go for the two form submissions.
 
 ## Blockers
 
-### Blocker 1 — Submission pack and pitch drafts not reachable
+### Blocker 1 — Images for Disco
 
-**Blocking:**
-- filling both directory forms with the agreed values;
-- fact-checking 07-authority.md "Draft pitch angles";
-- merging `cowork/authority-research`'s target CSV into 07;
-- writing the Submission log.
-
-**Needs:** `07-directory-submission-pack.md` and `07-authority.md`, committed to this branch as set out in `QUESTIONS.md` Q1–Q2. Issue #1 points here.  
-**From:** George  
-**Severity:** P1  
-**Can work around it?:** No  
-**Workaround:** None. The brief requires the pack's exact values, and new copy would bypass the approved wording.
-
-### Blocker 2 — Images for Disco
-
-**Blocking:** a complete Disco application. The logo and campaign image fields aren't marked required, but the brief includes them.  
-**Needs:** a square logo and a 4:5 campaign image with no text overlay, as PNG, JPG or WebP under 5 MB (`QUESTIONS.md` Q3–Q4).  
+**Blocking:** the Disco submission.  
+**Needs:** a square logo and a 4:5 campaign image with no text overlay, as PNG, JPG or WebP under 5 MB.  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Yes  
-**Workaround:** Streetwear Directory needs no images and goes first.
+**Workaround:** The form doesn't require the image fields, but the brief and the pack call for them. George can say "Disco without images" if he'd rather not wait.
 
 ## Waiting on George
 
-Every open item is in [`QUESTIONS.md`](QUESTIONS.md), with where each answer or file goes:
-
-1. Q1–Q2: the two 07 files.
-2. Q3–Q4: the logo and the campaign image.
-3. Q5: Disco selections.
-4. Q6: outlets to pitch.
-5. Q7: From address for drafts.
-
-The OKs to submit each form are not in that file. They come from George in the outreach chat, after he has seen the form filled in.
+1. **Go: submit the Streetwear Directory form** as filled (`artifacts/pitch-drafts.md` §4).
+2. **Go: submit the GUAP form** as filled (§3).
+3. **Send the two Gmail drafts** from the team@crooksldn.com Drafts folder: PAUSE and Menswear Style Podcast.
+4. **Send the square logo and the 4:5 image for Disco.** Then fill, review and get his go.
+5. **Optional:** restock Black Convict, or swap the pitch links to the Grey Set before sending (FINDINGS 7).
 
 ## Waiting on external systems
 
-None. Nothing has been submitted.
+None yet. After submission:
+- Streetwear Directory reviews new brands monthly.
+- Disco reviews in 5–7 days.
+- Editors reply, or don't.
 
 ## Next actions
 
-1. **Streetwear Directory.** Fill it from the pack, show George, submit on his OK and log it. It's an observed AI citation source and needs no images.
-2. **Disco.** Fill it from the pack with George's images and show him. Submit on his OK, then log it.
-3. **Pitch drafts.** Fact-check the drafts in 07-authority.md against the 16 Oct facts and point them at the verified routes. Show George the list.
-4. **Gmail drafts and forms.** Create Gmail drafts, never sent, for the approved email routes: PAUSE and Menswear Style. Fill the GUAP form and stop for OK.
-5. **Merge.** Merge `cowork/authority-research` `artifacts/authority-targets-second-pass.csv` into 07-authority.md, deduped by domain.
+1. Submit Streetwear Directory on George's go. Log it in `CHANGES.md` and the 07 Submission log.
+2. Submit GUAP on George's go. Log it the same way.
+3. Disco: fill, show George, then submit on his go, once the images arrive.
+4. After George sends the drafts, record the send dates and watch for replies at 7 days.
+5. Merge `cowork/authority-research`'s target CSV into the working copy of 07-authority.md, deduped by domain.
 
 ## Expected impact
 
@@ -115,6 +105,5 @@ None. Nothing has been submitted.
 **GEO:** Medium  
 **Confidence:** Medium
 
-- **GEO:** Two directory profiles give third-party confirmation of the name, category and official links. That supports separating the brand from Crooks & Castles. Streetwear Directory is already a source ChatGPT cites. GEO would rise to High if the listing reaches a cited list page.
-- **SEO:** Directory links carry little weight.
-- **Editorial:** Coverage from PAUSE, GUAP or Menswear Style would be worth more, but text-only pitches with no samples have uncertain acceptance.
+- **GEO:** Streetwear Directory is already a source ChatGPT cites (FINDINGS 2). Disco and Streetwear Directory profiles give third-party confirmation of the name, category and official links. GEO would rise to High if a listing reaches a cited "brands like" page.
+- **Editorial:** PAUSE, GUAP or Menswear Style coverage would be worth more, but acceptance of a text-only pitch is uncertain.

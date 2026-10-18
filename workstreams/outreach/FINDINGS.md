@@ -109,3 +109,43 @@ Field-by-field maps, with the source for each value, are in [`artifacts/director
 **Recommended action:**
 - Check the From address on the first draft before any others are created.
 - George confirms which address pitches go out from.
+
+## Finding 6 — The Gmail connector turns every link in a draft into a google.com redirect
+
+**Finding:**
+- When the Gmail connector creates or updates a draft, it rewrites every URL in the body as `https://www.google.com/url?q=<url>&source=gmail&ust=<creation time + 24h>&sa=E`.
+- This covers bare domains too, and it applies to both the plain-text and HTML parts.
+- In a plain-text draft, the wrapper URL becomes the visible link text.
+- `mailto:` links are left alone.
+- The wrapping is stored in the draft, not added when it's read back: the `ust` value matches each draft's creation millisecond. Order notification emails read through the same connector come back with clean links.
+
+**Evidence:**
+- Drafts `r-216980404927500130` and `r-3536417652796743101`, read back as RAW and FULL_CONTENT on 18 Oct 2026.
+- The PAUSE draft's anchors, inspected in Gmail's own compose window: hostname google.com, path `/url`.
+
+**Why it matters:**
+- Pitches sent like this would show editors long google.com links. After 24 hours those links stop going straight through, which looks like spam.
+- This applies to any workstream that drafts email through the connector, including `cowork/authority-research`'s Trustpilot and pitch work.
+
+**Confidence:** High
+
+**Recommended action:**
+- After creating a draft through the connector, open it in Gmail (George's Chrome is signed in to team@crooksldn.com). Reset each anchor's `href` and visible text to the clean URL, then Save & close.
+- Confirm with `get_draft` FULL_CONTENT.
+- Both 18 Oct drafts were fixed and checked this way.
+
+## Finding 7 — The Black Convict pieces are close to sold out
+
+**Finding:** On 18 Oct, Shopify shows the Black Convict Hoodie in stock in XS only. The Black Set's stock follows the hoodie's, so the set too can only be bought with an XS hoodie. The Black Convict Sweats have low stock across sizes.
+
+**Evidence:** Shopify products `convict-hoodie-1`, `black-joggers` and `black-set`, read live on 18 Oct 2026.
+
+**Why it matters:**
+- George chose Black Convict as the evergreen piece, and every pitch leads with it and links the Black Set.
+- An editor who clicks through now lands on a page where most sizes are sold out.
+
+**Confidence:** High for stock on 18 Oct.
+
+**Recommended action:**
+- Restock Black Convict before the pitches go, or soon after. That fits George's "evergreen" decision.
+- Otherwise George can swap the link to the Grey Set (`/products/grey-set`), which has wider stock, before sending.
