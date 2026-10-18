@@ -2,69 +2,96 @@
 
 **Branch:** cowork/geo-measurement  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:40 BST  
+**Last updated:** 18 Oct 2026, 16:55 BST  
 **Priority:** P1  
-**Overall status:** IMPLEMENTING
+**Overall status:** WAITING ON EXTERNAL
 
 ## Objective
 
-Build a repeatable, evidence-backed UK GEO panel for crooksldn.com, and use it to set the baseline for the programme:
+Build a repeatable, evidence-backed UK GEO panel for crooksldn.com, and use it to set the programme's baseline:
 - 21 queries.
-- Google UK plus ChatGPT, Gemini and Perplexity, each AI surface run 3 times per query.
+- Google UK, plus ChatGPT, Gemini and Perplexity, each AI surface run 3 times per query.
 - Every result recorded only from what is on screen, with screenshots.
 
 This is research only. It changes nothing on the store or any account.
 
 ## Current state
 
-The 16 Oct 2026 baseline run is committed to this branch:
+**The baseline is measured.** Results by surface:
 
-| Surface | Runs recorded |
-|---|---|
-| ChatGPT | 63/63 |
-| Gemini | 63/63 |
-| Google UK | 16/21 |
-| Perplexity | 5/63 (the other 58 hit a sign-up wall) |
+| Surface | Result | Run |
+|---|---|---|
+| Google UK | 21/21 queries | 16 on 16 Oct; the other 5 on 18 Oct as a dated gap-fill |
+| ChatGPT | 63/63 runs | 16 Oct |
+| Gemini | 63/63 runs | 16 Oct |
+| Perplexity | 5/63 runs | 16 Oct; the rest hit a sign-up wall |
 
-The measuring Mac went offline before 5 Google UK queries could run. It is back online, so those 5 queries are now being run as a dated gap-fill.
+**Headline:** Crooks appears only when the query contains "Crooks". It was named in 0 of 110 readable non-brand AI answers and on 0 of 18 non-brand Google UK pages (top 20 plus AI Overview). See `FINDINGS.md`.
+
+**What happens next:** the next measurement waits on other workstreams' changes going live and being indexed. A control re-run is set for 13 Nov (see `NEXT.md`).
+
+**Branch rebased.** At 16:50 this branch was rebased onto `main`. The old orphan commit `eca2845` is now `788cbb8`, with the same workstream files; the gap-fill is `b2260e2`. programme-records' merge register still lists `eca2845`.
+
+**Overlaps with other workstreams.** These are coordinated through this repo, and none of their files was edited:
+- **authority-research:** asked the panel to check its candidate domains. Answered in `artifacts/authority-candidate-citations.md`.
+- **product-data:** uses this run's Google Shopping-pack evidence.
+- **search-console:** tracks the same reactive query family.
+- **programme-records:** records the 16 Oct run as the programme's GEO baseline.
 
 ## Completed
 
-- Method written: `artifacts/panel-method.md`.
-- Baseline run on 16 Oct 2026, measured: `artifacts/runs/2026-10-16/`
+- **Method written:** `artifacts/panel-method.md`.
+- **Measured, 16 Oct 2026 baseline:** `artifacts/runs/2026-10-16/`
   - `results.csv`: 210 rows.
   - `meta.json`, `summary.md`.
   - 223 screenshots.
+- **Measured, 18 Oct 2026 Google UK gap-fill** for the 5 queries not run on 16 Oct: `artifacts/runs/2026-10-18/`
+  - `results.csv`: 5 rows.
+  - `meta.json`, `summary.md`.
+  - 10 screenshots.
+- **Researched:** 8 findings in `FINDINGS.md`, covering:
+  - non-brand invisibility;
+  - which list pages AI answers cite;
+  - small brands' own list pages getting them named;
+  - the reactive-product gap;
+  - wrong entity and wrong descriptor;
+  - the Companies House mismatch;
+  - Trustpilot as the only reputation source;
+  - measurement limits.
+- **Researched:** authority-research's candidate domains checked against both runs: `artifacts/authority-candidate-citations.md`.
 
 ## Currently working on
 
-- Google UK gap-fill for Corteiz alternatives, brands like Carsicko, brands like Broken Planet, water reactive clothing and heat reactive clothing.
-- Findings write-up.
+Nothing currently running.
 
 ## Blockers
 
 ### Blocker 1 — Perplexity login wall
 
-**Blocking:** Perplexity column of the panel (58 of 63 runs blocked on 16 Oct)  
+**Blocking:** the Perplexity column of the panel (58 of 63 runs blocked on 16 Oct)  
 **Needs:** One dedicated Perplexity account for the panel, with memory off  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Yes  
-**Workaround:** Report Google UK, ChatGPT and Gemini only. The Perplexity rows stay blank with the reason given.
+**Workaround:** Report Google UK, ChatGPT and Gemini only. The Perplexity rows stay blank, with the reason in `notes`.
 
 ## Waiting on George
 
-1. Create a Perplexity account for the GEO panel and share the login method.
+1. Create a Perplexity account for the GEO panel and share how to log in.
+2. Confirm whether Crooks London Limited (Companies House 16396366) is your company. AI answers present it as the brand's company.
+3. Decide whether the measuring network's IP address can stay in this public repo (it is in both `meta.json` files), or should be redacted.
+4. Switch the GitHub default branch to `main`. It is still this branch. This was already raised by programme-records.
 
 ## Waiting on external systems
 
-- Nothing yet.
+- Other workstreams' changes going LIVE, then Google and the AI engines re-crawling them, before a re-measure can show movement.
 
 ## Next actions
 
-1. Finish the Google UK gap-fill and commit it.
-2. Write up findings: outreach source list, reactive-product gap, entity confusion.
-3. Set the re-measure schedule.
+1. Hand the cited-source shortlist to outreach and authority-research. streetwear.directory goes first; add wings2fashion.com and rosenberries.co.uk. It is already in `FINDINGS.md` Finding 2 and `artifacts/authority-candidate-citations.md`.
+2. Fri 13 Nov 2026: control re-run of the core 8 on all four surfaces.
+3. Run the Perplexity column once the panel account exists.
+4. Re-measure the core 8 and then all 21, about 4 weeks after the first relevant LIVE change.
 
 ## Expected impact
 
@@ -73,4 +100,4 @@ The measuring Mac went offline before 5 Google UK queries could run. It is back 
 **GEO:** High  
 **Confidence:** High
 
-This workstream changes nothing by itself. It is the measurement every other workstream is judged against, and it shows which third-party pages the AI answers actually cite.
+This workstream changes nothing by itself. It is the measurement every other workstream is judged against, and it shows which third-party pages the AI answers actually cite. That makes outreach and on-site copy decisions evidence-based instead of guesses.

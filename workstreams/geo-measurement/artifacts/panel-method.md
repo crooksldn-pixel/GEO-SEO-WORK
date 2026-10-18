@@ -33,7 +33,8 @@ Type each query exactly as written, with no follow-ups.
    - that URL;
    - AI Overview Y/N, and whether it names Crooks;
    - the first 5 other domains;
-   - whether a shopping or product pack appears (written as `shopping_pack=Y/N` at the start of `notes`).
+   - whether a shopping or product pack appears (written as `shopping_pack=Y/N` at the start of `notes`);
+   - the AI Overview's sources in `sources_cited`: the inline source chips plus the visible source cards. On the 16 and 18 Oct runs the "Show all" button was not opened. Keep it that way so runs stay comparable.
 5. If crooksldn.com is not on page 1, check page 2 (`&start=10`) and screenshot it as `<name>_p2.png`.
 6. Position counts every titled result block in order, including TikTok, Instagram, Reddit and video blocks. Pages 1–2 usually hold 16–20 of these.
 
@@ -65,4 +66,4 @@ Surface-specific notes:
   `run_date,surface,query_group,query,run_n,crooks_mentioned,crooks_position,crooks_url,ai_overview,crooks_in_ai_overview,competitors,sources_cited,sentiment,product_surfaced,screenshot,notes`
 - `meta.json`: run_date, type, ip_country, browser, model and login state per surface, started, finished, problems.
 - `summary.md`: mention rate by query group and surface, Google UK positions, and the sources the AI answers cite most.
-- Never edit a past run. To fill a gap, make a new dated run folder.
+- Never edit a past run. To fill a gap, make a new dated run folder. Set its `meta.json` type to say what it completes, as `runs/2026-10-18/` does (type "gap-fill (Google UK only)", `completes_run` 2026-10-16).
