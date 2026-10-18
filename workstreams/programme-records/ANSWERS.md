@@ -12,3 +12,14 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **6–11:** use your stated defaults (6 yes; 7 George's wording only; 8 default parking; 9 records on this branch; 10 the answers since 16 Oct are in `owner-decisions-2026-10-18.md`; 11 contact-page copy is owned by collections).
 - **12 Default branch:** not done yet; George's action.
 - Orderify: KEEP. New live change to log: C-009 (live tees untracked, 18 Oct). F-003 = these decisions.
+
+## Update 18 Oct 2026, 18:50 UTC: George's go, and who does what now
+
+George typed **go** at 18:45 UTC for the approved store batch. The project thread's store writes are still refused by its own permission check, so **this Cowork chat now carries out the items below**. George's reply "answered" in this chat is his go for them. Re-read live values before each write, change one thing at a time, read it back, and log it in `project-files/seo/change-log.md` (or this branch's CHANGES.md).
+
+**Do now**
+1. Keep `project-files/seo/owner-decisions-2026-10-18.md` and the change-log as the record; log every live change the other chats make.
+2. Orderify is KEPT.
+
+**George does by hand:** set the GitHub default branch to main.
+**No decision outstanding for this chat.**
