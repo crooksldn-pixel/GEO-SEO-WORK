@@ -1,0 +1,91 @@
+Filter type,Filter value,Breakdown row (query or page),Clicks,Impressions,Position
+page filter,https://crooksldn.com/password,crooksldn,2,119,1.0
+page filter,https://crooksldn.com/password,crooks ldn,0,173,1.8
+page filter,https://crooksldn.com/password,crooks.ldn,0,9,1.2
+page filter,https://crooksldn.com/password,crooksldn joggers,0,3,1.0
+page filter,https://crooksldn.com/password,crookslnd,0,2,1.0
+page filter,https://crooksldn.com/password,crooks london,0,1,1.0
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks ldn,3,238,3.1
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooksldn,2,95,1.1
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks lnd,0,20,7.8
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks tesco shirt,0,9,1.2
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks tesco tee,0,7,7.9
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks.ldn,0,6,3.7
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks ldn website,0,4,7.8
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crookslnd,0,1,1.0
+page filter,https://crooksldn.com/products/crooks-express-t-shirt,crooks t shirt,0,1,42.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks jorts,10,24,1.7
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks ldn,1,135,1.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooksldn,1,67,1.8
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks london,0,13,2.6
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks ldn shorts,0,8,5.5
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks ldn jorts,0,6,2.8
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks.ldn,0,5,1.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks lnd,0,2,1.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,grey wash jorts,0,2,10.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,crooks london clothing,0,1,5.0
+page contains cb2-wash-jorts,*cb2-wash-jorts,miss crooks jeans,0,1,10.0
+page filter,https://crooksldn.com/products/v1-hoodie,crooksldn,3,156,1.1
+page filter,https://crooksldn.com/products/v1-hoodie,crooks ldn,2,10,10.4
+page filter,https://crooksldn.com/products/v1-hoodie,crookslnd,0,5,1.0
+page filter,https://crooksldn.com/products/v1-hoodie,crooks ldn logo,0,1,8.0
+page filter,https://crooksldn.com/collections,crooks ldn,22,134,3.8
+page filter,https://crooksldn.com/collections,crooksldn,5,41,4.6
+page filter,https://crooksldn.com/collections,crooks.ldn,1,8,2.9
+page filter,https://crooksldn.com/collections,crooks london store,1,2,5.0
+page filter,https://crooksldn.com/collections,crookz clothing,1,1,2.0
+page filter,https://crooksldn.com/collections,crooks london clothing,0,11,3.6
+page filter,https://crooksldn.com/collections,crookslnd,0,4,4.5
+page filter,https://crooksldn.com/collections,crooks london jeans,0,3,8.3
+page filter,https://crooksldn.com/collections,crooks lnd,0,2,1.0
+page filter,https://crooksldn.com/collections,crooks london,0,2,1.0
+page filter,https://crooksldn.com/collections,crooks brand,0,1,1.0
+page filter,https://crooksldn.com/collections,crooks ldn website,0,1,3.0
+page filter,https://crooksldn.com/collections,crooks ldn joggers,0,1,8.0
+page filter,https://crooksldn.com/collections,crooks ldn jeans,0,1,10.0
+page filter,https://crooksldn.com/collections,krooks,0,1,79.0
+page contains black-joggers,*black-joggers,crooksldn joggers,2,17,1.5
+page contains black-joggers,*black-joggers,crooks ldn joggers,1,17,6.0
+page contains black-joggers,*black-joggers,crooks london joggers,1,8,3.9
+page contains black-joggers,*black-joggers,crooksldn,0,7,1.0
+page contains black-joggers,*black-joggers,crooks joggers,0,5,15.6
+page contains clive,*clive,crooksldn,0,36,1.8
+page contains clive,*clive,crooks ldn,0,31,1.0
+page contains clive,*clive,crooks.ldn,0,3,1.0
+page contains clive,*clive,crooks ldn jorts,0,1,15.0
+page contains og-jeans,*og-jeans,crooks jeans,0,11,2.2
+page contains og-jeans,*og-jeans,crooksldn,0,3,1.0
+page contains og-jeans,*og-jeans,crooks london jeans,0,3,3.3
+page contains og-jeans,*og-jeans,crooks ldn jeans,0,3,6.3
+page contains og-jeans,*og-jeans,crooks ldn,0,1,1.0
+page contains og-jeans,*og-jeans,crookslnd,0,1,1.0
+query exact,crooks,https://crooksldn.com/,2070,11990,7.0
+query contains joggers,*joggers,https://crooksldn.com/,597,1560,1.7
+query contains joggers,*joggers,https://crooksldn.com/products/black-joggers,4,40,4.6
+query contains joggers,*joggers,https://crooksldn.com/collections/2005-drop/products/pink-crsdr-joggas,0,7,7.0
+query contains joggers,*joggers,https://crooksldn.com/products/black-joggers?variant=53455028453719,0,7,7.9
+query contains joggers,*joggers,https://crooksldn.com/password,0,3,1.0
+query contains joggers,*joggers,https://crooksldn.com/collections/2005-drop/products/pink-crsdr-hoody,0,1,7.0
+query contains joggers,*joggers,https://crooksldn.com/collections,0,1,8.0
+query contains tesco,*tesco,https://crooksldn.com/,43,239,4.1
+query contains tesco,*tesco,https://crooksldn.com/products/white-tesco-tshirt,1,1,2.0
+query contains tesco,*tesco,https://crooksldn.com/products/crooks-express-t-shirt,0,16,4.1
+query contains tesco,*tesco,https://crooksldn.com/products/crooks-express-t-shirt?variant=53099604279639,0,2,2.0
+query contains tesco,*tesco,https://crooksldn.com/products/black-tesco-tshirt,0,1,2.0
+query contains jeans,*jeans,https://crooksldn.com/,136,423,2.1
+query contains jeans,*jeans,https://crooksldn.com/products/og-jeans,0,14,3.4
+query contains jeans,*jeans,https://crooksldn.com/collections,0,4,8.8
+query contains jeans,*jeans,https://crooksldn.com/products/og-jeans?variant=53456578347351,0,3,2.0
+query contains jeans,*jeans,https://crooksldn.com/products/cb2-wash-jorts?variant=53639835582807,0,1,10.0
+query contains jorts,*jorts,https://crooksldn.com/,72,278,2.3
+query contains jorts,*jorts,https://crooksldn.com/products/cb2-wash-jorts?variant=53639835582807,10,32,2.4
+query contains jorts,*jorts,https://crooksldn.com/collections/all,0,1,10.0
+query contains jorts,*jorts,https://crooksldn.com/products/3-clives-tee,0,1,15.0
+query contains shirt,*shirt,https://crooksldn.com/,47,321,5.4
+query contains shirt,*shirt,https://crooksldn.com/products/white-tesco-tshirt,1,1,2.0
+query contains shirt,*shirt,https://crooksldn.com/products/crooks-express-t-shirt,0,10,5.3
+query contains shirt,*shirt,https://crooksldn.com/products/crooks-express-t-shirt?variant=53099604279639,0,1,1.0
+query contains shirt,*shirt,https://crooksldn.com/products/black-tesco-tshirt,0,1,2.0
+query contains shorts,*shorts,https://crooksldn.com/,45,158,3.7
+query contains shorts,*shorts,https://crooksldn.com/products/cb2-wash-jorts?variant=53639835582807,0,8,5.5
+query contains shorts,*shorts,https://crooksldn.com/collections/all,0,1,1.0
