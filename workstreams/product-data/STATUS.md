@@ -2,7 +2,7 @@
 
 **Branch:** cowork/product-data  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:45 BST  
+**Last updated:** 18 Oct 2026, 16:55 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -45,21 +45,12 @@ Nothing currently running.
 
 ### Blocker 2 — SEO project files not reachable
 
-**Blocking:** G (HydroCuff and Puffa descriptions), J (photo inbox), filing the results file in `seo/cowork-results/`  
+**Blocking:** G (HydroCuff and Puffa descriptions), J (photo inbox)  
 **Needs:** the `seo` folder connected to this session, or `workstreams/05-reactive-drafts.md`, `assets/README.md` and the incoming photos attached here or committed to this repo  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Partly  
-**Workaround:** the results file is kept on this branch at `artifacts/01-product-data.md`
-
-### Blocker 3 — GEO-SEO-WORK has no `main` branch
-
-**Blocking:** branching from the latest `main`, as the protocol requires  
-**Needs:** George or the orchestrator to create `main`  
-**From:** George / orchestrator  
-**Severity:** P3  
-**Can work around it?:** Yes  
-**Workaround:** this branch starts from its own root commit. Rebase onto `main` once it exists. As of 18 Oct 16:50 BST, GitHub reports `cowork/geo-measurement` as the repo's default branch (HEAD), because it was the first branch pushed. Set the default to `main` once `main` exists.
+**Workaround:** the results file the brief asked for is kept on this branch at `artifacts/01-product-data.md`, where `cowork/programme-records` can read it
 
 ## Waiting on George
 

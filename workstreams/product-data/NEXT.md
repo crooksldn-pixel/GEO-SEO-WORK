@@ -19,7 +19,7 @@
 - Don't attach any image until real photos are in `seo/assets/incoming/`. No placeholders.
 - Don't clear, change or move barcodes, ever. K is report only.
 - Don't uninstall ReStock without an explicit OK. It's hard to undo.
-- Don't merge this branch. Rebase it onto `main` once `main` exists.
+- Don't merge this branch; the orchestrator decides what gets merged.
 
 ## Decisions still required
 

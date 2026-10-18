@@ -1,6 +1,6 @@
 # Cowork results 01 — product data (CROOKSLDN Shopify)
 
-This is the results file the 16 Oct brief asked for (`seo/cowork-results/01-product-data.md`), kept here because the seo folder is not reachable from this session. When it is, copy this file there for the records session to merge.
+This is the results file the 16 Oct brief asked for (`seo/cowork-results/01-product-data.md`). It's kept here for `cowork/programme-records` because the seo folder isn't reachable from this session.
 
 For each item: baseline, exact change, George's approval and time, Admin read-back, and the metric to watch. Approval and read-back stay "pending" until a write actually happens.
 
