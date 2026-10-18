@@ -1,7 +1,7 @@
 <!-- Copied from the claude.ai Project seo/ folder on 18 Oct 2026 and sanitised for this public repo (owner decision #16): sales figures, order counts, age, town/address and IP removed. -->
 # CROOKSLDN GEO + SEO programme: status report
 
-**As of:** 16 Oct 2026, 18:00 UTC. Updated at 18:30 and 18:35 UTC with George's confirmed facts and decisions, and on 18 Oct 2026 at 20:30 BST by programme-records (see the Update sections; the newest is first). This is a read-only consolidation: nothing was changed to produce it.
+**As of:** 16 Oct 2026, 18:00 UTC. Updated at 18:30 and 18:35 UTC with George's confirmed facts and decisions, and on 18 Oct 2026 at 20:50 BST by programme-records (see the Update sections; the newest is first). This is a read-only consolidation: nothing was changed to produce it.
 **Sources:** all 10 workstream threads (latest replies 15:34–15:45 UTC), the project chat (including George's 25 answers at 15:33), `master-queue.md`, `change-log.md`, `workstreams/01–10`, `p1-collection-audit`, `measurements/geo-panel`.
 
 **How "live" was checked.** At ~17:55 UTC I read the store back through the Shopify Admin API (collections, products, themes, shop settings). I could not load crooksldn.com itself from this container (network blocked), so anything described as "visible on the live page" comes from the programme thread's own live fetch at 15:36 UTC unless marked **[verified now]**.
@@ -16,12 +16,12 @@ No thread is running right now. All ten finished their turn and are waiting on G
 
 ---
 
-## Update 18 Oct 2026, 20:30 BST: what went live, what was measured, what's left for you
+## Update 18 Oct 2026, 20:50 BST: what went live, what was measured, what's left for you
 
 **Sources:**
 - the change log and master queue in `records/` on `cowork/programme-records`;
 - `owner-decisions-2026-10-18.md`;
-- all eleven `cowork/*` workstream branches as they stood at 20:30 BST;
+- all eleven `cowork/*` workstream branches as they stood at 20:50 BST;
 - Shopify Admin reads at 19:17 and 19:22 UTC.
 
 Nothing was changed on the site to write this. Section C below and its superseded lists are out of date; the list at the end of this update replaces them.
@@ -37,6 +37,7 @@ Nothing was changed on the site to write this. Section C below and its supersede
 | IMP-8 | HS codes on 176 variants. Data only: US duty collection isn't switched on | 18 Oct ~19:20 BST |
 | TP-1 | 12 Trustpilot replies posted. No visible 1–3★ review is left without a reply | 18 Oct ~18:40–18:55 BST |
 | TP-2 | Trustpilot name changed to CROOKSLDN, with the approved brand line as the description | 18 Oct ~19:00–19:10 BST |
+| PD-1 to PD-7 | Product data:<br>• stock tracking off on all 21 tees<br>• unconfirmed cotton claims removed, and OG Jeans 14oz<br>• Crewneck and Puffa SEO titles<br>• HydroCuff and Puffa reactive copy<br>• Unisex and Adults on all 45 active products<br>• Puffa colour Black<br>• weights on the sets and 2 tees | 18 Oct 20:10–20:20 BST |
 
 - **Still live from 16 Oct:** C-001, C-002, C-006, C-007 and C-WS02-1.
 - **Not live:**
@@ -57,7 +58,9 @@ Each live entry now has a metric, a baseline, and review dates at 4 and 8 weeks 
 
   Still open: the tee "IN STOCK" label, the tee schema handling time, and the policies, FAQ and Terms.
 - **Store password-locked.** Every storefront URL redirected to /password at 18:35, 20:09 and 20:11 BST. The same URLs were open at 16:30–17:05 BST.
-- **T-shirt Week tees active.** 21 tee products are ACTIVE, and 4 of the new ones are on the Online Store. Their stock tracking was being changed while this was read, and that isn't logged yet.
+- **T-shirt Week tees active.** 21 tee products are ACTIVE, and 4 of the new ones are on the Online Store. Product-data has since turned stock tracking off on all of them (PD-1).
+- **Cream Cap.** It now has 4 photos, a description and an SEO title, so it stays on Google.
+- **Footer.** The OUTERWEAR link is now live.
 
 All of this falls inside the first measurement window. The lock days and T-shirt Week are kept out of every before/after comparison.
 
@@ -65,7 +68,7 @@ All of this falls inside the first measurement window. The lock days and T-shirt
 
 - **GEO panel:** run 16 Oct, with an 18 Oct Google UK gap-fill. Google UK 21/21 queries, ChatGPT 63/63 runs, Gemini 63/63, Perplexity 5/63. Crooks is named only when the query contains "Crooks": 0 of 110 readable non-brand AI answers.
 - **Search Console:** UK exports for 21 Jan – 22 Jul 2026 and 15–16 Oct 2026. There is no data for 23 Jul – 14 Oct.
-- **Merchant Center:** exports from 16 and 18 Oct. All 25 Shopify products are approved for the UK; the only UK disapproval is the Cream Cap.
+- **Merchant Center:** exports from 16 and 18 Oct. All 25 Shopify products are approved for the UK; the only UK disapproval is the Cream Cap. Since then the cap has been given photos and a description, and 20 more products have gone active, which makes 45. The 29 Oct re-export is the next reading.
 - **Core Web Vitals:** PageSpeed measured on 16 Oct, mobile and desktop, on 5 URLs. The homepage fails mobile INP.
 - **Trustpilot:** 4.2 from 80 reviews on 18 Oct. The 3.3 from 50 used earlier was out of date.
 
@@ -76,9 +79,16 @@ The old GEO 43/50/54 and SEO health 70/74 scores have no recorded method. They'r
 Everything in `owner-decisions-2026-10-18.md` is treated as answered and isn't asked again. Parked items aren't listed.
 
 1. **The 18 Oct evening launch.** Is the password lock intentional, and when does the store reopen? Which chat or person published the new live theme? This is needed to log it properly and to set the measurement windows.
-2. **Before any theme work copy is published,** check it was cut from the current live theme, "live 18 Oct + evening fixes". A copy cut earlier, such as theme-editor's work copy, would undo the evening changes.
-3. **Shopify admin:** take the Cream Cap off Google & YouTube. The connector refuses this write, and the cap is the only UK disapproval.
-4. **Shopify admin:** untick the pre-ticked marketing box at checkout.
+2. **Themes: one copy at a time.** The current live theme has no backup; the 18 Oct backup is of the old live. Before the next publish:
+   - back up the live theme;
+   - publish only a copy cut from the current live theme, "live 18 Oct + evening fixes".
+
+   Theme-editor's "approved fixes" copy is stale, and publishing it would undo T-shirt Week and the evening work. The "colour photos" copy edits the same product files as the tee fix (`cowork/theme-editor` FINDINGS 7).
+3. **Shopify admin:**
+   - untick the pre-ticked marketing box at checkout;
+   - paste the approved store description (decision #14) into Online Store preferences, because product-data couldn't type into that field;
+   - remove the obsolete ReStock plan from the 3 original tees and Pink Convict Sweats, keeping the CLIVE pre-order on Pink Sweats. The connector lacks the scope for this.
+4. **Outreach emails:** read and send the PAUSE and Menswear Style Podcast drafts in team@crooksldn.com.
 5. **International pricing (`cowork/international-markets-pricing`):**
    - load the USD and EUR fixed prices and activate both catalogs, by CSV import or by an explicit instruction in that chat;
    - click "Agree and activate" for US duties;
@@ -88,7 +98,7 @@ Everything in `owner-decisions-2026-10-18.md` is treated as answered and isn't a
    - give your go on reporting the two model reviews through Trustpilot support;
    - keep team@crooksldn.com answered, because 11 public replies promise a reply within 1–2 working days.
 7. **LinkedIn and Crunchbase:** create both profiles from the ready copy on `cowork/authority-research`.
-8. **Outreach:** give your go on each final text, both the Disco and Streetwear Directory listings and the PAUSE, GUAP and Menswear Style Podcast pitches.
+8. **Directories and GUAP:** give your go on the final Disco and Streetwear Directory listings, and on the GUAP pitch once it's drafted.
 9. **Merchant Center:** after the 29 Oct re-check, opt out of auto-add by 1 Nov if core items are still disapproved.
 10. **GitHub:** go to Settings, then General, then Default branch, and change it to `main`.
 

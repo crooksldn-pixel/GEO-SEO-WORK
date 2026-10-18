@@ -147,7 +147,9 @@ Never record a ranking or GEO improvement without a captured measurement.
   - 21 tee-tagged products are ACTIVE: the 3 earlier tees plus 18 new ones.
   - 4 new ones were published to the Online Store at 17:27 UTC: OG Crook, 3 Clives, Broadcast, Money Clive. The other 14 had no Online Store publish date.
   - Stock tracking was still on (first variant read) for 6 new tees: OG Crook, Phantom, Who Nose?, World Wide, V.C.T.I.M.L, Special Delivery.
-  - Other tees' tracking was being changed at the time (updatedAt to 19:16 UTC) by a session that hasn't logged it yet. Not merged as a change until its owner logs it.
+  - Other tees' tracking was being changed at the time (updatedAt to 19:16 UTC). `cowork/product-data` has since logged that change as PD-1: all 21 tees are now untracked.
+- 18 Oct, Cream Cap: it now has 4 photos, a description and an SEO title. These were added outside product-data, which has noted it but didn't make the change. Who added them isn't recorded.
+- 18 Oct, footer: the OUTERWEAR link is live in the footer (`cowork/theme-editor` FINDINGS 8). It came through the new live theme, not through theme-editor. That closes the footer item left open in C-001.
 
 ### C-WS02-1 · "Made in Portugal" removed, customs origin China · 16 Oct 2026 (product-schema thread)
 - **Baseline:** metafield crooks.origin = "Made in Portugal" on 7 products (v2-baggies, grey-wash-yard-jeans, blue-wash-yard-jeans, blue-wash-yard-jorts, grey-wash-yard-jorts, charcoal-cellblock-crewneck, charcoal-cellblock-shorts); crewneck description and SEO description also said "Made in Portugal". Inventory-item countryCodeOfOrigin set on 6 products only, blank on the rest.
@@ -183,9 +185,9 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Review at 8 weeks:** Sun 13 Dec 2026.
 - **Note:** this covers the 3 tees live on 18 Oct only. The T-shirt Week tees are outside it (see Outside changes observed).
 
-## Merged from workstream branches (programme-records, 18 Oct 2026, 20:30 BST)
+## Merged from workstream branches (programme-records, 18 Oct 2026, 20:30–20:50 BST)
 
-All eleven `cowork/*` workstream branches were read. Only `cowork/international-markets-pricing` and `cowork/trustpilot` record live changes, and those are merged below. Every other branch records no live change. The per-branch record is in `workstreams/programme-records/artifacts/merge-register.md`.
+All eleven `cowork/*` workstream branches were read. `cowork/international-markets-pricing`, `cowork/trustpilot` and `cowork/product-data` record live changes, and those are merged below. Product-data's were logged at 20:28 BST and merged at 20:50. The other eight branches record no live change. The per-branch record is in `workstreams/programme-records/artifacts/merge-register.md`.
 
 ### IMP-1 to IMP-8 · International markets, shipping zones and HS codes · 18 Oct 2026 (`cowork/international-markets-pricing`)
 - **Reason:** give each country one market and one price, put international shipping on real costs, and collect US duty. George approved each item in that workstream's chat on 18 Oct. The approvals are quoted in its CHANGES.md.
@@ -249,6 +251,33 @@ All eleven `cowork/*` workstream branches were read. Only `cowork/international-
 - **Review at 4 weeks:** Sun 15 Nov 2026.
 - **Review at 8 weeks:** Sun 13 Dec 2026.
 - **Next action:** recheck at day 7 and day 28. Reporting the two model reviews waits on George's go for the Trustpilot support route.
+
+### PD-1 to PD-7 · Product-data batch · 18 Oct 2026 20:10–20:20 BST (`cowork/product-data`)
+- **Reason:** owner decisions #2, #10, #11, #12, #15 and #23 (18 Oct 17:03 UTC). George's go was at 18:45 UTC, and he confirmed with "answered" in the product-data chat at 20:07 BST.
+- **Deploy date:** 18 Oct 2026, 20:10–20:20 BST, through the Shopify Admin API. Each item was re-read live before writing. Barcodes, prices and inventory policy were untouched.
+- **Observed result:** Admin read-back matched on every item, with no userErrors (that branch's CHANGES.md).
+
+| ID | Change | Before | Metric (Q36) | Baseline value |
+|---|---|---|---|---|
+| PD-1 | Stock tracking off on the other 18 tees (540 variants): the 14 T-shirt Week tees plus 3 Clives, Broadcast, Money Clive and OG Crook. All 21 tees (630 variants) are now untracked | tracked = true, stock 0, policy CONTINUE | Tee pages show no "[n] LEFT"; no negative tee stock in Admin | Tracked on all 540 (that branch's before-state). Tee page lines as for C-009 |
+| PD-2 | Fabric-claim cleanup. "Cotton" removed from the fabric fields and tags of the 3 original tees, from the 2 sock packs (description too) and from the Cellblock Shorts `shopify.fabric`. OG Jeans gets "14oz" in its fabric field, description and SEO description | Unconfirmed cotton claims; OG Jeans said "Heavyweight denim" | M5: Merchant Center `material` on tees and socks; "14oz" in the OG Jeans snippet | Merchant Center: no reading from just before the change. The 16 Oct export is two days earlier. Compare at the 29 Oct re-export |
+| PD-3 | SEO titles: Crewneck "Charcoal Cellblock Crewneck — 450gsm Fleece \| CROOKSLDN"; Puffa "Double-Agent Puffa — Heat-Reactive Puffer Jacket \| CROOKSLDN". These are also their Shopping titles | Crewneck had no SEO title; Puffa "Double-Agent Puffa \| Heat-Reactive Puffer Jacket" | M2: Search Console UK impressions and CTR for the two product URLs; feed titles in Merchant Center | M2: no baseline: Search Console pending |
+| PD-4 | HydroCuff and Puffa descriptions rewritten to the approved reactive facts. Puffa care "avoid washing where possible" | Short generic copy, plus a stray `<meta charset>` tag in the Puffa HTML | M2: Search Console UK impressions and clicks for "water reactive jacket" and "heat reactive puffer" on the two product pages; GEO specialist rows; M1 organic-search sessions to the two product pages | M1: /products/hydrocuff-windbreaker 13 sessions (90 days to 16 Oct). The Puffa isn't in `10-measurement`'s top-landings list. M2: no baseline: Search Console pending. GEO 16 Oct: as for C-001 |
+| PD-5 | Age group "Adults" and gender "Unisex" set on all 45 active products. The standard category metafield definitions were enabled | Neither set on any product | M5: Merchant Center gender and age_group present on every offer; item issues | None set (that branch's before-state). Merchant Center: compare at the 29 Oct re-export |
+| PD-6 | Double-Agent Puffa colour Black | No colour | M5: colour present on the Puffa in Merchant Center | None set |
+| PD-7 | Shipping weights: Black Set and Grey Set 1,700g; Cellblock Set 1,450g; CRX Garms and CRXST★RZ 250g (135 variants) | 0 on all 135 | Shipping-weight issues in Merchant Center; label weights | 0 on all 135 |
+
+- **URLs:** the product pages of the products above. The tee product pages don't change in copy.
+- **Target queries:** "water reactive jacket" and "heat reactive puffer" (PD-4). The rest are feed eligibility and honest availability.
+- **Expected result:** cleaner Merchant Center attributes before the 29 Oct re-check, no scarcity lines on tees, and reactive pages that state the approved facts.
+- **Review at 4 weeks:** Sun 15 Nov 2026.
+- **Review at 8 weeks:** Sun 13 Dec 2026.
+- **Note:** the store was password-locked while these went live, so crawl-based effects can't start until it reopens.
+- **Not done (from that branch):**
+  - The Cream Cap was not taken off Google & YouTube. It now has 4 photos, a description and an SEO title, added outside product-data, so pulling it would undo a fix.
+  - The store description isn't saved: the admin field wouldn't take input. Handed to George.
+  - Removing the ReStock plan was denied, because the connector lacks the purchase-options scope. Handed to George.
+  - The C2–C4 copy rows were skipped, because the three tees had already been rewritten outside product-data.
 
 ### Review windows: what affects every live entry
 - 18 Oct: the store was password-locked from the evening, a new live theme was published, and T-shirt Week launched (see Outside changes observed).
