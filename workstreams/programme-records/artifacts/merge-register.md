@@ -2,7 +2,30 @@
 
 This lists each workstream branch reviewed for the change log. Only work a branch's `CHANGES.md` marks LIVE becomes a change-log entry. PREPARED and STAGED work goes into the master queue as a status instead.
 
-`change-log.md` and `master-queue.md` aren't reachable yet (issue #1), so nothing below has been written into them. This register is what will be applied when they arrive.
+## Merged 18 Oct 2026, 20:30 BST, into `records/`
+
+| Branch | Commit read | Live changes | Merged as |
+|---|---|---|---|
+| `cowork/international-markets-pricing` | `ab1ca33` | IMP-1, IMP-2, IMP-4, IMP-5, IMP-7, IMP-8 live; IMP-3 and IMP-6 in draft | change-log IMP-1 to IMP-8 |
+| `cowork/trustpilot` | `d0d8536` | 12 replies posted; profile name, description and address | change-log TP-1, TP-2; queue Q23, Q24 |
+| `cowork/geo-measurement` | `c0471b8` | None (measurement; branch rebased onto `main`) | queue Q35 (baseline measured) |
+| `cowork/search-console` | `f7bd1f5` | None | queue Q30–Q33; password lock under Outside changes |
+| `cowork/live-site-checks` | `29e9ca7` | None (policy edits prepared, not applied) | queue Q20, Q34, Q42 |
+| `cowork/merchant-center` | `5e46a93` | None | queue Q2, Q8 |
+| `cowork/product-data` | `fb8d2f0` | None | queue Q9b, Q15, Q16, Q21, Q37, Q41 |
+| `cowork/collections` | `00ad6dd` | None | queue 2b, 4, Q6, Q7, Q32, Q40 |
+| `cowork/outreach` | `d70b71e` | None | queue Q25, Q27 |
+| `cowork/authority-research` | `c1e0fd9` | None | queue Q26 |
+| `cowork/theme-editor` | `f4539f8` | None on the live theme by this workstream | queue Q14 |
+
+**Also recorded under Outside changes observed in the change log,** from programme-records' own Admin reads and from other branches' findings:
+- the live theme was replaced on 18 Oct (new MAIN theme at 18:36 UTC);
+- the store was password-locked that evening;
+- the T-shirt Week tees were made active.
+
+None of these is logged in any workstream's CHANGES.md.
+
+## Earlier reviews (before the files arrived)
 
 ## Reviewed 18 Oct 2026, 16:55 UK
 

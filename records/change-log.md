@@ -128,6 +128,21 @@ Never record a ranking or GEO improvement without a captured measurement.
 
 ## Outside changes observed
 - 16 Oct: someone outside this project edited /collections/denim (title, meta, copy, 5 products) and published theme "CROOKSLDN — SEO round 2 (from live 16 Oct)". Details unknown.
+- 18 Oct, live theme replaced (programme-records Admin read, 19:22 UTC). The MAIN theme is now "CROOKSLDN — live 18 Oct + evening fixes" (gid 207475147095), created 18:36 UTC and last saved 18:58 UTC. "SEO round 2" is now unpublished. Created on 18 Oct and still unpublished:
+  - "BACKUP of live 18 Oct (do not edit)", 17:15
+  - "live + 18 Oct approved fixes", 17:15, saved 18:19
+  - "Mobile UX + Reviews 18 Oct"
+  - "T-shirt Week launch"
+  - "TW launch + Mobile UX + Puffa"
+  - "live 18 Oct + colour photos", saved 19:22
+
+  None of this is in a workstream CHANGES.md, so what changed on the live theme is unknown. Any work copy cut from the old live theme would undo the evening fixes if it were published.
+- 18 Oct, store password-locked. Every storefront URL redirected to /password at about 18:35 BST (`cowork/trustpilot` FINDINGS 2) and at 20:09 and 20:11 BST (`cowork/search-console` FINDINGS 13). The same URLs were open at 16:30–17:05 BST. It's not confirmed whether the lock is intentional, or when it ends. Leave lock days out of every like-for-like read.
+- 18 Oct, T-shirt Week tees made active (programme-records Admin read, 19:17 UTC):
+  - 21 tee-tagged products are ACTIVE: the 3 earlier tees plus 18 new ones.
+  - 4 new ones were published to the Online Store at 17:27 UTC: OG Crook, 3 Clives, Broadcast, Money Clive. The other 14 had no Online Store publish date.
+  - Stock tracking was still on (first variant read) for 6 new tees: OG Crook, Phantom, Who Nose?, World Wide, V.C.T.I.M.L, Special Delivery.
+  - Other tees' tracking was being changed at the time (updatedAt to 19:16 UTC) by a session that hasn't logged it yet. Not merged as a change until its owner logs it.
 
 ### C-WS02-1 · "Made in Portugal" removed, customs origin China · 16 Oct 2026 (product-schema thread)
 - **Baseline:** metafield crooks.origin = "Made in Portugal" on 7 products (v2-baggies, grey-wash-yard-jeans, blue-wash-yard-jeans, blue-wash-yard-jorts, grey-wash-yard-jorts, charcoal-cellblock-crewneck, charcoal-cellblock-shorts); crewneck description and SEO description also said "Made in Portugal". Inventory-item countryCodeOfOrigin set on 6 products only, blank on the rest.
@@ -162,3 +177,75 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Review at 4 weeks:** Sun 15 Nov 2026.
 - **Review at 8 weeks:** Sun 13 Dec 2026.
 - **Note:** this covers the 3 tees live on 18 Oct only. The T-shirt Week tees are outside it (see Outside changes observed).
+
+## Merged from workstream branches (programme-records, 18 Oct 2026, 20:30 BST)
+
+All eleven `cowork/*` workstream branches were read. Only `cowork/international-markets-pricing` and `cowork/trustpilot` record live changes, and those are merged below. Every other branch records no live change. The per-branch record is in `workstreams/programme-records/artifacts/merge-register.md`.
+
+### IMP-1 to IMP-8 · International markets, shipping zones and HS codes · 18 Oct 2026 (`cowork/international-markets-pricing`)
+- **Reason:** give each country one market and one price, put international shipping on real costs, and collect US duty. George approved each item in that workstream's chat on 18 Oct. The approvals are quoted in its CHANGES.md.
+- **URLs:** no page URL changes. The changes affect prices and shipping shown at checkout per country, across every product page.
+- **Target queries:** none. These are commercial and checkout changes, not search changes.
+
+| ID | Change | Baseline | Deploy (BST) | Observed after | State |
+|---|---|---|---|---|---|
+| IMP-1 | "all world" market made rest-of-world only (34 countries removed) | Held 230+ regions incl. GB, GG, JE, US, CA, AU, NZ and all EU states | 18 Oct 18:10–18:31 | Test SKU (Black Convict Sweats XS, £60) unchanged in US, CA, DE, PL, JP, AU, GG, GB | **Live** |
+| IMP-2 | New single-country "United States" market; old US+CA market now "Canada" | US and CA shared one market | 18 Oct 18:10–18:31 | US $82, CA C$116, unchanged | **Live** |
+| IMP-3 | US catalog and USD price list | None | 18 Oct 18:10–18:31 | Price load refused by that session's permission check | **Not live (draft)** |
+| IMP-4 | Channel Islands: free Tracked 48 from £30 | Tracked 48 £3.99 at any basket | 18 Oct 18:37 | Calculator: £6 basket → £3.99; £60 basket → £0 | **Live** |
+| IMP-5 | New "Eurozone" market (21 euro states plus 6 microstates); "European Union" now non-euro only | One EU market | 18 Oct ~19:05 | £60 test SKU unchanged in DE, FR, IT, IE, BG, MC, ME, XK, PL, DK, SE, US, JP | **Live** |
+| IMP-6 | Eurozone catalog and EUR price list | None | 18 Oct ~19:07 | Price load not attempted | **Not live (draft)** |
+| IMP-7 | International shipping zones rebuilt as US, Eurozone, AU+NZ, Rest of world and Rest of Europe, on real costs | EU zone £12.99 flat; International £18.99 flat | 18 Oct ~19:15 | Every zone read back; calculator checks on that branch | **Live** |
+| IMP-8 | HS codes on 176 variants of 17 products; origin CN on 2 caps | No HS codes on those variants | 18 Oct ~19:20 | userErrors empty on all 17 writes | **Live** (data only; US duty collection not switched on) |
+
+- **Expected result:** prices are stable per country, international shipping reflects cost, and US duty is collected once George activates it.
+- **Observed result:** see the table. No order data yet.
+- **Metric (Q36), set by records:** international orders and sessions-to-order conversion by market (Shopify), for the United States, Eurozone, Rest of Europe, AU+NZ and Rest of world.
+- **Baseline value:** no market-level baseline in `10-measurement.md`. Take the 90 days to 18 Oct from Shopify at the 4-week review. £ values stay out of this public repo.
+- **Review at 4 weeks:** Sun 15 Nov 2026.
+- **Review at 8 weeks:** Sun 13 Dec 2026.
+- **Next action (George, from that branch):**
+  - Load the USD and EUR fixed prices and activate the catalogs, either by CSV import in admin or by an explicit instruction in that chat.
+  - Click "Agree and activate" for US duties.
+  - Read one Gildan label per tee style, so the tee HS codes and origin can be set.
+  - Treat GG, JE and IM as domestic in CROOKS Shipping.
+- **Assumptions to confirm (from that branch):** the Puffa shell and fill are synthetic, and the socks are mostly cotton by weight.
+
+### TP-1 · 12 replies to unanswered 1–3★ Trustpilot reviews · 18 Oct 2026 ~18:40–18:55 BST (`cowork/trustpilot`)
+- **Baseline:** 12 of the 20 visible 1–3★ reviews had no reply. The last reply to a negative review was on 12 Feb 2026. Trustpilot showed replies to 45% of negative reviews, at 12.56 days.
+- **Change:** 12 replies posted, signed "— George, CROOKSLDN". 11 of them point to team@crooksldn.com. The texts are in that branch's `artifacts/reply-pack.md`. One clause was removed from the 5 Mar reply because it would have been untrue.
+- **Reason:** owner decision #18. Unanswered "scam" reviews feed Google's AI answers on legitimacy (`cowork/trustpilot` FINDINGS 3).
+- **URL:** https://uk.trustpilot.com/review/crooksldn.com
+- **Target queries:** "Crooks LDN reviews", "is crooks ldn legit", "crooksldn scam".
+- **Deploy date:** 18 Oct 2026, George's typed go at 18:38 BST.
+- **Expected result:** Trustpilot's reply rate and reply time improve, and AI answers to reputation queries reflect the replies. No causation is to be claimed from a TrustScore change.
+- **Observed result:** 0 visible 1–3★ reviews without a reply (was 12). At 19:15 BST, Trustpilot's reply stats still showed the cached 45% and 12.6 days.
+- **Metric (Q36):** Trustpilot's reply percentage and average reply time for negative reviews; the GEO panel row for "Crooks LDN reviews".
+- **Baseline value:**
+  - Trustpilot: 45% and 12.56 days (before the change).
+  - GEO, 16 Oct: crooksldn.com was #5 on Google UK for "Crooks LDN reviews", below two Trustpilot pages.
+- **Review at 4 weeks:** Sun 15 Nov 2026.
+- **Review at 8 weeks:** Sun 13 Dec 2026.
+- **Next action:** recheck at day 7 (25 Oct) and day 28 (15 Nov), per that branch. team@crooksldn.com has to be answered, because 11 public replies promise a reply within 1–2 working days.
+
+### TP-2 · Trustpilot profile name, description and address · 18 Oct 2026 ~19:00–19:10 BST (`cowork/trustpilot`)
+- **Baseline:** the name was "Crooks ldn". The description was "Streetwear Brand" plus a list of competitor brands.
+- **Change:** name changed to CROOKSLDN. The description is now the approved brand line (decision #14) plus a contact line. The address formatting was tidied.
+- **Reason:** owner decision #20 (rename to CROOKSLDN), and to take competitor names out of the snippet Google shows.
+- **URL:** https://uk.trustpilot.com/review/crooksldn.com
+- **Target queries:** "Crooks LDN" and "Crooks LDN reviews", and keeping the brand distinct from Crooks & Castles.
+- **Deploy date:** 18 Oct 2026, George's typed go at 18:59 BST.
+- **Expected result:** Google's Trustpilot snippet and AI Overviews show "CROOKSLDN" with no competitor names.
+- **Observed result:** the public page title now reads "CROOKSLDN Reviews | Read Customer Service Reviews of crooksldn.com", and the sidebar shows the new description (re-read on that branch).
+- **Metric (Q36):** brand-query AI answers and Google results naming CROOKSLDN, with no competitor names and no other entity (GEO panel brand rows).
+- **Baseline value:** 16 Oct GEO panel brand rows:
+  - Perplexity's "Crooks LDN" sources included a Crooks & Castles Trustpilot page.
+  - ChatGPT "Crooks London" run 1 described a different entity.
+- **Review at 4 weeks:** Sun 15 Nov 2026.
+- **Review at 8 weeks:** Sun 13 Dec 2026.
+- **Next action:** recheck at day 7 and day 28. Reporting the two model reviews waits on George's go for the Trustpilot support route.
+
+### Review windows: what affects every live entry
+- 18 Oct: the store was password-locked from the evening, a new live theme was published, and T-shirt Week launched (see Outside changes observed).
+- Search Console has no data for 23 Jul – 14 Oct 2026.
+- Every 4- and 8-week review must label these and leave lock days out of the comparison. `cowork/search-console` has a read scheduled for 14 Nov that pulls 4-week figures for each live entry.
