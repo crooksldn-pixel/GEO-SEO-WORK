@@ -2,9 +2,9 @@
 
 **Branch:** cowork/authority-research  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:20 UK  
+**Last updated:** 18 Oct 2026, 17:15 UK  
 **Priority:** P1  
-**Overall status:** READY TO IMPLEMENT
+**Overall status:** WAITING ON EXTERNAL
 
 ## Objective
 
@@ -62,7 +62,7 @@ The research is finished and the artefacts are prepared. **Nothing is live.** Ev
 
 ## Currently working on
 
-Nothing currently running.
+Nothing currently running. Waiting for George's answers in `QUESTIONS.md`. The follow-up research turn runs once this session resumes.
 
 ## Blockers
 
@@ -87,15 +87,12 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. **Post the 12 Trustpilot replies** (artifact §2.4), or say which to skip. Before posting, confirm team@crooksldn.com is the inbox that gets answered.
-2. **Check with Preston** whether the 5★ review from "kellan mullane" (8 Feb 2026) is his. If it is, he deletes it from his Trustpilot account.
-3. **Approve two invitation changes:**
-   - Install Trustpilot's own Shopify app (free plan, 50 automated invitations a month).
-   - Remove the Trustpilot link from the shipped-today email.
-4. **Create the profiles** from artifact §3: rename the Trustpilot profile to CROOKSLDN, then the LinkedIn company page and the Crunchbase entry. Confirm the line "CROOKSLDN is the trading name of Crooks Clothing Company Ltd".
-5. **Decide whether to report** the two 5★ reviews from people who say they modelled for the brand.
-6. **Decide which company is the brand's public entity.** AI assistants (Perplexity 3/3 brand runs, ChatGPT 1) cite **Crooks London Limited (16396366)**. The prepared profiles name **Crooks Clothing Company Ltd (16606021)**. Whichever is the operator, name it consistently on Crunchbase, LinkedIn and the site.
-7. **Decide on Dripscan,** whether to list as a seller (commission-based marketplace). Its magazine is cited by Gemini for "Corteiz alternatives", but no free editorial route was found.
+**All open questions are in [`QUESTIONS.md`](QUESTIONS.md): 14 numbered questions, each with options, a recommendation and an answer line.** Reply "answered" to this session once they're filled in.
+
+1. Q1–Q2: which company is the public operator, and the trading-name line. These block the LinkedIn and Crunchbase copy.
+2. Q3–Q7: support inbox, approval of the 12 Trustpilot replies, the "kellan mullane" review, the two model reviews, and the change to how reviews are requested. These block the Trustpilot work.
+3. Q8: the contact-page "run out of London" copy.
+4. Q9–Q14: smaller calls (Crunchbase team, Dripscan, IndyBest samples, core colourway, public-repo detail, the 07 file). Each has a stated default if left unanswered.
 
 ## Waiting on external systems
 

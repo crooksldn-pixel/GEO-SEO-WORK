@@ -34,18 +34,12 @@
 
 ## Decisions still required
 
-- Whether to report the two model reviews to Trustpilot.
-- Whether the profiles should say "CROOKSLDN is the trading name of Crooks Clothing Company Ltd".
-- Whether to add Preston as a director on Crunchbase. The founder field is George only.
-- Whether to keep one core Convict colourway permanently in stock. This only matters if evergreen roundups (IndyBest, GQ shopping) are pursued later.
-- Whether the 16 Oct "no sample offers" decision stands for IndyBest specifically. It's the one big title where samples decide the outcome.
-- **Which company is the brand's public operator:** Crooks London Limited (16396366), which AI assistants cite today, or Crooks Clothing Company Ltd (16606021), which the profiles name (FINDINGS 11).
-- **Whether to list on Dripscan** as a seller (commission marketplace). Its magazine is cited for "Corteiz alternatives".
+All of them are in [`QUESTIONS.md`](QUESTIONS.md), Q1–Q13. The most important is Q1: which company is the public operator. It blocks the LinkedIn and Crunchbase copy.
 
 ## Data still required
 
-- `seo/workstreams/07-authority.md` and `07-authority-raw/`, for the dedupe.
-- Which support inbox is actually monitored (team@, support@ or the Gmail address).
+- `seo/workstreams/07-authority.md` and `07-authority-raw/`, for the dedupe (QUESTIONS Q14).
+- Which support inbox is actually monitored (QUESTIONS Q3).
 
 ## Recommended follow-up date
 
