@@ -117,29 +117,43 @@ Noindex /collections/frontpage, or unpublish it and 301 it to /collections/new. 
 **Evidence:**
 Live sitemap fetch (16 and 18 Oct), Sitemaps report (39 discovered pages, up from 38), URL Inspection on 16 and 18 Oct.
 
+The article is published (collections audit: 16 Oct 13:10 UTC), has no robots meta, and is linked from /blogs/news and the blog's Atom feed. So Google will find it when it next crawls /blogs/news. It just isn't in the sitemap yet.
+
 **Why it matters:**
-The article is the mapped URL for fit and size intent. Two days on, this isn't sitemap lag.
+The article is the mapped URL for fit and size intent, and today the only way in is a page Google rarely visits (/blogs/news had 2 impressions in six months).
 
 **Confidence:** High.
 
 **Recommended action:**
-Check the article is published and visible on the Online Store channel. Link it from /collections/sweats and the hoodie and crewneck size guides so Google can discover it. Suggested owner: collections/blog.
+Link it from pages Google already crawls: /collections/sweats, /collections/tracksuits and the hoodie and crewneck size guides. Collections tasks A and C already plan the Sweats and Tracksuits links, so this adds urgency rather than new work. Suggested owner: collections.
 
-## Finding 8 — Archived product URLs that had impressions now 404
+## Finding 8 — Which 404s had search impressions (evidence for collections task F)
 
 **Finding:**
-The likely five archived 404s are /products/3-clives-tee, /products/evil-clive-tee, /products/white-tesco-tshirt, /products/black-tesco-tshirt and /products/joggas-1. Four of the five had impressions before July (31+17, 20+3, 7, 9). 3-clives-tee shows "Server error (5xx)" from its last crawl on 10 Sep. Old drop handles /collections/2005-drop/products/pink-crsdr-joggas and -hoody also 404; the products now live at /products/pink-crsdr-joggers and -hoodie.
+The five archived products are those in the `cowork/collections` Admin API audit: og-crook-tee, 3-clives-tee, broadcast-tee, evil-clive-tee and large-duffle-bag. **Two of the five had UK impressions in Jan–Jul:** /products/3-clives-tee (31, plus 17 on `?utm_source=shop_app`; Google's last crawl on 10 Sep got a 5xx) and /products/evil-clive-tee (20, plus 3 on parameter URLs). og-crook-tee, broadcast-tee and large-duffle-bag had none.
+
+Five more 404s had impressions or Googlebot hits but **aren't on the collections redirect list**:
+
+| URL | Live | Search Console evidence | Suggested target |
+|---|---|---|---|
+| /products/white-tesco-tshirt | 404 | 7 impressions, 1 click; 238 impressions of "tesco" queries (Finding 5) | see Finding 5 |
+| /products/black-tesco-tshirt | 404 | 9 impressions | see Finding 5 |
+| /products/joggas-1 | 404 | Googlebot got 404 on 19 and 23 Jul | /collections/sweats |
+| /collections/2005-drop/products/pink-crsdr-joggas | 404 | 7 impressions | /products/pink-crsdr-joggers (200) |
+| /collections/2005-drop/products/pink-crsdr-hoody | 404 | 1 impression | /products/pink-crsdr-hoodie (200) |
+
+One weak hint on the CB1/CB2 wash question: the only "grey wash jorts" impressions (2) showed /products/cb2-wash-jorts, which suggests CB2 was the grey wash.
 
 **Evidence:**
-`gsc_uk_16m_pages.csv`, Crawl stats 404 samples, URL Inspection, `curl`.
+`gsc_uk_16m_pages.csv`, `gsc_uk_16m_query_page_breakdowns.csv`, Crawl stats 404 drill-down, URL Inspection, `curl` on 16 and 18 Oct. Archived list: `cowork/collections` → `workstreams/collections/artifacts/index-hygiene-audit.md`.
 
 **Why it matters:**
-Small, but each is lost demand and crawl noise. The Tesco pair matters most (Finding 5).
+It gives collections task F its go-ahead evidence. The Tesco pair carries real, growing demand; the rest are small but are lost visits and crawl noise.
 
-**Confidence:** High for the status codes. Medium for which five George meant.
+**Confidence:** High for status codes and impressions. Low for the CB2 hint (2 impressions).
 
 **Recommended action:**
-301 each to its nearest live equivalent (the pink CRSDR pair to their new handles; the Clive tees to /collections/tees). Suggested owner: collections (redirects).
+Go ahead with collections F: redirect the five archived URLs, and add the five URLs above to the list. Suggested owner: collections (redirects).
 
 ## Finding 9 — Structured data: GBP confirmed, but currency URLs leak other currencies and shipping is overstated
 
@@ -177,18 +191,38 @@ It probably explains part of the jeans decline, and jeans is a mapped intent (ba
 **Recommended action:**
 None now. Recheck og-jeans indexing in the first post-deploy read.
 
-## Finding 11 — No Core Web Vitals or HTTPS problems on record
+## Finding 11 — Search Console's Core Web Vitals report is stale; use live-site-checks instead
 
 **Finding:**
-Mobile and desktop: 8 good URLs, 0 needing improvement, 0 poor. "No issues detected in the last 90 days". HTTPS: 8 URLs, all HTTPS. Data source is CrUX, last updated 23 Jul.
+Search Console shows mobile and desktop at 8 good URLs, 0 needing improvement, 0 poor, with "No issues detected in the last 90 days". But its CrUX data stops at 23 Jul, before the relaunch. The `cowork/live-site-checks` workstream measured current field data through PageSpeed Insights on 16 Oct and found the homepage failing Core Web Vitals on mobile (INP), with the Mida script as the heaviest load on every page (its Finding 4). HTTPS: 8 URLs, all HTTPS.
 
 **Evidence:**
-Core Web Vitals and HTTPS reports.
+Search Console Core Web Vitals and HTTPS reports (last update 23 Jul). `cowork/live-site-checks` → `workstreams/live-site-checks/FINDINGS.md`, Finding 4.
 
 **Why it matters:**
-Nothing here for the core-web-vitals workstream to fix, but the data predates the Horizon rebuild.
+Search Console's "all good" is out of date and shouldn't be quoted as current.
 
-**Confidence:** Medium (stale).
+**Confidence:** High that the Search Console report is stale.
 
 **Recommended action:**
-Recheck once fresh CrUX data appears.
+Use live-site-checks for current Core Web Vitals. Recheck Search Console once it shows CrUX data after 16 Oct.
+
+## Finding 12 — Overlaps with other workstreams
+
+**Finding:**
+As of 18 Oct 16:50 BST:
+- **collections** lists this workstream's report as its Blocker 3 (it couldn't reach `/mnt/project-files/seo/cowork-results/05-search-console.md`). The same report is now on this branch at `artifacts/search-console-report.md`. Findings 5, 6, 7 and 8 are the evidence its task F needs. It already plans `seo.hidden` on /collections/frontpage, which matches Finding 6.
+- **live-site-checks** Finding 6: the held "Claude P1 fixes" theme changes `snippets/crooks-schema-site.liquid` (Organization). The homepage entity work in Finding 3 and the `shippingDetails` / currency fix in Finding 9 touch the same structured data, so they should go through whichever theme route that workstream settles on, not as a separate edit. Its Finding 3 (delivery days 1–2 vs 2–3) is a separate problem from Finding 9 here (free shipping shown with no £30 threshold); both are in the same `shippingDetails` block.
+- **product-data** owns product records. Finding 10 here (OG Jeans 404 to Googlebot in July) sits alongside its Finding 2 (OG Jeans missing 14oz). No conflict.
+- **geo-measurement** runs the UK GEO panel. "water reactive windbreaker" (Finding 2) is Search Console's first view of a query family that panel already tracks.
+
+**Evidence:**
+STATUS and FINDINGS files on `cowork/collections`, `cowork/live-site-checks`, `cowork/product-data` and `cowork/geo-measurement`, read 18 Oct.
+
+**Why it matters:**
+It avoids two sessions editing the same theme snippet, and it unblocks collections F.
+
+**Confidence:** High.
+
+**Recommended action:**
+The orchestrator routes Findings 3 and 9 to the theme route in live-site-checks' NEXT.md, and Findings 5–8 to collections.

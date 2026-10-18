@@ -145,14 +145,18 @@ Indexing > Pages is still processing, so its "why pages aren't indexed" list can
 | /products/joggas-1 | Googlebot got 404 on 19 and 23 Jul (Crawl stats) | 404 | none | — |
 | /collections/2005-drop/products/pink-crsdr-joggas, …/pink-crsdr-hoody | — | 404 (products now /products/pink-crsdr-joggers, -hoodie) | 7, 1 | — |
 
-The five archived 404s are most likely 3-clives-tee, evil-clive-tee, white-tesco-tshirt, black-tesco-tshirt and joggas-1 (to be confirmed against George's list). **Four of the five got impressions** (all before July); the Tesco pair has live query demand behind it (see #3). joggas-1 had none.
+**The five archived products** (from the collections workstream's Shopify Admin read) are og-crook-tee, 3-clives-tee, broadcast-tee, evil-clive-tee and large-duffle-bag. **Two of the five had impressions**: 3-clives-tee and evil-clive-tee (table above). og-crook-tee, broadcast-tee and large-duffle-bag had none in Jan–Jul.
+
+**Five more 404s** had impressions or Googlebot hits but aren't archived products, so they aren't on the collections redirect list yet: white-tesco-tshirt and black-tesco-tshirt (with live "tesco" query demand, see #3), joggas-1 (→ /collections/sweats), and the two 2005-drop pink CRSDR URLs (→ /products/pink-crsdr-joggers and -hoodie).
+
+Weak hint for the CB1/CB2 wash question: the only "grey wash jorts" impressions (2) showed /products/cb2-wash-jorts, which suggests CB2 was the grey wash.
 
 New 16 Oct pages:
 
 | URL | 16 Oct | 18 Oct |
 |---|---|---|
 | /collections/outerwear | Not in sitemap; "URL is unknown to Google" | **In sitemap; "Discovered – currently not indexed"** (found via sitemap.xml) |
-| /blogs/news/convict-vs-cellblock-fit | Not in sitemap; unknown to Google | **Still not in sitemap_blogs_1.xml; still unknown to Google**, though the page returns 200 and is self-canonical. Two days on, this isn't sitemap lag: check that the article is published and visible on the Online Store, and link it from /collections/sweats and the hoodie/crewneck size guides so Google can find it. |
+| /blogs/news/convict-vs-cellblock-fit | Not in sitemap; unknown to Google | **Still not in sitemap_blogs_1.xml; still unknown to Google.** It is published, has no robots meta and is linked from /blogs/news and the Atom feed, so Google will find it on its next crawl of /blogs/news, a page it rarely visits. Link it from /collections/sweats, /collections/tracksuits and the hoodie/crewneck size guides. |
 
 Other findings:
 - Map targets that are indexed: /collections/sweats, /collections/tracksuits, /collections/denim, /collections/tees, /products/hydrocuff-windbreaker (indexed "with issues" — old variant-image problem, see §7).
@@ -177,7 +181,9 @@ Source CrUX, last update 23 Jul 2026 (stale — same data gap).
 | Mobile | 0 | 0 | 8 URLs |
 | Desktop | 0 | 0 | 8 URLs |
 
-"No issues detected in the last 90 days." No URL groups to list: the good-URL drill-down shows only the count. HTTPS: 8 HTTPS, 0 non-HTTPS. Nothing to act on; recheck once fresh CrUX data lands.
+"No issues detected in the last 90 days." No URL groups to list: the good-URL drill-down shows only the count. HTTPS: 8 HTTPS, 0 non-HTTPS.
+
+**This is out of date.** The live-site-checks workstream measured current field data through PageSpeed Insights on 16 Oct and found the homepage failing Core Web Vitals on mobile (INP). Use its figures, not this report, until Search Console shows CrUX data from after 16 Oct.
 
 ## 7. Currency and structured data (task 8)
 

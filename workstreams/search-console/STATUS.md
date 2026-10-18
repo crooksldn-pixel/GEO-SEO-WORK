@@ -2,7 +2,7 @@
 
 **Branch:** cowork/search-console  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:45 BST  
+**Last updated:** 18 Oct 2026, 17:05 BST  
 **Priority:** P1  
 **Overall status:** WAITING ON EXTERNAL
 
@@ -21,6 +21,8 @@ The research is done and recorded. Two things limit it:
 
 The ranked actions are recommendations for other workstreams. None are implemented. This workstream next measures what they change once data builds up.
 
+Overlaps (FINDINGS 12): collections was blocked waiting for this report, which is now on this branch at `artifacts/search-console-report.md`; FINDINGS 5–8 are its task F evidence. The structured-data items (FINDINGS 3 and 9) touch the same Organization snippet that live-site-checks' held theme changes, so they should ship through that theme route.
+
 ## Completed
 
 - **Measured:** UK Performance (queries, pages, daily) for 21 Jan – 22 Jul 2026 and 15–16 Oct 2026; first-half vs second-half comparison; query → page breakdowns for every product cluster. `artifacts/gsc-exports/`
@@ -28,7 +30,7 @@ The ranked actions are recommendations for other workstreams. None are implement
 - **Researched:** ranked opportunity list, 14 rows with suggested owner workstreams. `artifacts/opportunities.csv`
 - **Audited:** URL Inspection (indexed view) on 14 URLs; live status and redirects of every in-scope URL; Sitemaps, Core Web Vitals, HTTPS, Shopping and Crawl stats reports.
 - **Tested:** live URL test on /products/convict-hoodie-1. Rendered Product JSON-LD shows priceCurrency GBP, and the 5 merchant items are valid.
-- **Written:** full report `artifacts/search-console-report.md` and `FINDINGS.md` (11 findings).
+- **Written:** full report `artifacts/search-console-report.md` and `FINDINGS.md` (12 findings, including overlaps with collections, live-site-checks, product-data and geo-measurement).
 
 ## Currently working on
 
@@ -48,7 +50,6 @@ Nothing currently running.
 ## Waiting on George
 
 1. Is the Crooks Express tee the design people call the "Tesco tee"? This decides where the two 404 Tesco tee URLs redirect (FINDINGS 5).
-2. Confirm the five archived 404 product URLs. Likely: 3-clives-tee, evil-clive-tee, white-tesco-tshirt, black-tesco-tshirt, joggas-1.
 
 ## Waiting on external systems
 
@@ -60,7 +61,7 @@ Nothing currently running.
 ## Next actions
 
 1. Read Indexing > Pages once it finishes processing (check from 20 Oct) and add the reasons to FINDINGS.
-2. Hand the P1 rows to their owners: brand sitelinks / frontpage noindex and joggers internal links → collections; "CROOKSLDN (Crooks LDN)" on the homepage → entity-about; Tesco tee redirects → collections, once George answers.
+2. Orchestrator routing: FINDINGS 5–8 (redirects, frontpage `seo.hidden`, fit-article links, joggers/denim/tees anchor links) → collections; FINDINGS 3 and 9 (homepage brand line, `shippingDetails`, currency) → the theme route in live-site-checks' NEXT.md. The Tesco tee redirect waits on George's answer.
 3. Around 24 Oct: first 7-day post-deploy read (16–22 Oct) against the 15 Oct anchor. Track "crooks" position, which URL wins each product cluster, sitelinks, and indexing of /collections/outerwear and the fit article.
 4. Around 14 Nov: 28-day read.
 

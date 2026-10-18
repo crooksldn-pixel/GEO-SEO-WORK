@@ -23,8 +23,7 @@ Use the same method each time: country filter United Kingdom, search type Web, a
 ## Decisions still required
 
 - George: is the Crooks Express tee the "Tesco tee" design? (Redirect target for /products/white-tesco-tshirt and /products/black-tesco-tshirt.)
-- George: confirm the five archived 404 product URLs.
-- Collections workstream, with George's OK: noindex /collections/frontpage, or unpublish it and 301 it to /collections/new.
+- Collections workstream, with George's OK: task F (redirects plus `seo.hidden` on /collections/frontpage). Search Console evidence is in FINDINGS 6 and 8, including five more 404 URLs to add to its list.
 
 ## Data still required
 
