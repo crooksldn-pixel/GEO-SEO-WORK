@@ -154,7 +154,7 @@ Mixtape Madness alone has run about 15 Broken Planet drop stories.
 - RWD: dead.
 - SBTV: dormant.
 
-**Evidence:** artifact §1.1, rows 1, 2, 7, 8 and 9, each with evidence and contact URLs.
+**Evidence:** artifact §1.1 (the Mixtape Madness, Complex UK column, Trench, GUAP and Hunger rows), each with evidence and contact URLs. Of these, Mixtape Madness, Trench and Hunger are not in 07. Complex UK (A004) and GUAP (A025) are, and this pass adds verified routes.
 
 **Why it matters:**
 - **SEO:** these are editorial links and brand mentions from titles that already cover the peer set.

@@ -21,7 +21,7 @@
 | Parlez (parlez.co.uk) | Gemini 2/3 | Brand site | Not a target. |
 | Flow Like Zen (flowlikezen.com) | Google AI Overview | A brand blog that ranks itself | Not a target. Supports note A. |
 | instagram.com | Google AI Overview | Brand Instagram profiles | @crooksldn profile consistency (entity, not outreach). |
-| **Google UK organic, pages 1–2** | Google UK | p1: representclo.com, parlez.co.uk, gq-magazine.co.uk, flowlikezen.com, reddit.com. p2: Wings2Fashion, Cali Studios, Phrase Studios, Standout, Backward Fashion, Rosenberries, Ape to Gentleman. | **GQ UK** = §1.1 #4 · **backwardfashion.com** = §1.1 #11 · **Ape to Gentleman** = §1.1 #32 · **Reddit:** seeding off. |
+| **Google UK organic, pages 1–2** | Google UK | p1: representclo.com, parlez.co.uk, gq-magazine.co.uk, flowlikezen.com, reddit.com. p2: Wings2Fashion, Cali Studios, Phrase Studios, Standout, Backward Fashion, Rosenberries, Ape to Gentleman. | **GQ UK** = §1.1 (GQ; in 07 as A055) · **backwardfashion.com** = §1.1 (in 07 as A006) · **Ape to Gentleman** = §1.1 (in 07 as A007) · **Reddit:** seeding off. |
 
 ## "brands like Corteiz"
 
@@ -32,9 +32,9 @@
 | Wings2Fashion | Gemini 2/3; Google AI Overview | As above | New, low value (as above). |
 | Streetwear Societee (streetwearsocietee.com) | Gemini 1/3 (cited 5 times in that answer) | A UK resale retailer that stocks Corteiz, Trapstar, Carsicko and others | **Not a target.** It's a stocking relationship, and CROOKSLDN sells direct. |
 | Flow Like Zen | Gemini 1/3 | As above | Not a target. |
-| gq-magazine.co.uk | Google AI Overview; Google organic #1 ("The 20 most advanced streetwear brands on the planet") | British GQ | **Already §1.1 #4.** It's cited by the AI Overview, which backs the 250 score. |
+| gq-magazine.co.uk | Google AI Overview; Google organic #1 ("The 20 most advanced streetwear brands on the planet") | British GQ | **Already §1.1 (in 07 as A055).** It's cited by the AI Overview, which backs the 250 score. |
 | phrasestudios.com | Google AI Overview | As above | Not a target. |
-| **Google UK organic** | Google UK | gq-magazine.co.uk, backwardfashion.com, reddit.com (r/ukdrill thread), apetogentleman.com, tiktok.com/discover | backwardfashion = §1.1 #11. TikTok discover pages are fed by organic TikTok content (@crooksldn), not outreach. |
+| **Google UK organic** | Google UK | gq-magazine.co.uk, backwardfashion.com, reddit.com (r/ukdrill thread), apetogentleman.com, tiktok.com/discover | backwardfashion = §1.1 (in 07 as A006). TikTok discover pages are fed by organic TikTok content (@crooksldn), not outreach. |
 
 ## Related prompts (Corteiz alternatives, brands like Broken Planet / Carsicko, British / emerging / independent streetwear)
 

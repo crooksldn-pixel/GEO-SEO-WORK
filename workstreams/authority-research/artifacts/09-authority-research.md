@@ -9,17 +9,18 @@
   - Disco and Streetwear Directory submissions are already approved and owned by the outreach workstream.
   - Reddit and poll seeding are off.
   - Rows that depend on samples or seeding are re-scored and marked ⏸. The Trustpilot live state was re-checked on 18 Oct and is unchanged.
+- **Revised again 18 Oct 2026 (evening)** after George's answers (`../ANSWERS.md`, owner decisions of 18 Oct):
+  - deduped against `07-authority.md` (§1.1 has a new "In 07" column);
+  - the Trustpilot replies and profile rename were done by the `cowork/trustpilot` workstream (§2);
+  - the final LinkedIn and Crunchbase copy is in [`profile-pack-linkedin-crunchbase.md`](profile-pack-linkedin-crunchbase.md) (§3);
+  - reviewer names and exact order counts are removed (public repo, decision #16).
 
 **Brand naming used throughout:** CROOKSLDN ("Crooks LDN", "Crooks London"), an independent British streetwear label. It is not Crooks & Castles. Put "CROOKSLDN (UK)" in pitch subject lines.
 
-## Inputs that were not available
+## Inputs
 
-**`07-authority.md` was not deduped against.** `/mnt/project-files/seo/` was not mounted in this session. I also couldn't find it on GitHub, Google Drive or the linked Mac. So I couldn't read 07's "Gaps and how this was researched" section, and I couldn't dedupe against the 222.
-
-- Rows in §1 marked **"check 07"** are core streetwear titles (Complex, Highsnobiety, Hypebeast, Dazed, i-D) that the first pass most likely already has.
-- Everything else here is targeted at the segments the brief says the first pass missed. The merge should still dedupe by domain.
-
-**No GEO panel output was available.** There was no `measurements/geo-panel/runs/` to read. §4 is a clearly labelled search-ranking proxy, not observed AI citations.
+- **07-authority.md** (the first pass, 222 opportunities) is now on `cowork/project-files-import` → `project-files/seo/workstreams/07-authority.md`. Every §1.1 row has been checked against it: the "In 07" column gives the matching 07 ID, or **new**. Its raw tables were not copied to the public repo.
+- **The GEO panel** (16 Oct 2026) is on `cowork/geo-measurement`. Observed citations are mapped in [`geo-cited-sources-vs-targets.md`](geo-cited-sources-vs-targets.md). §4 keeps the earlier search-ranking proxy for reference.
 
 ---
 
@@ -34,9 +35,9 @@
    - **None mention sizing or quality.** The one 3-star review praises the quality.
    - 16 of the 21 were posted between 14 Dec 2025 and 14 Mar 2026, the winter pre-order and Chinese New Year backlog period.
    - **No 1–3 star review has been posted since 30 Jul 2026.**
-   - **12 of the 21 have no reply.** Drafts for all 12 are in §2.4.
+   - **12 of the 21 had no reply on 16 Oct.** All 12 were answered on 18 Oct by the `cowork/trustpilot` workstream, after George approved the texts.
 3. **Four Trustpilot issues could cost more than the bad reviews.** All four are fixable (§2.5):
-   - (a) A 5-star review from the 8 Feb 2026 (8 Feb 2026) was checked as a possible staff review (George confirmed 18 Oct it is not).
+   - (a) One 5-star review (8 Feb 2026) was checked as a possible staff review. George confirmed on 18 Oct that it is not, so no action.
    - (b) Two 5-star reviews (16 Sep 2026) are from people who say they modelled for the brand.
    - (c) The review link in the shipped-today email skips orders that are tagged out because of problems. Trustpilot's rules ban that kind of screening.
    - (d) The post-delivery email carries a discount code, so it must never also ask for a review.
@@ -101,55 +102,55 @@
 
 ### 1.1 Ranked list
 
-| # | Outlet / desk | Seg | Evidence (title, date, URL) | Peers | Pitch route | Angle | R | A | L | G | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Mixtape Madness**: News and /blog/fashion/ | MU | "Broken Planet Share Latest Collection 'Luv Day Basics'", 18 Feb 2025, Harvey Marwood: https://www.mixtapemadness.com/blog/news/broken-planet-share-latest-collection-luv-day-basics/ · "Corteiz's First Ever Festival Collab…", 30 Jun 2026: https://www.mixtapemadness.com/blog/news/corteizs-first-ever-festival-collab-will-take-place-at-yardland-paris-this-weekend/ · Bape x SYNA World, 23 Sep 2025: https://www.mixtapemadness.com/blog/news/central-cee-named-creative-director-for-bape-x-syna-world-collection/ | BP (about 15 drop stories), C, SW, T | info@mixtapemadness.com (General). The same inbox handles Marketing, so say you're offering news, not buying space. Verified on https://www.mixtapemadness.com/contact-us | **Drop-day news release** before the drop: the Convict 550gsm set, lookbook, prices, drop time and run size. It's the same format they use for every Broken Planet drop. | 5 | 4 | 4 | 4 | **320** |
-| 2 | **Complex UK**: "JP's UK Culture Picks" (monthly column) | MU | "JP's UK Culture Picks: June 2026", 10 Jun 2026, Joseph "JP" Patterson. It leads on Trapstar and discusses Corteiz: https://www.complex.com/music/a/joseph-jp-patterson/jps-uk-culture-picks-june-2026 | T, C | The general route at https://uk.complex.com/contact. There is no UK desk inbox. | **Brand pick for the column.** An independent UK label with a heist identity, carrying on the storytelling tradition the column credits Trapstar with. Designed in-house. If sourcing comes up, say it's made in China. | 5 | 5 | 3 | 4 | **300** |
-| 3 | **Complex UK**: Style (check 07) | MU | "Broken Planet Spotlights Signature Style With 'Out Of Service' Capsule", 30 Jan 2024, Sanj Patel: https://www.complex.com/style/a/sanj-patel/broken-planet-out-of-service-capsule · "Unknown's SS23 Campaign…", 28 Apr 2023: https://www.complex.com/style/unknown-ss23-cairo-campaign · "Streetwear Power Ranking: The 2026 Edition", 28 May 2026: https://www.complex.com/style/a/mike-destefano/streetwear-power-ranking-2026-edition | BP, UL, C, T | As in row 2 | **Reactive outerwear as a product-tech story:** the HydroCuff reacts to water and the Double-Agent changes with heat. It only works with a 10–15 second demo clip. | 5 | 5 | 2 | 5 | **250** |
-| 4 | **British GQ**: style / sneakers (Adam Cheung's bylines) | NP | "The Corteiz x Nike Air Max 95 is the unlikeliest collab…" (2023): https://www.gq-magazine.co.uk/fashion/article/corteiz-nike-air-max-95-collab-2023 · "With the Represent x Puma Speedcat OG 'Wolf Grey'…", 28 Aug 2025: https://www.gq-magazine.co.uk/article/with-the-represent-x-puma-speedcat-og-wolf-grey-they-were-very-careful-not-to-ruin-an-icon (bylines taken from Wikipedia citations; the site blocked fetching) | C, R | British GQ's published contact route. The writer's public professional Instagram is listed by Diary Directory: https://www.diarydirectory.com/newsarticle/british-gqs-style-writer-open-to-freelance-commissions/66009 | **Product news:** the HydroCuff and Double-Agent demo plus the drop date. Secondary: the Convict set for GQ's hoodie and tracksuit shopping pages. | 5 | 5 | 2 | 5 | **250** |
-| 5 | **GRM Daily**: News | MU | Search index only, since the pages are blocked from here: "GRM Exclusive: Junior Clint Talks 'Clints Festival', Fashion From A Business Perspective…": https://grmdaily.com/junior-clint-interview/ · Corteiz "Great Bolo Exchange": https://grmdaily.com/corteiz-great-bolo-exchange-donate-coats/ · Puma x Trapstar: https://grmdaily.com/puma-announces-teaser-collection-with-trapstar/ | T, C | **Not verified.** Check the footer by hand. The BiG! Agency runs GRM's commercial side, so treat any "partnership" or "premiere" offer as paid. | **Founder Q&A on the business of independent fashion**, the same format as the Junior Clint interview. | 5 | 5 | 2 | 5 | **250** |
-| 6 | **The Independent**: IndyBest (tested roundups) | NP | "9 best hoodies for men that are perfect for everyday wear", 23 Jun 2022, Richard Jones, IndyBest. It has a "how we tested" section and was read via the syndicated copy: https://uk.news.yahoo.com/10-best-hoodies-men-brands-050000792.html | None (evergreen roundup) | The IndyBest desk via The Independent's published contact route. independent.co.uk blocked fetching, so check the page by hand. | **Text-only pitch** for the best hoodies, joggers and tracksuit updates: the 550gsm 100% cotton spec, price, images and an in-stock link. IndyBest tests products, so this only really converts if George reverses the 16 Oct "no sample offers" decision. Keep one core Convict colourway in stock permanently, because evergreen roundups lose sold-out links. | 5 | 4 | 2 | 5 | **200** |
-| 7 | **Trench**: Style, News, Features | MU | "Corteiz Don't Play By The Rules", 9 Feb 2022: https://trenchtrenchtrench.com/features/corteiz-who-rules-the-world · "How 'P+F Sounds' By PLACES+FACES Captured…", 18 Oct 2022: https://trenchtrenchtrench.com/features/how-p-and-f-sounds-by-places-plus-faces-captured-the-heart-of-young-london · Small-label precedent: DFND London, 20 Jun 2024: https://trenchtrenchtrench.com/news/dfnd-london-reveals-first-streetwear-collection-under-new-art-direction | C, PF | editorial@trenchtrenchtrench.com for content enquiries. Verified on https://trenchtrenchtrench.com/about. advertising@ is paid. | **Collection-launch news** in the DFND format, tied to British heist-film visual language. | 5 | 3 | 4 | 3 | **180** |
-| 8 | **GUAP**: culture and fashion (now on Substack) | MU/YC | "The Best British Streetwear Brands Of 2022", 17 Jan 2023: https://www.guap.co/p/the-best-british-streetwear-brands-of-2022 · "Corteiz: The Pied Piper of Bolo Jackets", 1 Feb 2022: https://www.guap.co/p/corteiz-the-pied-piper-of-bolo-jackets · Small-label format: "Get to know streetwear brand CoSignedByGod": https://www.guap.co/p/get-to-know-streetwear-brand-cosignedbygod | C, PF, T | contact@guap.co.uk (https://www.guap.co/about). The listicle itself says "Tweet us @guapmag". | **Ask for a place in the next "best British streetwear brands" list**, plus a "Get to know" founder profile. The listicle ranks for 3 of the 10 proxy queries. | 5 | 3 | 3 | 4 | **180** |
-| 9 | **Hunger**: Editorial | YC | "Looking for your next cop? Corteiz, Clints and Asics…", 9 Aug 2023: https://hungermag.com/editorial/looking-for-your-next-cop-corteiz-clints-and-asics-are-all-topping-sneakerheads-wishlists · It also runs "emerging brands to have on your radar" roundups. | C | editorial@rankin.co.uk, listed for "Pitches and submissions". Verified on https://hungermag.com/contact | **Emerging British labels roundup.** Lead with short reactive-outerwear video, then the 550gsm Convict set and George as designer-owner running short-run drops. | 5 | 4 | 3 | 3 | **180** |
-| 10 | **The Guardian**: fashion desk | NP | "Why was Virgil Abloh such a revolutionary fashion designer?", 29 Nov 2021, Priya Elan: https://www.theguardian.com/fashion/2021/nov/29/virgil-abloh-black-fashion-designer-artist. Weaker evidence: no peer coverage found because the site blocks fetching. | None | The Guardian's published contact route. Couldn't be checked. | **"Clothes that change when wet or warm" trend item.** Don't lead with the incarceration theme here. | 3 | 5 | 2 | 5 | **150** |
-| 11 | **backwardfashion.com**: "Top 10 UK Streetwear Brands in 2026" | LG | Published 30 Nov 2025, modified 6 Feb 2026, Zac Rubi. Its "Up and Coming Brands to Check Out" section is for brands "under 100,000 followers on Instagram": https://backwardfashion.com/streetwear/top-10-uk-brands/ | C, SW, R, BP, UL, T | https://backwardfashion.com/contact/ (there's no submission form) | **Pitch for the Up and Coming slot.** Give a two-line description, the core products and an image link. It showed up for **6 of the 10** proxy queries, the most of any page. | 5 | 2 | 3 | 5 | **150** |
-| 12 | **Clash**: Fashion | MU | "Trapstar and Ed Hardy Embark On A Cross-Cultural Exchange…", 9 Oct 2024, Sabrina Soormally: https://www.clashmusic.com/fashion/trapstar-and-ed-hardy-embark-on-a-cross-cultural-exchange-for-their-debut-collection/ · "Central Cee Designs Debut Collection For Nike and Syna World", 24 Oct 2024: https://www.clashmusic.com/fashion/central-cee-designs-debut-collection-for-nike-and-syna-world/ · BBK x Corteiz, 30 Jul 2025: https://www.clashmusic.com/news/boy-better-know-link-with-corteiz-for-20th-anniversary-freestyle/ | T, SW, C | The Fashion Editor (Sabrina Soormally) and Fashion Director (Harry Clements) are listed with addresses on https://www.clashmusic.com/contact-clash/. press@clashmusic.com is the general press route. advertising@ is paid, so don't use it. | **Reactive outerwear tech story** built on a demo clip. An artist tie-in (e.g. the HydroCuff in the rain at a live session) would raise the odds, but it depends on seeding, which is paused. | 4 | 4 | 2 | 4 | **128** |
-| 13 | **discobrands.co**: "brands like Trapstar" and others | LG | "18 Brands like Trapstar", updated Jul 2026: https://www.discobrands.co/blogs/18-brands-like-trapstar. The page discloses affiliate links. | T (subject), UL, BP | https://www.discobrands.co/submit. Verified: "No payment required", "Approved listings are always free", reviewed by hand in 5–7 days. Needs a 150–250 character description. | **Free directory listing. Already approved by George on 16 Oct and owned by the outreach workstream (07), so it's not a new target here.** Its "brands like" pages rank for Trapstar queries. | 4 | 2 | 4 | 4 | **128** |
-| 14 | **Rolling Stone UK**: Style | MU | "Avenged Sevenfold just made gym merch metal with 247" (Represent 247), 20 Aug 2026, Joshua Graham: https://www.rollingstone.co.uk/style/avenged-sevenfold-247-represent-collabroation-63739/ | R | The staff email convention and editor names are on https://www.rollingstone.co.uk/about-rolling-stone-uk/. It says written content is never paid unless marked sponsored. | **A slot in the AW26 "things we're buying" style edits** for the Double-Agent Puffa. | 3 | 5 | 2 | 4 | **120** |
-| 15 | **Highsnobiety** (check 07) | YC | "Broken Planet Returns With New Gear for SS23", 30 Jan 2023, Sam Cole: https://www.highsnobiety.com/p/broken-planet-ss23-drop/ | BP | No editorial inbox is published, and sales@ is commercial. Use the writer's public professional channels. | Product news on the HydroCuff, with proof the effect works. | 4 | 5 | 1 | 5 | **100** |
-| 16 | **Hypebeast** (check 07) | YC | Trapstar tag. Latest: "Trapstar Revives Its 'Red Line' Range…", 24 Sep 2025: https://hypebeast.com/tags/trapstar | T | Not verified (fetching blocked) | A drop-news submission for the reactive outerwear. | 4 | 5 | 1 | 5 | **100** |
-| 17 | **Notion**: Fashion | YC/MU | "Corteiz And Nike Announce Forthcoming Collaboration", 20 Jan 2023: https://notion.online/corteiz-nike-collaboration/ · "Style: Havana Club x PLACES+FACES", 16 Jul 2019: https://notion.online/style-havana-club-x-placesfaces/ · The section is active: "Add To Cart: Fashion Month SS27", 8 Oct 2026: https://notion.online/add-to-cart-fashion-month-ss27/ | C, PF | uk@notion.online for UK editorial (https://notion.online/contact/). The advertising contact is paid. | **Text-only pitch for an "Add To Cart" edit,** with the HydroCuff or Double-Agent as an AW pick (product images and price). | 4 | 4 | 2 | 3 | **96** |
-| 18 | **Evening Standard**: fashion / new-label profiles | NP | "TOVE: the style set's new It label", Chloe Street, about 30 Mar 2023 (read via the licensed inkl copy): https://www.inkl.com/news/tove-the-style-set-s-new-it-label. Weaker evidence. | None | The Standard's published contact route. Couldn't be checked. | **Independent British label profile.** **Caveat:** these pieces lean towards London labels, and CROOKSLDN must not be described as being from London. Pitch "independent British" or skip. | 3 | 4 | 2 | 4 | **96** |
-| 19 | **Link Up TV**: News | MU | No peer coverage. Small-label precedent: "Beautifully Said Drops 'Fundamentals' Collection", 16 Feb 2025: https://www.linkuptv.co.uk/content/5530/beautifully-said-drops-fundamentals-collection | None | Form at https://www.linkuptv.co.uk/contact. Confirm there's no fee before sending. | **Collection-launch press release.** Their fashion news runs close to the release text. | 4 | 3 | 4 | 2 | **96** |
-| 20 | **streetwear.directory**: "Brands Like Corteiz" | LG | "Last verified 9 Oct 2026": https://streetwear.directory/brands/brands-like-corteiz (P+F #1, Represent #3) | C (subject), PF, R | https://streetwear.directory/join ("Add a Brand"). **Pricing isn't stated, so confirm it's free before submitting.** | **Directory listing. Already approved by George on 16 Oct and owned by the outreach workstream (07), so it's not a new target here.** The page ranks for "Corteiz alternatives"; confirm there's no fee. | 4 | 2 | 3 | 4 | **96** |
-| 21 | **Shift London** (London College of Fashion students): Fashion | ST | "Don't die for Corteiz, be like them", 20 Apr 2023, Shania Charles: https://www.shiftlondon.org/fashion/dont-die-for-corteiz-be-like-them/ (verified) | C, T | editor@shiftlondon.org (verified on the page) | **George as a working example of their "build an underground brand" theme:** heist identity, short-run drops, and being upfront about designing in-house and making in China. | 5 | 2 | 4 | 2 | **80** |
-| 22 | **Dazed**: Fashion (check 07) | YC | "Supreme officially teases upcoming Corteiz collaboration", 19 Dec 2023: https://www.dazeddigital.com/fashion/article/61621/1/supreme-corteiz-collaboration-clint-billboard | C, T | There's no desk inbox. https://www.dazeddigital.com/contact points freelancers to its pitching guide. pr@ and partnerships@ are not editorial routes. | One example within a freelancer's trend pitch, e.g. heist and lockup codes in UK streetwear, or colour-changing outerwear. | 4 | 5 | 1 | 4 | **80** |
-| 23 | **Vogue Business** | NP | "Inside Syna World, the viral streetwear brand from Central Cee", 30 Oct 2023: https://www.voguebusiness.com/fashion/inside-syna-world-the-viral-streetwear-brand-from-central-cee · Represent womenswear, 29 Jan 2025: https://www.vogue.com/article/represent-is-launching-womenswear-heres-why | SW, C, R | The outlet's published route. Kati Chitrakorn now lists FT and freelance on Muck Rack, so pitch the current bylines through the outlet. | **A drops-as-stock-control case study.** Only viable with real numbers (sell-through, repeat-purchase rate). | 4 | 5 | 1 | 4 | **80** |
-| 24 | **retailboss.co**: "Top 10 Corteiz Competitors And Alternatives" | LG | 4 Feb 2026: https://retailboss.co/top-10-corteiz-competitors-and-alternatives/. **#1 in both search modes** for "Corteiz alternatives". | C (subject), SW #1, T #2, BP #4 | "Submit News" via https://retailboss.co/contact/. The media kit and advertising routes are paid. | A brand-news item, aiming for inclusion when the list is next updated. | 4 | 2 | 2 | 5 | **80** |
-| 25 | **apartstyle.com**: "Brands Like Corteiz" | LG | Updated 15 Aug 2026, Ash Read: https://www.apartstyle.com/post/brands-like-corteiz | C (subject) | https://www.apartstyle.com/contact | **Suggest CROOKSLDN for the next update,** with the heavyweight set as the reason. | 5 | 2 | 2 | 4 | **80** |
-| 26 | **The Tab**: national Guides and News | ST/YC | Corteiz only in passing: festival-stereotypes guide, 20 Jul 2022: https://thetab.com/2022/07/20/the-british-festival-stereotypes-of-2022-a-starter-pack-guide-uk-262793 · Indie clothing-brand precedent, 19 Jun 2026: https://thetab.com/2026/06/19/a-deep-dive-into-lorenzo-from-love-islands-luxury-mens-clothing-brand-selling-185-jeans | C (passing) | tips@thetab.com, decoded from the protected link on https://thetab.com/tips/, so confirm on the page. The /submissions/ form is for students. | **A viral hook,** e.g. a TikTok-style clip of the HydroCuff reacting to rain, or one brand in a Guides trend piece. Also feeds the gift-guide requests in §1.2. | 4 | 3 | 2 | 3 | **72** |
-| 27 | **Sneaker Freaker** | YC | "Everything You Need to Know About Corteiz", 17 Apr 2023: https://www.sneakerfreaker.com/features/everything-you-need-to-know-about-corteiz | C | hello@sneakerfreaker.com for story pitches (https://www.sneakerfreaker.com/contact-us). Based in Australia. | Apparel news on the reactive outerwear. | 3 | 4 | 2 | 3 | **72** |
-| 28 | **fastfashionnews.co.uk**: "A-Z of Best UK Streetwear Brands" | LG | Updated 10 Jan 2025, 93 brands: https://www.fastfashionnews.co.uk/uk-streetwear-brands-a-z/. Affiliate-funded (Awin and Webgains, disclosed). | None of the 8 | The free "Submit a brand" form on the page, or info@fastfashionnews.co.uk. Its "Fashion Advertising" route is paid, so don't use it. | **Free listing request.** It ranks for 3 of the 10 proxy queries. | 4 | 2 | 3 | 3 | **72** |
-| 29 | **FashionBeans**: "10 Best Heavyweight Hoodies In 2026" | LG | 18 Sep 2026: https://www.fashionbeans.com/article/best-heavyweight-hoodies/ (affiliate disclosed). Ranks for "best heavyweight hoodie UK". | None (Represent is in rival roundups) | The editorial contact page. **Not** "Partner with Us" (/partner/), which is commercial. | **Text-only pitch** for the next update, leading on the 550gsm spec, which beats most of the field. A sample would make it realistic, but sample offers are declined as of 16 Oct. | 4 | 4 | 1 | 4 | **64** |
-| 30 | **BBC**: Newsbeat / Culture | NP | "The hype machine: Streetwear and the business of scarcity", 5 Feb 2018: https://www.bbc.com/capital/story/20180205-the-hype-machine-streetwear-and-the-business-of-scarcity · Newsbeat on streetwear rental, 10 Dec 2018: https://bbc.com/news/newsbeat-46474431 | None | BBC's published contact routes | Drop culture from the independent's side. Only as part of a wider youth or economics story. | 3 | 5 | 1 | 4 | **60** |
-| 31 | ⏸ **i-D** (check 07) | YC | "Great Britons", 24 Oct 2024. Credits a Corteiz vest and features Places+Faces staff: https://i-d.co/article/gabriel-moses-slawn-clint419-portfolio-john-glacier-chy-cartier/ | C, PF | Not verified | **Parked: depends on styling loans, and sample offers are declined.** If that changes: loans to UK stylists and photographers for credits. | 3 | 5 | 1 | 4 | **60** |
-| 32 | **Ape to Gentleman**: "Best Heavyweight Hoodie Brands For Men: 2026 Edition" | LG | Titled 2026 but modified 10 Mar 2023. Includes Represent. Tracked links with no disclosure: https://www.apetogentleman.com/the-best-heavyweight-hoodie-brands-for-men/ | R | The editorial contact. Not /advertise/, which is paid. Route not verified. | Text-only pitch for the next real refresh. Low chance without a sample. | 4 | 3 | 1 | 4 | **48** |
-| 33 | **The Sole Supplier**: News | YC | "What Is Corteiz? A Guide…", 24 Jul 2024: https://thesolesupplier.co.uk/news/what-is-corteiz-and-where-to-buy/ (affiliate) | C | General form at https://thesolesupplier.co.uk/contact/. The advertising email is paid. | Low chance. Their explainers follow affiliate stock, and CROOKSLDN only sells on its own site. | 4 | 3 | 1 | 4 | **48** |
-| 34 | ⏸ **GRM Daily**: freestyle and video formats | MU | BBK x Corteiz set (search index only): https://grmdaily.com/skepta-jme-unknown-t-victory-lap-corteiz-set/ | C | Artists and stylists only | **Parked: seeding paused.** If it resumes: wardrobe on freestyle formats. The incarceration-theme risk is sharpest here (§1.4). | 4 | 5 | 1 | 2 | **40** |
-| 35 | **British Vogue** | NP | Central Cee interview, 23 Mar 2023: https://www.vogue.co.uk/arts-and-lifestyle/article/central-cee-interview-2023 (Syna World founder; not brand coverage) | SW (weak) | The outlet's published route | At most a one-line mention of the reactive outerwear. | 2 | 5 | 1 | 4 | **40** |
-| 36 | **The Mancunion** (Manchester): Fashion & Beauty | ST | "In conversation with Ssstock: Manchester streetwear brand", 3 Dec 2021: https://mancunion.com/2021/12/03/in-conversation-with-ssstock-manchester-streetwear-brand/ | UL, C (passing) | The section head and story-tips inbox on https://mancunion.com/contact | A founder Q&A in the Ssstock format. Needs a Manchester or student hook. | 5 | 2 | 2 | 2 | **40** |
-| 37 | **The Tab**: university editions (Warwick, Bournemouth) | ST | Warwick founder Q&A (Unifit), 20 Apr 2021: https://thetab.com/2021/04/20/this-is-warwick-we-interviewed-the-founders-behind-warwicks-new-streetwear-brand-unifit-warwick-38438 · Bournemouth piece mocking Trapstar, 24 May 2023: https://thetab.com/2023/05/24/if-you-wear-any-of-these-five-items-on-bu-campus-then-you-need-to-sort-yourself-out | T (negative) | tips@thetab.com | A founder Q&A, only with a genuine campus link. The "sort yourself out" format carries a ridicule risk. | 3 | 2 | 3 | 2 | **36** |
-| 38 | ⏸ **Mixtape Madness**: music-video write-ups | MU | "Blade Brown + K Trap Sport Exclusive Trapstar Merch In Active 'Xtra Time' Visuals", 29 Mar 2022: https://www.mixtapemadness.com/blog/music/blade-brown-k-trap-sport-exclusive-trapstar-merch-in-active-xtra-time-visuals/ | T | Through artists, managers and stylists. This is wardrobe supply, not paid placement. | **Parked: creator seeding paused (16 Oct).** If it resumes: seed emerging artists, since the write-ups name the brand when it's on camera. | 4 | 4 | 1 | 2 | **32** |
-| 39 | **The Gryphon** (Leeds): Fashion | ST | "Virgil Was Here", 9 Dec 2021 (mentions "small independent brands … such as Corteiz"): https://www.thegryphon.co.uk/2021/12/09/virgil-was-here/ | C | Social only (@thegryphon) | An indie UK label feature for a fashion writer. | 4 | 2 | 2 | 2 | **32** |
-| 40 | **Financial Times**: business | NP | Dr Martens' Kenny Wilson interview, 11 May 2025 (later Represent chair): https://www.ft.com/content/7a5dabde-b4fe-4c01-b5a3-ffc88c67f88b | R (business) | The FT's published route | Park this until there are numbers worth reporting. | 2 | 5 | 1 | 3 | **30** |
-| 41 | ⏸ **Link Up TV**: Behind Barz and "Fashion Drop" | MU | "Link Up Fashion Drop: Jorja Smith's latest music video 'Addicted'", 25 Mar 2021: https://www.linkuptv.co.uk/content/3905/link-up-fashion-drop-jorja-smith-s-latest-music-video-addicted (column dormant since then) | None | Form at /contact | **Parked: seeding paused.** If it resumes: wardrobe for Behind Barz artists, and pitch reviving "what they wore". | 4 | 3 | 1 | 2 | **24** |
-| 42 | ⏸ **Crack Magazine** | MU | "5 stylists on streetwear, heritage and storytelling", 25 Oct 2023 (names Trapstar and Corteiz): https://crackmagazine.net/article/profiles/turning-looks/ | T, C, PF (event) | crack@crackmagazine.net (General). advertising@ is paid. | **Parked: stylist seeding paused.** A weak fit in any case. | 2 | 4 | 1 | 3 | **24** |
-| 43 | **City AM** | NP | "Represent: 'Exceptional' performance hailed…", 24 Sep 2024: https://www.cityam.com/represent-exceptional-performance-hailed-by-clothing-brand-as-sales-surge/ (verified) | R | https://www.cityam.com/tips/ (verified). Avoid the "From our partners" pages, which are sponsored. | A founder and small-business story, only with hard figures. | 2 | 3 | 2 | 2 | **24** |
-| 44 | **The Courier** (Newcastle): Life & Style | ST | "Street-wear: the uprising", 19 Nov 2018: https://www.thecourieronline.co.uk/street-wear-the-uprising/ | None | The Life & Style Editor role on https://www.thecourieronline.co.uk/getinvolved/ | One example in a streetwear explainer. | 3 | 2 | 2 | 2 | **24** |
-| 45 | ⏸ **Varsity** (Cambridge): Fashion | ST | Student-label feature, 28 Dec 2023: https://www.varsity.co.uk/fashion/26720 · Desk active 16 Oct 2026: https://www.varsity.co.uk/fashion/32218 | None | The Fashion Editors' role inboxes on https://www.varsity.co.uk/contact-us. Avoid the /sponsored/ section. | **Parked: depends on lending samples for a shoot.** Avoid the /sponsored/ section. | 3 | 3 | 1 | 2 | **18** |
-| 46 | **Redbrick** (Birmingham): Life&Style | ST | "Spotlight On: Burberry x Marcus Rashford", 18 Nov 2020: https://www.redbrick.me/spotlight-on-burberry-x-marcus-rashford/ | None | lifestyle@redbrickonline.co.uk (https://www.redbrick.me/contact) | A "Spotlight On" brand piece. Low priority. | 2 | 2 | 2 | 2 | **16** |
-| 47 | **Glasgow Guardian**: Lifestyle | ST | "Balaclavas: coveted and cosy, or criminal accessory?", 9 Feb 2022: https://archive.glasgowguardian.co.uk/2022/02/09/balaclavas-coveted-and-cosy-or-criminal-accessory/ | None | https://glasgowguardian.co.uk/contact/ | Expect critical framing of the heist and incarceration identity. Only pitch it if you're ready for that debate. | 2 | 2 | 2 | 2 | **16** |
+| # | Outlet / desk | Seg | In 07 | Evidence (title, date, URL) | Peers | Pitch route | Angle | R | A | L | G | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Mixtape Madness**: News and /blog/fashion/ | MU | **new** | "Broken Planet Share Latest Collection 'Luv Day Basics'", 18 Feb 2025, Harvey Marwood: https://www.mixtapemadness.com/blog/news/broken-planet-share-latest-collection-luv-day-basics/ · "Corteiz's First Ever Festival Collab…", 30 Jun 2026: https://www.mixtapemadness.com/blog/news/corteizs-first-ever-festival-collab-will-take-place-at-yardland-paris-this-weekend/ · Bape x SYNA World, 23 Sep 2025: https://www.mixtapemadness.com/blog/news/central-cee-named-creative-director-for-bape-x-syna-world-collection/ | BP (about 15 drop stories), C, SW, T | info@mixtapemadness.com (General). The same inbox handles Marketing, so say you're offering news, not buying space. Verified on https://www.mixtapemadness.com/contact-us | **Drop-day news release** before the drop: the Convict 550gsm set, lookbook, prices, drop time and run size. It's the same format they use for every Broken Planet drop. | 5 | 4 | 4 | 4 | **320** |
+| 2 | **Complex UK**: "JP's UK Culture Picks" (monthly column) | MU | A004 (merged) | "JP's UK Culture Picks: June 2026", 10 Jun 2026, Joseph "JP" Patterson. It leads on Trapstar and discusses Corteiz: https://www.complex.com/music/a/joseph-jp-patterson/jps-uk-culture-picks-june-2026 | T, C | The general route at https://uk.complex.com/contact. There is no UK desk inbox. | **Brand pick for the column.** An independent UK label with a heist identity, carrying on the storytelling tradition the column credits Trapstar with. Designed in-house. If sourcing comes up, say it's made in China. | 5 | 5 | 3 | 4 | **300** |
+| 3 | **Complex UK**: Style | MU | A004 | "Broken Planet Spotlights Signature Style With 'Out Of Service' Capsule", 30 Jan 2024, Sanj Patel: https://www.complex.com/style/a/sanj-patel/broken-planet-out-of-service-capsule · "Unknown's SS23 Campaign…", 28 Apr 2023: https://www.complex.com/style/unknown-ss23-cairo-campaign · "Streetwear Power Ranking: The 2026 Edition", 28 May 2026: https://www.complex.com/style/a/mike-destefano/streetwear-power-ranking-2026-edition | BP, UL, C, T | As in the JP's UK Culture Picks row | **Reactive outerwear as a product-tech story:** the HydroCuff reacts to water and the Double-Agent changes with heat. It only works with a 10–15 second demo clip. | 5 | 5 | 2 | 5 | **250** |
+| 4 | **British GQ**: style / sneakers (Adam Cheung's bylines) | NP | A055 | "The Corteiz x Nike Air Max 95 is the unlikeliest collab…" (2023): https://www.gq-magazine.co.uk/fashion/article/corteiz-nike-air-max-95-collab-2023 · "With the Represent x Puma Speedcat OG 'Wolf Grey'…", 28 Aug 2025: https://www.gq-magazine.co.uk/article/with-the-represent-x-puma-speedcat-og-wolf-grey-they-were-very-careful-not-to-ruin-an-icon (bylines taken from Wikipedia citations; the site blocked fetching) | C, R | British GQ's published contact route. The writer's public professional Instagram is listed by Diary Directory: https://www.diarydirectory.com/newsarticle/british-gqs-style-writer-open-to-freelance-commissions/66009 | **Product news:** the HydroCuff and Double-Agent demo plus the drop date. Secondary: the Convict set for GQ's hoodie and tracksuit shopping pages. | 5 | 5 | 2 | 5 | **250** |
+| 5 | **The Independent**: IndyBest (tested roundups) | NP | **new** (07 gap) | "9 best hoodies for men that are perfect for everyday wear", 23 Jun 2022, Richard Jones, IndyBest. It has a "how we tested" section and was read via the syndicated copy: https://uk.news.yahoo.com/10-best-hoodies-men-brands-050000792.html | None (evergreen roundup) | The IndyBest desk via The Independent's published contact route. independent.co.uk blocked fetching, so check the page by hand. | **Text-only pitch** for the best hoodies, joggers and tracksuit updates: the 550gsm 100% cotton spec, price, images and an in-stock link. IndyBest tests products, so this only really converts if George reverses the 16 Oct "no sample offers" decision. Keep one core Convict colourway in stock permanently, because evergreen roundups lose sold-out links. | 5 | 4 | 2 | 5 | **200** |
+| 6 | **Trench**: Style, News, Features | MU | **new** | "Corteiz Don't Play By The Rules", 9 Feb 2022: https://trenchtrenchtrench.com/features/corteiz-who-rules-the-world · "How 'P+F Sounds' By PLACES+FACES Captured…", 18 Oct 2022: https://trenchtrenchtrench.com/features/how-p-and-f-sounds-by-places-plus-faces-captured-the-heart-of-young-london · Small-label precedent: DFND London, 20 Jun 2024: https://trenchtrenchtrench.com/news/dfnd-london-reveals-first-streetwear-collection-under-new-art-direction | C, PF | editorial@trenchtrenchtrench.com for content enquiries. Verified on https://trenchtrenchtrench.com/about. advertising@ is paid. | **Collection-launch news** in the DFND format, tied to British heist-film visual language. | 5 | 3 | 4 | 3 | **180** |
+| 7 | **GUAP**: culture and fashion (now on Substack) | MU/YC | A025 | "The Best British Streetwear Brands Of 2022", 17 Jan 2023: https://www.guap.co/p/the-best-british-streetwear-brands-of-2022 · "Corteiz: The Pied Piper of Bolo Jackets", 1 Feb 2022: https://www.guap.co/p/corteiz-the-pied-piper-of-bolo-jackets · Small-label format: "Get to know streetwear brand CoSignedByGod": https://www.guap.co/p/get-to-know-streetwear-brand-cosignedbygod | C, PF, T | contact@guap.co.uk (https://www.guap.co/about). The listicle itself says "Tweet us @guapmag". | **Ask for a place in the next "best British streetwear brands" list**, plus a "Get to know" founder profile. The listicle ranks for 3 of the 10 proxy queries. | 5 | 3 | 3 | 4 | **180** |
+| 8 | **Hunger**: Editorial | YC | **new** (07 gap) | "Looking for your next cop? Corteiz, Clints and Asics…", 9 Aug 2023: https://hungermag.com/editorial/looking-for-your-next-cop-corteiz-clints-and-asics-are-all-topping-sneakerheads-wishlists · It also runs "emerging brands to have on your radar" roundups. | C | editorial@rankin.co.uk, listed for "Pitches and submissions". Verified on https://hungermag.com/contact | **Emerging British labels roundup.** Lead with short reactive-outerwear video, then the 550gsm Convict set and George as designer-owner running short-run drops. | 5 | 4 | 3 | 3 | **180** |
+| 9 | **The Guardian**: fashion desk | NP | **new** (07 gap) | "Why was Virgil Abloh such a revolutionary fashion designer?", 29 Nov 2021, Priya Elan: https://www.theguardian.com/fashion/2021/nov/29/virgil-abloh-black-fashion-designer-artist. Weaker evidence: no peer coverage found because the site blocks fetching. | None | The Guardian's published contact route. Couldn't be checked. | **"Clothes that change when wet or warm" trend item.** Don't lead with the incarceration theme here. | 3 | 5 | 2 | 5 | **150** |
+| 10 | **backwardfashion.com**: "Top 10 UK Streetwear Brands in 2026" | LG | A006 | Published 30 Nov 2025, modified 6 Feb 2026, Zac Rubi. Its "Up and Coming Brands to Check Out" section is for brands "under 100,000 followers on Instagram": https://backwardfashion.com/streetwear/top-10-uk-brands/ | C, SW, R, BP, UL, T | https://backwardfashion.com/contact/ (there's no submission form) | **Pitch for the Up and Coming slot.** Give a two-line description, the core products and an image link. It showed up for **6 of the 10** proxy queries, the most of any page. | 5 | 2 | 3 | 5 | **150** |
+| 11 | **Clash**: Fashion | MU | A040 | "Trapstar and Ed Hardy Embark On A Cross-Cultural Exchange…", 9 Oct 2024, Sabrina Soormally: https://www.clashmusic.com/fashion/trapstar-and-ed-hardy-embark-on-a-cross-cultural-exchange-for-their-debut-collection/ · "Central Cee Designs Debut Collection For Nike and Syna World", 24 Oct 2024: https://www.clashmusic.com/fashion/central-cee-designs-debut-collection-for-nike-and-syna-world/ · BBK x Corteiz, 30 Jul 2025: https://www.clashmusic.com/news/boy-better-know-link-with-corteiz-for-20th-anniversary-freestyle/ | T, SW, C | The Fashion Editor (Sabrina Soormally) and Fashion Director (Harry Clements) are listed with addresses on https://www.clashmusic.com/contact-clash/. press@clashmusic.com is the general press route. advertising@ is paid, so don't use it. | **Reactive outerwear tech story** built on a demo clip. An artist tie-in (e.g. the HydroCuff in the rain at a live session) would raise the odds, but it depends on seeding, which is paused. | 4 | 4 | 2 | 4 | **128** |
+| 12 | **discobrands.co**: "brands like Trapstar" and others | LG | A001 | "18 Brands like Trapstar", updated Jul 2026: https://www.discobrands.co/blogs/18-brands-like-trapstar. The page discloses affiliate links. | T (subject), UL, BP | https://www.discobrands.co/submit. Verified: "No payment required", "Approved listings are always free", reviewed by hand in 5–7 days. Needs a 150–250 character description. | **Free directory listing. Already approved by George on 16 Oct and owned by the outreach workstream (07), so it's not a new target here.** Its "brands like" pages rank for Trapstar queries. | 4 | 2 | 4 | 4 | **128** |
+| 13 | **Rolling Stone UK**: Style | MU | **new** | "Avenged Sevenfold just made gym merch metal with 247" (Represent 247), 20 Aug 2026, Joshua Graham: https://www.rollingstone.co.uk/style/avenged-sevenfold-247-represent-collabroation-63739/ | R | The staff email convention and editor names are on https://www.rollingstone.co.uk/about-rolling-stone-uk/. It says written content is never paid unless marked sponsored. | **A slot in the AW26 "things we're buying" style edits** for the Double-Agent Puffa. | 3 | 5 | 2 | 4 | **120** |
+| 14 | **GRM Daily**: News | MU | **new** (07 gap) | Search index only, since the pages are blocked from here: "GRM Exclusive: Junior Clint Talks 'Clints Festival', Fashion From A Business Perspective…": https://grmdaily.com/junior-clint-interview/ · Corteiz "Great Bolo Exchange": https://grmdaily.com/corteiz-great-bolo-exchange-donate-coats/ · Puma x Trapstar: https://grmdaily.com/puma-announces-teaser-collection-with-trapstar/ · **Archive offline on 18 Oct 2026** (holding page). | T, C | **Checked 18 Oct: grmdaily.com is a "New website coming soon" holding page.** Every article URL, including the evidence above, shows it. The only route on it is info@grmdaily.com (general). The BiG! Agency runs GRM's commercial side, so treat any "partnership" or "premiere" offer as **paid**. | **Founder Q&A on the business of independent fashion**, the same format as the Junior Clint interview. | 5 | 5 | 2 | 2 | **100** |
+| 15 | **Highsnobiety** | YC | A015, A024, A034 | "Broken Planet Returns With New Gear for SS23", 30 Jan 2023, Sam Cole: https://www.highsnobiety.com/p/broken-planet-ss23-drop/ | BP | No editorial inbox is published, and sales@ is commercial. Use the writer's public professional channels. | Product news on the HydroCuff, with proof the effect works. | 4 | 5 | 1 | 5 | **100** |
+| 16 | **Hypebeast** | YC | A032, A145 | Trapstar tag. Latest: "Trapstar Revives Its 'Red Line' Range…", 24 Sep 2025: https://hypebeast.com/tags/trapstar | T | Not verified (fetching blocked) | A drop-news submission for the reactive outerwear. | 4 | 5 | 1 | 5 | **100** |
+| 17 | **Notion**: Fashion | YC/MU | **new** (07 gap) | "Corteiz And Nike Announce Forthcoming Collaboration", 20 Jan 2023: https://notion.online/corteiz-nike-collaboration/ · "Style: Havana Club x PLACES+FACES", 16 Jul 2019: https://notion.online/style-havana-club-x-placesfaces/ · The section is active: "Add To Cart: Fashion Month SS27", 8 Oct 2026: https://notion.online/add-to-cart-fashion-month-ss27/ | C, PF | uk@notion.online for UK editorial (https://notion.online/contact/). The advertising contact is paid. | **Text-only pitch for an "Add To Cart" edit,** with the HydroCuff or Double-Agent as an AW pick (product images and price). | 4 | 4 | 2 | 3 | **96** |
+| 18 | **Evening Standard**: fashion / new-label profiles | NP | **new** (07 gap) | "TOVE: the style set's new It label", Chloe Street, about 30 Mar 2023 (read via the licensed inkl copy): https://www.inkl.com/news/tove-the-style-set-s-new-it-label. Weaker evidence. | None | The Standard's published contact route. Couldn't be checked. | **Independent British label profile.** **Caveat:** these pieces lean towards London labels, and CROOKSLDN must not be described as being from London. Pitch "independent British" or skip. | 3 | 4 | 2 | 4 | **96** |
+| 19 | **Link Up TV**: News | MU | **new** (07 gap) | No peer coverage. Small-label precedent: "Beautifully Said Drops 'Fundamentals' Collection", 16 Feb 2025: https://www.linkuptv.co.uk/content/5530/beautifully-said-drops-fundamentals-collection | None | Form at https://www.linkuptv.co.uk/contact. Confirm there's no fee before sending. | **Collection-launch press release.** Their fashion news runs close to the release text. | 4 | 3 | 4 | 2 | **96** |
+| 20 | **streetwear.directory**: "Brands Like Corteiz" | LG | A003 | "Last verified 9 Oct 2026": https://streetwear.directory/brands/brands-like-corteiz (P+F #1, Represent #3) | C (subject), PF, R | https://streetwear.directory/join ("Add a Brand"). **Pricing isn't stated, so confirm it's free before submitting.** | **Directory listing. Already approved by George on 16 Oct and owned by the outreach workstream (07), so it's not a new target here.** The page ranks for "Corteiz alternatives"; confirm there's no fee. | 4 | 2 | 3 | 4 | **96** |
+| 21 | **Shift London** (London College of Fashion students): Fashion | ST | A109 (newsletter only; adds the site's editor route) | "Don't die for Corteiz, be like them", 20 Apr 2023, Shania Charles: https://www.shiftlondon.org/fashion/dont-die-for-corteiz-be-like-them/ (verified) | C, T | editor@shiftlondon.org (verified on the page) | **George as a working example of their "build an underground brand" theme:** heist identity, short-run drops, and being upfront about designing in-house and making in China. | 5 | 2 | 4 | 2 | **80** |
+| 22 | **Dazed**: Fashion | YC | A188 | "Supreme officially teases upcoming Corteiz collaboration", 19 Dec 2023: https://www.dazeddigital.com/fashion/article/61621/1/supreme-corteiz-collaboration-clint-billboard | C, T | There's no desk inbox. https://www.dazeddigital.com/contact points freelancers to its pitching guide. pr@ and partnerships@ are not editorial routes. | One example within a freelancer's trend pitch, e.g. heist and lockup codes in UK streetwear, or colour-changing outerwear. | 4 | 5 | 1 | 4 | **80** |
+| 23 | **Vogue Business** | NP | A056 | "Inside Syna World, the viral streetwear brand from Central Cee", 30 Oct 2023: https://www.voguebusiness.com/fashion/inside-syna-world-the-viral-streetwear-brand-from-central-cee · Represent womenswear, 29 Jan 2025: https://www.vogue.com/article/represent-is-launching-womenswear-heres-why | SW, C, R | The outlet's published route. Kati Chitrakorn now lists FT and freelance on Muck Rack, so pitch the current bylines through the outlet. | **A drops-as-stock-control case study.** Only viable with real numbers (sell-through, repeat-purchase rate). | 4 | 5 | 1 | 4 | **80** |
+| 24 | **retailboss.co**: "Top 10 Corteiz Competitors And Alternatives" | LG | A008 | 4 Feb 2026: https://retailboss.co/top-10-corteiz-competitors-and-alternatives/. **#1 in both search modes** for "Corteiz alternatives". | C (subject), SW #1, T #2, BP #4 | "Submit News" via https://retailboss.co/contact/. The media kit and advertising routes are paid. | A brand-news item, aiming for inclusion when the list is next updated. | 4 | 2 | 2 | 5 | **80** |
+| 25 | **apartstyle.com**: "Brands Like Corteiz" | LG | A020 | Updated 15 Aug 2026, Ash Read: https://www.apartstyle.com/post/brands-like-corteiz | C (subject) | https://www.apartstyle.com/contact | **Suggest CROOKSLDN for the next update,** with the heavyweight set as the reason. | 5 | 2 | 2 | 4 | **80** |
+| 26 | **The Tab**: national Guides and News | ST/YC | A211 | Corteiz only in passing: festival-stereotypes guide, 20 Jul 2022: https://thetab.com/2022/07/20/the-british-festival-stereotypes-of-2022-a-starter-pack-guide-uk-262793 · Indie clothing-brand precedent, 19 Jun 2026: https://thetab.com/2026/06/19/a-deep-dive-into-lorenzo-from-love-islands-luxury-mens-clothing-brand-selling-185-jeans | C (passing) | tips@thetab.com (verified on https://thetab.com/tips/, 18 Oct 2026). General contact: https://thetab.com/contact/. The /submissions/ form is for students. | **A viral hook,** e.g. a TikTok-style clip of the HydroCuff reacting to rain, or one brand in a Guides trend piece. Also feeds the gift-guide requests in §1.2. | 4 | 3 | 2 | 3 | **72** |
+| 27 | **Sneaker Freaker** | YC | A019 | "Everything You Need to Know About Corteiz", 17 Apr 2023: https://www.sneakerfreaker.com/features/everything-you-need-to-know-about-corteiz | C | hello@sneakerfreaker.com for story pitches (https://www.sneakerfreaker.com/contact-us). Based in Australia. | Apparel news on the reactive outerwear. | 3 | 4 | 2 | 3 | **72** |
+| 28 | **fastfashionnews.co.uk**: "A-Z of Best UK Streetwear Brands" | LG | **new** | Updated 10 Jan 2025, 93 brands: https://www.fastfashionnews.co.uk/uk-streetwear-brands-a-z/. Affiliate-funded (Awin and Webgains, disclosed). | None of the 8 | The free "Submit a brand" form on the page, or info@fastfashionnews.co.uk. Its "Fashion Advertising" route is paid, so don't use it. | **Free listing request.** It ranks for 3 of the 10 proxy queries. | 4 | 2 | 3 | 3 | **72** |
+| 29 | **FashionBeans**: "10 Best Heavyweight Hoodies In 2026" | LG | A005 | 18 Sep 2026: https://www.fashionbeans.com/article/best-heavyweight-hoodies/ (affiliate disclosed). Ranks for "best heavyweight hoodie UK". | None (Represent is in rival roundups) | The editorial contact page. **Not** "Partner with Us" (/partner/), which is commercial. | **Text-only pitch** for the next update, leading on the 550gsm spec, which beats most of the field. A sample would make it realistic, but sample offers are declined as of 16 Oct. | 4 | 4 | 1 | 4 | **64** |
+| 30 | **BBC**: Newsbeat / Culture | NP | **new** (07 gap) | "The hype machine: Streetwear and the business of scarcity", 5 Feb 2018: https://www.bbc.com/capital/story/20180205-the-hype-machine-streetwear-and-the-business-of-scarcity · Newsbeat on streetwear rental, 10 Dec 2018: https://bbc.com/news/newsbeat-46474431 | None | BBC's published contact routes | Drop culture from the independent's side. Only as part of a wider youth or economics story. | 3 | 5 | 1 | 4 | **60** |
+| 31 | ⏸ **i-D** | YC | A033 | "Great Britons", 24 Oct 2024. Credits a Corteiz vest and features Places+Faces staff: https://i-d.co/article/gabriel-moses-slawn-clint419-portfolio-john-glacier-chy-cartier/ | C, PF | Not verified | **Parked: depends on styling loans, and sample offers are declined.** If that changes: loans to UK stylists and photographers for credits. | 3 | 5 | 1 | 4 | **60** |
+| 32 | **Ape to Gentleman**: "Best Heavyweight Hoodie Brands For Men: 2026 Edition" | LG | A007 | Titled 2026 but modified 10 Mar 2023. Includes Represent. Tracked links with no disclosure: https://www.apetogentleman.com/the-best-heavyweight-hoodie-brands-for-men/ | R | The editorial contact. Not /advertise/, which is paid. Route not verified. | Text-only pitch for the next real refresh. Low chance without a sample. | 4 | 3 | 1 | 4 | **48** |
+| 33 | **The Sole Supplier**: News | YC | A027 | "What Is Corteiz? A Guide…", 24 Jul 2024: https://thesolesupplier.co.uk/news/what-is-corteiz-and-where-to-buy/ (affiliate) | C | General form at https://thesolesupplier.co.uk/contact/. The advertising email is paid. | Low chance. Their explainers follow affiliate stock, and CROOKSLDN only sells on its own site. | 4 | 3 | 1 | 4 | **48** |
+| 34 | ⏸ **GRM Daily**: freestyle and video formats | MU | **new** | BBK x Corteiz set (search index only): https://grmdaily.com/skepta-jme-unknown-t-victory-lap-corteiz-set/ | C | Artists and stylists only | **Parked: seeding paused.** If it resumes: wardrobe on freestyle formats. The incarceration-theme risk is sharpest here (§1.4). | 4 | 5 | 1 | 2 | **40** |
+| 35 | **British Vogue** | NP | A056 (merged) | Central Cee interview, 23 Mar 2023: https://www.vogue.co.uk/arts-and-lifestyle/article/central-cee-interview-2023 (Syna World founder; not brand coverage) | SW (weak) | The outlet's published route | At most a one-line mention of the reactive outerwear. | 2 | 5 | 1 | 4 | **40** |
+| 36 | **The Mancunion** (Manchester): Fashion & Beauty | ST | A022 (adds 2021 brand Q&A and desk route) | "In conversation with Ssstock: Manchester streetwear brand", 3 Dec 2021: https://mancunion.com/2021/12/03/in-conversation-with-ssstock-manchester-streetwear-brand/ | UL, C (passing) | The section head and story-tips inbox on https://mancunion.com/contact | A founder Q&A in the Ssstock format. Needs a Manchester or student hook. | 5 | 2 | 2 | 2 | **40** |
+| 37 | **The Tab**: university editions (Warwick, Bournemouth) | ST | A211 | Warwick founder Q&A (Unifit), 20 Apr 2021: https://thetab.com/2021/04/20/this-is-warwick-we-interviewed-the-founders-behind-warwicks-new-streetwear-brand-unifit-warwick-38438 · Bournemouth piece mocking Trapstar, 24 May 2023: https://thetab.com/2023/05/24/if-you-wear-any-of-these-five-items-on-bu-campus-then-you-need-to-sort-yourself-out | T (negative) | tips@thetab.com (verified 18 Oct 2026) | A founder Q&A, only with a genuine campus link. The "sort yourself out" format carries a ridicule risk. | 3 | 2 | 3 | 2 | **36** |
+| 38 | ⏸ **Mixtape Madness**: music-video write-ups | MU | **new** | "Blade Brown + K Trap Sport Exclusive Trapstar Merch In Active 'Xtra Time' Visuals", 29 Mar 2022: https://www.mixtapemadness.com/blog/music/blade-brown-k-trap-sport-exclusive-trapstar-merch-in-active-xtra-time-visuals/ | T | Through artists, managers and stylists. This is wardrobe supply, not paid placement. | **Parked: creator seeding paused (16 Oct).** If it resumes: seed emerging artists, since the write-ups name the brand when it's on camera. | 4 | 4 | 1 | 2 | **32** |
+| 39 | **The Gryphon** (Leeds): Fashion | ST | **new** | "Virgil Was Here", 9 Dec 2021 (mentions "small independent brands … such as Corteiz"): https://www.thegryphon.co.uk/2021/12/09/virgil-was-here/ | C | Social only (@thegryphon) | An indie UK label feature for a fashion writer. | 4 | 2 | 2 | 2 | **32** |
+| 40 | **Financial Times**: business | NP | **new** | Dr Martens' Kenny Wilson interview, 11 May 2025 (later Represent chair): https://www.ft.com/content/7a5dabde-b4fe-4c01-b5a3-ffc88c67f88b | R (business) | The FT's published route | Park this until there are numbers worth reporting. | 2 | 5 | 1 | 3 | **30** |
+| 41 | ⏸ **Link Up TV**: Behind Barz and "Fashion Drop" | MU | **new** | "Link Up Fashion Drop: Jorja Smith's latest music video 'Addicted'", 25 Mar 2021: https://www.linkuptv.co.uk/content/3905/link-up-fashion-drop-jorja-smith-s-latest-music-video-addicted (column dormant since then) | None | Form at /contact | **Parked: seeding paused.** If it resumes: wardrobe for Behind Barz artists, and pitch reviving "what they wore". | 4 | 3 | 1 | 2 | **24** |
+| 42 | ⏸ **Crack Magazine** | MU | **new** (07 gap) | "5 stylists on streetwear, heritage and storytelling", 25 Oct 2023 (names Trapstar and Corteiz): https://crackmagazine.net/article/profiles/turning-looks/ | T, C, PF (event) | crack@crackmagazine.net (General). advertising@ is paid. | **Parked: stylist seeding paused.** A weak fit in any case. | 2 | 4 | 1 | 3 | **24** |
+| 43 | **City AM** | NP | A062 | "Represent: 'Exceptional' performance hailed…", 24 Sep 2024: https://www.cityam.com/represent-exceptional-performance-hailed-by-clothing-brand-as-sales-surge/ (verified) | R | https://www.cityam.com/tips/ (verified). Avoid the "From our partners" pages, which are sponsored. | A founder and small-business story, only with hard figures. | 2 | 3 | 2 | 2 | **24** |
+| 44 | **The Courier** (Newcastle): Life & Style | ST | **new** | "Street-wear: the uprising", 19 Nov 2018: https://www.thecourieronline.co.uk/street-wear-the-uprising/ | None | The Life & Style Editor role on https://www.thecourieronline.co.uk/getinvolved/ | One example in a streetwear explainer. | 3 | 2 | 2 | 2 | **24** |
+| 45 | ⏸ **Varsity** (Cambridge): Fashion | ST | A214 | Student-label feature, 28 Dec 2023: https://www.varsity.co.uk/fashion/26720 · Desk active 16 Oct 2026: https://www.varsity.co.uk/fashion/32218 | None | The Fashion Editors' role inboxes on https://www.varsity.co.uk/contact-us. Avoid the /sponsored/ section. | **Parked: depends on lending samples for a shoot.** Avoid the /sponsored/ section. | 3 | 3 | 1 | 2 | **18** |
+| 46 | **Redbrick** (Birmingham): Life&Style | ST | **new** | "Spotlight On: Burberry x Marcus Rashford", 18 Nov 2020: https://www.redbrick.me/spotlight-on-burberry-x-marcus-rashford/ | None | lifestyle@redbrickonline.co.uk (https://www.redbrick.me/contact) | A "Spotlight On" brand piece. Low priority. | 2 | 2 | 2 | 2 | **16** |
+| 47 | **Glasgow Guardian**: Lifestyle | ST | **new** | "Balaclavas: coveted and cosy, or criminal accessory?", 9 Feb 2022: https://archive.glasgowguardian.co.uk/2022/02/09/balaclavas-coveted-and-cosy-or-criminal-accessory/ | None | https://glasgowguardian.co.uk/contact/ | Expect critical framing of the heist and incarceration identity. Only pitch it if you're ready for that debate. | 2 | 2 | 2 | 2 | **16** |
 
 ### 1.2 Journalist-request platforms
 
@@ -264,7 +265,7 @@ All statuses and prices were checked on the platforms' own pages on 16 Oct 2026.
   - "CROOKSLDN (UK)" in the subject line, to avoid confusion with Crooks & Castles.
 - **Carsicko is a coverage gap.** No outlet I could search had covered it.
 - **Bylines that have moved:**
-  - JP Patterson, who wrote Vice's 2013 Trapstar profile, now writes the Complex UK column in row 2.
+  - JP Patterson, who wrote Vice's 2013 Trapstar profile, now writes the Complex UK column in §1.1 ("JP's UK Culture Picks").
   - Kati Chitrakorn, who wrote the Vogue Business Corteiz and Syna pieces, now lists FT and freelance.
 - **Trade press lead outside this brief:** Drapers 30 Under 30 has featured Clint of Corteiz (2024) and Represent's founder. It's a strong authority target if George is eligible: https://www.drapersonline.com/people/30-under-30-2024/drapers-30-under-30-2024-clint-ogbenna-founder-corteiz
 
@@ -273,6 +274,13 @@ All statuses and prices were checked on the platforms' own pages on 16 Oct 2026.
 ## 2. Trustpilot
 
 ### 2.1 Live snapshot
+
+**Update, 18 Oct 2026 evening (`cowork/trustpilot`):**
+- The display name is now **CROOKSLDN**, and the description and address have been replaced.
+- All 12 unanswered low-star reviews have a reply.
+- The profile still shows 4.2 from 80 reviews.
+
+The snapshot below is the 16 Oct state.
 
 Read in Chrome on 16 Oct 2026 from https://uk.trustpilot.com/review/crooksldn.com. Re-checked 18 Oct 2026: nothing has changed. It's still 80 reviews with the same 21 at 1–3★, no new replies, and the display name is still "Crooks ldn".
 
@@ -287,41 +295,41 @@ Read in Chrome on 16 Oct 2026 from https://uk.trustpilot.com/review/crooksldn.co
 
 ### 2.2 The 21 public reviews at 1–3 stars
 
-Names are shown as the reviewers display them. Reviews are paraphrased.
+Reviewer names are left out (public repo, decision #16). Reviews are paraphrased. The 12 "No" rows were all answered on 18 Oct.
 
-| Posted | ★ | Reviewer | Verified | What they say | Tags | Replied? |
-|---|---|---|---|---|---|---|
-| 30 Jul 2026 | 1 | Mason | No | Waiting more than 3 months, no response | Delivery, Comms | **No** |
-| 26 Jul 2026 | 1 | Tors | No | May pre-order due mid-June, not received; email and DMs ignored | Delivery (pre-order), Comms | **No** |
-| 7 Jun 2026 | 1 | Ebru | No | 6 weeks against a 2-week estimate; only an automated reply | Delivery, Comms | **No** |
-| 20 May 2026 | 1 | Lucy | No | Nothing arrived, no response | Delivery, Comms | **No** |
-| 15 May 2026 | 3 | Ike Poke | No | Quality "really nice"; ordered 14 Feb, arrived 14 Mar; slow email replies | Delivery, Comms (quality positive) | **No** |
-| 14 Mar 2026 | 1 | Dilwyn Howells | Yes | Not a pre-order, never received; emails unanswered | Delivery, Comms | **No** |
-| 10 Mar 2026 | 2 | Marcel Brozek | Yes | Delivery and contact both bad | Delivery, Comms | **No** |
-| 7 Mar 2026 | 1 | K Turner | Yes | Jacket ordered Dec 2025; told it had shipped, then that it hadn't; then given an August 2026 date | Delivery, Comms (mixed messages) | **No** |
-| 6 Mar 2026 | 1 | Yanhao Cai | Yes | Never received; owner rarely replies | Delivery, Comms | **No** |
-| 5 Mar 2026 | 1 | anonymous | Yes | No order after more than 2 months | Delivery | **No** |
-| 2 Mar 2026 | 1 | Jonas Kalasinskas | Yes | Took 3 months to arrive (Lithuania) | Delivery | **No** |
-| 27 Feb 2026 | 1 | Sarah Eagles | No | Puffer for her son ordered in December, not arrived; several support emails unanswered | Delivery, Comms | **No** |
-| 12 Feb 2026 | 1 | Leanne Toms | No | Item listed as "in hand", ordered 31 Dec, nothing received; contacted her card company | Delivery, Comms, Chargeback | Yes, 12 Feb |
-| 10 Feb 2026 | 1 | Emma (updated) | No | NYE hoodie not received; order email gave no dates; says the brand tried to remove her review | Delivery, Comms, review integrity | Yes, 10 Feb |
-| 7 Feb 2026 | 1 | serena Cornell | No | Puffer more than a month late; DMs and email got about two replies, neither about the order | Delivery (pre-order), Comms | Yes, 8 Feb (£10 store credit) |
-| 3 Feb 2026 | 1 | M Gibbon | No | Shifting delivery dates; refund requests unanswered; reported to bank | Delivery, Comms, Refund | Yes, 6 Feb |
-| 2 Feb 2026 | 1 | Vesna Sipp | No | "Scam", no details | none | Yes, 6 Feb |
-| 31 Jan 2026 | 1 | Josh | No | Nothing after 1 month, no answer | Delivery, Comms | Yes, 6 Feb |
-| 13 Jan 2026 | 1 | Emma | No | No communication, nothing sent | Delivery, Comms | Yes, 6 Feb |
-| 12 Jan 2026 | 1 | Abigail | No | Bundle: poster arrived, clothing didn't; no reply. Reply says there was an address problem. | Delivery (partial), Comms | Yes, 6 Feb |
-| 14 Dec 2025 | 1 | Peta Clohosey | No | Not delivered after 3 weeks; no response | Delivery, Comms | Yes, 6 Feb |
+| Posted | ★ | Verified | What they say | Tags | Replied? |
+|---|---|---|---|---|---|
+| 30 Jul 2026 | 1 | No | Waiting more than 3 months, no response | Delivery, Comms | **No** |
+| 26 Jul 2026 | 1 | No | May pre-order due mid-June, not received; email and DMs ignored | Delivery (pre-order), Comms | **No** |
+| 7 Jun 2026 | 1 | No | 6 weeks against a 2-week estimate; only an automated reply | Delivery, Comms | **No** |
+| 20 May 2026 | 1 | No | Nothing arrived, no response | Delivery, Comms | **No** |
+| 15 May 2026 | 3 | No | Quality "really nice"; ordered 14 Feb, arrived 14 Mar; slow email replies | Delivery, Comms (quality positive) | **No** |
+| 14 Mar 2026 | 1 | Yes | Not a pre-order, never received; emails unanswered | Delivery, Comms | **No** |
+| 10 Mar 2026 | 2 | Yes | Delivery and contact both bad | Delivery, Comms | **No** |
+| 7 Mar 2026 | 1 | Yes | Jacket ordered Dec 2025; told it had shipped, then that it hadn't; then given an August 2026 date | Delivery, Comms (mixed messages) | **No** |
+| 6 Mar 2026 | 1 | Yes | Never received; owner rarely replies | Delivery, Comms | **No** |
+| 5 Mar 2026 | 1 | Yes | No order after more than 2 months | Delivery | **No** |
+| 2 Mar 2026 | 1 | Yes | Took 3 months to arrive (Lithuania) | Delivery | **No** |
+| 27 Feb 2026 | 1 | No | Puffer for her son ordered in December, not arrived; several support emails unanswered | Delivery, Comms | **No** |
+| 12 Feb 2026 | 1 | No | Item listed as "in hand", ordered 31 Dec, nothing received; contacted her card company | Delivery, Comms, Chargeback | Yes, 12 Feb |
+| 10 Feb 2026 | 1 | No | NYE hoodie not received; order email gave no dates; says the brand tried to remove her review | Delivery, Comms, review integrity | Yes, 10 Feb |
+| 7 Feb 2026 | 1 | No | Puffer more than a month late; DMs and email got about two replies, neither about the order | Delivery (pre-order), Comms | Yes, 8 Feb (£10 store credit) |
+| 3 Feb 2026 | 1 | No | Shifting delivery dates; refund requests unanswered; reported to bank | Delivery, Comms, Refund | Yes, 6 Feb |
+| 2 Feb 2026 | 1 | No | "Scam", no details | none | Yes, 6 Feb |
+| 31 Jan 2026 | 1 | No | Nothing after 1 month, no answer | Delivery, Comms | Yes, 6 Feb |
+| 13 Jan 2026 | 1 | No | No communication, nothing sent | Delivery, Comms | Yes, 6 Feb |
+| 12 Jan 2026 | 1 | No | Bundle: poster arrived, clothing didn't; no reply. Reply says there was an address problem. | Delivery (partial), Comms | Yes, 6 Feb |
+| 14 Dec 2025 | 1 | No | Not delivered after 3 weeks; no response | Delivery, Comms | Yes, 6 Feb |
 
 ### 2.3 Complaint groups
 
 | Group | Reviews (of 21) | Detail |
 |---|---|---|
-| **Delivery** (late, missing or partial) | **20** | Ranges from 3 weeks to more than 3 months. At least 3 involve pre-orders (Tors's May pre-order, Emma's NYE hoodie, serena's puffer), and the December puffer orders probably did too. Two say explicitly the item was *not* a pre-order (Dilwyn) or was "in hand" (Leanne). |
-| **Communication** (no reply, automated only, mixed messages) | **18** | The thread running through almost every review. Several say both email and Instagram DMs went unanswered. K Turner got contradictory shipping messages. |
-| **Refund or chargeback** | 2 | M Gibbon (refund requests unanswered, went to bank) and Leanne (card company). |
+| **Delivery** (late, missing or partial) | **20** | Ranges from 3 weeks to more than 3 months. At least 3 involve pre-orders (a May pre-order, a New Year's Eve hoodie, a December puffer), and the other December puffer orders probably did too. Two say explicitly the item was *not* a pre-order (14 Mar) or was listed as "in hand" (12 Feb). |
+| **Communication** (no reply, automated only, mixed messages) | **18** | The thread running through almost every review. Several say both email and Instagram DMs went unanswered. One reviewer (7 Mar) got contradictory shipping messages. |
+| **Refund or chargeback** | 2 | 3 Feb (refund requests unanswered, went to bank) and 12 Feb (card company). |
 | **Sizing** | **0** | Positive reviews mention fit repeatedly. |
-| **Quality** | **0** | The one 3★ (Ike Poke) praises the quality. |
+| **Quality** | **0** | The one 3★ (15 May) praises the quality. |
 
 **Timing**
 - **16 of the 21** were posted between 14 Dec 2025 and 14 Mar 2026. That matches the winter pre-order and the Chinese New Year backlog the brand's own February replies describe.
@@ -330,7 +338,9 @@ Names are shown as the reviewers display them. Reviews are paraphrased.
 
 **The word "scam" appears in 8 of the 21.** This matters for AI visibility: assistants that summarise Trustpilot can repeat it. A calm, specific reply on every one of them is the cheapest counterweight.
 
-### 2.4 Draft replies for the 12 unanswered reviews
+### 2.4 Replies to the 12 unanswered reviews (posted 18 Oct 2026)
+
+**Posted by the `cowork/trustpilot` workstream** after George approved them. The posted texts, including one approved edit, are in `cowork/trustpilot` → `workstreams/trustpilot/artifacts/reply-pack.md`. The drafts below are this workstream's originals, kept for the record with names removed.
 
 Written in George's voice: plain and direct, with no heist language (customer comms stay plain). None of them promises a refund, credit, or anything else not on record. The only service facts used are on crooksldn.com:
 - In-stock orders placed before 18:00 (Mon–Sat) ship the same day.
@@ -343,48 +353,50 @@ Written in George's voice: plain and direct, with no heist language (customer co
 - Don't mention order details or personal information in public; Trustpilot removes replies that do.
 - Each draft commits George to reply personally, so only post the ones he can follow through on within 1–2 working days.
 
-**1. Mason (1★, 30 Jul 2026)**
-> Mason, I'm sorry. Three months without your order or a reply isn't acceptable, and nor is how long this reply took. I can't match this review to an order from the name alone, so please email your order number to team@crooksldn.com and I'll check it myself and tell you exactly where it stands. — George, CROOKSLDN
+**1. 1★, 30 Jul 2026**
+> I'm sorry. Three months without your order or a reply isn't acceptable, and nor is how long this reply took. I can't match this review to an order from the name alone, so please email your order number to team@crooksldn.com and I'll check it myself and tell you exactly where it stands. — George, CROOKSLDN
 
-**2. Tors (1★, 26 Jul 2026)**
-> Tors, a pre-order due mid-June that hasn't turned up, with no answer to your emails or DMs, is on us. Sorry. If it's still outstanding, send your order number to team@crooksldn.com and I'll look at it personally and come back to you with a straight answer on where it is and what happens next. — George, CROOKSLDN
+**2. 1★, 26 Jul 2026**
+> A pre-order due mid-June that hasn't turned up, with no answer to your emails or DMs, is on us. Sorry. If it's still outstanding, send your order number to team@crooksldn.com and I'll look at it personally and come back to you with a straight answer on where it is and what happens next. — George, CROOKSLDN
 
-**3. Ebru (1★, 7 Jun 2026)**
-> Ebru, sorry. You were told about two weeks, it was six, and all you got in between was an automated reply. That's not good enough. If anything on this order is still open, email your order number to team@crooksldn.com and I'll deal with it myself. — George, CROOKSLDN
+**3. 1★, 7 Jun 2026**
+> Sorry. You were told about two weeks, it was six, and all you got in between was an automated reply. That's not good enough. If anything on this order is still open, email your order number to team@crooksldn.com and I'll deal with it myself. — George, CROOKSLDN
 
-**4. Lucy (1★, 20 May 2026)**
-> Lucy, sorry you've had no item and no reply. That isn't how it should work. Send your order number to team@crooksldn.com and I'll find out what happened and get back to you within 1–2 working days. — George, CROOKSLDN
+**4. 1★, 20 May 2026**
+> Sorry you've had no item and no reply. That isn't how it should work. Send your order number to team@crooksldn.com and I'll find out what happened and get back to you within 1–2 working days. — George, CROOKSLDN
 
-**5. Ike Poke (3★, 15 May 2026)**
-> Thanks Ike, glad the quality landed. A month from order to delivery plus slow email replies isn't what I want anyone to sit through, and I take the point. In-stock orders placed before 6pm (Mon–Sat) now ship the same day, with tracking emailed when they leave. Hope we get another go. — George, CROOKSLDN
+**5. 3★, 15 May 2026**
+> Thanks, glad the quality landed. A month from order to delivery plus slow email replies isn't what I want anyone to sit through, and I take the point. In-stock orders placed before 6pm (Mon–Sat) now ship the same day, with tracking emailed when they leave. Hope we get another go. — George, CROOKSLDN
 
-**6. Dilwyn Howells (1★, 14 Mar 2026)**
-> Dilwyn, sorry. An in-stock order going missing with no answer to your emails isn't acceptable. If this still isn't resolved, email your order number to team@crooksldn.com and I'll trace it myself. — George, CROOKSLDN
+**6. 1★, 14 Mar 2026**
+> Sorry. An in-stock order going missing with no answer to your emails isn't acceptable. If this still isn't resolved, email your order number to team@crooksldn.com and I'll trace it myself. — George, CROOKSLDN
 
-**7. Marcel Brozek (2★, 10 Mar 2026)**
-> Marcel, fair criticism on the delivery and the contact, and I'm sorry. If anything is still open on your order, email the order number to team@crooksldn.com and I'll handle it directly. — George, CROOKSLDN
+**7. 2★, 10 Mar 2026**
+> Fair criticism on the delivery and the contact, and I'm sorry. If anything is still open on your order, email the order number to team@crooksldn.com and I'll handle it directly. — George, CROOKSLDN
 
-**8. K Turner (1★, 7 Mar 2026)**
+**8. 1★, 7 Mar 2026**
 > Sorry. Being told your jacket had shipped, then that it hadn't, then getting an August date is a mess, and that's on us. If it still hasn't reached you, email your order number to team@crooksldn.com and I'll get you one clear answer. — George, CROOKSLDN
 
-**9. Yanhao Cai (1★, 6 Mar 2026)**
-> Yanhao, no order and no proper replies isn't acceptable, and I'm sorry. If it's still missing, email your order number to team@crooksldn.com and I'll check it myself. — George, CROOKSLDN
+**9. 1★, 6 Mar 2026**
+> No order and no proper replies isn't acceptable, and I'm sorry. If it's still missing, email your order number to team@crooksldn.com and I'll check it myself. — George, CROOKSLDN
 
-**10. anonymous (1★, 5 Mar 2026)**
+**10. 1★, 5 Mar 2026**
 > Sorry for the wait, and for how late this reply is. Two months without your order isn't OK. I can't see who left this review, so if it's still outstanding please email your order number to team@crooksldn.com and I'll look into it straight away. — George, CROOKSLDN
 
-**11. Jonas Kalasinskas (1★, 2 Mar 2026)**
-> Jonas, three months is far too long, sorry. Glad it got to you in the end. If anything's wrong with the order, email your order number to team@crooksldn.com. — George, CROOKSLDN
+**11. 1★, 2 Mar 2026**
+> Three months is far too long, sorry. Glad it got to you in the end. If anything's wrong with the order, email your order number to team@crooksldn.com. — George, CROOKSLDN
 
-**12. Sarah Eagles (1★, 27 Feb 2026)**
-> Sarah, sorry. Your son's puffer was ordered in December and your emails to support went unanswered, which isn't acceptable. If it hasn't arrived, or anything else is wrong, email your order number to team@crooksldn.com and I'll deal with it with you directly. — George, CROOKSLDN
+**12. 1★, 27 Feb 2026**
+> Sorry. Your son's puffer was ordered in December and your emails to support went unanswered, which isn't acceptable. If it hasn't arrived, or anything else is wrong, email your order number to team@crooksldn.com and I'll deal with it with you directly. — George, CROOKSLDN
 
-**Optional: edit two earlier replies.** Trustpilot lets businesses edit their own replies.
-- **Leanne Toms (12 Feb).** The current reply says she has never placed an order. In public that reads as calling her a liar, and the order may simply be under a different name or email. Suggested replacement:
-  > Leanne, sorry for how this went. I couldn't find an order under the details on this review, which can just mean it was placed under a different name or email. Please send your order number, or the email you used at checkout, to team@crooksldn.com and I'll check it straight away. — George, CROOKSLDN
-- **Emma (10 Feb).** Keep the apology and the delivery explanation. Delete the "Regarding the reviews you mentioned" section, because arguing in public about review removal does more harm than the review itself.
+**Optional: edit two earlier replies.** Trustpilot lets businesses edit their own replies. *Parked: George didn't answer this one on 18 Oct.*
+- **The 12 Feb 2026 reply.** The current reply says the reviewer has never placed an order. In public that reads as calling her a liar, and the order may simply be under a different name or email. Suggested replacement:
+  > Sorry for how this went. I couldn't find an order under the details on this review, which can just mean it was placed under a different name or email. Please send your order number, or the email you used at checkout, to team@crooksldn.com and I'll check it straight away. — George, CROOKSLDN
+- **The 10 Feb 2026 reply.** Keep the apology and the delivery explanation. Delete the "Regarding the reviews you mentioned" section, because arguing in public about review removal does more harm than the review itself.
 
 ### 2.5 Invitations: use Trustpilot's own flow, with no incentives
+
+**George's decision, 18 Oct (owner decision #6): NOT NOW.** The review-request setup stays unchanged and this section is parked. The model-review reports were approved (decision #18) and are owned by `cowork/trustpilot`. Trustpilot's in-app flag form has no conflict-of-interest option, so the route is a Content Integrity report through Trustpilot Business support. That needs George's go in that workstream.
 
 **Recommended setup**
 - Use **Trustpilot's own Shopify app**: "Trustpilot Reviews", published by Trustpilot and launched 18 Feb 2026 (https://apps.shopify.com/trustpilot-reviews).
@@ -406,10 +418,10 @@ Written in George's voice: plain and direct, with no heist language (customer co
 **Specific fixes**
 
 1. **One 5★ review, 8 Feb 2026.** Checked as a possible staff review; George confirmed on 18 Oct it is not. No action.
-2. **Two 5★ reviews from people who say they modelled for the brand** ("Got to model for crooksldn" by Tee Wizza and "Great service… as a model" by georgia, both 16 Sep 2026).
+2. **Two 5★ reviews from people who say they modelled for the brand** (both 16 Sep 2026; names left out).
    - People working for the business shouldn't review it.
    - Don't ask models, crew, staff, friends or family for reviews.
-   - George can flag these two himself through Trustpilot's report function. That is the clean option, and it shows good faith.
+   - George approved reporting both (decision #18). `cowork/trustpilot` owns the report route (see above).
 3. **The shipped-today email.**
    - The Trustpilot link (https://uk.trustpilot.com/evaluate/crooksldn.com) goes out before the customer has the product.
    - Orders with problems are tagged `ship-email-sent` to keep them out of that email, so unhappy customers never get the review ask. That is the screening the guidelines ban.
@@ -421,99 +433,26 @@ Written in George's voice: plain and direct, with no heist language (customer co
 
 ## 3. Profile copy (George creates the profiles)
 
-**Rules applied to all three profiles**
-- **Links:** only https://crooksldn.com, https://instagram.com/crooksldn and https://tiktok.com/@crooksldn. Leave any other link fields empty, including Facebook, X and LinkedIn on Crunchbase.
-- **Location:** never written as London. The trading and registered address is in Bourne End, Buckinghamshire.
-- **Manufacturing origin:** left out of all three profiles, per the 16 Oct rule that origin stays out of consumer copy. It is still stated in press pitches where the angle needs it.
-- **Claims used:** only confirmed ones. Fabric weights (the cotton claim applies to hoodies and joggers only), "designed in-house", free size swaps, and free UK shipping over £30.
+**Final, ready-to-paste copy is in [`profile-pack-linkedin-crunchbase.md`](profile-pack-linkedin-crunchbase.md).** It replaces the 16 Oct drafts that were here.
 
-**Company record**, verified on Companies House 16 Oct 2026 (https://find-and-update.company-information.service.gov.uk/company/16606021):
-- **Name and number:** CROOKS CLOTHING COMPANY LTD, no. 16606021.
-- **Status:** active private limited company.
-- **Incorporated:** 24 July 2025.
-- **Registered office:** Unit M, Bourne End Business Park, Bourne End, SL8 5AS.
-- **SIC:** 47710 (retail sale of clothing).
-- **Directors:** George Samuel Hinxman and Preston Kellan Mullane.
+It follows George's 18 Oct answers:
+- **Company:** Crooks Clothing Company Ltd (16606021), named only where a company is needed, with the approved trading-name line.
+- **People:** George Hinxman as founder and nobody else.
+- **Dates:** trading since March 2024.
+- **Description:** the approved verbatim line.
+- **Contact:** team@crooksldn.com.
+- **Evergreen colourway:** Black Convict.
+- **Nothing else:** no other details.
 
-### 3.1 Trustpilot
+**Trustpilot (§3.1 of the 16 Oct draft) is done.** On 18 Oct the `cowork/trustpilot` workstream renamed the profile to CROOKSLDN, replaced the description with the approved line plus a contact line, and tidied the address.
 
-**Business display name.** Change "Crooks ldn" to **CROOKSLDN**. I couldn't confirm which field in Trustpilot Business holds this, because the search budget ran out. If the name isn't editable in the profile settings, request the change through Trustpilot support.
+**Company record**, Companies House, checked 16 and 18 Oct 2026 (https://find-and-update.company-information.service.gov.uk/company/16606021):
+- CROOKS CLOTHING COMPANY LTD, no. 16606021, active private limited company.
+- Incorporated 24 July 2025.
+- SIC 47710 (retail sale of clothing).
+- George Hinxman is a director.
 
-**Description:**
-> Independent British streetwear. Heavyweight fleece, baggy denim, graphic tees and reactive outerwear. Released in drops.
->
-> Everything is designed in-house: the 550gsm 100% cotton Convict hoodie and jogger sets, the 450gsm Cellblock crewneck and shorts co-ord, 14oz baggy denim, graphic tees, the water-reactive HydroCuff Windbreaker and the heat-reactive Double-Agent Puffa. Free UK shipping over £30 and free size swaps. In-stock orders placed before 6pm (Mon–Sat) ship the same day. Pre-orders ship on the date shown on the product page. Order questions: team@crooksldn.com.
-
-**Other profile fields**
-- **Website:** https://crooksldn.com
-- **Email:** team@crooksldn.com
-- **Address,** tidied to match the site: Unit M, Oairo UK Office, Bourne End Business Park, Bourne End, Buckinghamshire, SL8 5AS
-- **Category:** the closest available clothing-store category, preferring men's clothing if it exists.
-
-### 3.2 LinkedIn company page
-
-| Field | Copy |
-|---|---|
-| Name | CROOKSLDN |
-| Public URL | linkedin.com/company/crooksldn (if it's free) |
-| Tagline | Independent British streetwear. Heavyweight fleece, baggy denim, graphic tees and reactive outerwear. Released in drops. *(Exactly 120 characters. If LinkedIn's limit cuts it, drop the final full stop.)* |
-| Website | https://crooksldn.com |
-| Industry | Retail Apparel and Fashion |
-| Organisation size | 2–10 employees |
-| Organisation type | Privately held |
-| Founded | 2025 |
-| Location | Bourne End, Buckinghamshire, United Kingdom |
-| Specialties | Streetwear; Heavyweight fleece; Matching sets; Baggy denim; Graphic tees; Reactive outerwear; Limited drops |
-
-**About:**
-> Independent British streetwear. Heavyweight fleece, baggy denim, graphic tees and reactive outerwear. Released in drops.
->
-> CROOKSLDN is an independent British streetwear brand founded by George Hinxman, making menswear and womenswear. Everything is designed in-house and released in short runs through crooksldn.com.
->
-> The core range:
-> • Convict hoodie and joggers – 550gsm, 100% cotton, sold as a matching set
-> • Cellblock crewneck and shorts – 450gsm co-ord
-> • 14oz baggy denim
-> • Graphic tees, printed on demand
-> • HydroCuff Windbreaker – water-reactive
-> • Double-Agent Puffa – heat-reactive
->
-> The heist-and-lockup names are the brand's identity. The product is about weight, fit and finish.
->
-> CROOKSLDN is the trading name of Crooks Clothing Company Ltd (company no. 16606021). Not connected to Crooks & Castles.
->
-> Shop: crooksldn.com · Instagram and TikTok: @crooksldn
-
-### 3.3 Crunchbase
-
-| Field | Copy |
-|---|---|
-| Organization name | CROOKSLDN |
-| Also known as | Crooks LDN; Crooks London |
-| Legal name | Crooks Clothing Company Ltd |
-| Website | https://crooksldn.com |
-| Description (short) | Independent British streetwear. Heavyweight fleece, baggy denim, graphic tees and reactive outerwear. Released in drops. |
-| Founded date | 24 July 2025 (incorporation) |
-| Founders | George Hinxman |
-| Headquarters | Bourne End, Buckinghamshire, United Kingdom |
-| Operating status | Active |
-| Company type | For profit |
-| Number of employees | 1–10 |
-| Industries | Fashion; Apparel; E-Commerce |
-| Contact email | team@crooksldn.com |
-| Funding, investors, acquisitions | Leave blank (nothing on record) |
-| LinkedIn / Facebook / X | Leave blank (links rule) |
-
-**Full description:**
-> CROOKSLDN is an independent British streetwear brand founded by George Hinxman and operated by Crooks Clothing Company Ltd (Companies House no. 16606021). It designs menswear and womenswear in-house and sells direct through crooksldn.com in short-run drops. The range covers 550gsm 100% cotton Convict hoodie and jogger sets, the 450gsm Cellblock crewneck and shorts co-ord, 14oz baggy denim, print-on-demand graphic tees, the water-reactive HydroCuff Windbreaker and the heat-reactive Double-Agent Puffa. Instagram and TikTok: @crooksldn. Not connected to Crooks & Castles.
-
-**Decisions for George before posting**
-- **The trading-name line.** It is written as "CROOKSLDN is the trading name of Crooks Clothing Company Ltd". Confirm that's how he wants the entity stated.
-- **Founders field.** It lists George only, per the brief. Companies House also lists Preston as a director. Add him on Crunchbase only if George wants to.
-
-**Same fix on the site:** change "run out of London" on https://crooksldn.com/pages/contact to "an independent British streetwear label".
-
----
+The brand traded before incorporation (since March 2024). So the profiles give March 2024 as the founding date, and the company is named only as the legal entity.
 
 ## 4. GEO panel citations
 
@@ -540,23 +479,23 @@ The headlines:
 
 | Domain | Queries (of 10) | Type | Target? |
 |---|---|---|---|
-| backwardfashion.com | 6 | Independent editorial listicle | **Candidate new: §1.1 #11** |
-| complex.com | 4 | Editorial | §1.1 #3 (check 07) |
+| backwardfashion.com | 6 | Independent editorial listicle | **Candidate new: §1.1 (backwardfashion; in 07 as A006)** |
+| complex.com | 4 | Editorial | §1.1 (Complex UK; in 07 as A004) |
 | en.wikipedia.org | 4 | Wiki | Not a target. Notability rules apply and there's no self-editing. |
 | spocket.co | 4 | Dropshipping SEO content | No |
 | phrasestudios.com, flowlikezen.com | 4 each | Brand blogs that rank themselves | No |
-| guap.co | 3 | Editorial listicle | §1.1 #8 |
-| fastfashionnews.co.uk | 3 | Affiliate directory | **Candidate new: §1.1 #28** |
-| highsnobiety.com | 3 | Editorial (old pieces) | §1.1 #15 (check 07) |
+| guap.co | 3 | Editorial listicle | §1.1 (GUAP; in 07 as A025) |
+| fastfashionnews.co.uk | 3 | Affiliate directory | **Candidate new: §1.1 (fastfashionnews; new)** |
+| highsnobiety.com | 3 | Editorial (old pieces) | §1.1 (Highsnobiety; in 07) |
 | graziadaily.co.uk | 3 | Editorial shopping ("best british brands") | Candidate new. Not opened, so verify. |
 | ldnfashion.com | 3 | Editorial, affiliate | Excluded (London framing) |
 | calistudios.co.uk, deathnfriends.com | 3 each | Self-ranking brand blogs | No |
-| discobrands.co | 2 | Directory, free submission | Approved 16 Oct, owned by outreach (07). §1.1 #13 |
-| streetwear.directory | 2 | Directory | Approved 16 Oct, owned by outreach (07). §1.1 #20 |
+| discobrands.co | 2 | Directory, free submission | Approved 16 Oct, owned by outreach (07). §1.1 (Disco; A001) |
+| streetwear.directory | 2 | Directory | Approved 16 Oct, owned by outreach (07). §1.1 (Streetwear Directory; A003) |
 | wearop.com | 2 | Directory ("Add your brand" link is broken) | Watch |
-| apartstyle.com | 2 | Style listicle | **Candidate new: §1.1 #25** |
-| fashionbeans.com | 2 | Affiliate editorial | **Candidate new: §1.1 #29** (text-only) |
-| retailboss.co | 1, but #1 in both modes for Q5 | Business-news listicle | **Candidate new: §1.1 #24** |
+| apartstyle.com | 2 | Style listicle | **Candidate new: §1.1 (apartstyle; in 07 as A020)** |
+| fashionbeans.com | 2 | Affiliate editorial | **Candidate new: §1.1 (FashionBeans; in 07 as A005)** (text-only) |
+| retailboss.co | 1, but #1 in both modes for Q5 | Business-news listicle | **Candidate new: §1.1 (retailboss; in 07 as A008)** |
 | tiktok.com/discover/brands-like-corteiz | 2 | Social | The organic TikTok @crooksldn content route |
 
 **"Brands like Corteiz" and "Corteiz alternatives" are flooded with fake-Corteiz-store spam.** None of it is a target, and the brand should not appear near it.

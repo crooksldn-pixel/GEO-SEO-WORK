@@ -11,7 +11,7 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **Q1 Public operator:** Crooks Clothing Company Ltd (16606021), George as founder.
 - **Q2 Trading-name line:** YES ("CROOKSLDN is the trading name of Crooks Clothing Company Ltd (company no. 16606021)").
 - **Q3 Inbox:** **team@crooksldn.com**.
-- **Q4 Trustpilot replies:** YES, all 12 (George posts). Use team@crooksldn.com. Leanne/Emma edits: not answered; parked.
+- **Q4 Trustpilot replies:** YES, all 12 (George posts). Use team@crooksldn.com. Edits to the 12 Feb and 10 Feb replies: not answered; parked.
 - **Q5 8 Feb 2026 review:** NO, not a staff review. Treat it as an ordinary review; the name link was removed from FINDINGS 3.
 - **Q6 Two model reviews:** YES, report both (George does it).
 - **Q7 Review-request changes:** NOT NOW. Parked.

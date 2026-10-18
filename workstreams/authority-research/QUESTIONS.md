@@ -2,7 +2,7 @@
 
 **Branch:** cowork/authority-research  
 **Asked:** 18 Oct 2026, 17:15 UK  
-**How to answer:** write the answer under each question in the `Answer:` line. Picking a letter is enough. Then tell this session "answered".
+**Status: ANSWERED, 18 Oct 2026 (17:03 UTC).** George's answers are in [`ANSWERS.md`](ANSWERS.md) and are copied into each `Answer:` line below. Unanswered items are parked.
 
 These are the only things this workstream needs from George. Everything else it can continue alone.
 
@@ -27,7 +27,7 @@ AI assistants currently tie the brand to **Crooks London Limited (16396366)**. P
 **Recommendation:** A, since that's your stated profile entity. The site and policy pages should then name it too, so assistants stop picking up 16396366.  
 **If unanswered:** LinkedIn and Crunchbase stay on hold.
 
-**Answer:**
+**Answer:** Crooks Clothing Company Ltd (16606021), George as founder.
 
 ### Q2 — Can the profiles state the trading name?
 
@@ -37,7 +37,7 @@ Draft line: "CROOKSLDN is the trading name of Crooks Clothing Company Ltd (compa
 - **B.** No legal line on the profiles. The company is only named in Crunchbase's legal-name field.
 - **C.** Different wording (give it).
 
-**Answer:**
+**Answer:** A: yes, as written.
 
 ---
 
@@ -53,7 +53,7 @@ Earlier Trustpilot replies sent customers to three different addresses. The site
 
 **If unanswered:** the drafts keep team@crooksldn.com.
 
-**Answer:**
+**Answer:** A: team@crooksldn.com.
 
 ### Q4 — Are the 12 draft replies approved for you to post?
 
@@ -63,30 +63,30 @@ The drafts are in `artifacts/09-authority-research.md` §2.4. They're plain, the
 - **B.** All except these (list them).
 - **C.** Change these (list the changes).
 
-Also: **edit the two earlier replies (Leanne, Emma)** as suggested in §2.4? Yes / No.
+Also: **edit the two earlier replies (12 Feb and 10 Feb 2026)** as suggested in §2.4? Yes / No.
 
-**Answer:**
+**Answer:** A: all 12 (posted 18 Oct by `cowork/trustpilot`). The 12 Feb and 10 Feb edits weren't answered, so they're parked.
 
-### Q5 — Is the 5★ the 8 Feb 2026 review (8 Feb 2026) Preston's?
+### Q5 — Is the 5★ review of 8 Feb 2026 from someone at the business?
 
-The name matches a director of Crooks Clothing Company Ltd on Companies House. Trustpilot bans reviews from people working for the business. Only the reviewer can delete his own review.
+The reviewer's name matched a company officer on Companies House. Trustpilot bans reviews from people working for the business. Only the reviewer can delete their own review.
 
-- **A.** Yes, and he'll delete it.
+- **A.** Yes, and they'll delete it.
 - **B.** Yes, but leave it.
 - **C.** No, it's someone else.
 
-**Answer:**
+**Answer:** C: not a staff review. No action.
 
 ### Q6 — Report the two 5★ reviews from people who say they modelled for the brand?
 
-The two reviews are Tee Wizza and georgia, both 16 Sep 2026. Modelling for the brand counts as working for it under Trustpilot's rules.
+Both reviews are from 16 Sep 2026 (names left out). Modelling for the brand counts as working for it under Trustpilot's rules.
 
 - **A.** Yes, you report both yourself in Trustpilot Business.
 - **B.** Leave them.
 
 **Recommendation:** A. It costs two 5★ reviews and shows good faith if Trustpilot looks at the profile.
 
-**Answer:**
+**Answer:** A: report both. The `cowork/trustpilot` workstream owns the route.
 
 ### Q7 — Approve the two changes to how reviews are requested?
 
@@ -98,7 +98,7 @@ The two reviews are Tee Wizza and georgia, both 16 Sep 2026. Modelling for the b
 - **C.** Approve 2 only.
 - **D.** Neither for now.
 
-**Answer:**
+**Answer:** D: not now (parked).
 
 ---
 
@@ -112,23 +112,23 @@ crooksldn.com/pages/contact says "an independent streetwear label run out of Lon
 - **B.** Approve, with different wording (give it).
 - **C.** Leave it.
 
-**Answer:**
+**Answer:** A: approved. The collections workstream makes the edit.
 
 ---
 
 ## Smaller calls
 
-### Q9 — Add Preston to Crunchbase?
+### Q9 — Add anyone besides George to Crunchbase?
 
-The founder field is George only, as briefed. Companies House lists Preston as a director of Crooks Clothing Company Ltd.
+The founder field is George only, as briefed. Companies House lists one other director of Crooks Clothing Company Ltd.
 
 - **A.** No, George only.
-- **B.** Add Preston as director (not founder).
-- **C.** Add Preston as co-founder.
+- **B.** Add the other director as director (not founder).
+- **C.** Add them as co-founder.
 
 **If unanswered:** A.
 
-**Answer:**
+**Answer:** A: George only. No other people without approval.
 
 ### Q10 — List CROOKSLDN as a seller on Dripscan?
 
@@ -140,7 +140,7 @@ Dripscan's magazine is cited by Gemini for "Corteiz alternatives" and covers ind
 
 **If unanswered:** B.
 
-**Answer:**
+**Answer:** B: not now (parked).
 
 ### Q11 — Does "no sample offers" also apply to IndyBest?
 
@@ -151,7 +151,7 @@ The Independent's IndyBest tests products before including them. Without a sampl
 
 **If unanswered:** A.
 
-**Answer:**
+**Answer:** A: no samples.
 
 ### Q12 — Keep one core Convict colourway permanently in stock?
 
@@ -162,7 +162,7 @@ Evergreen roundups (IndyBest, GQ shopping, FashionBeans) drop products whose lin
 
 **If unanswered:** B, and evergreen roundups stay low priority.
 
-**Answer:**
+**Answer:** A: yes, Black Convict.
 
 ### Q13 — The repo is public. Keep, reword or remove two sensitive details?
 
@@ -175,7 +175,7 @@ Evergreen roundups (IndyBest, GQ shopping, FashionBeans) drop products whose lin
 
 **Recommendation:** B.
 
-**Answer:**
+**Answer:** B: reword. No names tied to reviews and no exact order counts (applied).
 
 ---
 
@@ -191,7 +191,7 @@ They're needed to dedupe this list against the first pass's 222 opportunities. P
 
 **If unanswered:** C.
 
-**Answer:**
+**Answer:** A: on `cowork/project-files-import` (sanitised).
 
 ---
 
