@@ -175,3 +175,89 @@ Adding the link gives the new collection a sitewide internal link from every pag
 
 **Recommended action:**
 Task B, pre-approved under change log C-001: label `OUTERWEAR`, link `/collections/outerwear`.
+
+---
+
+## Finding 7 — A different theme went live on 18 Oct; the "approved fixes" work copy is now stale
+
+**Finding:**
+Lineage worked out from file checksums (Admin API, 18 Oct 20:10 BST):
+
+| Theme | Created (BST) | What it is |
+|---|---|---|
+| BACKUP of live 18 Oct (do not edit), 207468822871 | 18:15 | Identical to SEO round 2, the old live. Good rollback for the old live only |
+| live + 18 Oct approved fixes, 207468855639 | 18:15 | Old live plus footer OUTERWEAR (`footer-group.json` 74b8fcd0…) and tee wording (`product.json` 4d38a614…) |
+| Mobile UX + Reviews 18 Oct, 207466594647 | 17:50 | Someone else's. New `crooks-record.js`, `crooks-exhibit-record.liquid`, `crooks-ux.css`, header, index and product templates |
+| T-shirt Week launch, 207470887255 | 18:42 | Approved-fixes copy plus T-shirt Week on (`crk_tw_on: true`) |
+| TW launch + Mobile UX + Puffa (18 Oct), 207472165207 | 19:01 | Merge of the three above |
+| **live 18 Oct + evening fixes, 207475147095 (MAIN)** | 19:37 | Copy of the TW+MUX+Puffa merge, edited at 19:55 (`layout/theme.liquid`, `header-group.json`, `crooks-ux.css`, tee-week and terminal JS). Now published |
+| live 18 Oct + colour photos, 207476752727 | 20:04 | Copy of live. `crooks-record.js` and `crooks-exhibit-record.liquid` edited at 20:09 |
+
+**Evidence:** Admin API `themes` list, plus `checksumMd5` on 12 key files across all 8 themes.
+
+**Why it matters:**
+- Publishing the approved-fixes copy now would remove the T-shirt Week launch, the Mobile UX work, the Puffa work and the evening fixes from the live site.
+- The colour-photos copy edits the same two PDP files the tee stock fix needs. Two copies of live are being changed in parallel, and whichever is published second wipes the other.
+- The current live theme has no backup. The 18 Oct backup is of the old live.
+
+**Confidence:** High
+
+**Recommended action:**
+- Retire the approved-fixes copy (don't publish it).
+- Make one integration theme at a time: whoever owns the colour-photos copy finishes and publishes, then the next change starts from a fresh copy of live.
+- Back up the current live before the next publish.
+
+---
+
+## Finding 8 — Live state of this workstream's items, 18 Oct 20:15 BST
+
+**Finding:**
+- **Footer** (`sections/footer-group.json` block `c1`): `label_5`/`url_5` = OUTERWEAR, `/collections/outerwear`; `label_6`/`url_6` = ACCESSORIES. **B is done.**
+- **Product template main section:**
+  - `made_to_order_text` "Printed to order. Dispatched within 2–3 working days.", `made_to_order_tag` `tee`.
+  - Custody step s1: "In-stock pieces ordered before 18:00 are dispatched the same day … T-shirts are printed to order and dispatched within 2–3 working days."
+  - Custody step s3: Tracked 24 typically 1–2, Tracked 48 typically 2–3 working days, "estimated delivery aims, not guaranteed dates".
+  - A new promises list shows the made-to-order line in place of promise 1 on tees.
+  - **The wording half of D is done.**
+- **App embeds** (`config/settings_data.json`): Judge.me core and Judge.me cart drawer are both `disabled: false`. Orderify, Mida and Partner Hub are on. **A and C are not done.**
+- **Stock line:** the live section now also renders the stock line server-side (around lines 373–408) as well as in `crooks-record.js` `render()` (around lines 434–450). Neither checks the made-to-order flag, so tees show "IN STOCK", and "[n] LEFT" when a tracked quantity is 1–3. Tracking is now off on the 3 live tees (C-009), which removes "[n] LEFT" there. **"IN STOCK" remains.**
+- **Schema:** `snippets/crooks-schema-shipping.liquid` sends `handlingTime` 0–2 and `transitTime` 1–2 for every product. Tees should be 2–3 handling (#1). The Tracked 48 rate it describes should be 2–3 transit (#3).
+- **Status bar** (`sections/header-group.json`, `crooks_status_bar`), three messages:
+  - m1 "FREE UK DELIVERY OVER £30"
+  - m2 "ORDER BY 6PM — DISPATCHED TODAY"
+  - m3 "FREE SIZE SWAPS WITHIN 14 DAYS"
+
+  m2 promises same-day dispatch on tee pages too, against decision #1.
+
+**Evidence:**
+- Live theme 207475147095 files, read 18 Oct 20:10–20:20 BST.
+- Tee page check on the Crooks Express tee, White / XL, in George's Chrome. The preview theme was byte-identical to live for the product template, section and script.
+
+**Why it matters:**
+"IN STOCK" on a print-on-demand tee and a sitewide "DISPATCHED TODAY" are the last false tee claims left on the site.
+
+**Confidence:** High
+
+**Recommended action:**
+Code handoff in `artifacts/code-handoff-tee-stock-and-schema.md`. Status bar wording needs George's go.
+
+---
+
+## Finding 9 — The storefront is password-locked
+
+**Finding:**
+Shopify Online Store password protection is **enabled**. Every public URL (`/`, `/products/crooks-express-t-shirt`, `/collections/outerwear`) redirects to `/password` ("Enter password"). The site served normally without a login on 16 Oct around 20:30 BST.
+
+**Evidence:**
+- Admin API `onlineStore { passwordProtection { enabled } }` returns `true` (18 Oct 20:14 BST).
+- A cookieless fetch of three URLs ends at `/password`.
+
+**Why it matters:**
+- No sales from anyone without the password.
+- Google crawls a password page.
+- Merchant Center can disapprove products whose landing pages don't load.
+
+**Confidence:** High
+
+**Recommended action:**
+George confirms whether it's an intentional drop lock. If not, he turns it off in Online Store → Preferences. Not a theme setting, so this session hasn't touched it.

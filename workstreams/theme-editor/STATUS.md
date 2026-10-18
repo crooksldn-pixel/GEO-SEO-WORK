@@ -1,49 +1,52 @@
 # Workstream: Live theme — Theme editor settings and App embeds
 
-> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
-
 **Branch:** cowork/theme-editor  
 **Owner:** Cowork session  
-**Last updated:** Sun 18 Oct 2026, 17:25 UK  
-**Priority:** P1  
+**Last updated:** Sun 18 Oct 2026, 20:30 UK  
+**Priority:** P0 (store password-locked, see Blocker 1), otherwise P1  
 **Overall status:** BLOCKED
+
+George's answers of 18 Oct are in [ANSWERS.md](ANSWERS.md) and are applied below. The work-copy plan in ANSWERS.md ("publish 'live + 18 Oct approved fixes'") is **out of date and must not be followed**: a different theme went live at about 19:37 BST (FINDINGS 7).
 
 ## Objective
 
-Make the approved fixes on the **live** theme ("CROOKSLDN — SEO round 2 (from live 16 Oct)"), using only Theme editor settings and App embeds. No code edits, no publishing.
+Make George's approved theme fixes on the live theme without losing anyone else's live work:
 
-- **A.** Switch off the Judge.me cart-drawer embed. Pre-approved.
-- **B.** Add OUTERWEAR (`/collections/outerwear`) to the footer SHOP column, slot 6. Pre-approved under C-001.
-- **C.** Decide whether the Judge.me core embed also goes off. Waiting on George.
-- **D.** Replace "Order before 18:00 and it ships today" on print-on-demand tee pages with true wording. If the theme editor can't scope it to tees, record exactly where the text lives for the held code work.
+- **A.** Judge.me cart-drawer embed off.
+- **B.** OUTERWEAR in the footer SHOP column.
+- **C.** Judge.me core embed off (decision #22).
+- **D.** Tee pages tell the truth: "Printed to order. Dispatched within 2–3 working days." (decision #1), with no "IN STOCK" or "[n] LEFT" (decision #2).
 
-This is the only workstream allowed to change the live theme.
+Keep Orderify (decision #26). Never publish "Claude P1 fixes".
 
 ## Current state
 
-Nothing has been changed on the live theme.
+The live theme is now **"CROOKSLDN — live 18 Oct + evening fixes"** (207475147095). Other sessions built it tonight from "TW launch + Mobile UX + Puffa", and it already contains B and the wording half of D. Checked against the live theme files at 20:15 BST (FINDINGS 7 and 8).
 
-- **Done, read-only:**
-  - Every setting this workstream touches has been audited on the live theme, and the before state is recorded.
-  - The live theme was rechecked on 18 Oct: no file this workstream touches has changed since 16 Oct 14:33 BST.
-- **Waiting on George:**
-  - A and B are ready. They need George to confirm nobody else is editing the live theme. The brief requires that confirmation before any save.
-  - C needs his decision.
-  - D needs his tee dispatch time.
-- **Tooling problem:** the Shopify theme editor loads as a blank white page in Claude's Chrome tab, on three attempts across 16 and 18 Oct. Saves can't be made until it renders.
+| Item | Live now | Who did it |
+|---|---|---|
+| B. Footer OUTERWEAR | **Done.** SHOP slot 5 is OUTERWEAR and ACCESSORIES moved to slot 6 | Another session, tonight |
+| D. Tee wording and `tee` tag | **Done.** Made-to-order line "Printed to order. Dispatched within 2–3 working days.", tag `tee`, custody steps reworded | Another session, tonight |
+| A. Judge.me cart-drawer embed | **Still on** | Not done |
+| C. Judge.me core embed | **Still on** | Not done |
+| D. No "IN STOCK" / "[n] LEFT" on tees | **Not done.** A live tee shows "IN STOCK" after a size is picked. Needs code | Held theme work (`artifacts/code-handoff-tee-stock-and-schema.md`) |
+| Tee `handlingTime` in product schema | **Not done.** Every product still says 0–2 days handling and 1–2 days transit. Needs code | Same handoff file |
+| Status bar | Now three rotating messages. m2 reads **"ORDER BY 6PM — DISPATCHED TODAY"** sitewide, tee pages included | George's wording call |
+
+This session has changed nothing on any theme. CHANGES.md is still empty.
 
 ## Completed
 
-- Audited the live app embed states (8 embeds, see `artifacts/before-state-live-theme.md`).
-- Audited Judge.me core embed output on the live site. It shows nothing (FINDINGS 3).
-- Audited Judge.me cart-drawer embed output. It is a hidden div only (FINDINGS 4).
-- Audited footer SHOP column block `c1`. Slot 6 is empty. Checked `/collections/outerwear` is live with 2 products (FINDINGS 6).
-- Traced all four sources of the same-day dispatch claim on tee pages, and which of them the theme editor can scope to tees (FINDINGS 5).
-- Prepared the exact theme-editor change for D, pending the dispatch time (FINDINGS 5, NEXT).
-- Recorded file checksums for drift detection (FINDINGS 1).
-- Identified the risk that publishing 16 Oct copy-of-live drafts reverts live changes (FINDINGS 2).
-
-Nothing has been deployed, staged or changed live.
+- Audited the before state on 16 Oct and rechecked it on 18 Oct (FINDINGS 1–6).
+- Read George's answers and owner decisions #1, #2, #3, #7, #22 and #26.
+- Traced the lineage of all 18 Oct themes by file checksum (FINDINGS 7).
+- Read the live footer, product template, status bar, app embeds, and stock-line and schema code (FINDINGS 8).
+- Page check on the Crooks Express tee, White / XL: it shows "IN STOCK" after a size is picked, and the 2–3 day line is present.
+  - George's Chrome was previewing "TW launch + Mobile UX + Puffa", not live.
+  - That theme's `templates/product.json`, `sections/crooks-exhibit-record.liquid` and `assets/crooks-record.js` have the same checksums as live, so live behaves the same.
+  - The public site couldn't be checked because it's password-locked.
+- Found the store password lock and confirmed it with the Admin API (`onlineStore.passwordProtection.enabled = true`). Told George at 20:16 BST (FINDINGS 9).
+- Wrote the exact code locations for the tee stock lines and schema timings (`artifacts/code-handoff-tee-stock-and-schema.md`).
 
 ## Currently working on
 
@@ -51,100 +54,74 @@ Nothing currently running.
 
 ## Blockers
 
-### Blocker 1 — Confirmation that nobody else is editing the live theme
+### Blocker 1 — Storefront password-locked
 
-**Blocking:** A and B saves. Every later save too.  
-**Needs:** George to say "clear, nobody else is editing the live theme".  
+**Blocking:** All public traffic, sales, crawling and live-page checks.  
+**Needs:** George to confirm the lock is intentional (a drop lock), or to turn it off in Online Store → Preferences → Password protection.  
+**From:** George  
+**Severity:** P0  
+**Can work around it?:** For checks only. Logged-in preview still works. Shoppers can't get in.  
+**Workaround:** None for customers.
+
+### Blocker 2 — Someone is building another copy of live right now
+
+**Blocking:** A and C. Any write to live or to a copy of it.  
+**Needs:** George to say who owns "CROOKSLDN — live 18 Oct + colour photos" (207476752727) and whether it will be published.
+- That copy was made from live at 20:04 BST and edited at 20:09 BST.
+- Its edits are to `assets/crooks-record.js` and `sections/crooks-exhibit-record.liquid`, the same two files the tee stock fix needs.
+- Whichever copy is published second wipes the first one's changes.
+
 **From:** George  
 **Severity:** P1  
-**Can work around it?:** No. The brief makes this a hard rule.  
-**Workaround:** None.
+**Can work around it?:** No.  
+**Workaround:** None. Writing now risks wiping someone's work.
 
-### Blocker 2 — Theme editor renders blank in Claude's Chrome tab
+### Blocker 3 — No route for this session to write the live theme
 
-**Blocking:** All theme editor and App embed saves (A, B, C, D).  
-**Needs:** The theme editor (`Online Store → Themes → Customize` on the live theme) to render in the Claude in Chrome tab group. The storefront and Shopify admin pages load fine. Only the editor's embedded frame is white. George may need to open Chrome, check nothing is waiting on him, and open the editor once himself.  
-**From:** George (Chrome on his computer)  
-**Severity:** P1  
-**Can work around it?:** Only with George's explicit approval.  
-**Workaround:** Apply the same settings through the Shopify Admin API by writing `config/settings_data.json` and `sections/footer-group.json`. The brief does not allow this route: it says Theme editor only, no code edits. Not used.
+**Blocking:** A and C on live.  
+**Needs:** One of these:
+- George flips the two Judge.me toggles himself in Theme editor → App embeds. About a minute.
+- The theme editor renders in Claude's Chrome tab. It's been blank on three tries.
+- The toggles go into the next theme copy before George publishes it.
 
-### Blocker 3 — Tee dispatch time
-
-**Blocking:** D.  
-**Needs:** The number of working days from a tee order to dispatch. This is the same question as `cowork/merchant-center` Q3.  
+The Shopify connector can't write the published theme (change-log C-001).  
 **From:** George  
-**Severity:** P1 (a false shipping promise is on live tee pages now)  
-**Can work around it?:** No. Inventing a number would be another false promise.  
-**Workaround:** None.
+**Severity:** P2  
+**Can work around it?:** Yes, through the next copy to be published.  
+**Workaround:** Put the toggles into that copy.
 
 ## Waiting on George
 
-**How to answer:** reply in this workstream's Cowork chat, or add `workstreams/theme-editor/ANSWERS.md` on this branch with one numbered answer per question. Then send the chat the word "answered". This session reads both places before making any change.
-
-1. **Concurrent editing:** is anyone else editing the live theme ("CROOKSLDN — SEO round 2 (from live 16 Oct)") right now? No save happens until the answer is "no".
-2. **Theme editor won't render:** Online Store → Themes → live theme → Customize loads as a blank white page in Claude's Chrome tab group. Answer (a) or (b):
-   - (a) George opens the theme editor once in Chrome himself, clears any prompt or dialog waiting there, and confirms it loads; or
-   - (b) George allows the fallback: the same settings written through the Shopify Admin API, which counts as a file write and is outside the brief's theme-editor-only rule.
-3. **Tee dispatch time:** how many working days from a tee order to dispatch? Give a minimum and a maximum, e.g. "3–5". This is the same question as `cowork/merchant-center` QUESTIONS Q3, so one answer covers both.
-4. **D approach.** In both routes, the theme editor sets "Made-to-order delivery line" (Default product template → Exhibit record section) to `Printed to order. Dispatched within [N] working days.` The route decides how the theme knows a product is a tee:
-   - (a) **Recommended.** The theme editor sets "Made-to-order tag" to `tee`.
-     - All 17 tees (3 live, 14 draft) already carry the `tee` tag, and no other product does.
-     - No product edits are needed, so it works as soon as it's saved.
-   - (b) Leave the tag setting as `made-to-order`.
-     - `cowork/product-data` adds the `made-to-order` tag to all 17 tees, as `cowork/live-site-checks` Finding 1 proposes.
-     - The wording only changes once those product edits are live.
-
-   Either route affects tee pages only. Other products keep "Order before 18:00 and it ships today". Pick (a) or (b), and say yes to the wording or replace it.
-5. **Judge.me core embed (task C):** off, or keep on? It shows shoppers nothing today: no floating tab, no trust badge, no stars, no medals. Review request emails keep working either way.
-6. **Sitewide status bar:** it reads "FREE UK SHIPPING OVER £30 // ORDER BY 18:00 FOR SAME-DAY DISPATCH" on every page, tee pages included. Answer (a), (b) or (c):
-   - (a) keep it as it is;
-   - (b) replace it with George's wording; or
-   - (c) leave it to the held theme work.
+1. **Password lock:** is it a deliberate T-shirt Week drop lock? If not, turn it off (Online Store → Preferences → Password protection).
+2. **"live 18 Oct + colour photos":** whose is it, and is it the next theme to be published?
+   - If yes, its owner should also switch off the two Judge.me embeds and apply the tee stock fix in that copy before you publish it.
+   - If not, flip the two Judge.me toggles on live yourself (Theme editor → App embeds → "Judge.me" and "Judge.me cart drawer widget" → off → Save). Leave Orderify, Mida and Partner Hub on.
+3. **Status bar m2:** it now says "ORDER BY 6PM — DISPATCHED TODAY" on every page, tees included. Proposed replacement: "IN-STOCK ORDERS BY 6PM DISPATCHED TODAY". Say yes, or give other wording.
 
 ## Waiting on external systems
 
-None yet. After B is live, Google needs to recrawl to pick up the new footer link.
+Google recrawl of the footer OUTERWEAR link and the tee wording, once the password lock is off.
 
 ## Next actions
 
-1. **D**, once the dispatch time is known: removes a false same-day promise from every tee page. Biggest commercial risk.
-2. **B**: a sitewide internal link to the new Outerwear collection.
-3. **A**: removes a dead embed.
-4. **C**, if George says off: removes about 34 KB of unused Judge.me settings and scripts from every page.
-5. Hand the out-of-scope tee claims to their owners:
-   - custody step 01 and the stock or low-stock labels → held code work
-   - the status bar → George's wording
-   - tee inventory tracking → products workstream
+1. George settles the password lock. It's P0, and nothing else matters while shoppers can't get in.
+2. George names the next theme to publish. Apply A, C and the tee stock and schema code there. Preview-check a tee and a hoodie, then George publishes.
+3. Status bar m2 wording, once George says yes.
+4. After the publish: check a live tee (no "IN STOCK", 2–3 day line, `handlingTime` 2–3 in the JSON-LD), a live hoodie (unchanged, "IN STOCK" and same-day line), the footer and the Judge.me scripts. Then log it.
 
 ## Expected impact
 
-**Commercial:** Medium. D stops promising same-day dispatch on print-on-demand tees, which drives "where's my order" contacts and complaints. B surfaces a new collection from every page.  
-**SEO:** Low–Medium. B adds a sitewide internal link to `/collections/outerwear`. A and C are small page-weight gains.  
-**GEO:** Low–Medium. AI shopping answers quote on-page shipping text, so the tee dispatch wording needs to be true.  
-**Confidence:** Medium. The findings are high confidence; the size of the effect is not measured.
+**Commercial:** Very high while the password lock is on. Otherwise Medium: the tee claims are honest now, apart from "IN STOCK".  
+**SEO:** High if the password lock persists (Google sees a password page). Otherwise Low–Medium.  
+**GEO:** Low–Medium. The schema handling time feeds AI shopping answers.  
+**Confidence:** High on the findings.
 
 ## Notes for the orchestrator
 
-- This branch was first pushed as an orphan, because `main` didn't exist yet. It was rebased onto `main` (3905e37) on 18 Oct, so it now shares history with `main`.
-- **Overlap on tees.** Four workstreams touch the tee dispatch and stock claims:
-  - `cowork/live-site-checks` Finding 1
-  - `cowork/product-data` D2
-  - `cowork/merchant-center` Q3 and task D
-  - this branch, task D
-
-  Who owns what:
-  - Theme editor wording and the made-to-order tag setting: this branch.
-  - Turning off tee inventory tracking: product-data (D2).
-  - Tee handling time in the Google feed: merchant-center.
-  - Product schema `handlingTime` and the stock-line code: the held theme work.
-
-  The only real choice is STATUS Q4: route (a) or route (b). Nothing here adds a product tag.
-- The risk that the held P1 theme reverts live edits (FINDINGS 2) is also recorded as item 6 in `cowork/programme-records` `artifacts/merge-register.md`.
-- The repo is **public**. This branch leaves out admin URLs and exact stock counts. Everything else in it, including the theme name and ID, the app embeds and the on-page wording, can already be seen from the storefront's page source.
-- `CHANGES.md` is empty because nothing has been changed live.
-- The brief's files `09-performance.md`, `01-collections-internal-linking.md` and `03-merchant-feed-handoff.md` section D were never available to this session.
-- Results file: the brief asked for `/mnt/project-files/seo/cowork-results/03-theme-editor.md`, which this session can't reach. It is kept in this branch at `artifacts/03-theme-editor.md`.
-
-## 18 Oct 2026, ~18:30 UTC — theme work copy
-Live theme backed up as "CROOKSLDN — BACKUP of live 18 Oct (do not edit)". Approved fixes applied one file at a time to the unpublished copy "CROOKSLDN — live + 18 Oct approved fixes": tee dispatch 2–3 working days (made_to_order_tag = tee), delivery wording as estimated aims not guaranteed dates, footer OUTERWEAR link. Each read back and checked. Still to do in the code/theme editor: Judge.me storefront embeds off, IN STOCK / "[n] LEFT" suppression for tees, shipping schema timings. Goes live when George publishes the copy.
+- **Do not publish "CROOKSLDN — live + 18 Oct approved fixes" (207468855639).**
+  - It was copied from the old live theme (SEO round 2) at 18:15 BST.
+  - Publishing it now would wipe out tonight's TW launch, Mobile UX, Puffa and evening fixes.
+  - Everything useful in it (footer OUTERWEAR, tee wording) is already live.
+- The backup "CROOKSLDN — BACKUP of live 18 Oct (do not edit)" is a backup of the old live (SEO round 2), not the current live. The current live has no backup.
+- Overlap on tees is unchanged: product-data turned tracking off on the 3 live tees (C-009); merchant-center owns the feed handling time; the stock lines and schema are code.
+- The repo is public. This branch leaves out admin URLs and exact stock counts.
