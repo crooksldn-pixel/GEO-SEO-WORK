@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-10-18",
+  "type": "gap-fill (Google UK only)",
+  "type_explained": "Supplement to the 2026-10-16 full run, not a new baseline. The 16 Oct run marked 5 Google UK queries NOT RUN because the measuring computer went offline. This run searches only those 5 queries, with the same method, so the Google UK column has all 21 queries. The 16 Oct folder is left unchanged (never edit a past run). Read the two folders together, and note these 5 rows are 2 days later than the rest.",
+  "completes_run": "2026-10-16",
+  "queries": [
+    "Corteiz alternatives",
+    "brands like Carsicko",
+    "brands like Broken Planet",
+    "water reactive clothing",
+    "heat reactive clothing"
+  ],
+  "ip_country": "GB",
+  "ip_detail": "92.41.54.61, Hutchison 3G UK (Three), London (ipinfo.io check in the same browser just before the first search; same IP and network as 16 Oct). No VPN.",
+  "browser": "Same as 16 Oct: Claude desktop app built-in browser pane on George's Mac, its own profile separate from George's Chrome, signed out of Google; viewport emulated at 1280x2400, screenshots saved at 800x1500 (top of the page, not full-page). The viewport emulation was cleared on all four tabs after the last capture.",
+  "surfaces": {
+    "google_uk": {
+      "login_state": "signed out of Google",
+      "model": "n/a",
+      "url_template": "https://www.google.co.uk/search?q=<query>&gl=uk&hl=en-GB&pws=0",
+      "method": "one load per query; waited 15s (10s + 5s) for the AI Overview and expanded it with 'Show more'; page 2 (&start=10) checked and screenshotted as <name>_p2.png for every query because crooksldn.com was not on page 1"
+    }
+  },
+  "started": "2026-10-18T16:38:50+01:00",
+  "first_capture": "2026-10-18T16:38:50+01:00",
+  "finished": "2026-10-18T16:45:06+01:00",
+  "row_counts": {
+    "google_uk_answered": 5
+  },
+  "screenshot_files": 10,
+  "problems": [
+    "Corteiz alternatives: the first AI Overview text read stopped at 1,800 characters, before the third source card. The browser's Back button returned to the same results page (same AI Overview text, no new search) and the full source-card list was read from there.",
+    "Brands like Carsicko, brands like Broken Planet and water reactive clothing: the AI Overview side panel shows 3 source cards and a 'Show all' button. 'Show all' was not opened. sources_cited holds the inline source chips plus the visible cards.",
+    "Screenshots capture the top 1500px of an emulated 1280x2400 viewport. Lower page-1 results were read from the page, and the notes list them.",
+    "'Top 20' means Google pages 1 and 2. These pages showed 17-19 titled results because of video, social and forum blocks."
+  ]
+}
