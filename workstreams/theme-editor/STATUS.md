@@ -145,3 +145,6 @@ None yet. After B is live, Google needs to recrawl to pick up the new footer lin
 - `CHANGES.md` is empty because nothing has been changed live.
 - The brief's files `09-performance.md`, `01-collections-internal-linking.md` and `03-merchant-feed-handoff.md` section D were never available to this session.
 - Results file: the brief asked for `/mnt/project-files/seo/cowork-results/03-theme-editor.md`, which this session can't reach. It is kept in this branch at `artifacts/03-theme-editor.md`.
+
+## 18 Oct 2026, ~18:30 UTC — theme work copy
+Live theme backed up as "CROOKSLDN — BACKUP of live 18 Oct (do not edit)". Approved fixes applied one file at a time to the unpublished copy "CROOKSLDN — live + 18 Oct approved fixes": tee dispatch 2–3 working days (made_to_order_tag = tee), delivery wording as estimated aims not guaranteed dates, footer OUTERWEAR link. Each read back and checked. Still to do in the code/theme editor: Judge.me storefront embeds off, IN STOCK / "[n] LEFT" suppression for tees, shipping schema timings. Goes live when George publishes the copy.
