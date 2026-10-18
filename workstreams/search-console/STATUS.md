@@ -1,5 +1,7 @@
 # Workstream: Search Console analysis
 
+> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
+
 **Branch:** cowork/search-console  
 **Owner:** Cowork session  
 **Last updated:** 18 Oct 2026, 17:20 BST  
