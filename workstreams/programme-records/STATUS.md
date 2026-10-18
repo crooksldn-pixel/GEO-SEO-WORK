@@ -1,0 +1,64 @@
+# Workstream: Programme records (change log, master queue, status report)
+
+**Branch:** cowork/programme-records  
+**Owner:** Cowork session  
+**Last updated:** 18 Oct 2026, 16:50 UK  
+**Priority:** P1  
+**Overall status:** BLOCKED
+
+## Objective
+
+Keep the programme's single record. That means `change-log.md` (every live change with a metric, a baseline, and review dates at 4 and 8 weeks), `master-queue.md` (the status of every queued item) and `status-report-2026-10-16.md` (dated updates for George). This is the only session that edits those three files. Other workstreams report on their own `cowork/*` branches, and this session merges their results into the record.
+
+## Current state
+
+No record file has been edited. The three record files and `workstreams/10-measurement.md` are in the Project folder (`/mnt/project-files/seo/`). This session can't reach that folder, and nor can the other Cowork sessions. Issue #1 asks for the files.
+
+The repo now has `main` (README only) and two workstream branches: `cowork/geo-measurement` and this one. The GitHub default branch is still `cowork/geo-measurement`, because that branch was pushed before `main` existed.
+
+## Completed
+
+- Audited: searched for the record files in this session's workspace, on George's linked Mac (no folder connected), in Google Drive and in every `crooksldn-pixel` GitHub repo. They weren't found anywhere this session can reach.
+- Set up the repo: created `main` with a README describing the branch rules (George approved this on 18 Oct).
+- Opened issue #1 for the missing record files.
+- Read `cowork/geo-measurement`: it holds the 16 Oct 2026 UK GEO panel baseline. This is the first captured GEO measurement in the programme (see FINDINGS, Finding 4).
+
+## Currently working on
+
+`Nothing currently running.`
+
+## Blockers
+
+### Blocker 1 — Record files not reachable (issue #1)
+
+**Blocking:** Q36 (adding metric, baseline and review dates to C-001, C-002, C-006, C-007 and C-WS02-1, and marking C-003, C-004, C-005 and C-008 not live), the master-queue tidy-up, merging workstream changes, and the status-report update  
+**Needs:** `change-log.md`, `master-queue.md`, `status-report-2026-10-16.md` and `workstreams/10-measurement.md`, committed to this branch under `records/` or attached to the records chat  
+**From:** George  
+**Severity:** P1  
+**Can work around it?:** No  
+**Workaround:** None. Editing from memory or chat summaries would put unverified deploy dates and baselines into the record.
+
+## Waiting on George
+
+1. The four record files (issue #1).
+2. Switch the repo's default branch to `main` (GitHub > Settings > General > Default branch). This session can't change repo settings.
+
+## Waiting on external systems
+
+- Other workstreams pushing their branches. Only `cowork/geo-measurement` exists so far.
+
+## Next actions
+
+1. Q36 in `change-log.md`. For C-001, C-002, C-006, C-007 and C-WS02-1, add Metric, Baseline value (the Shopify 90-day baseline from `10-measurement.md`, or "no baseline: Search Console pending"), and Review at 4 weeks and Review at 8 weeks counted from each deploy date. Mark C-003, C-004, C-005 and C-008 not live.
+2. `master-queue.md`: mark done whatever the change log shows as done, mark parked items "Parked (George)", and change the Orderify row to "keep; customers use it for order edits".
+3. Merge each `cowork/*` branch's `CHANGES.md` into `change-log.md` as new entries, and update queue status to match. Record the 16 Oct GEO panel as the GEO baseline.
+4. Add a dated Update section at the top of the status report: what went live, what was measured, and George's remaining actions.
+
+## Expected impact
+
+**Commercial:** Low  
+**SEO:** Medium  
+**GEO:** Medium  
+**Confidence:** High
+
+No change here moves rankings by itself. A metric, a baseline and a review date on every live change is what will show which changes worked, and it stops deploys being reported as results.
