@@ -3,7 +3,7 @@
 ## Do next
 
 1. **Trustpilot compliance (George).** These protect the 4.2 from a Consumer Warning.
-   - Confirm whether the "kellan mullane" review is Preston's, and delete it if so.
+   - Confirm whether the the 8 Feb 2026 review is Preston's, and delete it if so.
    - Remove the review link from the shipped-today email.
    - Install Trustpilot's own Shopify app (free, 50 automated invitations a month) and set it to invite automatically after delivery.
 

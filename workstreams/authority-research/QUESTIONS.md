@@ -67,7 +67,7 @@ Also: **edit the two earlier replies (Leanne, Emma)** as suggested in §2.4? Yes
 
 **Answer:**
 
-### Q5 — Is the 5★ "kellan mullane" review (8 Feb 2026) Preston's?
+### Q5 — Is the 5★ the 8 Feb 2026 review (8 Feb 2026) Preston's?
 
 The name matches a director of Crooks Clothing Company Ltd on Companies House. Trustpilot bans reviews from people working for the business. Only the reviewer can delete his own review.
 
@@ -166,8 +166,8 @@ Evergreen roundups (IndyBest, GQ shopping, FashionBeans) drop products whose lin
 
 ### Q13 — The repo is public. Keep, reword or remove two sensitive details?
 
-1. FINDINGS 3 links the "kellan mullane" review to a named director.
-2. FINDINGS 4 and the artefact quote monthly fulfilled-order counts (166–265 a month, Jul–Sep 2026).
+1. FINDINGS 3 links the the 8 Feb 2026 review to a named director.
+2. FINDINGS 4 and the artefact quote monthly fulfilled-order counts (a few hundred a month).
 
 - **A.** Keep as is.
 - **B.** Reword without names or figures (e.g. "a reviewer whose name matches a company officer"; "a few hundred orders a month").

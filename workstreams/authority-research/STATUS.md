@@ -1,5 +1,7 @@
 # Workstream: Authority research, second pass (earned media, Trustpilot, entity profiles)
 
+> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
+
 **Branch:** cowork/authority-research  
 **Owner:** Cowork session  
 **Last updated:** 18 Oct 2026, 17:15 UK  
@@ -90,7 +92,7 @@ Nothing currently running. Waiting for George's answers in `QUESTIONS.md`. The f
 **All open questions are in [`QUESTIONS.md`](QUESTIONS.md): 14 numbered questions, each with options, a recommendation and an answer line.** Reply "answered" to this session once they're filled in.
 
 1. Q1–Q2: which company is the public operator, and the trading-name line. These block the LinkedIn and Crunchbase copy.
-2. Q3–Q7: support inbox, approval of the 12 Trustpilot replies, the "kellan mullane" review, the two model reviews, and the change to how reviews are requested. These block the Trustpilot work.
+2. Q3–Q7: support inbox, approval of the 12 Trustpilot replies, the the 8 Feb 2026 review, the two model reviews, and the change to how reviews are requested. These block the Trustpilot work.
 3. Q8: the contact-page "run out of London" copy.
 4. Q9–Q14: smaller calls (Crunchbase team, Dripscan, IndyBest samples, core colourway, public-repo detail, the 07 file). Each has a stated default if left unanswered.
 

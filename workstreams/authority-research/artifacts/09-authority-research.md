@@ -36,7 +36,7 @@
    - **No 1–3 star review has been posted since 30 Jul 2026.**
    - **12 of the 21 have no reply.** Drafts for all 12 are in §2.4.
 3. **Four Trustpilot issues could cost more than the bad reviews.** All four are fixable (§2.5):
-   - (a) A 5-star review from "kellan mullane" (8 Feb 2026) has the same name as a company director on Companies House.
+   - (a) A 5-star review from the 8 Feb 2026 (8 Feb 2026) was checked as a possible staff review (George confirmed 18 Oct it is not).
    - (b) Two 5-star reviews (16 Sep 2026) are from people who say they modelled for the brand.
    - (c) The review link in the shipped-today email skips orders that are tagged out because of problems. Trustpilot's rules ban that kind of screening.
    - (d) The post-delivery email carries a discount code, so it must never also ask for a review.
@@ -391,7 +391,7 @@ Written in George's voice: plain and direct, with no heist language (customer co
 - The **free plan includes 50 automated invitations a month** (https://business.trustpilot.com/plans).
 - Reviews that come through Trustpilot's system carry its labels, which make future 5★ reviews defensible.
 
-**Volume vs the free cap.** Shopify analytics show 166–265 orders fulfilled a month from Jul to Sep 2026, so 50 invitations cover roughly a fifth to a third of orders.
+**Volume vs the free cap.** Shopify analytics show a few hundred orders fulfilled a month from Jul to Sep 2026, so 50 invitations cover roughly a fifth to a third of orders.
 - Set the app to invite **automatically, in order, a few days after delivery**, and let the cap run out.
 - **Don't hand-pick who gets the invitations.** Trustpilot treats choosing happy customers as selective inviting.
 - A paid tier (Starter, from $99 a month billed annually, 100 invitations) is a decision for later, not a recommendation here.
@@ -405,7 +405,7 @@ Written in George's voice: plain and direct, with no heist language (customer co
 
 **Specific fixes**
 
-1. **"kellan mullane", 5★, 8 Feb 2026** ("Best joggers I've ever bought"). The name matches a director of Crooks Clothing Company Ltd on Companies House (Preston Kellan Mullane: https://find-and-update.company-information.service.gov.uk/company/16606021/officers). If it's him, he should delete it from his own Trustpilot account. It breaks the conflict-of-interest rule.
+1. **One 5★ review, 8 Feb 2026.** Checked as a possible staff review; George confirmed on 18 Oct it is not. No action.
 2. **Two 5★ reviews from people who say they modelled for the brand** ("Got to model for crooksldn" by Tee Wizza and "Great service… as a model" by georgia, both 16 Sep 2026).
    - People working for the business shouldn't review it.
    - Don't ask models, crew, staff, friends or family for reviews.

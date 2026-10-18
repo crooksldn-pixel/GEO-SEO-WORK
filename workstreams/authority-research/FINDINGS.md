@@ -53,13 +53,13 @@ George posts the 12 drafted replies (artifact §2.4). Nothing in them promises a
 ## Finding 3 — Conflict-of-interest reviews on the profile
 
 **Finding:**
-- A 5★ review from "kellan mullane" (8 Feb 2026) has the same name as a company director, Preston Kellan Mullane.
+- One 5★ review (8 Feb 2026) was checked as a possible staff review. George confirmed on 18 Oct that it is not from anyone at the business.
 - Two 5★ reviews (16 Sep 2026) are from people who say they modelled for the brand.
 
 Trustpilot doesn't allow reviews from "someone who is working for your business".
 
 **Evidence:**
-- Trustpilot profile page 4 (kellan mullane) and page 1 (Tee Wizza, georgia).
+- Trustpilot profile page 1 (the two model reviews).
 - Companies House officers: https://find-and-update.company-information.service.gov.uk/company/16606021/officers
 - Trustpilot Guidelines for Businesses v7.3: https://corporate.trustpilot.com/legal/for-businesses/guidelines-for-businesses/sep-2026
 
@@ -69,7 +69,7 @@ Misuse can lead to a Consumer Warning on the profile and a hidden TrustScore. Th
 **Confidence:** Medium. The name match is exact, but I can't confirm identity.
 
 **Recommended action:**
-- If the "kellan mullane" review is Preston's, he deletes it.
+- Resolved 18 Oct: the 8 Feb review is not a staff review; no action.
 - George decides whether to report the two model reviews.
 - From now on, no reviews from staff, models, crew, friends or family.
 
@@ -96,7 +96,7 @@ This is the same Consumer Warning risk as Finding 3. Selective collection also m
 - Send invites automatically, in order, a few days after delivery.
 - Remove the link from the shipped-today email.
 - Never put a review ask next to a discount code.
-- With 166–265 orders fulfilled a month (Jul–Sep 2026, Shopify analytics), the free cap covers about a fifth to a third of orders. Let it run out; don't hand-pick who gets it.
+- With a few hundred orders fulfilled a month (Jul–Sep 2026, Shopify analytics), the free cap covers about a fifth to a third of orders. Let it run out; don't hand-pick who gets it.
 
 ## Finding 5 — Three different support addresses in public replies
 
