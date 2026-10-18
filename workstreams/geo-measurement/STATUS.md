@@ -2,7 +2,7 @@
 
 **Branch:** cowork/geo-measurement  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:55 BST  
+**Last updated:** 18 Oct 2026, 17:15 BST  
 **Priority:** P1  
 **Overall status:** WAITING ON EXTERNAL
 
@@ -62,7 +62,7 @@ This is research only. It changes nothing on the store or any account.
 
 ## Currently working on
 
-Nothing currently running.
+Nothing currently running. Waiting for George's answers in `artifacts/questions-for-george.md`.
 
 ## Blockers
 
@@ -77,10 +77,15 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Create a Perplexity account for the GEO panel and share how to log in.
-2. Confirm whether Crooks London Limited (Companies House 16396366) is your company. AI answers present it as the brand's company.
-3. Decide whether the measuring network's IP address can stay in this public repo (it is in both `meta.json` files), or should be redacted.
-4. Switch the GitHub default branch to `main`. It is still this branch. This was already raised by programme-records.
+Each question has options and an answer slot in **`artifacts/questions-for-george.md`**. Answer there, then tell this session "answered".
+
+1. Perplexity: sign in a panel account in the built-in browser (with email, not Google), or drop Perplexity.
+2. Is Crooks London Limited (Companies House 16396366) your company?
+3. The repo is public: keep the measuring network's IP address in the run files, or redact it?
+4. Switch the GitHub default branch to `main`. This was also raised by programme-records.
+5. Add "water reactive windbreaker" as an extra tracked query?
+6. Is Fri 13 Nov OK for the control re-run, with the Mac on? Should it be a scheduled task?
+7. Is the GitHub branch enough as the record, or should the run zips also go in the Project folder?
 
 ## Waiting on external systems
 

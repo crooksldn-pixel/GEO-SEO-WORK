@@ -32,11 +32,15 @@ The baseline is measured: Google UK 21/21 queries, ChatGPT 63/63 runs, Gemini 63
 
 ## Decisions still required
 
-- **George:** create a Perplexity panel account, or accept that Perplexity stays out of the panel.
-- **George:** is Crooks London Limited (Companies House 16396366) his company? Perplexity and ChatGPT present it as the brand's company. See FINDINGS Finding 6.
-- **George:** the repo is public. Both run `meta.json` files include the measuring network's IP address (a Three mobile IP). The 16 Oct file also notes Gemini's location footer ("Wooburn Green, UK"). Keep them, or redact them in a new commit? Git history would still hold them unless it's rewritten.
-- **George or the orchestrator:** add "water reactive windbreaker" as an extra tracked query, labelled outside the 21? `cowork/search-console` Finding 2 shows it as a real Search Console query.
-- **George:** switch the GitHub default branch to `main`. It is still `cowork/geo-measurement`. This was already raised by `cowork/programme-records` (Finding 2), and that session couldn't change it.
+All of these are in `artifacts/questions-for-george.md` (Q1–Q7), with options and answer slots. When the answers come back, apply each one as that file says, then update `STATUS.md`.
+
+- **Q1:** a Perplexity panel account (signed in by George, with email not Google), or drop Perplexity.
+- **Q2:** is Crooks London Limited (16396366) George's company? See FINDINGS Finding 6.
+- **Q3:** keep or redact the measuring IP address in this public repo.
+- **Q4:** switch the GitHub default branch to `main`. This was also raised by programme-records.
+- **Q5:** add "water reactive windbreaker" as a labelled extra query? See `cowork/search-console` Finding 2.
+- **Q6:** the 13 Nov control re-run date, and whether to schedule it.
+- **Q7:** the GitHub branch alone, or the run zips in the Project folder too.
 
 ## Data still required
 
