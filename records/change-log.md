@@ -66,7 +66,7 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** upload accepted (Liquid compiles); checksum eb35bdce… matches local file. Rendered JSON-LD not checked (no raw HTML access); run Rich Results Test on the preview/live homepage after publish.
 - **Deployment status:** on unpublished copy only. Needs publish of the copy (live theme unchanged since 13:33 UTC, so the copy = live + C-004 + C-005).
 - **Metric:** Knowledge-panel/AI answers naming CROOKSLDN = Crooks LDN; GEO brand rows.
-- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy, which is never to be published wholesale (owner decision #7).
+- **Live status (Q36, 18 Oct):** NOT LIVE as this entry, because it is staged only on the held "Claude P1 fixes" copy, which is never to be published wholesale (owner decision #7). However, equivalent Organization schema went live outside the programme in the 18 Oct evening theme (see Outside changes observed). Its rendered output hasn't been tested yet (Rich Results Test).
 
 ### C-005 · Homepage popup delayed and softened (theme copy) · 16 Oct 2026
 - **Baseline:** "The Getaway" opened 3 s after load, full screen on phones with scroll lock and dim.
@@ -75,7 +75,7 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** JS passes `node --check`; upload accepted; checksum f3f802ac… matches. Not yet browser-tested: check on a 390px phone via the theme preview with ?ctc=1 before publishing.
 - **Deployment status:** on unpublished copy only.
 - **Metric:** popup signups per 1,000 homepage sessions, 14 days before vs after; mobile conversion rate; GSC page experience.
-- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy (owner decision #7).
+- **Live status (Q36, 18 Oct):** NOT LIVE as this entry, because it is staged only on the held "Claude P1 fixes" copy (owner decision #7). A different popup rebuild went live outside the programme in the 18 Oct evening theme (see Outside changes observed).
 
 ### C-000 · Theme workspace · 16 Oct 2026
 - Unpublished theme "CROOKSLDN — Claude P1 fixes (copy of live 16 Oct)" (gid 207340142935) created from live theme 207329132887. No edits yet. Publishing it would overwrite edits being made on the live theme today, so theme changes must be ported, not published wholesale.
@@ -120,7 +120,7 @@ Never record a ranking or GEO improvement without a captured measurement.
 ### C-008 · sameAs limited to IG + TikTok (theme copy, on HOLD) · 16 Oct 2026
 - **Implementation:** `snippets/crooks-schema-site.liquid` on copy 207340142935: allowlist changed from 14 social hosts to `instagram.com/crooksldn,tiktok.com/@crooksldn`; crooksldn.com stays the Organization url/@id. Live output today is already those two (footer links only them), so this guards against future footer links. Checksum f5527c5d…
 - **Status:** unpublished, owner HOLD.
-- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy (owner decision #7). Live sameAs output is already crooksldn.com, Instagram and TikTok only.
+- **Live status (Q36, 18 Oct):** NOT LIVE as this entry, because it is staged only on the held "Claude P1 fixes" copy (owner decision #7). The 18 Oct evening theme now limits sameAs to Instagram and TikTok in the live snippet (see Outside changes observed).
 
 ### Observed 16 Oct (not this thread)
 - Q3 (Portugal removed, customs CN) was done by the product-schema thread: see C-WS02-1 below.
@@ -136,7 +136,12 @@ Never record a ranking or GEO improvement without a captured measurement.
   - "TW launch + Mobile UX + Puffa"
   - "live 18 Oct + colour photos", saved 19:22
 
-  None of this is in a workstream CHANGES.md, so what changed on the live theme is unknown. Any work copy cut from the old live theme would undo the evening fixes if it were published.
+  No workstream logs this publish as its own change. `cowork/live-site-checks` FINDINGS 12 diffed it against the 16 Oct live theme: 15 files added, 42 changed, none removed. Files read at 20:15 BST show:
+  - **Organization schema live:** founder, Companies House 16606021, sameAs Instagram and TikTok only, "Crooks LDN" alternate name, and the brand description.
+  - **Tee dispatch line live:** "Printed to order. Dispatched within 2–3 working days."
+  - **Popup rebuilt:** a teaser bar after 3 s, with the game opening only on press. This isn't the held version, and it's checked in code only.
+
+  Still open: the tee "IN STOCK" label and the tee schema handling time. Theme-editor's work copy "live + 18 Oct approved fixes" was cut before this publish, so publishing it now would undo the evening changes.
 - 18 Oct, store password-locked. Every storefront URL redirected to /password at about 18:35 BST (`cowork/trustpilot` FINDINGS 2) and at 20:09 and 20:11 BST (`cowork/search-console` FINDINGS 13). The same URLs were open at 16:30–17:05 BST. It's not confirmed whether the lock is intentional, or when it ends. Leave lock days out of every like-for-like read.
 - 18 Oct, T-shirt Week tees made active (programme-records Admin read, 19:17 UTC):
   - 21 tee-tagged products are ACTIVE: the 3 earlier tees plus 18 new ones.

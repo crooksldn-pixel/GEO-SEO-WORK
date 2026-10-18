@@ -1,7 +1,7 @@
 <!-- Copied from the claude.ai Project seo/ folder on 18 Oct 2026 and sanitised for this public repo (owner decision #16): sales figures, order counts, age, town/address and IP removed. -->
 # CROOKSLDN GEO + SEO programme: status report
 
-**As of:** 16 Oct 2026, 18:00 UTC; updated 18:30 and 18:35 UTC with George's confirmed facts and decisions (see the Update sections). Read-only consolidation; nothing was changed to produce it.
+**As of:** 16 Oct 2026, 18:00 UTC. Updated at 18:30 and 18:35 UTC with George's confirmed facts and decisions, and on 18 Oct 2026 at 20:30 BST by programme-records (see the Update sections; the newest is first). This is a read-only consolidation: nothing was changed to produce it.
 **Sources:** all 10 workstream threads (latest replies 15:34–15:45 UTC), the project chat (including George's 25 answers at 15:33), `master-queue.md`, `change-log.md`, `workstreams/01–10`, `p1-collection-audit`, `measurements/geo-panel`.
 
 **How "live" was checked.** At ~17:55 UTC I read the store back through the Shopify Admin API (collections, products, themes, shop settings). I could not load crooksldn.com itself from this container (network blocked), so anything described as "visible on the live page" comes from the programme thread's own live fetch at 15:36 UTC unless marked **[verified now]**.
@@ -15,6 +15,82 @@
 No thread is running right now. All ten finished their turn and are waiting on George or on an external event.
 
 ---
+
+## Update 18 Oct 2026, 20:30 BST: what went live, what was measured, what's left for you
+
+**Sources:**
+- the change log and master queue in `records/` on `cowork/programme-records`;
+- `owner-decisions-2026-10-18.md`;
+- all eleven `cowork/*` workstream branches as they stood at 20:30 BST;
+- Shopify Admin reads at 19:17 and 19:22 UTC.
+
+Nothing was changed on the site to write this. Section C below and its superseded lists are out of date; the list at the end of this update replaces them.
+
+### Live since 16 Oct
+
+| Entry | What | When |
+|---|---|---|
+| C-009 | Stock tracking off on the 3 tees that were live (90 variants) | 18 Oct ~17:20 UTC |
+| IMP-1, IMP-2, IMP-5 | Markets restructured: the US and the Eurozone are now their own markets, and "all world" is rest-of-world only. Test prices unchanged | 18 Oct 18:10 to ~19:05 BST |
+| IMP-4 | Channel Islands get free Tracked 48 from £30 | 18 Oct 18:37 BST |
+| IMP-7 | International shipping zones rebuilt on real costs | 18 Oct ~19:15 BST |
+| IMP-8 | HS codes on 176 variants. Data only: US duty collection isn't switched on | 18 Oct ~19:20 BST |
+| TP-1 | 12 Trustpilot replies posted. No visible 1–3★ review is left without a reply | 18 Oct ~18:40–18:55 BST |
+| TP-2 | Trustpilot name changed to CROOKSLDN, with the approved brand line as the description | 18 Oct ~19:00–19:10 BST |
+
+- **Still live from 16 Oct:** C-001, C-002, C-006, C-007 and C-WS02-1.
+- **Not live:**
+  - C-003: re-approved as decision #13 and routed to collections.
+  - C-004, C-005 and C-008: on the held theme copy, parked. Most of their content is live anyway, through the evening theme below.
+  - IMP-3 and IMP-6: the USD and EUR catalogs, still in draft.
+
+Each live entry now has a metric, a baseline, and review dates at 4 and 8 weeks (Q36):
+- 4-week review: 13 Nov for the 16 Oct changes, 15 Nov for the 18 Oct ones.
+- 8-week review: 11 Dec and 13 Dec respectively.
+
+### Changed on 18 Oct with no workstream record
+
+- **New live theme.** "CROOKSLDN — live 18 Oct + evening fixes" became the live theme (created 18:36 UTC, last saved 18:58 UTC). No workstream logged it as its own change. `cowork/live-site-checks` read its files and found three things now live:
+  - the Organization schema, with founder, Companies House number, sameAs limited to Instagram and TikTok, and "Crooks LDN";
+  - the tee line "Printed to order. Dispatched within 2–3 working days.";
+  - a rebuilt popup (teaser bar, with the game opening on press).
+
+  Still open: the tee "IN STOCK" label, the tee schema handling time, and the policies, FAQ and Terms.
+- **Store password-locked.** Every storefront URL redirected to /password at 18:35, 20:09 and 20:11 BST. The same URLs were open at 16:30–17:05 BST.
+- **T-shirt Week tees active.** 21 tee products are ACTIVE, and 4 of the new ones are on the Online Store. Their stock tracking was being changed while this was read, and that isn't logged yet.
+
+All of this falls inside the first measurement window. The lock days and T-shirt Week are kept out of every before/after comparison.
+
+### Measured (baselines; no improvement is claimed)
+
+- **GEO panel:** run 16 Oct, with an 18 Oct Google UK gap-fill. Google UK 21/21 queries, ChatGPT 63/63 runs, Gemini 63/63, Perplexity 5/63. Crooks is named only when the query contains "Crooks": 0 of 110 readable non-brand AI answers.
+- **Search Console:** UK exports for 21 Jan – 22 Jul 2026 and 15–16 Oct 2026. There is no data for 23 Jul – 14 Oct.
+- **Merchant Center:** exports from 16 and 18 Oct. All 25 Shopify products are approved for the UK; the only UK disapproval is the Cream Cap.
+- **Core Web Vitals:** PageSpeed measured on 16 Oct, mobile and desktop, on 5 URLs. The homepage fails mobile INP.
+- **Trustpilot:** 4.2 from 80 reviews on 18 Oct. The 3.3 from 50 used earlier was out of date.
+
+The old GEO 43/50/54 and SEO health 70/74 scores have no recorded method. They're kept only as labelled history.
+
+### Your remaining actions
+
+Everything in `owner-decisions-2026-10-18.md` is treated as answered and isn't asked again. Parked items aren't listed.
+
+1. **The 18 Oct evening launch.** Is the password lock intentional, and when does the store reopen? Which chat or person published the new live theme? This is needed to log it properly and to set the measurement windows.
+2. **Before any theme work copy is published,** check it was cut from the current live theme, "live 18 Oct + evening fixes". A copy cut earlier, such as theme-editor's work copy, would undo the evening changes.
+3. **Shopify admin:** take the Cream Cap off Google & YouTube. The connector refuses this write, and the cap is the only UK disapproval.
+4. **Shopify admin:** untick the pre-ticked marketing box at checkout.
+5. **International pricing (`cowork/international-markets-pricing`):**
+   - load the USD and EUR fixed prices and activate both catalogs, by CSV import or by an explicit instruction in that chat;
+   - click "Agree and activate" for US duties;
+   - read one Gildan label per tee style (for the tee HS codes and origin);
+   - treat GG, JE and IM as domestic in CROOKS Shipping.
+6. **Trustpilot:**
+   - give your go on reporting the two model reviews through Trustpilot support;
+   - keep team@crooksldn.com answered, because 11 public replies promise a reply within 1–2 working days.
+7. **LinkedIn and Crunchbase:** create both profiles from the ready copy on `cowork/authority-research`.
+8. **Outreach:** give your go on each final text, both the Disco and Streetwear Directory listings and the PAUSE, GUAP and Menswear Style Podcast pitches.
+9. **Merchant Center:** after the 29 Oct re-check, opt out of auto-add by 1 Nov if core items are still disapproved.
+10. **GitHub:** go to Settings, then General, then Default branch, and change it to `main`.
 
 ## Update 16 Oct 18:30 UTC: owner-confirmed facts
 George confirmed these facts at 18:26. They override the conclusions below wherever the two conflict. The full wording is in `change-log.md` F-001 and in each affected workstream file.
