@@ -1,30 +1,35 @@
 # Next
 
-## Waiting on George's "go" (in this order)
+## George
 
-1. **USD prices.** Load 44 products by product (USD column of the approved list) and the 8 sock packs by variant, set the US catalog ACTIVE, then test (see the script below). Sock packs, both colours: 1pc $9, 3pc $22, 6pc $35, 12pc $65 (EUR: €8, €20, €30, €55). Manual route: Markets → Catalogs → Import → [artifacts/catalog-prices-USD.csv](artifacts/catalog-prices-USD.csv), then set the sock packs in the catalog by hand.
-2. **Eurozone (Q12, option A).** New market "Eurozone": the 21 euro states plus MC, AD, SM, VA, ME, XK; base EUR. Take the 21 out of "European Union" and rename it "European Union (non-euro)". Add a EUR catalog "Eurozone — EUR fixed prices" with [artifacts/catalog-prices-EUR.csv](artifacts/catalog-prices-EUR.csv) + sock packs. Test DE, IT, FR, IE, BG.
-3. **Shipping zones (Q13).** Split "International" into United States (fixed USD), Australia/New Zealand and rest of world; split "EU (European Union)" into Eurozone (fixed EUR) and Rest of Europe; value-band rates per Q13; move the Isle of Man to the Channel Islands zone.
-4. **US duties (Q3b).** Only after every product has an HS code.
+1. **Fixed prices** — import [catalog-prices-USD.csv](artifacts/catalog-prices-USD.csv) and [catalog-prices-EUR.csv](artifacts/catalog-prices-EUR.csv) (Markets → Catalogs → Import → Adjust prices → Import CSV), set the 8 sock packs by hand, set both catalogs Active. Or tell me in plain words to load and activate them and I retry once.
+2. **US duty** — Settings → Taxes and duties → Duties and import taxes → Set up: United States only, add at checkout (not included in price), postal duty rates, confirm DDP (Royal Mail US is duty pre-paid), Agree and activate.
+3. **Tee label** — the "Made in" country on one Gildan tee per style.
+4. **CLIVE Shipping** — treat GG, JE, IM as domestic (Royal Mail Tracked 48), not international.
+
+## Me, once unblocked
+
+1. Read back both price lists; contextualPricing for every price point in US, DE, IT, FR, IE, BG; confirm PL/DK/SE unchanged.
+2. Tees: HS 6109.10 + origin on all 630 tee variants.
+3. After duty activation: draftOrderCalculate a US basket and check a duty line appears at ~36% of goods (China origin) / ~16.5% (tees).
+4. Update FINDINGS, CHANGES, STATUS.
 
 ## Other workstreams
 
-- **Theme:** Horizon country/region selector in header and footer. Without it, local prices only show at checkout.
-- **Product-data:** weights on 31 products, HS codes on 37, origin CN on the Blue and Brown caps, HydroCuff HS to 6201.40, tee origin once the blank is known (F5).
-- **Ops / CROOKS Shipping:** Channel Islands parcels must route Royal Mail Tracked 48, not Parcelforce (F10).
-- **Accountant:** the three VAT points in F9.
+- **Theme:** country/region selector in header and footer.
+- **Product-data:** weights on the 31 zero-weight products (needed if shipping moves to weight bands, and for Swiss duties).
+- **Accountant:** the three VAT points in FINDINGS F9.
 
-## Tier 1 test script (after each go-live)
+## Tier 1 test script (after prices go live)
 
-1. contextualPricing for every price point in US / DE / IT / FR / GG; must match the list exactly.
-2. With the selector (once live): homepage, collection, product page, cart, checkout for US, DE, IT and GG. Pass = same currency and price at every step; shipping matches the matrix; no tax line in US/EU; US duty line present and plausible once enabled.
-3. One checkout to the payment step per Tier 1 market with a real address — George, or with his OK.
-4. Screenshots into `artifacts/tests/`.
+1. contextualPricing for every price point in US / DE / IT / FR / GG; must match the lists.
+2. With the selector: homepage, collection, product page, cart, checkout for US, DE, IT, GG. Pass = same currency and price at every step; shipping matches the matrix; US duty line once on.
+3. One real checkout to the payment step per Tier 1 market — George, or with his OK.
 
 ## Measurement
 
-Baseline is F1 (checkout completion by country, 18 Oct 2026). Re-pull at 30 and 60 days after the US and Eurozone prices go live. Nothing is recorded as an improvement without that re-pull.
+Baseline is F1 (checkout completion by country, 18 Oct 2026). Re-pull at 30 and 60 days after fixed prices go live.
 
 ## Ongoing
 
-Fixed prices don't move with FX. Re-check quarterly, or sooner if GBP/USD or GBP/EUR moves more than ~5% from 1.334 / 1.186.
+Fixed prices don't move with FX. Re-check quarterly, or sooner if GBP/USD or GBP/EUR moves more than ~5% from 1.334 / 1.186. Shipping bands are "fine for now" per George; revisit once weights exist or Easyship quotes are available.
