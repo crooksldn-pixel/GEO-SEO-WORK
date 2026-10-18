@@ -23,3 +23,16 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **Q13 Public repo:** reword: no names tied to reviews, no exact order counts (decision #16). Applied to FINDINGS 3–4 on 18 Oct.
 - **Q14 07-authority.md:** on `cowork/project-files-import` (sanitised; raw tables not copied).
 - Also approved: LinkedIn and Crunchbase pages, Trustpilot renamed to CROOKSLDN, the brand one-liner. Trading since **March 2024**.
+
+## Update 18 Oct 2026, 18:50 UTC: George's go, and who does what now
+
+George typed **go** at 18:45 UTC for the approved store batch. The project thread's store writes are still refused by its own permission check, so **this Cowork chat now carries out the items below**. George's reply "answered" in this chat is his go for them. Re-read live values before each write, change one thing at a time, read it back, and log it in `project-files/seo/change-log.md` (or this branch's CHANGES.md).
+
+**Do now**
+1. Finalise the 12 Trustpilot replies (contact: team@crooksldn.com) and the 2 model-review reports, ready for George to post.
+2. LinkedIn and Crunchbase drafts: Crooks Clothing Company Ltd where a company is needed, George as founder, trading since March 2024, approved brand line; no other people or details.
+3. Trustpilot rename to CROOKSLDN (George does it in Trustpilot).
+4. Use Black Convict as the evergreen colourway in entity copy.
+
+**Parked:** review-invitation change, Dripscan.
+**No decision outstanding for this chat.**
