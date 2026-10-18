@@ -2,7 +2,7 @@
 
 **Branch:** cowork/outreach  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:50 UK  
+**Last updated:** 18 Oct 2026, 17:15 UK  
 **Priority:** P1  
 **Overall status:** BLOCKED
 
@@ -67,7 +67,7 @@ Nothing currently running.
 - merging `cowork/authority-research`'s target CSV into 07;
 - writing the Submission log.
 
-**Needs:** `07-directory-submission-pack.md` and `07-authority.md`, attached to the outreach chat. These are already tracked in issue #1.  
+**Needs:** `07-directory-submission-pack.md` and `07-authority.md`, committed to this branch as set out in `QUESTIONS.md` Q1–Q2. Issue #1 points here.  
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
@@ -76,7 +76,7 @@ Nothing currently running.
 ### Blocker 2 — Images for Disco
 
 **Blocking:** a complete Disco application. The logo and campaign image fields aren't marked required, but the brief includes them.  
-**Needs:** a square logo and a 4:5 campaign image with no text overlay, as PNG, JPG or WebP under 5 MB.  
+**Needs:** a square logo and a 4:5 campaign image with no text overlay, as PNG, JPG or WebP under 5 MB (`QUESTIONS.md` Q3–Q4).  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Yes  
@@ -84,11 +84,15 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Attach `07-directory-submission-pack.md` and `07-authority.md` to the outreach chat.
-2. Send the square logo and the 4:5 campaign image (no text).
-3. Say OK on each filled form before it is submitted.
-4. Pick the outlets to pitch. Recommended: PAUSE, GUAP and Menswear Style Podcast. FashionBeans and Ape to Gentleman are optional.
-5. Confirm the From address for pitch drafts (FINDINGS 5).
+Every open item is in [`QUESTIONS.md`](QUESTIONS.md), with where each answer or file goes:
+
+1. Q1–Q2: the two 07 files.
+2. Q3–Q4: the logo and the campaign image.
+3. Q5: Disco selections.
+4. Q6: outlets to pitch.
+5. Q7: From address for drafts.
+
+The OKs to submit each form are not in that file. They come from George in the outreach chat, after he has seen the form filled in.
 
 ## Waiting on external systems
 

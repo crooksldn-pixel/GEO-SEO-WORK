@@ -2,7 +2,7 @@
 
 ## Do next
 
-1. **Get the two 07 files.** Get `07-directory-submission-pack.md` and `07-authority.md` from George, attached to the outreach chat. Steps 2–5 depend on them.
+1. **Pull this branch and read `QUESTIONS.md`.** The answers and the files in `artifacts/inputs/` arrive there. Steps 2–6 depend on Q1–Q2.
 2. **Streetwear Directory.** Open https://tally.so/r/vGXPdQ.
    - Fill it from the pack. The field map is in `artifacts/directory-form-fields.md`: Owner, George Hinxman, team@crooksldn.com, https://crooksldn.com, and the pack text in "Anything Else?".
    - Show George the filled form and submit only on his explicit OK for this submission.
