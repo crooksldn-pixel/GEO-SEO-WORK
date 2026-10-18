@@ -1,27 +1,28 @@
 # Reply pack — 12 unanswered low-star reviews
 
-**Status:** approved in principle by George (authority-research ANSWERS Q4, 18 Oct 2026). Awaiting the final go to post. Nothing posted yet.
+**Status:** all 12 **posted 18 Oct 2026, ~18:40–18:55 BST** after George's typed "Post all 12". Verified on the public page. See CHANGES.md.
 
 **Source:** drafts from `cowork/authority-research` `09-authority-research.md` §2.4, checked against the live review text on 18 Oct 2026.
 
-**Public-repo rule:** the reviewer's first name opens each reply when posted. It is shown here as [name]. Full versions are in the session chat.
+**Public-repo rule:** the reviewer's first name opens each posted reply. It is shown here as [name].
 
 ## Checks applied to every reply
 
 - Matches what the review actually says (no corrected timelines, no assumed pre-orders).
-- No order details, no personal data, no outcome Cowork can't verify (no "refunded", "delivered", "sorted").
+- No order details, no personal data, no outcome that can't be verified (no "refunded", "delivered", "sorted").
 - No accusation, no arguing, no legal language.
 - Only service facts from the live shop policies (read via Shopify Admin, 18 Oct): same-day dispatch before 18:00 Mon–Sat; pre-orders ship on the date on the product page; tracking emailed on dispatch; team@crooksldn.com replies within 1–2 working days (Mon–Sat).
 - One contact route: team@crooksldn.com.
-- Each reply commits George to answer personally within 1–2 working days, so team@ must be watched once these go live.
+- Each reply commits George to answer personally within 1–2 working days, so team@ must be watched.
 
 ## Changes from the 16 Oct drafts
 
-- **15 May 3★:** dropped "a month from order to delivery". The reviewer describes it as three months; the reply no longer states a duration. Dropped "now" before the dispatch line, since there's no record the policy was different then.
+- **15 May 3★:** dropped "a month from order to delivery". The reviewer describes it as three months; the reply no longer states a duration. Dropped "now" before the dispatch line.
 - **14 Mar 1★:** "an in-stock order" became "your order". The reviewer said it wasn't a pre-order, not that it was in stock.
-- **6 Mar 1★:** now acknowledges the review request that arrived before the order. Acknowledgement only; no promise about the invitation setup.
+- **6 Mar 1★:** now acknowledges the review request that arrived before the order. No promise about the invitation setup.
+- **5 Mar 1★ (at posting):** removed "I can't see who left this review, so". Trustpilot Business shows an order reference on that review, so the clause was untrue.
 
-## Replies, in posting order
+## Replies as posted
 
 ### P0
 
@@ -44,7 +45,7 @@
 > [name], no order, no proper replies, and then a review request on top of that isn't acceptable, and I'm sorry. If it's still missing, email your order number to team@crooksldn.com and I'll check it myself. — George, CROOKSLDN
 
 **5 Mar 2026 · 1★** — no order after 2+ months (reviewer shown as anonymous)
-> Sorry for the wait, and for how late this reply is. Two months without your order isn't OK. I can't see who left this review, so if it's still outstanding please email your order number to team@crooksldn.com and I'll look into it straight away. — George, CROOKSLDN
+> Sorry for the wait, and for how late this reply is. Two months without your order isn't OK. If it's still outstanding, please email your order number to team@crooksldn.com and I'll look into it straight away. — George, CROOKSLDN
 
 **27 Feb 2026 · 1★** — December puffer not arrived; support emails unanswered
 > [name], sorry. Your son's puffer was ordered in December and your emails to support went unanswered, which isn't acceptable. If it hasn't arrived, or anything else is wrong, email your order number to team@crooksldn.com and I'll deal with it with you directly. — George, CROOKSLDN
