@@ -3,8 +3,16 @@
 
 Owner: workstream 1 thread (the only session that writes to Shopify or the theme copy). Other workstreams propose changes via /mnt/project-files/seo/master-queue.md.
 
-Baselines: 9 Oct 2026 GEO 43. 15 Oct GEO 50, SEO health 70. 16 Oct GEO 54, SEO health 74.
+Historical scores, **not evidence**. They have no recorded method, so never cite them: 9 Oct 2026 GEO 43; 15 Oct GEO 50, SEO health 70; 16 Oct GEO 54, SEO health 74.
+
+Measured baselines:
+- Shopify analytics, 90 days to 16 Oct 2026 (`workstreams/10-measurement.md`).
+- UK GEO panel, 16 Oct 2026, with an 18 Oct Google UK gap-fill (`cowork/geo-measurement`).
+- Search Console UK exports (`cowork/search-console`). The property has no data for 23 Jul – 14 Oct 2026.
+
 Never record a ranking or GEO improvement without a captured measurement.
+
+**Q36 (18 Oct 2026):** every live entry carries a Metric, a Baseline value and review dates at 4 and 8 weeks, counted from its deploy date. Entries that aren't live say so.
 
 ## Entries
 
@@ -19,6 +27,16 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** Admin read-back: collection has 2 products (hydrocuff-windbreaker, double-agent-puffa). Live fetch of /collections/outerwear: title "Water-Reactive & Heat-Reactive Jackets | CROOKSLDN", meta as set, H1 "Outerwear", copy shown, "2 ITEMS"; OUTERWEAR shows in the SHOP dropdown.
 - **Deployment status:** live. Footer link (theme, footer-group.json block c1 slot 6) not done: live theme writes are blocked for this connection; user to add in theme editor.
 - **Metric to monitor:** GSC impressions/clicks for /collections/outerwear; GEO rows "water reactive jacket", "heat reactive puffer".
+- **Metric (Q36):**
+  - M1: organic-search sessions landing on /collections/outerwear (Shopify).
+  - M2: Search Console UK impressions and clicks for /collections/outerwear.
+  - GEO panel rows for "water reactive jacket" and "heat reactive puffer".
+- **Baseline value:**
+  - M1: 0 sessions (90 days to 16 Oct 2026).
+  - M2: no baseline: Search Console pending.
+  - GEO (16 Oct panel): Crooks was not in the Google UK top 20 for either query, and was named in 0/3 ChatGPT and 0/3 Gemini runs for each. Perplexity was blocked.
+- **Review at 4 weeks:** Fri 13 Nov 2026.
+- **Review at 8 weeks:** Fri 11 Dec 2026.
 
 ### C-002 · Tracksuits collection copy · 16 Oct 2026
 - **Baseline:** SEO title "Convict Tracksuits: Matching Fleece Sets | CROOKSLDN"; description without internal links.
@@ -27,9 +45,19 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** live fetch shows new title, unchanged meta, Sweats link present, 6 items.
 - **Deployment status:** live, 16 Oct ~15:42 UTC.
 - **Metric:** GSC impressions/position for "heavyweight tracksuit(s) uk", "550gsm tracksuit" on /collections/tracksuits.
+- **Metric (Q36):**
+  - M2: Search Console UK impressions and average position for "heavyweight tracksuit(s) uk" and "550gsm tracksuit" on /collections/tracksuits.
+  - M1: organic-search sessions landing on /collections/tracksuits.
+- **Baseline value:**
+  - M1: 22 sessions (90 days to 16 Oct 2026).
+  - M2: no baseline: Search Console pending.
+- **Review at 4 weeks:** Fri 13 Nov 2026.
+- **Review at 8 weeks:** Fri 11 Dec 2026.
+- **Note:** C-007 changed the same page later the same day, so C-002 and C-007 can't be measured apart. Review them together.
 
 ### C-003 · Sweats and Denim collection copy · 16 Oct 2026
 - **Status:** approved, NOT applied. The live /collections/sweats and /collections/denim are not visible to this Admin API connection (only stale sweats-1/denim-1, 0 products). Draft copy in workstreams/01; user or the other editor to paste in Shopify admin, or tell me how those collections are managed.
+- **Live status (Q36, 18 Oct):** NOT LIVE. Superseded by owner decision #13: the Sweats and Denim cleanup, with "Made in Portugal" removed, is approved and routed to `cowork/collections`. It isn't applied: collections' CHANGES records no change as of 18 Oct.
 
 ### C-004 · Organization/Brand/WebSite schema (theme copy) · 16 Oct 2026
 - **Baseline:** alternateName ["Crooks London","Crooks"]; no founder, identifier or country; fallback description "streetwear label… accessories".
@@ -38,6 +66,7 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** upload accepted (Liquid compiles); checksum eb35bdce… matches local file. Rendered JSON-LD not checked (no raw HTML access); run Rich Results Test on the preview/live homepage after publish.
 - **Deployment status:** on unpublished copy only. Needs publish of the copy (live theme unchanged since 13:33 UTC, so the copy = live + C-004 + C-005).
 - **Metric:** Knowledge-panel/AI answers naming CROOKSLDN = Crooks LDN; GEO brand rows.
+- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy, which is never to be published wholesale (owner decision #7).
 
 ### C-005 · Homepage popup delayed and softened (theme copy) · 16 Oct 2026
 - **Baseline:** "The Getaway" opened 3 s after load, full screen on phones with scroll lock and dim.
@@ -46,6 +75,7 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** JS passes `node --check`; upload accepted; checksum f3f802ac… matches. Not yet browser-tested: check on a 390px phone via the theme preview with ?ctc=1 before publishing.
 - **Deployment status:** on unpublished copy only.
 - **Metric:** popup signups per 1,000 homepage sessions, 14 days before vs after; mobile conversion rate; GSC page experience.
+- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy (owner decision #7).
 
 ### C-000 · Theme workspace · 16 Oct 2026
 - Unpublished theme "CROOKSLDN — Claude P1 fixes (copy of live 16 Oct)" (gid 207340142935) created from live theme 207329132887. No edits yet. Publishing it would overwrite edits being made on the live theme today, so theme changes must be ported, not published wholesale.
@@ -68,16 +98,29 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Not done:** cap off the Google & YouTube channel (MCP blocks unpublishing; user does it in admin); gender (no product data says which pieces are women's); tee customs origin left blank (print on demand).
 - **Validation:** mutation read-backs clean; all new media READY; Puffa order = photo, reacted, second photo.
 - **Metric:** GMC export item issues (missing colour/description/category, image warnings) on these 13 products.
+- **Metric (Q36):** M5 Merchant Center item issues on these 13 products (missing colour, description or category; image warnings), from a Products and Needs attention export.
+- **Baseline value:** the Admin before-state in this entry's Baseline line. There is no Merchant Center issue count from before the change. The 16 Oct products export (`cowork/merchant-center` → `artifacts/baseline-2026-10-16.md`) already shows this entry's values, for example Cellblock Set colour Gray and category Outfit Sets. That makes it a post-change reading.
+- **Review at 4 weeks:** Fri 13 Nov 2026.
+- **Review at 8 weeks:** Fri 11 Dec 2026.
+- **Note:** merchant-center's 29 Oct re-export comes before the 4-week review, and is the reading for the 1 Nov opt-out decision.
 
 ### C-007 · Tracksuits lists the 3 Convict Sets · 16 Oct 2026 ~19:05 UTC
 - **Approval:** user 18:29 ("Tracksuits: YES, it can list the three Convict Sets").
 - **Implementation:** manual collection 687058518359 + grey-set, black-set, pink-set (9 products). Description now says 550gsm, 100% cotton and links the three sets at £110 vs pieces at £60. Cellblock Set not added. /collections/sets left as is (holds the Cellblock Set too; set pages keep `seo.hidden`).
 - **Validation:** read-back 9 products; description saved.
 - **Metric:** Tracksuits sessions → set add-to-carts; AOV on Tracksuits landings.
+- **Metric (Q36):** M1 organic-search sessions landing on /collections/tracksuits, the set add-to-carts from those sessions, and AOV on Tracksuits landings (Shopify).
+- **Baseline value:**
+  - Sessions: 22 (90 days to 16 Oct 2026).
+  - Set add-to-carts and AOV: no baseline in `10-measurement.md`. Take them from Shopify for the 90 days to 16 Oct at the 4-week review. £ values stay out of this public repo.
+- **Review at 4 weeks:** Fri 13 Nov 2026.
+- **Review at 8 weeks:** Fri 11 Dec 2026.
+- **Note:** this is the same page as C-002, changed the same day. Review the two together.
 
 ### C-008 · sameAs limited to IG + TikTok (theme copy, on HOLD) · 16 Oct 2026
 - **Implementation:** `snippets/crooks-schema-site.liquid` on copy 207340142935: allowlist changed from 14 social hosts to `instagram.com/crooksldn,tiktok.com/@crooksldn`; crooksldn.com stays the Organization url/@id. Live output today is already those two (footer links only them), so this guards against future footer links. Checksum f5527c5d…
 - **Status:** unpublished, owner HOLD.
+- **Live status (Q36, 18 Oct):** NOT LIVE. Staged only on the held "Claude P1 fixes" copy (owner decision #7). Live sameAs output is already crooksldn.com, Instagram and TikTok only.
 
 ### Observed 16 Oct (not this thread)
 - Q3 (Portugal removed, customs CN) was done by the product-schema thread: see C-WS02-1 below.
@@ -94,6 +137,13 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** Admin read-back 18:45 UTC: every active non-tee variant reads CN; crooks.origin absent on the 7 products; no userErrors on any write.
 - **Deployment status:** live (store data). Theme JSON-LD reads crooks.origin only where present, so countryOfOrigin simply drops out; no theme change needed.
 - **Metric to monitor:** duties/import charges shown at checkout for non-UK markets; no "Portugal" text in a site crawl.
+- **Metric (Q36):** count of "Portugal" mentions in a crawl of crooksldn.com, plus duties or import charges shown at checkout for non-UK markets.
+- **Baseline value:**
+  - Product data: 7 products carried crooks.origin "Made in Portugal", and the crewneck copy said it too (this entry's Admin before-state).
+  - Crawl: no baseline crawl on record. Known live mentions outside this entry: the Sweats and Denim collection descriptions (`cowork/collections`, 18 Oct). Owner decision #13 approves removing them, and collections owns that fix.
+  - Duties: no baseline. US duty collection isn't switched on (`cowork/international-markets-pricing`).
+- **Review at 4 weeks:** Fri 13 Nov 2026.
+- **Review at 8 weeks:** Fri 11 Dec 2026.
 
 ### F-003 · Owner decisions on the 33-question pack (no site change) · 18 Oct 2026 17:03 UTC
 - Full list and routing: `owner-decisions-2026-10-18.md`. Supersedes earlier open questions; unresolved items are parked.
@@ -105,3 +155,10 @@ Never record a ranking or GEO improvement without a captured measurement.
 - **Validation:** mutation read-back tracked=false on all 90, no userErrors.
 - **Not done:** the 14 draft T-shirt Week tees (420 variants): the next write was refused by this session's permission check; waiting on George's "go" in the decision-pack thread. The "IN STOCK" label and the same-day dispatch lines are theme output and still show until the theme fix (owner decision #1/#7).
 - **Metric:** tee-related "where is my order" contacts; tee PDPs show no "[n] LEFT".
+- **Metric (Q36):** tee pages showing no "[n] LEFT" (live check), and tee-related "where is my order" contacts.
+- **Baseline value:**
+  - Tee pages: on 16 Oct, the tee pages showed "IN STOCK" on a zero-stock tee and a "leaves tomorrow" line (`cowork/live-site-checks` screenshots 10 and 12).
+  - Contacts: no baseline recorded.
+- **Review at 4 weeks:** Sun 15 Nov 2026.
+- **Review at 8 weeks:** Sun 13 Dec 2026.
+- **Note:** this covers the 3 tees live on 18 Oct only. The T-shirt Week tees are outside it (see Outside changes observed).
