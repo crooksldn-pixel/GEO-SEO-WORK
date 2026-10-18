@@ -21,6 +21,8 @@ Quote 4.2 / 80, dated. Read Trustpilot in a real browser, not through fetch tool
 
 ## Finding 2 — Low reviews are about delivery and silence, not product
 
+**Update, 18 Oct (evening):** all 12 unanswered reviews were answered by `cowork/trustpilot` after George approved the texts.
+
 **Finding:**  
 Across all 21 public reviews at 1–3★:
 
@@ -52,6 +54,10 @@ George posts the 12 drafted replies (artifact §2.4). Nothing in them promises a
 
 ## Finding 3 — Conflict-of-interest reviews on the profile
 
+**Update, 18 Oct:**
+- The 8 Feb review: George confirmed it isn't a staff review. Closed.
+- The two model reviews: George approved reporting both. `cowork/trustpilot` found the in-app flag form has no conflict-of-interest option, so the route is a Trustpilot support report, pending George's go there.
+
 **Finding:**
 - One 5★ review (8 Feb 2026) was checked as a possible staff review. George confirmed on 18 Oct that it is not from anyone at the business.
 - Two 5★ reviews (16 Sep 2026) are from people who say they modelled for the brand.
@@ -74,6 +80,8 @@ Misuse can lead to a Consumer Warning on the profile and a hidden TrustScore. Th
 - From now on, no reviews from staff, models, crew, friends or family.
 
 ## Finding 4 — The current review asks are selective, and one sits near an incentive
+
+**Update, 18 Oct:** George decided NOT NOW on any change to how reviews are requested (owner decision #6). The finding stands, and the recommended action is **parked**. Re-raise it only if Trustpilot flags the profile or George reopens it.
 
 **Finding:**
 - The shipped-today email carries the Trustpilot review link (https://uk.trustpilot.com/evaluate/crooksldn.com). It goes out before delivery.
@@ -100,6 +108,8 @@ This is the same Consumer Warning risk as Finding 3. Selective collection also m
 
 ## Finding 5 — Three different support addresses in public replies
 
+**Update, 18 Oct:** team@crooksldn.com is the canonical public inbox (owner decision #17). The 12 new replies use it.
+
 **Finding:**  
 Earlier Trustpilot replies sent customers to crooksldn@gmail.com, support@crooksldn.com and team@crooksldn.com. The site, the policies and the Trustpilot profile list only team@crooksldn.com.
 
@@ -117,6 +127,8 @@ Customers email the wrong inbox, the "no reply" complaints keep coming, and the 
 Use team@crooksldn.com everywhere. All the drafts do. George should confirm it's monitored.
 
 ## Finding 6 — The contact page breaks the "independent British" descriptor
+
+**Update, 18 Oct:** approved (owner decision #13). The collections workstream makes the edit.
 
 **Finding:**  
 crooksldn.com/pages/contact calls the brand "an independent streetwear label run out of London". That conflicts with the confirmed descriptor ("independent British streetwear brand", never described as being from London) and with the Bourne End address on the same page.
@@ -217,6 +229,8 @@ Outreach sets up saved searches for: gift guide, menswear, streetwear, hoodie, t
 
 ## Finding 10 — Streetwear Directory is ChatGPT's only cited source for "brands like Corteiz"
 
+**Update, 18 Oct:** the outreach workstream confirmed the Streetwear Directory form is free (no payment, reviewed monthly). Submission is queued there behind George's go.
+
 **Finding:**  
 In the 16 Oct GEO panel, these were the cited sources for the two prompts:
 
@@ -254,6 +268,8 @@ In the 16 Oct GEO panel, these were the cited sources for the two prompts:
 
 ## Finding 11 — AI assistants tie the brand to a different company than the prepared profiles
 
+**Resolved, 18 Oct:** George named Crooks Clothing Company Ltd (16606021) as the public operator, with himself as founder. The profile pack uses it. Making the site's legal text and schema consistent is the entity workstream's job.
+
 **Finding:**
 - **What AI cites:** Perplexity (3/3 "Crooks LDN" runs) and ChatGPT (1 "Crooks London" run) cite the Companies House record for **Crooks London Limited (16396366)**. It was incorporated 19 Apr 2025 with an Englefield Green registered office, and George is its sole active director.
 - **What the profiles name:** the prepared LinkedIn and Crunchbase copy names **Crooks Clothing Company Ltd (16606021)**, as George instructed for profiles.
@@ -273,3 +289,55 @@ In the 16 Oct GEO panel, these were the cited sources for the two prompts:
 - George confirms which company operates the brand publicly.
 - The profiles, the site's legal or footer text and any schema `legalName` then name that company consistently.
 - Hold creating the LinkedIn and Crunchbase entries until this is decided.
+
+## Finding 12 — The "evergreen" Black Convict hoodie is mostly sold out
+
+**Finding:**  
+George chose Black Convict as the evergreen colourway for roundup pitches and entity copy (owner decision #30). On 18 Oct 2026:
+- the **Black Convict Hoodie** had stock in **XS only**. S, M, L and XL were at 0 with overselling off, so they can't be bought;
+- the **Black Convict Sweats** had stock in all five sizes.
+
+**Evidence:** Shopify Admin, read-only, 18 Oct 2026. Product "BLACK CONVICT HOODIE": variant inventory and `inventoryPolicy: DENY`. Product "BLACK CONVICT SWEATS": same check.
+
+**Why it matters:**
+- **Commercial / SEO:** evergreen roundups (IndyBest, GQ shopping, FashionBeans) link to a product page. A hoodie unavailable in the core sizes gets dropped or never added.
+
+**Confidence:** High (live store data)
+
+**Recommended action:**
+- The profile copy says "core colourway", not "always in stock".
+- Outreach shouldn't lead roundup pitches with the Black Convict hoodie until S–XL are back.
+- Restocking is George's call.
+
+## Finding 13 — The storefront is behind the password page
+
+**Finding:**  
+At ~20:15 BST on 18 Oct 2026 every crooksldn.com URL redirected to `/password`. `cowork/trustpilot` first recorded it at ~18:35 BST, and George was told there. That workstream owns the finding; this one records the impact on outreach.
+
+**Evidence:** an HTTP request to https://crooksldn.com/products/convict-hoodie-1 resolved to https://crooksldn.com/password (200, page contains the password form).
+
+**Why it matters:**
+- Every pitch, directory listing and new profile links to the site. While it's locked, those links land on a password page.
+- Crawlers and AI assistants re-reading the site see no products.
+
+**Confidence:** High at the time checked. It may be intentional, e.g. a drop countdown.
+
+**Recommended action:**
+- Don't submit directory listings, send pitches or publish the LinkedIn and Crunchbase pages while the store is locked.
+- If the lock is deliberate for a drop, time outreach for after it opens.
+
+## Finding 14 — GRM Daily's website is offline ("new website coming soon")
+
+**Finding:**  
+On 18 Oct 2026 grmdaily.com and every article URL checked show a "New website coming soon" holding page with only info@grmdaily.com. The peer-coverage articles found on 16 Oct (Trapstar, Corteiz, the Junior Clint interview) can't be reached.
+
+**Evidence:** Chrome, 18 Oct 2026: https://grmdaily.com/contact/ and https://grmdaily.com/junior-clint-interview/ both render the holding page.
+
+**Why it matters:**
+- **GEO:** nothing on the site can be cited right now.
+- **Outreach:** the only route is a general inbox. GRM Daily drops from 250 to 100 and out of the top tier.
+
+**Confidence:** High
+
+**Recommended action:** park GRM Daily until the new site launches. Its YouTube formats stay parked anyway, because seeding is paused.
+

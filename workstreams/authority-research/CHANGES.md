@@ -131,3 +131,42 @@ The geo-measurement workstream's 16 Oct observed citations are mapped against th
 
 **Expected metric:** citation share and the CROOKSLDN mention rate for these prompts in the next GEO panel run, after the Streetwear Directory and Disco listings go live.
 
+
+## 18 Oct 2026, 20:40 — George's answers applied; profile pack finalised; dedupe against 07
+
+**State:** PREPARED
+
+**Affected:**
+- `artifacts/profile-pack-linkedin-crunchbase.md` (new)
+- `artifacts/dedupe-vs-07.md` (new)
+- `artifacts/09-authority-research.md` (§0, §1.1, §2, §3, §4 cross-references)
+- `artifacts/authority-targets-second-pass.csv` (new `in_07` column)
+- `QUESTIONS.md` (answers filled in)
+- `ANSWERS.md` (two reviewer first names replaced with reply dates)
+- `FINDINGS.md` (resolution notes; Findings 12–14)
+
+**Before:**
+- Profile copy named a company still to be decided, with no founding date.
+- The Trustpilot section held drafts and named reviewers.
+- Targets were marked "check 07".
+
+**After:**
+- **Profile pack:** ready-to-paste LinkedIn and Crunchbase copy. It names Crooks Clothing Company Ltd only where a company is needed, has George as founder, trading since March 2024, the approved description verbatim, Black Convict as the core colourway, and no other people or details.
+- **Trustpilot section:** marked as done by `cowork/trustpilot` (replies posted, profile renamed), with every reviewer name removed.
+- **Dedupe:** every target carries its 07 ID or "new" (21 new, 26 overlap).
+- **GRM Daily:** rescored (G 5→2) after its site was found offline.
+- **The Tab:** tips route verified.
+
+**Reason:** George's answers of 18 Oct 2026 (`ANSWERS.md`), and owner decision #16 (no names tied to reviews, no exact order counts in the public repo).
+
+**Target:** entity consistency (LinkedIn, Crunchbase); a clean merge into 07.
+
+**Validation:**
+- Shopify read-only check of Black Convict stock.
+- Companies House re-read.
+- crooksldn.com fetched (password page).
+- GRM Daily and The Tab checked in Chrome.
+- Grepped every file in this folder for reviewer names (none left) and exact order counts (none).
+- Score arithmetic re-run by `table_tool.py`.
+
+**Expected metric:** n/a until the profiles are live. Then: whether AI brand answers name Crooks Clothing Company Ltd and stop citing other entities (next GEO panel run).
