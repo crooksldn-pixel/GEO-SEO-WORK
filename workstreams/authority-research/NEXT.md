@@ -12,14 +12,15 @@
    - The drafts are in `artifacts/09-authority-research.md` §2.4.
    - First, confirm team@crooksldn.com is monitored.
    - Optionally edit the Leanne and Emma replies (§2.4).
-3. **Merge into 07 (outreach workstream).**
+3. **Prioritise the Streetwear Directory listing (outreach workstream).** It's already approved, and it's ChatGPT's only cited source for "brands like Corteiz" (FINDINGS 10). Disco second; Gemini cites it.
+4. **Merge into 07 (outreach workstream).**
    - Take `artifacts/authority-targets-second-pass.csv` and dedupe by domain against `07-authority.md`. Rows marked "check 07" are the likely overlaps.
    - Draft text-only Gmail pitches for George to send, in score order. Skip ⏸ rows.
    - Also set up the free journalist-request feeds (§1.2) with saved searches.
-4. **Entity copy (entity/About or storefront workstream).** On crooksldn.com/pages/contact, replace "run out of London" with "an independent British streetwear brand". Needs George's OK.
-5. **Profiles (George).** Rename the Trustpilot profile to CROOKSLDN, then create the LinkedIn company page and the Crunchbase entry from §3.
-6. **Follow-up research turn (this workstream).** Close the evidence gaps listed in §5: the national press titles still without evidence, GRM Daily's contact route, The Tab's tips address, Grazia's "best british brands" page, and whether streetwear.directory charges.
-7. **GEO measurement (geo-measurement workstream).** Add the candidate domains to the panel: backwardfashion.com, discobrands.co, streetwear.directory, retailboss.co, apartstyle.com, fastfashionnews.co.uk, graziadaily.co.uk, fashionbeans.com.
+5. **Entity copy (entity/About or storefront workstream).** On crooksldn.com/pages/contact, replace "run out of London" with "an independent British streetwear brand". Needs George's OK.
+6. **Profiles (George).** Rename the Trustpilot profile to CROOKSLDN now. Create the LinkedIn and Crunchbase entries from §3 **after** deciding which company is the public operator (FINDINGS 11).
+7. **Follow-up research turn (this workstream).** Close the evidence gaps listed in §5: the national press titles still without evidence, GRM Daily's contact route, The Tab's tips address, Grazia's "best british brands" page, and whether streetwear.directory charges.
+8. **GEO measurement (geo-measurement workstream).** Next run, check whether the Streetwear Directory and Disco listings have moved the CROOKSLDN mention rate on the competitor prompts (0/60 at baseline). Also watch these candidates, which ranked in the proxy but weren't cited in the panel: backwardfashion.com, retailboss.co, apartstyle.com, fastfashionnews.co.uk.
 
 ## Do not do yet
 
@@ -38,11 +39,12 @@
 - Whether to add Preston as a director on Crunchbase. The founder field is George only.
 - Whether to keep one core Convict colourway permanently in stock. This only matters if evergreen roundups (IndyBest, GQ shopping) are pursued later.
 - Whether the 16 Oct "no sample offers" decision stands for IndyBest specifically. It's the one big title where samples decide the outcome.
+- **Which company is the brand's public operator:** Crooks London Limited (16396366), which AI assistants cite today, or Crooks Clothing Company Ltd (16606021), which the profiles name (FINDINGS 11).
+- **Whether to list on Dripscan** as a seller (commission marketplace). Its magazine is cited for "Corteiz alternatives".
 
 ## Data still required
 
 - `seo/workstreams/07-authority.md` and `07-authority-raw/`, for the dedupe.
-- `seo/measurements/geo-panel/runs/`, for observed AI citations (Task 4).
 - Which support inbox is actually monitored (team@, support@ or the Gmail address).
 
 ## Recommended follow-up date

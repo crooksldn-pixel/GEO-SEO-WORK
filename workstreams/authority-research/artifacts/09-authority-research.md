@@ -517,9 +517,14 @@ Written in George's voice: plain and direct, with no heist language (customer co
 
 ## 4. GEO panel citations
 
-**No panel results exist here.** `measurements/geo-panel/runs/` was not available in this session, so there are no observed AI citations to report.
+**Update, 18 Oct 2026: observed citations now exist.** The geo-measurement workstream's 16 Oct panel (branch `cowork/geo-measurement`) records the sources AI assistants actually cite. The mapping of those sources against this target list, with new targets flagged, is in [`geo-cited-sources-vs-targets.md`](geo-cited-sources-vs-targets.md).
 
-**What follows is a proxy:** the pages that web search returns for these prompts, which are the pool AI assistants draw from. Ten queries were run in two search modes:
+The headlines:
+- **Streetwear Directory** is ChatGPT's only cited source for "brands like Corteiz" (3 of 3 runs).
+- **Brand-owned self-ranking guides** (Phrase Studios, Cali Studios, Flow Like Zen, CUOTTI) dominate the "best UK streetwear brands" citations.
+- **Two genuinely new domains:** Dripscan, a magazine attached to a commission-based marketplace, so it's a channel decision; and Wings2Fashion, a manufacturer's blog, low value.
+
+**The proxy below is kept for reference.** It was built on 16 Oct, before the panel was reachable: the pages that web search returns for these prompts, which are the pool AI assistants draw from. Ten queries were run in two search modes:
 1. best UK streetwear brands
 2. … 2026
 3. best British streetwear brands

@@ -95,12 +95,39 @@ George confirmed on 16 Oct, in the outreach and programme sessions:
 The repository was empty: no commits and no `main` branch.
 
 **After:**  
-The branch was created as an orphan, so nothing was committed to `main`. It holds STATUS, FINDINGS, CHANGES, NEXT and the artefacts.
+The branch was created as an orphan, so nothing was committed to `main`. It holds STATUS, FINDINGS, CHANGES, NEXT and the artefacts. Once programme-records created `main` (README only), the branch was rebased onto it.
 
 **Reason:** the programme protocol requires a durable record per workstream.
 
 **Target:** programme coordination.
 
-**Validation:** branch pushed and checked on GitHub with `git ls-remote`.
+**Validation:** branch pushed and checked with `git ls-remote`. After the rebase, `git merge-base` confirms the branch now descends from `origin/main`.
 
 **Expected metric:** n/a
+
+## 18 Oct 2026, 17:20 — GEO panel citations mapped to targets
+
+**State:** PREPARED
+
+**Affected:**
+- `workstreams/authority-research/artifacts/geo-cited-sources-vs-targets.md` (new)
+- `artifacts/09-authority-research.md` §4
+- `STATUS.md`, `FINDINGS.md` (Findings 10 and 11) and `NEXT.md`
+
+**Before:**  
+Task 4 had only a search-ranking proxy, because the GEO panel wasn't reachable.
+
+**After:**  
+The geo-measurement workstream's 16 Oct observed citations are mapped against this target list and 07's approved items. Two new domains were checked (Dripscan, Wings2Fashion) and an entity divergence was recorded (Crooks London Limited vs Crooks Clothing Company Ltd). The `cowork/geo-measurement` files were read only, not edited.
+
+**Reason:** answer Task 4 with measured data instead of the proxy.
+
+**Target:** GEO answers for "best UK streetwear brands" and "brands like Corteiz".
+
+**Validation:**
+- Counts were taken directly from `results.csv` (210 rows).
+- The new domains were opened in Chrome: Dripscan's magazine and seller pages, the Wings2Fashion post, and Rosenberries.
+- The Companies House officers page for 16396366 was read.
+
+**Expected metric:** citation share and the CROOKSLDN mention rate for these prompts in the next GEO panel run, after the Streetwear Directory and Disco listings go live.
+
