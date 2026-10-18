@@ -14,10 +14,11 @@ Before every save, recheck the live theme file checksums against FINDINGS 1. If 
    - Label `OUTERWEAR`. Link: pick the Outerwear collection.
    - Save.
    - Live check: the footer SHOP column reads NEW, TEES, DENIM, SWEATS, ACCESSORIES, OUTERWEAR, and the new link goes to `/collections/outerwear`.
-3. **D — tee dispatch wording.** Needs Blockers 1–3 cleared and George's approval of the approach.
+3. **D — tee dispatch wording.** Needs Blockers 1–3 cleared and George's route choice (STATUS Q4).
    - Theme editor → Products → Default product → Exhibit record section.
    - Set "Made-to-order delivery line" to `Printed to order. Dispatched within [N] working days.`
-   - Set "Made-to-order tag" to `tee`.
+   - **Route (a):** also set "Made-to-order tag" to `tee`.
+   - **Route (b):** leave the tag setting alone. The wording only shows on tees once `cowork/product-data` has tagged them `made-to-order`, so check that first.
    - Save.
    - Live check on one active tee (`/products/crxst-rz-t-shirt`): the new line shows and there's no "leaves today/tomorrow" line.
    - Live check on one non-tee (e.g. `/products/pink-crsdr-hoodie`): still the original wording.
@@ -42,7 +43,7 @@ Before every save, recheck the live theme file checksums against FINDINGS 1. If 
 ## Decisions still required
 
 - **C:** is the Judge.me core embed on or off?
-- **D:** approve the tag-scoped approach and the exact wording.
+- **D:** route (a), the theme tag setting `tee`, or route (b), product-data tags tees `made-to-order`. Plus the exact wording.
 - **Status bar wording.** "SAME-DAY DISPATCH" sits on tee pages too.
 - **Blocker 2 fallback:** if the theme editor still won't render, is an Admin API settings write allowed for A and B?
 - **Before any 16 Oct copy-of-live draft is published:** who re-applies the live changes to it (FINDINGS 2)?

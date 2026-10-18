@@ -46,6 +46,8 @@ This is the main cross-workstream conflict risk. The theme and code workstreams 
 **Recommended action:**
 Before any of these themes is published, re-apply the live changes listed in `CHANGES.md` to it, or copy the live theme's editor settings across. Whoever publishes must check `CHANGES.md` first.
 
+`cowork/programme-records` (merge register item 6) and `cowork/live-site-checks` also record this for the P1 theme. This finding adds the other two copy-of-live drafts.
+
 ---
 
 ## Finding 3 — Judge.me core embed shows shoppers nothing
@@ -149,6 +151,12 @@ The stock labels also imply held stock on print-on-demand tees:
 - **Held code work:** make custody step 01 respect the made-to-order tag, and skip the stock and low-stock lines for made-to-order products.
 - **George's wording call:** the sitewide status bar (source 4).
 - **Products workstream:** whether tee variants should stop tracking inventory.
+
+**Related workstreams (checked 18 Oct):**
+- `cowork/live-site-checks` Finding 1 measured the same problem on the live site. It proposes product-data tags all 17 tees `made-to-order`. This branch's route (a) reaches the same result with no product edits, by pointing the theme setting at the existing `tee` tag. George picks one route (STATUS Q4).
+- `cowork/product-data` D2 turns off inventory tracking on the 30 tee variants. That stops the "[n] LEFT" line and the negative stock.
+- "IN STOCK" still shows after D2. `crooks-record.js` `render()` prints `label_in_stock` for every available variant, tracked or not, and that label is shared by every product. Removing it from tees needs code (held theme work).
+- `cowork/merchant-center` Q3 asks George for the same tee dispatch time, for the feed handling time. One answer covers both.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Branch:** cowork/theme-editor  
 **Owner:** Cowork session  
-**Last updated:** Sun 18 Oct 2026, 17:15 UK  
+**Last updated:** Sun 18 Oct 2026, 17:25 UK  
 **Priority:** P1  
 **Overall status:** BLOCKED
 
@@ -70,7 +70,7 @@ Nothing currently running.
 ### Blocker 3 — Tee dispatch time
 
 **Blocking:** D.  
-**Needs:** The number of working days from a tee order to dispatch.  
+**Needs:** The number of working days from a tee order to dispatch. This is the same question as `cowork/merchant-center` Q3.  
 **From:** George  
 **Severity:** P1 (a false shipping promise is on live tee pages now)  
 **Can work around it?:** No. Inventing a number would be another false promise.  
@@ -84,12 +84,16 @@ Nothing currently running.
 2. **Theme editor won't render:** Online Store → Themes → live theme → Customize loads as a blank white page in Claude's Chrome tab group. Answer (a) or (b):
    - (a) George opens the theme editor once in Chrome himself, clears any prompt or dialog waiting there, and confirms it loads; or
    - (b) George allows the fallback: the same settings written through the Shopify Admin API, which counts as a file write and is outside the brief's theme-editor-only rule.
-3. **Tee dispatch time:** how many working days from a tee order to dispatch? A number, or a range such as "3–5".
-4. **D approach:** approve both of these on the Default product template → Exhibit record section?
-   - "Made-to-order delivery line" → `Printed to order. Dispatched within [N] working days.`
-   - "Made-to-order tag" → `tee`
+3. **Tee dispatch time:** how many working days from a tee order to dispatch? Give a minimum and a maximum, e.g. "3–5". This is the same question as `cowork/merchant-center` QUESTIONS Q3, so one answer covers both.
+4. **D approach.** In both routes, the theme editor sets "Made-to-order delivery line" (Default product template → Exhibit record section) to `Printed to order. Dispatched within [N] working days.` The route decides how the theme knows a product is a tee:
+   - (a) **Recommended.** The theme editor sets "Made-to-order tag" to `tee`.
+     - All 17 tees (3 live, 14 draft) already carry the `tee` tag, and no other product does.
+     - No product edits are needed, so it works as soon as it's saved.
+   - (b) Leave the tag setting as `made-to-order`.
+     - `cowork/product-data` adds the `made-to-order` tag to all 17 tees, as `cowork/live-site-checks` Finding 1 proposes.
+     - The wording only changes once those product edits are live.
 
-   This affects tee pages only. Other products keep "Order before 18:00 and it ships today". Yes, or give replacement wording.
+   Either route affects tee pages only. Other products keep "Order before 18:00 and it ships today". Pick (a) or (b), and say yes to the wording or replace it.
 5. **Judge.me core embed (task C):** off, or keep on? It shows shoppers nothing today: no floating tab, no trust badge, no stars, no medals. Review request emails keep working either way.
 6. **Sitewide status bar:** it reads "FREE UK SHIPPING OVER £30 // ORDER BY 18:00 FOR SAME-DAY DISPATCH" on every page, tee pages included. Answer (a), (b) or (c):
    - (a) keep it as it is;
@@ -120,7 +124,21 @@ None yet. After B is live, Google needs to recrawl to pick up the new footer lin
 
 ## Notes for the orchestrator
 
-- The repo was empty when this branch was created: no `main`, no other workstream branches. This branch is an orphan root, so `main` was never committed to.
+- This branch was first pushed as an orphan, because `main` didn't exist yet. It was rebased onto `main` (3905e37) on 18 Oct, so it now shares history with `main`.
+- **Overlap on tees.** Four workstreams touch the tee dispatch and stock claims:
+  - `cowork/live-site-checks` Finding 1
+  - `cowork/product-data` D2
+  - `cowork/merchant-center` Q3 and task D
+  - this branch, task D
+
+  Who owns what:
+  - Theme editor wording and the made-to-order tag setting: this branch.
+  - Turning off tee inventory tracking: product-data (D2).
+  - Tee handling time in the Google feed: merchant-center.
+  - Product schema `handlingTime` and the stock-line code: the held theme work.
+
+  The only real choice is STATUS Q4: route (a) or route (b). Nothing here adds a product tag.
+- The risk that the held P1 theme reverts live edits (FINDINGS 2) is also recorded as item 6 in `cowork/programme-records` `artifacts/merge-register.md`.
 - The repo is **public**. This branch leaves out admin URLs and exact stock counts. Everything else in it, including the theme name and ID, the app embeds and the on-page wording, can already be seen from the storefront's page source.
 - `CHANGES.md` is empty because nothing has been changed live.
 - The brief's files `09-performance.md`, `01-collections-internal-linking.md` and `03-merchant-feed-handoff.md` section D were never available to this session.
