@@ -62,7 +62,7 @@ Fill the segments where the first pass hit search limits. Prepare the reputation
 
 **After:**
 - **Text-only rescoring:** IndyBest, FashionBeans, Ape to Gentleman and Clash are re-scored for text-only pitches.
-- **Parked rows (⏸):** 7 rows that depend on seeding or loans are marked parked.
+- **Parked rows (⏸):** 6 rows that depend on seeding or loans are marked parked.
 - **Profile copy:** manufacturing origin removed. Free UK shipping over £30 and free size swaps added.
 - **Disco and Streetwear Directory:** marked as approved 16 Oct and owned by the outreach workstream.
 - **Reddit:** the note now reflects that Reddit seeding is off.
@@ -170,3 +170,38 @@ The geo-measurement workstream's 16 Oct observed citations are mapped against th
 - Score arithmetic re-run by `table_tool.py`.
 
 **Expected metric:** n/a until the profiles are live. Then: whether AI brand answers name Crooks Clothing Company Ltd and stop citing other entities (next GEO panel run).
+
+## 18 Oct 2026, 21:45 — Follow-up research on the remaining gaps
+
+**State:** PREPARED
+
+**Affected:**
+- `artifacts/09-authority-research.md` (§0, §1.1, §1.3, §5)
+- `artifacts/authority-targets-second-pass.csv`
+- `artifacts/dedupe-vs-07.md`
+- `STATUS.md` and `NEXT.md` (rewritten)
+
+**Before:**
+- 47 targets.
+- National-press gaps (Times, Telegraph, Metro, Mail, Esquire UK, Men's Health UK and others) were unevidenced.
+- No outlets for the reactive-outerwear angle.
+
+**After:**
+- **63 targets.** The 16 added are 11 reactive-outerwear outlets (Man of Many 300, Yanko Design 240, designboom 160, FashionUnited 144 and others) and 5 national-press rows (ES Best, Men's Health UK, Esquire UK, The Times, ITV Meridian).
+- **Updated rows:** Hypebeast rescored for the reactive angle (100→200); the Standard row renamed (The London Standard).
+- **New exclusions:** affiliate pieces, commercial arms, and wrong-fit national titles.
+- **Totals:** 33 of 63 rows are new vs 07.
+
+**Reason:** close the evidence gaps listed in §5 and in 07's own Gaps section.
+
+**Target:** UK streetwear editorial mentions, plus the "water reactive jacket" and "heat reactive puffer" answers, where the GEO panel names no brand.
+
+**Validation:**
+- Two parallel research passes, with every row carrying an evidence URL. Syndicated or search-only evidence is marked as such.
+- National titles that block crawlers were checked in Chrome against Google UK results: The Times, Telegraph, Metro, Daily Mail, Men's Health UK.
+- Each new row was checked against 07.
+- One angle from the research was corrected: it claimed Black Convict "never sells out", which is false (FINDINGS 12).
+- Score arithmetic re-run: 63 rows, 0 errors.
+
+**Expected metric:** editorial mentions once outreach runs; the CROOKSLDN mention rate for the reactive and competitor prompts at the next GEO run.
+

@@ -62,10 +62,23 @@
 - ChatGPT cited it once in the GEO panel.
 - Poll seeding is off (16 Oct), so there's no action left. Treat it as excluded.
 
-## 07 gaps still open after this pass
+## Follow-up rows (18 Oct 2026)
 
-These are covered by the 18 Oct follow-up research (see `09-authority-research.md` §1.1 rows marked "new (follow-up)"), or remain open:
-- Telegraph, Metro, Esquire UK, Wired UK, and pages about water- or heat-reactive outerwear: follow-up research, 18 Oct.
-- Time Out, MyLondon, Secret London: **not pursued**. London-local framing conflicts with the descriptor rule.
-- Reddit threads: ranking check only. Seeding is off, and reddit.com can't be fetched from the cloud.
-- Supplier and manufacturer case studies, Omnisend customer stories, UK TikTok follower counts: out of scope for this workstream.
+The follow-up added 16 rows to §1.1. Totals are now **63 rows: 33 new and 30 overlapping with 07**.
+
+| Status | Outlets |
+|---|---|
+| **New (12)** | Man of Many, Yanko Design, designboom, Totally The Bomb, Trend Hunter, Proper Magazine, Uncrate (reactive-outerwear outlets); The London Standard ES Best, Men's Health UK, Esquire UK, The Times, ITV News Meridian (national press) |
+| **In 07, reactive angle added (4)** | FashionUnited UK (A031, news@ route), Culted (A029, no editorial route found), nss magazine (A043), Gear Patrol (A198, pitches@ route) |
+
+## 07 gaps after the follow-up
+
+| 07 gap | Status |
+|---|---|
+| Telegraph, Metro | Checked in Google UK. Wrong fit, so not added (see §1.3). |
+| Esquire UK | Added (60) |
+| Wired UK | Print ended in 2025; no apparel coverage. Not added. |
+| Pages about water- or heat-reactive outerwear | Covered: 11 RX rows |
+| Time Out, MyLondon, Secret London | **Not pursued.** London-local framing conflicts with the descriptor rule. |
+| Reddit threads | Ranking check only. Seeding is off, and reddit.com can't be fetched from the cloud. |
+| Supplier/manufacturer case studies, Omnisend customer stories, UK TikTok follower counts | Out of scope for this workstream |

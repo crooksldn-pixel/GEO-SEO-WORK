@@ -1,139 +1,114 @@
 # Workstream: Authority research, second pass (earned media, Trustpilot, entity profiles)
 
-> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
-
 **Branch:** cowork/authority-research  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:15 UK  
-**Priority:** P1  
-**Overall status:** WAITING ON EXTERNAL
+**Last updated:** 18 Oct 2026, 21:45 UK  
+**Priority:** P2  
+**Overall status:** READY TO IMPLEMENT
 
 ## Objective
 
-Extend the first authority pass (`07-authority.md`, 222 opportunities, owned by the outreach workstream) into the segments where it hit search limits:
-- UK national press style desks
-- grime, rap and music titles
-- youth culture and student outlets
-- journalist-request platforms
+Extend the first authority pass (07-authority, 222 opportunities, owned by `cowork/outreach`) into the segments it couldn't cover:
+- UK national press;
+- grime, rap and music titles;
+- youth culture and student outlets;
+- journalist-request platforms;
+- since 18 Oct, outlets that cover water- and heat-reactive outerwear.
 
-Each target is scored on relevance × authority × likelihood × GEO value, with an evidence URL, pitch route and angle.
+Each target is scored on relevance × authority × likelihood × GEO value, with evidence, pitch route and angle.
 
 The workstream also:
-- audits CROOKSLDN's public Trustpilot reviews and drafts honest replies for George to post;
-- drafts Trustpilot, LinkedIn and Crunchbase profile copy for Crooks Clothing Company Ltd (16606021);
-- reports which sources AI assistants cite for "best UK streetwear brands" and "brands like Corteiz".
+- audited the public Trustpilot reviews and drafted replies;
+- prepared the LinkedIn and Crunchbase copy;
+- mapped which sources AI assistants cite against the target list.
 
 This is a research-only workstream. It contacts no one, submits nothing and creates no profiles.
 
 ## Current state
 
-The research is finished and the artefacts are prepared. **Nothing is live.** Every external action (posting replies, creating profiles, pitching) belongs to George or to the outreach workstream (07).
+Research is finished, George's 18 Oct answers are applied ([ANSWERS.md](ANSWERS.md)), and the outputs are ready for the people who act on them. **Nothing in this workstream is live.**
 
-**Trustpilot** was re-checked on 18 Oct and is unchanged from 16 Oct:
-- TrustScore 4.2 "Great" from 80 reviews.
-- 21 reviews at 1–3★, 12 of them still unanswered.
-- Display name still "Crooks ldn".
+| Area | Status |
+|---|---|
+| Earned-media targets | **63 scored rows**: 33 new vs 07, 30 overlapping with 07 IDs, 6 parked (need samples or seeding). CSV ready for the outreach merge. |
+| Trustpilot | **Done by `cowork/trustpilot`** on 18 Oct: 12 replies posted, profile renamed CROOKSLDN, description and address replaced. The model-review reports are owned there (route blocked in-app; support report pending George's go there). The invitation change is parked (decision #6). |
+| LinkedIn and Crunchbase | **Final copy ready**: `artifacts/profile-pack-linkedin-crunchbase.md`. George creates both. |
+| GEO citations | Mapped from the 16 Oct panel: Streetwear Directory is ChatGPT's only cited source for "brands like Corteiz". |
 
-**This record is not yet deduped against 07-authority.md.** 07 isn't in this repo and the project `seo/` folder isn't reachable.
-
-**The GEO panel is now available** on `cowork/geo-measurement`. Its 16 Oct cited sources are mapped against this target list in `artifacts/geo-cited-sources-vs-targets.md`.
-
-**Repo state.** This branch was first pushed as an orphan, because the repo was empty at the time. It was then rebased onto `main` once the programme-records workstream created it.
+Live conditions that affect timing (FINDINGS 12–14):
+- The storefront redirected to `/password` at ~20:15 BST on 18 Oct.
+- The Black Convict hoodie has stock in XS only.
+- GRM Daily's site is a holding page.
 
 ## Completed
 
 **Researched**
-- 47 scored earned-media targets across national press, music titles, youth culture, student press, and ranking listicles/directories. All have evidence URLs.
-- 8 journalist-request platforms with live status and cost. 13 paid tools and 3 dead or irrelevant ones are excluded, with reasons.
-- Spot-checked the contact routes for Mixtape Madness, Clash, Trench, Hunger and Shift London.
-- Verified the backwardfashion and discobrands submission criteria.
+- 63 targets with evidence URLs, including 16 added by the 18 Oct follow-up: 11 reactive-outerwear outlets and 5 national press.
+- 8 journalist-request platforms. 13 paid and 3 dead or irrelevant ones excluded.
 
 **Audited**
-- All 21 public 1–3★ Trustpilot reviews, grouped by complaint: delivery 20, communication 18, refund/chargeback 2, sizing 0, quality 0.
-- Read Trustpilot's Guidelines for Businesses (v7.3, Sept 2026). Identified 5 compliance risks.
+- 21 Trustpilot reviews at 1–3★, grouped by complaint.
+- Trustpilot's business guidelines.
+- Black Convict stock (Shopify, read-only).
+- Storefront access.
 
 **Prepared**
-- 12 draft Trustpilot replies in George's voice, plus 2 suggested edits to earlier replies.
-- Trustpilot, LinkedIn and Crunchbase copy, checked against Companies House and the 16 Oct brand rules.
-- Ranked target CSV for the outreach merge.
+- Profile pack: LinkedIn and Crunchbase.
+- Ranked CSV with an `in_07` merge key.
+- Dedupe note for 07 (`artifacts/dedupe-vs-07.md`).
+- GEO citation mapping.
 
-**Measured**
-- Mapped the 16 Oct GEO panel's cited sources (geo-measurement's measurement, not this workstream's) for "best UK streetwear brands", "brands like Corteiz" and related prompts against the target list. Two new domains were checked: Dripscan and Wings2Fashion.
-- Checked Companies House for the entity AI assistants cite.
-- Also kept: the 16 Oct search-ranking proxy (10 prompts) and a summary of 2025–26 studies on AI citation sources.
+**Measured (read only, not this workstream's measurement):** the 16 Oct GEO panel citations, mapped to targets.
+
+**Handed over:** the 12 Trustpilot reply texts went to `cowork/trustpilot`, which posted them.
 
 ## Currently working on
 
-Nothing currently running. Waiting for George's answers in `QUESTIONS.md`. The follow-up research turn runs once this session resumes.
+Nothing currently running.
 
 ## Blockers
 
-### Blocker 1 — 07-authority.md not available
-
-**Blocking:** deduping this list against the first pass's 222 opportunities. GEO panel runs are no longer a blocker: they're on `cowork/geo-measurement`.
-
-**Needs:** `seo/workstreams/07-authority.md` committed to this repo, or attached to this chat (see issue #1, raised by programme-records for the Project files).  
-**From:** George or the outreach workstream  
-**Severity:** P2  
-**Can work around it?:** Yes  
-**Workaround:** The outreach session dedupes by domain when it merges. Rows likely to duplicate 07 are marked "check 07".
-
-### Blocker 2 — search budget and blocked sites
-
-**Blocking:** evidence rows for The Times/Sunday Times Style, Telegraph, the i, Metro, Mail, Sun, Mirror, Star, Sky, ITV, Esquire UK and Men's Health UK; the GRM Daily contact route; a Reddit ranking check.  
-**Needs:** a follow-up research turn. Reddit and some national sites need a normal browser.  
-**From:** other (tooling limits)  
-**Severity:** P3  
-**Can work around it?:** Yes  
-**Workaround:** The top-ranked targets are already evidenced, so outreach can start with them.
+None. Everything left belongs to George or to another workstream (below and in NEXT.md).
 
 ## Waiting on George
 
-**All open questions are in [`QUESTIONS.md`](QUESTIONS.md): 14 numbered questions, each with options, a recommendation and an answer line.** Reply "answered" to this session once they're filled in.
+1. **Create the LinkedIn company page and the Crunchbase entry** from `artifacts/profile-pack-linkedin-crunchbase.md`, once the storefront is public again. LinkedIn's organisation-size field is required; the pack assumes 2–10 employees, so change it if that's wrong.
 
-1. Q1–Q2: which company is the public operator, and the trading-name line. These block the LinkedIn and Crunchbase copy.
-2. Q3–Q7: support inbox, approval of the 12 Trustpilot replies, the the 8 Feb 2026 review, the two model reviews, and the change to how reviews are requested. These block the Trustpilot work.
-3. Q8: the contact-page "run out of London" copy.
-4. Q9–Q14: smaller calls (Crunchbase team, Dripscan, IndyBest samples, core colourway, public-repo detail, the 07 file). Each has a stated default if left unanswered.
+All other decisions were answered on 18 Oct. The parked ones (review-invitation change, Dripscan, samples and seeding, edits to the 12 Feb and 10 Feb replies) block nothing.
 
 ## Waiting on external systems
 
-None. Nothing has been submitted.
+- Crunchbase's review of the new entry, after George submits it.
+- The new GRM Daily website.
 
 ## Next actions
 
-1. **Trustpilot compliance fixes:**
-   - Remove the director-name review if it's Preston's.
-   - Take the review link out of the shipped-today email.
-   - Switch to Trustpilot's own invitations.
-
-   Biased collection can trigger a Consumer Warning and hide the TrustScore.
-2. **Post the 12 replies.** Eight of the 21 low reviews use the word "scam", and AI assistants that summarise Trustpilot can repeat it.
-3. **Outreach workstream: prioritise the Streetwear Directory listing** (already approved 16 Oct). It's ChatGPT's only cited source for "brands like Corteiz" (3/3 runs).
-4. **Outreach workstream merges §1.1 into 07.** Dedupe by domain, then start with the top text-only pitches:
-   - Mixtape Madness (320)
-   - Complex UK "JP's UK Culture Picks" (300)
-   - British GQ (250)
-   - Trench, GUAP, Hunger (180 each)
-   - backwardfashion.com (150)
-5. **Entity copy fix on crooksldn.com/pages/contact.** Change "run out of London" to "independent British streetwear brand". This belongs to the entity/About or storefront workstream.
-6. **Create the Trustpilot, LinkedIn and Crunchbase profiles** from the prepared copy, once the entity decision (Waiting on George #6) is made.
-7. **Follow-up research turn** for the national press rows that still have no evidence, and to verify GRM Daily.
-8. **Content/collections workstream:** consider an honest, ownership-disclosed CROOKSLDN guide. Brand-owned guides are among the most-cited sources (see `artifacts/geo-cited-sources-vs-targets.md`, note A).
+1. **Outreach (`cowork/outreach`):** prioritise the Streetwear Directory listing (ChatGPT's only cited source for "brands like Corteiz"), then Disco.
+2. **Outreach:** merge `artifacts/authority-targets-second-pass.csv` into 07 using `in_07`.
+   - Draft text-only pitches in score order, starting with Mixtape Madness, Complex UK's culture column, Man of Many, GQ and Yanko Design.
+   - Leave ⏸ rows alone.
+   - Hold IndyBest and FashionBeans until the Black Convict hoodie is back in S–XL.
+3. **George:** create the LinkedIn and Crunchbase profiles once the store is public.
+4. **Entity/collections workstreams:** the contact-page "run out of London" fix (approved, owned by collections). After the profiles go live, George decides whether they join `sameAs`.
+5. **Content workstream:** the reactive-outerwear niche is open. Almost no editorial covers water-reactive jackets, and AI panels name no brand. The approved reactive guide plus TikTok captions using the exact phrases "water reactive jacket" and "heat reactive puffer" are the cheapest way in.
+6. **GEO measurement:** re-run after the directory listings go live. Baseline: CROOKSLDN named in 0 of 60 category and competitor answers.
 
 ## Expected impact
 
-**Commercial:** High  
+**Commercial:** Medium  
 **SEO:** Medium  
 **GEO:** High  
 **Confidence:** Medium
 
-- **Commercial:** Trustpilot sits on the purchase path. Unanswered "scam" reviews and a possible Consumer Warning are a direct conversion risk.
-- **GEO:** Trustpilot, LinkedIn and Crunchbase are entity sources AI assistants draw on. Studies put LinkedIn among the most-cited domains, and the ranking listicles are the pool for "brands like Corteiz" answers.
-- **SEO:** the earned editorial links are mostly from mid-authority titles.
-- **Confidence:** medium, because likelihood scores for a small label are judgement calls and the GEO evidence is a proxy.
+- **GEO:** the Streetwear Directory and Disco listings target the exact sources AI assistants cite for competitor prompts. LinkedIn and Crunchbase add authoritative entity records.
+- **Reactive outerwear:** a niche where no brand is named yet.
+- **Commercial:** the Trustpilot clean-up (done in its own workstream) protects conversion.
+- **Confidence:** medium, because likelihood scores for a small label are judgement calls and the GEO effect needs a re-measure.
 
 Key artefacts:
-- [`artifacts/09-authority-research.md`](artifacts/09-authority-research.md): full research, replies and profile copy.
-- [`artifacts/authority-targets-second-pass.csv`](artifacts/authority-targets-second-pass.csv): ranked targets for the merge.
-- [`artifacts/geo-cited-sources-vs-targets.md`](artifacts/geo-cited-sources-vs-targets.md): GEO panel citations mapped to targets.
+- `artifacts/09-authority-research.md`: full research.
+- `artifacts/authority-targets-second-pass.csv`: ranked targets with the `in_07` key.
+- `artifacts/dedupe-vs-07.md`
+- `artifacts/geo-cited-sources-vs-targets.md`
+- `artifacts/profile-pack-linkedin-crunchbase.md`
+- `QUESTIONS.md` / `ANSWERS.md`
