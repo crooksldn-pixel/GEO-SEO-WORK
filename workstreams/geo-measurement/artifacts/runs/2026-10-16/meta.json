@@ -2,7 +2,7 @@
   "run_date": "2026-10-16",
   "type": "full",
   "ip_country": "GB",
-  "ip_detail": "92.41.54.61, Hutchison 3G UK (Three), London; Gemini's footer showed 'Wooburn Green, UK - From your IP address'. No VPN.",
+  "ip_detail": "GB mobile connection, no VPN (IP and location detail removed 18 Oct 2026 per owner decision #16)",
   "browser": "Claude desktop app built-in browser pane on George's Mac (Chromium engine, Chrome 152), its own profile separate from George's Chrome, signed out of Google; consent banners answered with the reject/necessary-only option; viewport emulated at 1280x2400, screenshots saved at 800x1500 (top of the answer/result page, not full-page).",
   "browser_choice": "The built-in browser was used instead of George's own Chrome because it is a separate, signed-out profile, so no personal Google, ChatGPT, Gemini or Perplexity session could influence results.",
   "surfaces": {
