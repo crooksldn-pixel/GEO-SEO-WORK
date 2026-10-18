@@ -2,6 +2,8 @@
 
 **No changes have been made** to Shopify, any theme, any app, Merchant Center or any live URL by this workstream. The brief was research only.
 
+**18 Oct 2026, 20:40 BST:** still no changes. George's answers made this workstream the owner of four Shopify policy edits. They are prepared in `artifacts/policy-edits-ready.md` but **not applied**. Each one is logged here only after it's written and read back.
+
 Store reads were read-only Admin API queries. They covered:
 - policies
 - delivery profiles

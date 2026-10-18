@@ -1,5 +1,7 @@
 # Questions for George — live-site checks
 
+> **ANSWERED 18 Oct 2026, 17:03 UTC.** George's answers are recorded in [ANSWERS.md](ANSWERS.md), which is the source of truth. The answer slots below were left as they were. What this workstream does with them is in `STATUS.md` and `NEXT.md`.
+
 **How to answer:** write under each **Answer:** line and commit to `cowork/live-site-checks`, or answer in the main chat. Then tell this session **"answered"**.
 
 These are facts and decisions only. This workstream is research only and doesn't change the store. Product data belongs to `cowork/product-data`, and theme and settings changes to whoever is implementing them.

@@ -1,71 +1,58 @@
 # Next
 
+Updated 18 Oct 2026, 20:40 BST, after George's answers ([ANSWERS.md](ANSWERS.md)) and the 18:58 UTC live theme (FINDINGS 12).
+
 ## Do next
 
-1. **Tees: stop the false stock and dispatch claims.** Do this before any T-shirt week tee is published.
-   - **Owner:** `cowork/product-data`, the only workstream allowed to write products and inventory. Its item D2 already covers turning tracking off on the 30 live tee variants, pending George's yes.
-   - This workstream asks product-data to add two things to that plan:
-     - **(a)** Tag all 17 T-Shirts products `made-to-order`: the 3 active ones (`crooks-express-t-shirt`, `crx-garms-t-shirt`, `crxst-rz-t-shirt`) and the 14 drafts tagged `t-shirt-week`. The tag is what switches the PDP from "IN STOCK / leaves tomorrow" to the made-to-order line.
-     - **(b)** Extend D2 to the 14 draft tees.
-   - Then re-open a tee PDP and confirm "IN STOCK", "Ordered now — leaves tomorrow" and "1 LEFT" are gone.
-2. **Checkout consent.** Turn off preselect for the email marketing box (Settings → Checkout → Marketing options). Check by opening checkout with any item: "Keep me updated." should start unticked. Owner: George.
-3. **One delivery-time wording.** UK delivery is free from £30 by Royal Mail Tracked 48 (2–3 working days), and free Tracked 24 (1–2 working days) from £80. Under £30, Tracked 48 is £3 and Tracked 24 is £4.99. In-stock orders placed by 18:00 Mon–Sat leave the same day; tees are printed to order; pre-orders leave on the date shown.
-   - Apply it to: shipping, refund and contact policies; FAQ (`templates/page.faq.json`); Terms (`templates/page.terms.json`); the PDP custody blocks (`templates/product.json`, `templates/product.crooks.json`); and the status bar.
-   - Set schema `transitTime` to 2–3 for Tracked 48 in `snippets/crooks-schema-shipping.liquid`.
-   - The exact place list is in the report, section 3.
-4. **Performance (apps).** Mida: embed off per Q4. Mida has no sampling or page-exclusion setting (its docs list only IP and country exclusion), so the choice is on or off. Shopify Forms: keep the homepage/password signup block (form 923202). If Q5 says there are no Forms popups, test the Forms app embed off on a copy theme and confirm the homepage signup still submits.
-5. **Pre-order cancellation policy.** Draft is in `artifacts/proposed-copy.md` §B. Add it under Settings → Policies → Cancellation policy once George approves it (Q6).
-6. **Theme code, small fixes:**
-   - `sections/crooks-exhibit-record.liquid`: no `label_low` when `inventory_policy == 'continue'`.
-   - `snippets/crooks-schema-product.liquid`: print `size` once when a product has two size options (sets).
-   - Tee `handlingTime` from the POD lead time.
-   - Set-panel line (`set_shipping_text`): "The set ships free by Tracked 24" (`artifacts/proposed-copy.md` A4).
+1. **Policies: this workstream, on George's typed go in this chat.**
+   - Write shipping, refund, contact and the new cancellation policy, one at a time, following the method in `artifacts/policy-edits-ready.md`: re-read, write, read back, byte-compare, then log in `CHANGES.md`.
+   - Terms of service (Shopify policy) is untouched.
+2. **Hand to `cowork/theme-editor`**, the only workstream that changes the live theme. Copy is in `artifacts/proposed-copy.md`:
+   - **A6 FAQ** (`templates/page.faq.json`): q1 dispatch, q2 delivery, q3 cost. The FAQPage schema follows the same text.
+   - **A7 Terms page** (`templates/page.terms.json`): 01 Carriage, plus one tee sentence in 02 Dispatch.
+   - **A4 set-panel line** (`set_shipping_text`): "The set ships free by Tracked 24".
+3. **Theme code** (theme-editor, or whoever it hands to):
+   - **A3b:** no "IN STOCK" on products tagged `tee` (owner decision #2). `label_in_stock` is shared, so this needs an exception in `assets/crooks-record.js` and `sections/crooks-exhibit-record.liquid`.
+   - **A11** (`snippets/crooks-schema-shipping.liquid`): set `transitTime` to 2–3 days, and `handlingTime` to 2–3 days for `tee` products. In-stock handling stays 0–2; pre-orders are unchanged.
+   - **Small fixes:** no `label_low` when `inventory_policy == 'continue'`, and print `size` once when a product has two size options (sets).
+4. **Hand to `cowork/product-data`:**
+   - Turn tracking off on the 4 tees published 17:27 UTC (`og-crook-tee`, `3-clives-tee`, `broadcast-tee`, `evil-clive-tee`). Do the same for the 14 T-shirt Week tees **before** they're published.
+   - Confirm every one of those 18 carries the `tee` tag. The made-to-order line and the status-bar exception key off it.
+5. **George:** untick "Preselect the sign-up option" (Settings → Checkout → Marketing options). Q3 is still outstanding per `ANSWERS.md`. Also confirm whether the storefront password page is intended, and when it comes off (FINDINGS 11).
+6. **When the password page comes off** (read-only):
+   - PageSpeed on the homepage, mobile and desktop.
+   - The Rich Results Test on the hoodie, tee and outerwear pages.
+   - The 390 px popup check on the new teaser bar.
+   - Re-open a tee PDP to check that "IN STOCK" and next-day dispatch are gone.
+   - Open each policy URL, including `/policies/subscription-policy`.
+   - Record everything against the 16 Oct baseline.
 
 ## Do not do yet
 
-- **Don't build a new popup fix.** One is already built and staged in "CROOKSLDN — Claude P1 fixes (copy of live 16 Oct)" (09-performance workstream). Wait for George to lift that theme's hold.
-- **Don't edit `snippets/crack-the-cuffs.liquid` or `snippets/crooks-schema-site.liquid` on the live theme.** Both have staged versions in the held theme; editing live now creates a merge conflict when it publishes.
-- **Don't make theme edits (Do next items 3 and 6) until the theme vehicle is decided.** "Claude P1 fixes" is a full copy of live as of 16 Oct. If live is edited and the held theme is published afterwards, every live edit since 16 Oct is silently reverted. Pick one route first:
-  - **(a)** Port the two changed files from the held theme into live, retire the held copy, then edit live.
-  - **(b)** Make every edit in both themes.
-
-  Policies (Shopify settings) and product data (tags, inventory tracking) are not theme-bound and can go ahead now.
-- **Don't put a number in the tee made-to-order line until George confirms the POD lead time.** The theme default "9–16 days" is not a CROOKSLDN figure.
+- **Don't write theme files from this workstream.** theme-editor owns the live theme.
+- **Don't preview, publish or port the held "Claude P1 fixes" theme.** It stays held (owner decision). Its popup and Organization fixes are superseded on live by the 18 Oct evening theme.
 - **Don't fill `crooks.origin`.** It renders in the PDP "Origin" row, and the brand rule is no manufacturing origin in consumer copy. Merchant Center origin, if needed, belongs in the feed (03-merchant-feed).
 - **Don't add `aggregateRating`.** There is one 1.0★ Judge.me review on one tee.
-- **Don't write products, variants or inventory from this workstream.** `cowork/product-data` owns them.
-
-## When George says "answered"
-
-1. Read the answers in `QUESTIONS.md` (or as relayed from the main chat).
-2. Finalise `artifacts/proposed-copy.md`:
-   - put the Q1 lead time into every `{TEE LEAD TIME}`
-   - use the Q2 delivery times
-   - apply any edits from Q6 and Q7
-   - mark it "approved" with the date
-3. Put the finished tee wording and the made-to-order tag ask into `NEXT.md` for `cowork/product-data`. Put the copy and schema values in for whichever workstream implements the theme.
-4. Verify anything George has already done:
-   - **Q3:** checkout box starts unticked.
-   - **Q4:** Mida script gone from the homepage; re-run homepage PageSpeed.
-   - **Q8:** if published, the 390 px popup now arrives as a bottom sheet after 10 s or more, and the Rich Results Test passes on home, hoodie, tee and outerwear.
-5. **Q9:** if yes, confirm in chat, then run the tee-only cart test and record the result against Finding 8.
-6. Update `STATUS.md`, `FINDINGS.md` and `CHANGES.md` (only for anything this session actually did), commit and push.
+- **Don't write products, variants or inventory.** `cowork/product-data` owns them.
+- **Dropped or parked by George:**
+  - the tee-only test cart (Q9)
+  - turning the Mida embed off (Mida stays on)
+  - turning the Forms embed off (parked)
 
 ## Decisions still required
 
-All owner decisions are in `QUESTIONS.md` (Q1–Q9).
-
-- **Repository (orchestrator):** this branch is rebased onto `main` (3905e37, the README commit). `cowork/geo-measurement` and `cowork/product-data` were pushed before `main` existed. Check whether they still need rebasing, and whether the repo's default branch is set to `main`.
+- **George:** typed go for the four policy edits.
+- **George:** whether the password page is intended, and when it lifts.
+- **Repository (orchestrator):** check that the default branch is `main`, and whether `cowork/geo-measurement` and `cowork/product-data` need rebasing.
 
 ## Data still required
 
-- POD lead time (above).
-- One test cart holding only a tee, read at checkout, to confirm the deferred-purchase notice does not appear. Do it once George allows a test add-to-cart. It decides whether Finding 8 affects tee orders at all.
-- Post-fix CrUX homepage INP, mobile.
-- `ctc_shown` / `ctc_run` / signup rate per 1,000 homepage sessions, after the staged popup ships.
+- **CrUX mobile INP for the homepage**, 28 days after the popup rebuild (18 Oct → check about 15 Nov).
+- **`ctc_shown` / `ctc_run` / signup rate** per 1,000 homepage sessions under the new teaser bar.
 
-## Recommended follow-up date
+## Recommended follow-up dates
 
-- **29 Oct 2026:** re-check tee PDP lines and tee schema availability/handling. The Merchant Center auto-add decision (03-merchant-feed) is due 29–30 Oct, and tee offers currently claim InStock with 0–2 day handling.
-- **28 days after the Mida/Forms change:** re-run PageSpeed on the homepage and read CrUX mobile INP. For example, a change on 20 Oct → check 17 Nov.
-- **Same day as any theme publish:** re-run the Rich Results Test on the hoodie, tee and outerwear URLs (IDs in `FINDINGS.md`, Finding 7) to confirm nothing regressed.
+- **Same day as the password page lifts:** the re-runs in Do next item 6.
+- **Same day as any theme publish:** re-run the Rich Results Test on hoodie, tee and outerwear (IDs in `FINDINGS.md`, Finding 7).
+- **29 Oct 2026:** re-check tee schema availability and handling before the Merchant Center auto-add decision (03-merchant-feed, due 29–30 Oct).
+- **About 15 Nov 2026:** homepage CrUX INP after the popup rebuild.

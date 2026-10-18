@@ -275,3 +275,52 @@ It's a misleading shipping claim on the highest-traffic product pages.
 
 **Recommended action:**
 Theme editor: change it to "The set ships free by Tracked 24 (orders £80+)", or show it only after the set price.
+
+## Finding 11 — The whole storefront is behind the password page (18 Oct, evening)
+
+**Finding:**
+At 18 Oct ~20:10 BST, every storefront URL fetched without a session redirects to `/password` ("Enter using password … Are you the store owner? Log in here"). That covers `/`, `/products/crx-garms-t-shirt`, `/collections/outerwear` and every tee page. The Shopify preview bar in George's built-in browser also reads "Password protected". At about 16:55 BST, session-less fetches of `/products/<handle>.js` from this session still returned product JSON, so the password most likely went on between ~16:55 and ~20:10 BST on 18 Oct. The exact time is not known. The Admin API also returns `onlineStoreUrl: null` for every tee.
+
+**Evidence:** session-less `fetch()` from the storefront origin, 18 Oct 20:10 BST: final URL `/password`, password form present. Preview bar screenshot: `artifacts/screenshots/60-…`.
+
+**Why it matters:**
+While it's on, customers can't shop, and Googlebot, Merchant Center's crawler and AI crawlers all see a password page instead of the site. A few hours ahead of a planned launch is normally harmless. Left on for days, it risks pages dropping from the index and Merchant Center items being disapproved for an unreachable landing page. Merchant Center's auto-add decision falls on 29–30 Oct (03-merchant-feed).
+
+**Confidence:** High that it's on. Whether it's intended, for example a lock ahead of T-shirt Week, is unknown.
+
+**Recommended action:**
+- George confirms it's intended, and when it comes off.
+- If it's intended, keep it to the shortest window possible.
+- When it lifts, re-run PageSpeed, the Rich Results Test and the 390 px popup check. All of them hit the password page while it's on.
+
+## Finding 12 — What the 18 Oct evening live theme fixed, and what's still open
+
+**Finding:**
+A new theme, **"CROOKSLDN — live 18 Oct + evening fixes"** (`gid://shopify/OnlineStoreTheme/207475147095`), became the live theme at ~18:58 UTC on 18 Oct. "SEO round 2" is now unpublished. A checksum diff against Friday's live theme shows 15 files added and 42 changed, and none removed. Against this workstream's findings:
+
+| Finding | Status in the new live theme |
+|---|---|
+| 1 — tees promise stock/next-day | **Mostly fixed.** `made_to_order_tag` = `tee` and the line reads "Printed to order. Dispatched within 2–3 working days."; the "leaves today/tomorrow" line no longer renders on tees; the status bar's "DISPATCHED TODAY" message skips tee-tagged products. **Still open:** the stock line still says "IN STOCK" once a size is chosen, and tee schema still says handling 0–2, transit 1–2, InStock. |
+| 3 — 1–2 vs 2–3 day delivery | **Partly fixed.** The PDP custody block now has the Tracked 24/48 aims and the "not guaranteed" line. **Still open:** FAQ, Terms, schema `transitTime` (all unchanged since 16 Oct), and the policies (ready in `artifacts/policy-edits-ready.md`). |
+| 5 — full-screen mobile popup | **Rebuilt, code-verified only.** `snippets/crack-the-cuffs.liquid` is now a teaser bar on browsing pages after 3 s, and the game window opens only when someone presses it. It isn't the held P1 version. Not rendered at 390 px: the store is password-protected, and George's browser is previewing an unpublished draft. |
+| 6 — Organization schema | **Live.** Founder, Companies House 16606021, sameAs limited to Instagram/TikTok, "Crooks LDN" alternate name, and the independent-British description are all in the live `crooks-schema-site.liquid`. |
+| 8 — missing cancellation policy | **Open.** Prepared (`artifacts/policy-edits-ready.md` §4). |
+| 10 — set-panel line | **Open.** Unchanged. |
+
+Product data has also changed (from outside this session):
+- **The 3 original tees** now have 30 variants each, six colours, with tracking off (change-log C-009).
+- **4 more tees were published at 17:27 UTC** (`og-crook-tee`, `3-clives-tee`, `broadcast-tee`, `evil-clive-tee`) with tracking still **on**.
+- **The 14 T-shirt Week tees** are ACTIVE but unpublished.
+
+**Evidence:** Admin API theme list and file checksums (514 vs 499 files); live `templates/product.json`, `sections/header-group.json`, `sections/crooks-status-bar.liquid`, `snippets/crack-the-cuffs.liquid` and `snippets/crooks-schema-site.liquid` read 18 Oct 20:15 BST; product reads 18 Oct 20:12 BST; tee PDP check in the TW-launch draft preview (same `templates/product.json` settings): screenshot `60-…`.
+
+**Why it matters:**
+Most of the commercial risk on tees is gone. What remains is the "IN STOCK" label, the schema handling time (which Merchant Center reads for every tee) and the written policies.
+
+**Confidence:** High for file contents. Medium for the popup until it's rendered.
+
+**Recommended action:** routes in `NEXT.md`.
+- theme-editor: FAQ, Terms, set line.
+- Theme code: tee "IN STOCK", schema handling and transit.
+- product-data: tracking off on the 4 newly published tees.
+- This workstream: policies, on George's go.
