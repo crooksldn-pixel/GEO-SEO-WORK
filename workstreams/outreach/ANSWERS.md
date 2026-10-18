@@ -15,3 +15,15 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **Q7 From address:** **team@crooksldn.com**.
 - Directory submissions were approved on 16 Oct (free, human-reviewed). Show George each filled form and wait for his **go**.
 - Evergreen colourway for evergreen roundups: **Black Convict**. Trading since March 2024.
+
+## Update 18 Oct 2026, 18:50 UTC: George's go, and who does what now
+
+George typed **go** at 18:45 UTC for the approved store batch. The project thread's store writes are still refused by its own permission check, so **this Cowork chat now carries out the items below**. George's reply "answered" in this chat is his go for them. Re-read live values before each write, change one thing at a time, read it back, and log it in `project-files/seo/change-log.md` (or this branch's CHANGES.md).
+
+**Do now**
+1. Text-only pitch drafts for PAUSE, GUAP and Menswear Style Podcast. No samples, no paid placements.
+2. Directory listings (Streetwear Directory, Disco = Unisex) using the approved brand line and team@crooksldn.com.
+3. Lead with Black Convict as the evergreen piece.
+
+**Parked:** samples and creator seeding.
+**No decision outstanding for this chat.** Nothing is sent without George's go on the final text.
