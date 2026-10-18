@@ -2,7 +2,7 @@
 
 **Branch:** cowork/merchant-center  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:30 BST  
+**Last updated:** 18 Oct 2026, 17:20 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -42,7 +42,7 @@ Nothing currently running.
 ### Blocker 1 — Every Merchant Center change needs George's yes
 
 **Blocking:** removing the 10 `CROOKSRELEASESEPT` duplicates; the business-name fix  
-**Needs:** George answers the two questions under "Waiting on George"  
+**Needs:** George's answers to Q1 and Q2 in QUESTIONS.md  
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
@@ -51,7 +51,7 @@ Nothing currently running.
 ### Blocker 2 — Tee handling time has no number yet
 
 **Blocking:** task D (tee handling time and shipping_label)  
-**Needs:** the real print-on-demand production + dispatch time for tees, in working days  
+**Needs:** Q3 in QUESTIONS.md, the tee print-on-demand time in working days  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** No  
@@ -60,7 +60,7 @@ Nothing currently running.
 ### Blocker 3 — The `seo` project folder isn't reachable
 
 **Blocking:** comparing against the 11 findings in `workstreams/03-merchant-feed.md` and the handoff "corrections" (sections A–E); saving the export to `measurements/`  
-**Needs:** the `seo` folder connected, or those two files attached or committed to this repo  
+**Needs:** Q5 in QUESTIONS.md: those two files committed to this repo, or the `seo` folder connected  
 **From:** George  
 **Severity:** P2  
 **Can work around it?:** Partly  
@@ -68,11 +68,14 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Are the 10 `CROOKSRELEASESEPT` products (all-caps, "Added in Merchant Center") a September leftover? If yes, may this session delete those 10 products? Shopify already sends all 10.
-2. Business name: change "CROOKSLDN" to "Crooks LDN" in Business info, or keep it?
-3. The tee print-on-demand production + dispatch time, in working days.
-4. Say yes to item A in the `cowork/product-data` chat (Cream Cap off Google & YouTube). That clears the last UK disapproval.
-5. Connect the `seo` folder, or attach `03-merchant-feed.md` and `03-merchant-feed-handoff.md`.
+All questions, with options and answer lines, are in [QUESTIONS.md](QUESTIONS.md). When George says "answered", this session reads that file and carries on.
+
+1. Q1: delete the 10 `CROOKSRELEASESEPT` duplicates?
+2. Q2: business name "Crooks LDN"?
+3. Q3: tee print-on-demand time, in working days.
+4. Q4: auto-add stance for 1 Nov.
+5. Q5: the `03-merchant-feed` files.
+6. Q6 and Q7 are optional.
 
 ## Waiting on external systems
 

@@ -31,16 +31,28 @@
 
 ## Decisions still required
 
-- George: delete the 10 `CROOKSRELEASESEPT` products (yes/no).
-- George: business name "Crooks LDN" (yes/no, or another confirmed alternate).
-- George, 29–30 Oct: stay opted in to auto-add, or opt out.
-- Orchestrator: who owns Shopify Settings > Shipping? It drives the 2–4 day free tiers, the 12:00 AM cut-off and item-level handling time.
+All of these are in [QUESTIONS.md](QUESTIONS.md), with answer lines:
+- Q1 (delete the duplicates)
+- Q2 (business name)
+- Q4 (auto-add stance)
+- Q7 (small markets)
+- O1 (who owns Shopify shipping settings; for the orchestrator)
 
 ## Data still required
 
-- The tee print-on-demand production + dispatch time, in working days.
-- `workstreams/03-merchant-feed.md` (the 11 findings) and `03-merchant-feed-handoff.md` (corrections A–E), so this record can be checked against them.
-- Optional: where the brief's "112 invalid codes" figure came from.
+These are in QUESTIONS.md too:
+- Q3 (tee print-on-demand time)
+- Q5 (the `03-merchant-feed` files)
+- Q6 (source of the "112" figure)
+
+## When George says "answered"
+
+1. Pull this branch and read QUESTIONS.md.
+2. Q1 yes: show the 10 products in Merchant Center, delete them, then log the change in CHANGES.md.
+3. Q2: say exactly what will be saved, save it, then log it.
+4. Q3: run NEXT step 2 (task D) with the number.
+5. Q5: map FINDINGS against the 11 findings and add the comparison to `artifacts/04-merchant-center.md`.
+6. Update STATUS.md, then commit and push.
 
 ## Recommended follow-up date
 
