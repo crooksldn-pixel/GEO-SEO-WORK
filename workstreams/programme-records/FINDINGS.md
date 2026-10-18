@@ -20,19 +20,19 @@ Treat this repo as the shared record. Have each workstream put its 16 Oct result
 ## Finding 2 — The default branch is not `main`
 
 **Finding:**  
-`cowork/geo-measurement` was pushed at 16:37 UK on 18 Oct, before `main` existed. GitHub made it the default branch. This session created `main` at about 16:45 (README only), but `main` and `cowork/geo-measurement` share no history.
+`cowork/geo-measurement` was pushed at 16:37 UK on 18 Oct, before `main` existed, and GitHub made it the default branch. This session created `main` at 16:39 (README only). Neither `cowork/geo-measurement` nor `cowork/authority-research` (an orphan branch) shares history with `main`. `cowork/product-data` has rebased onto `main`.
 
 **Evidence:**  
 `git ls-remote --symref origin` shows `HEAD -> refs/heads/cowork/geo-measurement`. Changing the default through this session's proxy was refused ("Repository settings writes are not permitted").
 
 **Why it matters:**  
-A new session that clones without naming a branch starts on `cowork/geo-measurement` and could build on that workstream's files. Merging `cowork/geo-measurement` into `main` later needs `--allow-unrelated-histories`, or that workstream has to rebase onto `main`.
+A new session that clones without naming a branch starts on `cowork/geo-measurement` and could build on that workstream's files. Merging either unrelated branch into `main` later needs `--allow-unrelated-histories`, or that workstream has to rebase onto `main`.
 
 **Confidence:**  
 High.
 
 **Recommended action:**  
-George switches the default branch to `main` in GitHub settings. The geo-measurement workstream rebases onto `main` when convenient.
+George switches the default branch to `main` in GitHub settings. The geo-measurement and authority-research workstreams rebase onto `main` when convenient.
 
 ## Finding 3 — The repo is public
 
@@ -66,4 +66,4 @@ This is the baseline any GEO claim in the change log has to be checked against. 
 High. These are counts from the committed CSV.
 
 **Recommended action:**  
-When merging into the change log, use this run as the GEO baseline for every live change that targets AI answers. Keep Perplexity out of any comparison until a full run exists.
+When merging into the change log, use this run as the GEO baseline for every live change that targets AI answers. Keep Perplexity out of any comparison until a full run exists. Authority-research's §4 is a search-ranking proxy written because this run wasn't available to it. The run's observed citation table should replace that proxy (see artifacts/merge-register.md, note 1).

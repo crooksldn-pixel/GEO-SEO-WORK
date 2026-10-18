@@ -2,7 +2,7 @@
 
 Nothing has been changed in the record files, Shopify, the theme, Merchant Center or any external site.
 
-## 18 Oct 2026, 16:45 UK — Created `main` with a README
+## 18 Oct 2026, 16:39 UK — Created `main` with a README
 
 **State:** LIVE
 
@@ -27,7 +27,7 @@ Repo setup.
 **Expected metric:**  
 None.
 
-## 18 Oct 2026, 16:47 UK — Opened issue #1
+## 18 Oct 2026, 16:40 UK — Opened issue #1
 
 **State:** LIVE
 
@@ -51,3 +51,5 @@ The issue URL was returned by the GitHub API.
 
 **Expected metric:**  
 None.
+
+At 16:58 a comment was added to issue #1 listing the files product-data and authority-research also need from the Project folder.
