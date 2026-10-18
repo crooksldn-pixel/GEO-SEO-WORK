@@ -2,7 +2,7 @@
 
 **Branch:** cowork/search-console  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:05 BST  
+**Last updated:** 18 Oct 2026, 17:20 BST  
 **Priority:** P1  
 **Overall status:** WAITING ON EXTERNAL
 
@@ -49,7 +49,12 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Is the Crooks Express tee the design people call the "Tesco tee"? This decides where the two 404 Tesco tee URLs redirect (FINDINGS 5).
+All four questions are written out, with options and an answer line each, in `QUESTIONS.md`.
+
+1. Is the Crooks Express tee the "Tesco tee"? This decides where the two 404 Tesco tee URLs redirect (FINDINGS 5).
+2. Does any other Google account hold a Search Console property for crooksldn.com that could fill the 23 Jul – 14 Oct gap?
+3. Drop, launch and password-gating dates before 14 Nov, so measurement windows can be marked.
+4. Should this workstream schedule its own checks for 20 Oct, 24 Oct and 14 Nov, or will the main chat trigger them?
 
 ## Waiting on external systems
 

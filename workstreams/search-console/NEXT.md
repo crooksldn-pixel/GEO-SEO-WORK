@@ -1,5 +1,15 @@
 # Next
 
+## When George's answers arrive ("answered")
+
+Read the `Answer:` lines in `QUESTIONS.md`, or the answers in the chat message. Then:
+- **Q1:** put the Tesco tee redirect target in FINDINGS 5 and 8 and in `artifacts/opportunities.csv` row 3.
+- **Q2:** if another property exists, export UK Queries, Pages and Dates for 23 Jul – 14 Oct into `artifacts/gsc-exports/` and rebuild the baseline in FINDINGS 1 around the weeks before 16 Oct.
+- **Q3:** add the drop, launch and password dates to the measurement plan below, and leave those days out of like-for-like comparisons.
+- **Q4:** if A, create the three scheduled checks (20 Oct, 24 Oct, 14 Nov); if B, wait for the main chat.
+
+Update STATUS.md and commit.
+
 ## Do next
 
 1. **From 20 Oct:** open Indexing > Pages. If processing has finished, record every "why pages aren't indexed" reason with page counts and example URLs in FINDINGS. Check that /password, /collections/frontpage, /collections/all and the archived 404s appear where FINDINGS 6–8 expect.
