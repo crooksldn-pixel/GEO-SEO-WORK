@@ -2,7 +2,7 @@
 
 **Branch:** cowork/programme-records  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:05 UK  
+**Last updated:** 18 Oct 2026, 17:20 UK  
 **Priority:** P1  
 **Overall status:** BLOCKED
 
@@ -14,9 +14,9 @@ Keep the programme's single record. That means `change-log.md` (every live chang
 
 No record file has been edited. The three record files and `workstreams/10-measurement.md` are in the Project folder (`/mnt/project-files/seo/`). This session can't reach that folder, and nor can the other Cowork sessions. Issue #1 asks for the files.
 
-The repo now has `main` (README only) and seven workstream branches: `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks`, `cowork/search-console` and this one. The GitHub default branch is still `cowork/geo-measurement`, because that branch was pushed before `main` existed.
+The repo now has `main` (README only) and nine workstream branches: `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks`, `cowork/search-console`, `cowork/merchant-center`, `cowork/outreach` and this one. The GitHub default branch is still `cowork/geo-measurement`, because that branch was pushed before `main` existed.
 
-All six other branches were reviewed by 17:05. None reports a live change, so none adds a change-log entry. Their status for the master queue, and nine cross-workstream notes, are in [artifacts/merge-register.md](artifacts/merge-register.md). Note 5 matters for Q36: Search Console has no data for 23 Jul – 14 Oct 2026.
+All eight other branches were reviewed by 17:15. None reports a live change, so none adds a change-log entry. Their status for the master queue, and nine cross-workstream notes, are in [artifacts/merge-register.md](artifacts/merge-register.md). Note 5 matters for Q36: Search Console has no data for 23 Jul – 14 Oct 2026.
 
 ## Completed
 
@@ -24,7 +24,7 @@ All six other branches were reviewed by 17:05. None reports a live change, so no
 - Set up the repo: created `main` with a README describing the branch rules (George approved this on 18 Oct).
 - Opened issue #1 for the missing record files. Added a comment that gathers the other workstreams' missing Project files into the same issue.
 - Read `cowork/geo-measurement`: it holds the 16 Oct 2026 UK GEO panel baseline. This is the first captured GEO measurement in the programme (see FINDINGS, Finding 4).
-- Reviewed `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks` and `cowork/search-console` for change-log entries. None has a live change. Recorded the commits reviewed, the master-queue status for each, and the cross-workstream notes in `artifacts/merge-register.md`.
+- Reviewed `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks`, `cowork/search-console`, `cowork/merchant-center` and `cowork/outreach` for change-log entries. None has a live change. Recorded the commits reviewed, the master-queue status for each, and the cross-workstream notes in `artifacts/merge-register.md`.
 
 ## Currently working on
 
@@ -43,12 +43,15 @@ All six other branches were reviewed by 17:05. None reports a live change, so no
 
 ## Waiting on George
 
-1. The four record files (issue #1).
-2. Switch the repo's default branch to `main` (GitHub > Settings > General > Default branch). This session can't change repo settings.
+All of it is in [WAITING-ON-GEORGE.md](WAITING-ON-GEORGE.md), with a default for every decision. In short:
+
+1. The four record files, plus anything in `cowork-results/` (issue #1).
+2. Six decisions (Q36 metric, Search Console baseline wording, parked rows, where records live, answers given since 16 Oct, page-copy owner). Each has a default.
+3. Switch the repo's default branch to `main`.
 
 ## Waiting on external systems
 
-- More workstreams pushing their branches. So far there are none for theme, Merchant Center or outreach, and search-console has not yet pushed its STATUS or FINDINGS.
+- More workstreams pushing their branches. There's no theme branch yet, and search-console hasn't pushed its STATUS or FINDINGS.
 
 ## Next actions
 

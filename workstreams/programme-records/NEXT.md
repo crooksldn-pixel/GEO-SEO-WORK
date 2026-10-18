@@ -26,7 +26,7 @@
 
 ## Decisions still required
 
-- None from George beyond issue #1 and switching the default branch.
+- Listed with defaults in [WAITING-ON-GEORGE.md](WAITING-ON-GEORGE.md). When George says "answered", read `ANSWERS.md`, the `records/` folder (or `cowork/project-files-import`) and issue #1, then start at step 1. Use the stated default for anything left unanswered.
 
 ## Data still required
 

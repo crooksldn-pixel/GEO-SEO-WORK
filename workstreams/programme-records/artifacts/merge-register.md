@@ -20,7 +20,14 @@ This lists each workstream branch reviewed for the change log. Only work a branc
 | `cowork/live-site-checks` | `5aef376` (18 Oct 16:42) | Yes | None. Research only. A test checkout went as far as shipping rates, with no submission. | None | Measured baseline 16 Oct (PSI, Rich Results, shipping promises, tee stock lines, mobile popup), re-checked 18 Oct. 10 findings, 2 at P1: tees show false stock and dispatch, and checkout pre-ticks marketing consent. |
 | `cowork/search-console` | `3cacbd5` (18 Oct 16:42) | Yes | None. Only exports committed so far; no STATUS or CHANGES yet. | None | UK exports for 21 Jan – 22 Jul 2026 and 15–16 Oct 2026 committed. The property has no performance data for 23 Jul – 14 Oct 2026. |
 
-**Result so far:** none of the six branches reports a live change. When `change-log.md` arrives, they add no change-log entries. Their status goes into the master queue only.
+## Reviewed 18 Oct 2026, 17:15 UK
+
+| Branch | Commit reviewed | Cut from `main`? | Live changes | Change-log entries to add | Master-queue status to record |
+|---|---|---|---|---|---|
+| `cowork/merchant-center` | `4fcc18f` (18 Oct 17:00) | Yes | None. Two exports were downloaded, and the UK shipping wizard was opened and cancelled without saving. | None | Audit done. All 25 Shopify products are approved for the UK. The only UK disapproval is the Cream Cap, which waits on product-data item A. Other disapprovals come from 10 hand-added `CROOKSRELEASESEPT` duplicates and from five minor markets. GTIN task B can't be done as briefed. Re-check booked for 29 Oct, ahead of the 1 Nov opt-out decision. |
+| `cowork/outreach` | `65abd3c` (18 Oct 16:47) | Yes | None. Nothing submitted, no profile created, no draft made. | None | Both directory forms inspected (both free). Pitch routes verified for 8 outlets: 3 usable, 2 weak, 3 to skip. Blocked on `07-directory-submission-pack.md` and `07-authority.md`. |
+
+**Result so far:** none of the eight branches reports a live change. When `change-log.md` arrives, they add no change-log entries. Their status goes into the master queue only.
 
 ## Cross-workstream notes
 
@@ -28,9 +35,11 @@ This lists each workstream branch reviewed for the change log. Only work a branc
 2. **Several workstreams are missing files from the same Project folder:**
    - this workstream: `change-log.md`, `master-queue.md`, the status report and `10-measurement.md`;
    - product-data: `05-reactive-drafts.md`, `assets/README.md` and the photo inbox;
-   - authority-research: `07-authority.md`.
+   - authority-research: `07-authority.md`;
+   - collections: `01-collections-internal-linking.md`, `05-reactive-drafts.md`, `05-query-map.md` and `p1-collection-audit-2026-10-16.md`;
+   - outreach: `07-directory-submission-pack.md` and `07-authority.md`.
 
-   All are listed in issue #1, so George has one place to answer.
+   All of these are listed in `WAITING-ON-GEORGE.md`, along with the suggestion to import the whole `seo/` folder in one go.
 3. **No owner for the contact-page copy.** Authority-research found "run out of London" on crooksldn.com/pages/contact. It should read "independent British streetwear brand". No workstream branch owns site page copy yet.
 4. **Two branches don't share history with `main`:** `cowork/geo-measurement` and `cowork/authority-research`. Whoever merges them will need `--allow-unrelated-histories`, or the workstream rebases onto `main` first. `cowork/product-data`, `cowork/collections`, `cowork/live-site-checks` and `cowork/search-console` are all cut from `main`.
 5. **Search Console has no data for 23 Jul – 14 Oct 2026. This affects Q36.** Any live entry deployed in that window, or just after it, has no Search Console window immediately before the deploy. The nearest data is 21 Jan – 22 Jul 2026 (pre-gap, so a different season and not like-for-like) and 15–16 Oct 2026 (two days). Q36 is still applied as briefed: the Shopify 90-day baseline where it exists, otherwise "no baseline: Search Console pending". An entry's Search Console baseline should be labelled with the window it actually comes from.
