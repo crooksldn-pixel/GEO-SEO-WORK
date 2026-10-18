@@ -61,7 +61,7 @@ Nothing currently running.
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
-**Workaround:** — (The Sweats copy is pre-approved text, and rewriting it here would bypass that approval.)
+**Workaround:** — (The Sweats copy is pre-approved text, and rewriting it here would bypass that approval.) The same path problem affects other sessions too: see `cowork/programme-records` FINDINGS. That branch also has C-003 down as not live, which matches this record.
 
 ### Blocker 3 — Search Console evidence
 
