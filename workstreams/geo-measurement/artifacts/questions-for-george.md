@@ -1,6 +1,7 @@
 # geo-measurement: questions for George
 
 **Asked:** 18 Oct 2026, 17:15 UK  
+**Answered:** 18 Oct 2026, 17:03 UTC, in the project chat. The record is `../ANSWERS.md`, and it wins if this file disagrees with it.  
 **Branch:** `cowork/geo-measurement`
 
 These are everything this workstream needs from George. Each question has its options and what happens with each answer.
@@ -30,14 +31,14 @@ Answers pasted into that chat also work. None of these blocks the baseline, whic
 - **A:** I run Perplexity for all 21 queries × 3 into a new dated run folder ("Perplexity gap-fill"), with the login state recorded in `meta.json`.
 - **B:** I record the decision in `panel-method.md` and `STATUS.md`, and close Blocker 1.
 
-**Answer:**
+**Answer:** Parked (not answered). The panel reports Google UK, ChatGPT and Gemini. Blocker 1 is parked.
 
 ---
 
 ## Q2 — Is Crooks London Limited (Companies House 16396366) your company?
 
 **Why:**
-- Perplexity (3 of 3 "Crooks LDN" runs) cites "Crooks London Limited, 16396366, incorporated 19 Apr 2025, Englefield Green" as the brand's company.
+- Perplexity (3 of 3 "Crooks LDN" runs) cites "Crooks London Limited, 16396366, incorporated 19 Apr 2025" as the brand's company.
 - ChatGPT ("Crooks London" run 2) also points to Crooks London Limited.
 - The entity used for profiles is Crooks Clothing Company Ltd (16606021).
 
@@ -53,7 +54,7 @@ See FINDINGS Finding 6, and screenshot `artifacts/runs/2026-10-16/shots/perplexi
 - **B:** Finding 6 records it as a known second company. The recommendation becomes making sure the site names 16606021 as the trading entity.
 - **C:** It stays open.
 
-**Answer:**
+**Answer:** B. 16396366 is George's company, but the public operator is Crooks Clothing Company Ltd (16606021). FINDINGS Finding 6 is updated.
 
 ---
 
@@ -63,12 +64,12 @@ See FINDINGS Finding 6, and screenshot `artifacts/runs/2026-10-16/shots/perplexi
 
 **Options:**
 - **A. Keep as is.**
-- **B. Redact from now on.** New runs record only "GB, Three UK". The two existing run folders stay unchanged, under the never-edit-a-past-run rule.
+- **B. Redact from now on.** New runs record only "GB". The two existing run folders stay unchanged, under the never-edit-a-past-run rule.
 - **C. Redact everywhere.** This edits the 16 and 18 Oct `meta.json` files, which is an explicit exception to never editing a past run. Even then, git history keeps the old values unless the history is rewritten, which needs a force-push. Say whether you want that too.
 
 **What happens next:** I apply the chosen option and log it in `CHANGES.md`.
 
-**Answer:**
+**Answer:** Remove. Record the country only (owner decision #16). The `meta.json` files were redacted by the project thread on 18 Oct. This workstream also removed the network detail from both `summary.md` files and the Gemini location footer from the 63 Gemini screenshots (see CHANGES.md).
 
 ---
 
@@ -78,7 +79,7 @@ See FINDINGS Finding 6, and screenshot `artifacts/runs/2026-10-16/shots/perplexi
 
 **Action:** GitHub → the repo's Settings → default branch → `main`.
 
-**Answer:** done / not done
+**Answer:** Not done yet. This is George's action in GitHub settings.
 
 ---
 
@@ -90,7 +91,7 @@ See FINDINGS Finding 6, and screenshot `artifacts/runs/2026-10-16/shots/perplexi
 - **A. Yes,** as a labelled extra from the next run.
 - **B. No.**
 
-**Answer:**
+**Answer:** A. Yes, as a labelled extra query. Added to `panel-method.md`. Baseline captured 18 Oct in `runs/2026-10-18-extra-query/`.
 
 ---
 
@@ -106,7 +107,7 @@ The 16 Oct run of all 21 queries took about 1.5 hours. The core 8 should take ro
 
 Also say whether you want this set up as a scheduled task that starts the run automatically. It would still need the Mac on.
 
-**Answer:**
+**Answer:** A. 13 Nov stands. Mark T-shirt Week so a launch spike isn't read as GEO movement (done in `run-log.md`). Scheduling wasn't answered, so no scheduled task was created.
 
 ---
 
@@ -119,4 +120,4 @@ Also say whether you want this set up as a scheduled task that starts the run au
 - **B. I've uploaded the zips** to the Project folder.
 - **C. I'll upload them later.**
 
-**Answer:**
+**Answer:** A. The branch is enough as the record.

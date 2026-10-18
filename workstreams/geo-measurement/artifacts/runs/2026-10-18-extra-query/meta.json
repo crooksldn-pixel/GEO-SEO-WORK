@@ -1,0 +1,44 @@
+{
+  "run_date": "2026-10-18",
+  "type": "extra-query baseline",
+  "type_explained": "First reading of the labelled extra query 'water reactive windbreaker', which George approved on 18 Oct (ANSWERS.md Q5). It sits outside the 21-query panel (query_group 'extra') and is not compared with the 21-query totals. It gives the 13 Nov run a before-reading for this query.",
+  "queries": [
+    "water reactive windbreaker"
+  ],
+  "ip_country": "GB",
+  "ip_detail": "GB, no VPN (country only, owner decision #16)",
+  "browser": "Same as 16 Oct: Claude desktop app built-in browser pane on George's Mac, its own profile, signed out of Google, ChatGPT and Gemini. Viewport emulated at 1280x2400; screenshots saved at 800x1500 (top of the page). The pane had been closed since the gap-fill, so fresh tabs were opened. Viewport emulation was cleared on all tabs afterwards.",
+  "surfaces": {
+    "google_uk": {
+      "login_state": "signed out of Google",
+      "method": "one load; about 15s wait; AI Overview expanded with 'Show more'; pages 1 and 2"
+    },
+    "chatgpt": {
+      "login_state": "logged out; the log-in pop-up was closed with its X before each run",
+      "model": "not shown",
+      "chat_handling": "new chat per run, no follow-ups; the answer's own style/budget forms were not used"
+    },
+    "gemini": {
+      "login_state": "signed out",
+      "model": "Flash-Lite (model picker)",
+      "chat_handling": "new chat per run, no follow-ups"
+    },
+    "perplexity": {
+      "status": "not run: panel account parked by George (18 Oct)"
+    }
+  },
+  "started": "2026-10-18T19:23:36Z",
+  "finished": "2026-10-18T19:29:23Z",
+  "context": "Inside the T-shirt Week window (18-25 Oct, see run-log.md). This is a non-brand query, so the run went ahead with this note. C-001 (Outerwear collection, water-reactive wording) has been live since 16 Oct, about 15:40 UTC.",
+  "row_counts": {
+    "google_uk": 1,
+    "chatgpt": 3,
+    "gemini": 3
+  },
+  "screenshot_files": 9,
+  "privacy": "The Gemini sidebar shows a location derived from the IP address. It was covered in all four Gemini screenshots before saving (owner decision #16).",
+  "problems": [
+    "Gemini source chips show labels, not URLs. In run 2 the crooksldn.com chip was opened once to read its link. That is the extra file gemini__water-reactive-windbreaker__2_source.png. No follow-up prompt was sent.",
+    "Google AI Overview: 'Show all' sources were not opened, consistent with the other runs."
+  ]
+}

@@ -112,6 +112,7 @@ For the blog/collections workstream: decide whether a crooksldn.com guide page f
 - **Heat-reactive:**
   - "Heat reactive puffer": ChatGPT and Gemini name Remyx London (£115), Mertra, PESO, Trapstar Hyperdrive and Pretty Boy Ugly World.
   - Google's AI Overview for "heat reactive clothing" (18 Oct) names Stone Island and Lyle & Scott. Lyle & Scott's "Reactive Series" page ranks #1 for "heat reactive clothing" and #2 for "water reactive clothing".
+- **Extra query "water reactive windbreaker" (18 Oct):** Gemini run 2 cites crooksldn.com for its opening definition. The chip opens to "HydroCuff Windbreaker — Water-Reactive Jacket | CROOKSLDN" (`/products/hydrocuff-windbreaker`). This is the first crooksldn.com citation in any non-brand answer in the panel. The answer text still names no brand, so Crooks is cited but not named. On Google, Mertra holds all 7 page-1 results and the AI Overview's opening line.
 - **Crooks' own products:** Crooks sells both categories. Google's own AI Overview for "Crooks London" lists the HydroCuff Windbreaker (£85) and the Double-Agent Puffa (£140). Neither product is tied to "water-reactive" or "heat-reactive" in any non-brand answer.
 
 **Evidence:**  
@@ -121,15 +122,23 @@ For the blog/collections workstream: decide whether a crooksldn.com guide page f
 - `2026-10-16/shots/chatgpt__heat-reactive-puffer__{1,2,3}.png`, `2026-10-16/shots/gemini__heat-reactive-puffer__{1,2,3}.png`
 - `2026-10-16/shots/google_uk__crooks-london__1.png` (AI Overview product list)
 - `2026-10-18/shots/google_uk__water-reactive-clothing__1.png`, `2026-10-18/shots/google_uk__heat-reactive-clothing__1.png`
+- `2026-10-18-extra-query/shots/gemini__water-reactive-windbreaker__2.png` and `..._2_source.png` (the crooksldn.com citation)
+- `2026-10-18-extra-query/shots/google_uk__water-reactive-windbreaker__1.png` (Mertra page 1)
 
 **Why it matters:**  
-- **Water-reactive:** ChatGPT and Gemini name no brand at all, so a clear product page could become their default answer. Google's AI Overviews already draw on Buchan, Lyle & Scott and Pretty Green product and collection pages. A product page is therefore the kind of page Google picks up for this query.
+- **Water-reactive:**
+  - ChatGPT and Gemini name no brand for "water reactive jacket" or "clothing", so a clear product page could become their default answer.
+  - Google's AI Overviews already draw on Buchan, Lyle & Scott and Pretty Green product and collection pages.
+  - Gemini has already used the HydroCuff product page as a source, for the windbreaker query. The page is readable and citable, but it is cited for a definition and the brand is not named.
 - **Heat-reactive:** Remyx London and Mertra hold the AI answers for puffers. Stone Island and Lyle & Scott hold Google's AI Overview for clothing.
 
 **Confidence:** High for what the answers show. Medium for how quickly a product page would be picked up.
 
 **Recommended action:**  
-For the reactive-products / product-data workstream: the HydroCuff and Double-Agent product pages should say "water-reactive (hydrochromic)" and "heat-reactive (thermochromic)" in their titles, descriptions and Product data. Re-measure "water reactive jacket" and "heat reactive puffer" after indexing.
+For the reactive-products / product-data workstream:
+- The HydroCuff and Double-Agent product pages should say "water-reactive (hydrochromic)" and "heat-reactive (thermochromic)" in their titles, descriptions and Product data.
+- The HydroCuff page is already being read. Make the brand and product name explicit next to the water-reactive description, so a cited answer has something to name. Use "CROOKSLDN (Crooks LDN) HydroCuff Windbreaker", with "independent British streetwear brand" as the descriptor.
+- Re-measure "water reactive jacket", "water reactive windbreaker" and "heat reactive puffer" after indexing.
 
 ## Finding 5 — Wrong entity and wrong descriptor on brand queries
 
@@ -162,26 +171,32 @@ For the entity / About workstream:
 - Use the name "CROOKSLDN (Crooks LDN)" and "independent British streetwear brand" consistently across the site and profiles.
 - Add Organization structured data with `sameAs` pointing to the official Instagram and TikTok (@crooksldn) and with `legalName` set (see Finding 6).
 
-## Finding 6 — AI engines connect the brand to a different Companies House record
+## Finding 6 — AI engines name the wrong one of George's companies as the brand's company
 
 **Finding:**  
-- Perplexity (3 of 3 runs) cites Companies House "Crooks London Limited, 16396366, incorporated 19 Apr 2025, registered office Englefield Green" as the brand's company.
+- Perplexity (3 of 3 runs) cites Companies House "Crooks London Limited, 16396366, incorporated 19 Apr 2025" as the brand's company.
 - ChatGPT ("Crooks London" run 2) also points to "Crooks London Limited" on Companies House.
-- The legal entity George uses for profiles and listings is Crooks Clothing Company Ltd (16606021).
+- George confirmed on 18 Oct that 16396366 is his company. It is not the public operator, though. The operator decided on 16 Oct is **Crooks Clothing Company Ltd (16606021)**.
+- No AI answer or Google page in either run names 16606021 or "Crooks Clothing Company".
 
 **Evidence:**  
 - `notes` and `sources_cited` (find-and-update.company-information.service.gov.uk) on the Perplexity "Crooks LDN" rows
 - `2026-10-16/shots/perplexity__crooks-ldn__1.png`
 - `2026-10-16/shots/chatgpt__crooks-london__2.png`
+- George's answer: `ANSWERS.md` Q2, 18 Oct 2026
+- A search of both `results.csv` files for "16606021" and "Crooks Clothing Company" finds 0 matches
 
 **Why it matters:**  
-AI answers present an unconfirmed company record as the brand's legal identity.
+- The AI engines are filling the brand's legal identity from the only matching company record they find. That record is a real company of George's, but not the one he wants on profiles, listings and Trustpilot.
+- Until crooksldn.com and the brand's profiles state 16606021 plainly, the engines have nothing else to cite.
 
-**Confidence:** High that the citation happens. Unknown whether 16396366 is connected to George.
+**Confidence:** High.
 
 **Recommended action:**  
-- George: confirm whether Crooks London Limited (16396366) is his.
-- Entity workstream: show the legal entity (Crooks Clothing Company Ltd, 16606021) in the site footer and legal pages, and set it as `legalName` in Organization structured data.
+For the entity / About work and authority-research (Trustpilot, LinkedIn and Crunchbase use Crooks Clothing Company Ltd under owner decision #20):
+- State "Crooks Clothing Company Ltd (16606021)" as the trading entity on crooksldn.com, in the footer or legal pages.
+- Set it as `legalName` in Organization structured data.
+- Re-check in the next panel run which company the brand-query answers name.
 
 ## Finding 7 — Every reputation answer comes from Trustpilot, and delivery is the main complaint
 
@@ -221,5 +236,5 @@ Without a fix, Perplexity is missing from the panel, and logged-out results refl
 **Confidence:** High.
 
 **Recommended action:**  
-- George: create one dedicated Perplexity account for the panel with memory off. The protocol allows this.
+- The Perplexity panel account is **parked** by George (18 Oct). The panel reports Google UK, ChatGPT and Gemini only until he un-parks it.
 - Keep ChatGPT and Gemini logged out so runs stay comparable with this baseline.

@@ -1,6 +1,6 @@
 # Crooks LDN: UK GEO baseline, 16 Oct 2026
 
-This is the first measured run. It covers 21 queries: Google UK once each, and ChatGPT, Gemini and Perplexity 3 runs each in fresh chats. It was collected from a UK IP (Three, London) in a signed-out browser between 20:28 and 22:03 BST. All counts come from `results.csv`. The old 43→54 scores are not used.
+This is the first measured run. It covers 21 queries: Google UK once each, and ChatGPT, Gemini and Perplexity 3 runs each in fresh chats. It was collected from a UK (GB) connection in a signed-out browser between 20:28 and 22:03 BST. All counts come from `results.csv`. The old 43→54 scores are not used.
 
 **Gaps:** Perplexity hit a sign-up wall after 5 answers, so 58 of its 63 runs are blocked. The measuring Mac went offline before 5 Google UK queries could run: Corteiz alternatives, brands like Carsicko, brands like Broken Planet, water reactive clothing and heat reactive clothing. Those rows are marked NOT RUN.
 

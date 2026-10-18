@@ -1,6 +1,6 @@
 # Crooks LDN: Google UK gap-fill, 18 Oct 2026
 
-This run finishes the Google UK column of the 16 Oct baseline. On 16 Oct the measuring computer went offline before these 5 queries were searched. They were run on 18 Oct with the same method: same signed-out browser, UK IP (Three, London), pages 1–2 and the expanded AI Overview. The 16 Oct folder is unchanged. Read both folders together. These 5 rows are 2 days later than the rest.
+This run finishes the Google UK column of the 16 Oct baseline. On 16 Oct the measuring computer went offline before these 5 queries were searched. They were run on 18 Oct with the same method: same signed-out browser, UK (GB) connection, pages 1–2 and the expanded AI Overview. The 16 Oct folder is unchanged. Read both folders together. These 5 rows are 2 days later than the rest.
 
 ## Results
 
