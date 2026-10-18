@@ -109,3 +109,33 @@ A shared timestamp across three collections points to product-side activity, sin
 **Confidence:** Medium
 
 **Recommended action:** The orchestrator can confirm which session ran at 12:25 BST on 18 Oct.
+
+## Finding 8 — The Contact page's "run out of London" line is live-theme text, not page content
+
+**Finding:**
+The line "CROOKSLDN is an independent streetwear label run out of London." is the `about_body` setting of the `crooks-contact` section in the live theme's `templates/page.contact.json`. The Contact page itself (Page 159699730775) has an empty body.
+
+**Evidence:**
+Admin API reads of the page and of the main theme file "CROOKSLDN — live 18 Oct + evening fixes" (file updated 18 Oct 18:37 UTC). Live `/pages/contact`, 18 Oct.
+
+**Why it matters:**
+Owner decision 13 routes this fix to collections, but this brief bars theme edits. The theme-editor session is actively changing the live theme, so a second editor risks overwriting its work.
+
+**Confidence:** High
+
+**Recommended action:**
+Theme-editor changes `about_body` to `<p>CROOKSLDN is an independent British streetwear brand. Short runs, made properly, packed by hand.</p><p>We are small enough that the person reading your email is one of the people who put your order in the box.</p>`, after its backup (decision 7). The page SEO title "Contact Crooks London | CROOKSLDN" uses the approved alias and needs no change.
+
+## Finding 9 — The theme drops the brand suffix from titles over 56 characters
+
+**Finding:**
+`snippets/meta-tags.liquid` adds " | CROOKSLDN" only when the full title fits in 56 characters, and trims meta descriptions over 160. So the new Sweats title (51 characters) renders without the brand. It is not cut off.
+
+**Evidence:** Main theme file `snippets/meta-tags.liquid`, read 18 Oct.
+
+**Why it matters:**
+Any session writing SEO titles should expect this. Brand-led titles should put the brand inside the 56 characters.
+
+**Confidence:** High
+
+**Recommended action:** None for Sweats. Keep metas at 160 characters or fewer.

@@ -4,7 +4,7 @@
 
 **Branch:** cowork/collections  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:20 BST  
+**Last updated:** 18 Oct 2026, 19:35 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -22,15 +22,9 @@ This is the only session allowed to change Shopify collections, menus, URL redir
 
 ## Current state
 
-This workstream has changed nothing in Shopify yet.
+George's answers are in (ANSWERS.md). The exact final changes are prepared in `artifacts/final-changes-2026-10-18.md`, re-checked against the live store at 19:15–19:30 BST on 18 Oct. Nothing is live yet. The session is waiting for George's typed "go" in the collections chat.
 
-- Live baselines for every target were captured on 16 Oct and re-checked on 18 Oct; nothing had changed.
-- Exact copy for B (Denim links), B2 (Denim "made in Portugal" removal), C (Tracksuits fit link) and D (fit-article gsm section) is drafted and waiting on George's yes in chat.
-- A (Sweats copy) and E (reactive guide) can't start, because their source files aren't reachable from this session.
-- F is audited from the live site and the redirect list is ready, but it waits for Search Console evidence.
-- G is answered: leave `/collections/sets` alone, because it's already noindexed.
-
-This repo is public, so these files leave out anything about manufacturing origin and name no internal-only collections.
+The Contact page fix (decision 13) turned out to be live-theme text (`templates/page.contact.json`), which this brief bars, so it is handed to theme-editor (FINDINGS, Finding 8). This repo is public, so these files leave out manufacturing origin and internal-only collection names.
 
 ## Completed
 
