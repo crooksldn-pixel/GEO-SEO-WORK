@@ -34,7 +34,15 @@ A measurable record for every live change.
 - Review dates computed in code (deploy date + 28 and + 56 days).
 - Every queue row checked for 11 cells.
 - The remote branch was checked as unchanged before each push, and read back about 10 s after.
-- An independent agent check of the records diff (`2ce51cc`..`a0ec9b3`) against its sources was started at 20:40 BST. Its result will be recorded here.
+- An independent agent checked the records diff (`2ce51cc`..`a0ec9b3`) against its sources: about 140 claims, 11 discrepancies.
+  - Items 1–3 were already fixed by the PD merge commit: the stale branch reads, the Cream Cap action and the footer.
+  - The rest were fixed in the next commit:
+    - the outreach status (Disco images, which forms wait on a go, George sending the drafts);
+    - the tee counts (3 + 4 older + 14 T-shirt Week);
+    - the Search Console baseline explained (the 15–16 Oct export spans the deploy day);
+    - the live-site-checks policy go added to George's list;
+    - IMP approval wording, the shipping-tool name, the Eurozone country list and the Trustpilot score wording.
+  - Checked and fine: all review dates, the Shopify and GEO baselines, the TP figures, the owner-decision numbers, the IMP values, the Merchant Center figures, the password-lock times and the table structure.
 
 **Expected metric:**  
 None directly.

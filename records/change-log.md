@@ -144,9 +144,12 @@ Never record a ranking or GEO improvement without a captured measurement.
   Still open: the tee "IN STOCK" label and the tee schema handling time. Theme-editor's work copy "live + 18 Oct approved fixes" was cut before this publish, so publishing it now would undo the evening changes.
 - 18 Oct, store password-locked. Every storefront URL redirected to /password at about 18:35 BST (`cowork/trustpilot` FINDINGS 2) and at 20:09 and 20:11 BST (`cowork/search-console` FINDINGS 13). The same URLs were open at 16:30–17:05 BST. It's not confirmed whether the lock is intentional, or when it ends. Leave lock days out of every like-for-like read.
 - 18 Oct, T-shirt Week tees made active (programme-records Admin read, 19:17 UTC):
-  - 21 tee-tagged products are ACTIVE: the 3 earlier tees plus 18 new ones.
-  - 4 new ones were published to the Online Store at 17:27 UTC: OG Crook, 3 Clives, Broadcast, Money Clive. The other 14 had no Online Store publish date.
-  - Stock tracking was still on (first variant read) for 6 new tees: OG Crook, Phantom, Who Nose?, World Wide, V.C.T.I.M.L, Special Delivery.
+  - 21 tee-tagged products are ACTIVE:
+    - the 3 tees already live;
+    - 4 older tees made live on 18 Oct: OG Crook, 3 Clives, Broadcast and Money Clive (handle `evil-clive-tee`);
+    - the 14 T-shirt Week tees.
+  - The 4 older ones were published to the Online Store at 17:27 UTC. The 14 T-shirt Week tees had no Online Store publish date.
+  - Stock tracking was still on (first variant read) for 6 of them: OG Crook, Phantom, Who Nose?, World Wide, V.C.T.I.M.L, Special Delivery.
   - Other tees' tracking was being changed at the time (updatedAt to 19:16 UTC). `cowork/product-data` has since logged that change as PD-1: all 21 tees are now untracked.
 - 18 Oct, Cream Cap: it now has 4 photos, a description and an SEO title. These were added outside product-data, which has noted it but didn't make the change. Who added them isn't recorded.
 - 18 Oct, footer: the OUTERWEAR link is live in the footer (`cowork/theme-editor` FINDINGS 8). It came through the new live theme, not through theme-editor. That closes the footer item left open in C-001.
@@ -190,7 +193,8 @@ Never record a ranking or GEO improvement without a captured measurement.
 All eleven `cowork/*` workstream branches were read. `cowork/international-markets-pricing`, `cowork/trustpilot` and `cowork/product-data` record live changes, and those are merged below. Product-data's were logged at 20:28 BST and merged at 20:50. The other eight branches record no live change. The per-branch record is in `workstreams/programme-records/artifacts/merge-register.md`.
 
 ### IMP-1 to IMP-8 · International markets, shipping zones and HS codes · 18 Oct 2026 (`cowork/international-markets-pricing`)
-- **Reason:** give each country one market and one price, put international shipping on real costs, and collect US duty. George approved each item in that workstream's chat on 18 Oct. The approvals are quoted in its CHANGES.md.
+- **Reason:** give each country one market and one price, put international shipping on real costs, and collect US duty.
+- **Approval:** that CHANGES.md says every change was made after George's approval in that chat on 18 Oct. It quotes his words for IMP-4, IMP-5, IMP-7 and IMP-8 only; none are quoted for IMP-1, IMP-2, IMP-3 or IMP-6.
 - **URLs:** no page URL changes. The changes affect prices and shipping shown at checkout per country, across every product page.
 - **Target queries:** none. These are commercial and checkout changes, not search changes.
 
@@ -200,7 +204,7 @@ All eleven `cowork/*` workstream branches were read. `cowork/international-marke
 | IMP-2 | New single-country "United States" market; old US+CA market now "Canada" | US and CA shared one market | 18 Oct 18:10–18:31 | US $82, CA C$116, unchanged | **Live** |
 | IMP-3 | US catalog and USD price list | None | 18 Oct 18:10–18:31 | Price load refused by that session's permission check | **Not live (draft)** |
 | IMP-4 | Channel Islands: free Tracked 48 from £30 | Tracked 48 £3.99 at any basket | 18 Oct 18:37 | Calculator: £6 basket → £3.99; £60 basket → £0 | **Live** |
-| IMP-5 | New "Eurozone" market (21 euro states plus 6 microstates); "European Union" now non-euro only | One EU market | 18 Oct ~19:05 | £60 test SKU unchanged in DE, FR, IT, IE, BG, MC, ME, XK, PL, DK, SE, US, JP | **Live** |
+| IMP-5 | New "Eurozone" market (21 euro states plus MC, AD, SM, VA, ME and XK); "European Union" now non-euro only | One EU market | 18 Oct ~19:05 | £60 test SKU unchanged in DE, FR, IT, IE, BG, MC, ME, XK, PL, DK, SE, US, JP | **Live** |
 | IMP-6 | Eurozone catalog and EUR price list | None | 18 Oct ~19:07 | Price load not attempted | **Not live (draft)** |
 | IMP-7 | International shipping zones rebuilt as US, Eurozone, AU+NZ, Rest of world and Rest of Europe, on real costs | EU zone £12.99 flat; International £18.99 flat | 18 Oct ~19:15 | Every zone read back; calculator checks on that branch | **Live** |
 | IMP-8 | HS codes on 176 variants of 17 products; origin CN on 2 caps | No HS codes on those variants | 18 Oct ~19:20 | userErrors empty on all 17 writes | **Live** (data only; US duty collection not switched on) |
@@ -215,7 +219,7 @@ All eleven `cowork/*` workstream branches were read. `cowork/international-marke
   - Load the USD and EUR fixed prices and activate the catalogs, either by CSV import in admin or by an explicit instruction in that chat.
   - Click "Agree and activate" for US duties.
   - Read one Gildan label per tee style, so the tee HS codes and origin can be set.
-  - Treat GG, JE and IM as domestic in CROOKS Shipping.
+  - Treat GG, JE and IM as domestic in the shipping tool (that branch calls it "CLIVE Shipping").
 - **Assumptions to confirm (from that branch):** the Puffa shell and fill are synthetic, and the socks are mostly cotton by weight.
 
 ### TP-1 · 12 replies to unanswered 1–3★ Trustpilot reviews · 18 Oct 2026 ~18:40–18:55 BST (`cowork/trustpilot`)
@@ -281,5 +285,5 @@ All eleven `cowork/*` workstream branches were read. `cowork/international-marke
 
 ### Review windows: what affects every live entry
 - 18 Oct: the store was password-locked from the evening, a new live theme was published, and T-shirt Week launched (see Outside changes observed).
-- Search Console has no data for 23 Jul – 14 Oct 2026.
+- Search Console has no data for 23 Jul – 14 Oct 2026. Since the gap, the only data from before the 16 Oct deploys is a single day, 15 Oct. The committed page-level export also covers 15–16 Oct together, so it spans the deploy day and can't serve as a clean before-figure for any URL. That's why the M2 baselines read "no baseline: Search Console pending". `cowork/search-console` uses 15 Oct as the anchor for its reads.
 - Every 4- and 8-week review must label these and leave lock days out of the comparison. `cowork/search-console` has a read scheduled for 14 Nov that pulls 4-week figures for each live entry.

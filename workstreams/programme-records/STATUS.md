@@ -30,7 +30,8 @@ All four briefed tasks are done. What's next depends on other workstreams loggin
   - three 18 Oct changes nobody logged are recorded under Outside changes, from this session's Admin reads and other branches' findings: the new live theme, the password lock and the T-shirt Week tees.
 
   Branch commits read are in [artifacts/merge-register.md](artifacts/merge-register.md).
-- **Status report:** a dated 18 Oct Update at the top, covering what went live, what was measured, and George's 10 remaining actions. Questions answered in owner-decisions aren't repeated.
+- **Status report:** a dated 18 Oct Update at the top, covering what went live, what was measured, and George's 11 remaining actions.
+- **Checked:** an independent agent checked the records against their sources. Every discrepancy it found is fixed (see CHANGES). Questions answered in owner-decisions aren't repeated.
 - Earlier: created `main` with a README, and opened issue #1.
 
 ## Currently working on

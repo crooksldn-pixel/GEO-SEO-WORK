@@ -58,7 +58,12 @@ Each live entry now has a metric, a baseline, and review dates at 4 and 8 weeks 
 
   Still open: the tee "IN STOCK" label, the tee schema handling time, and the policies, FAQ and Terms.
 - **Store password-locked.** Every storefront URL redirected to /password at 18:35, 20:09 and 20:11 BST. The same URLs were open at 16:30–17:05 BST.
-- **T-shirt Week tees active.** 21 tee products are ACTIVE, and 4 of the new ones are on the Online Store. Product-data has since turned stock tracking off on all of them (PD-1).
+- **T-shirt Week tees active.** 21 tee products are ACTIVE:
+  - the 3 earlier tees;
+  - 4 older tees made live on 18 Oct and published to the Online Store at 17:27 UTC;
+  - the 14 T-shirt Week tees, which are active but not on the Online Store.
+
+  Product-data has since turned stock tracking off on all 21 (PD-1).
 - **Cream Cap.** It now has 4 photos, a description and an SEO title, so it stays on Google.
 - **Footer.** The OUTERWEAR link is now live.
 
@@ -89,18 +94,19 @@ Everything in `owner-decisions-2026-10-18.md` is treated as answered and isn't a
    - paste the approved store description (decision #14) into Online Store preferences, because product-data couldn't type into that field;
    - remove the obsolete ReStock plan from the 3 original tees and Pink Convict Sweats, keeping the CLIVE pre-order on Pink Sweats. The connector lacks the scope for this.
 4. **Outreach emails:** read and send the PAUSE and Menswear Style Podcast drafts in team@crooksldn.com.
-5. **International pricing (`cowork/international-markets-pricing`):**
+5. **Policies:** type **go** in the live-site-checks chat for the four prepared policy edits: shipping, refund, contact and the pre-order cancellation policy. That session won't act on an approval relayed through a file.
+6. **International pricing (`cowork/international-markets-pricing`):**
    - load the USD and EUR fixed prices and activate both catalogs, by CSV import or by an explicit instruction in that chat;
    - click "Agree and activate" for US duties;
    - read one Gildan label per tee style (for the tee HS codes and origin);
-   - treat GG, JE and IM as domestic in CROOKS Shipping.
-6. **Trustpilot:**
+   - treat GG, JE and IM as domestic in your shipping tool (that branch calls it "CLIVE Shipping").
+7. **Trustpilot:**
    - give your go on reporting the two model reviews through Trustpilot support;
    - keep team@crooksldn.com answered, because 11 public replies promise a reply within 1–2 working days.
-7. **LinkedIn and Crunchbase:** create both profiles from the ready copy on `cowork/authority-research`.
-8. **Directories and GUAP:** give your go on the final Disco and Streetwear Directory listings, and on the GUAP pitch once it's drafted.
-9. **Merchant Center:** after the 29 Oct re-check, opt out of auto-add by 1 Nov if core items are still disapproved.
-10. **GitHub:** go to Settings, then General, then Default branch, and change it to `main`.
+8. **LinkedIn and Crunchbase:** create both profiles from the ready copy on `cowork/authority-research`.
+9. **Directories and GUAP:** give your go on the filled Streetwear Directory and GUAP forms. For Disco, send a square logo and a 4:5 image, or say "Disco without images".
+10. **Merchant Center:** after the 29 Oct re-check, opt out of auto-add by 1 Nov if core items are still disapproved.
+11. **GitHub:** go to Settings, then General, then Default branch, and change it to `main`.
 
 ## Update 16 Oct 18:30 UTC: owner-confirmed facts
 George confirmed these facts at 18:26. They override the conclusions below wherever the two conflict. The full wording is in `change-log.md` F-001 and in each affected workstream file.
