@@ -2,7 +2,7 @@
 
 **Branch:** cowork/collections  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:55 BST  
+**Last updated:** 18 Oct 2026, 17:20 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -48,7 +48,7 @@ Nothing currently running.
 ### Blocker 1 — Write approvals
 
 **Blocking:** B, B2, C, D  
-**Needs:** George's yes typed in the Cowork chat for each change. The C-003 pre-approval written in the brief isn't accepted on its own: the session's permission check blocked the Denim save on 16 Oct at 20:40.  
+**Needs:** answers to QUESTIONS.md Q1 to Q4, then George's typed "go" in the Cowork chat. The C-003 pre-approval written in the brief isn't accepted on its own: the session's permission check blocked the Denim save on 16 Oct at 20:40.  
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
@@ -57,7 +57,7 @@ Nothing currently running.
 ### Blocker 2 — Project files not reachable
 
 **Blocking:** A (Sweats copy), E (reactive guide), writing `cowork-results/02-collections.md`  
-**Needs:** `workstreams/01-collections-internal-linking.md`, `workstreams/05-reactive-drafts.md`, `workstreams/05-query-map.md`, `p1-collection-audit-2026-10-16.md` and `change-log.md` from `/mnt/project-files/seo/`. They can be attached in chat, added as a connected folder, or committed to this repo.  
+**Needs:** the Sweats section of `01-collections-internal-linking.md` and sections 3 and 4 of `05-reactive-drafts.md`, copied into `inputs/` (QUESTIONS.md, Q10 and Q11). The other project files are useful context but not required.  
 **From:** George  
 **Severity:** P1  
 **Can work around it?:** No  
@@ -66,7 +66,7 @@ Nothing currently running.
 ### Blocker 3 — Search Console evidence
 
 **Blocking:** F  
-**Needs:** `cowork-results/05-search-console.md`  
+**Needs:** `cowork-results/05-search-console.md`, or the per-URL figures in QUESTIONS.md Q12  
 **From:** another workstream (search console)  
 **Severity:** P2  
 **Can work around it?:** Partly  
@@ -74,10 +74,12 @@ Nothing currently running.
 
 ## Waiting on George
 
-1. Say yes or no in chat to: B Denim links, B2 Denim "made in Portugal" removal, C Tracksuits fit link, D fit-article gsm section.
-2. Attach the five project files, or connect the `seo` folder.
-3. Say which wash the old CB1 and CB2 products were. The jeans and jorts redirects disagree.
-4. Approve the E drafts (sections 3 and 4 of `05-reactive-drafts.md`).
+Every open question is in **`QUESTIONS.md`** (Q1 to Q12), with an answer line under each one. Source text goes in `inputs/`. When the answers are committed to this branch, George tells the collections chat "answered".
+
+1. Approvals for the live edits: Q1 to Q6 and Q9. A typed "go" from George in the collections chat is still needed before any save.
+2. Facts: Q7 (which wash CB1 and CB2 were)
+3. Decisions: Q8 (leave Sets alone) and Q9 (optional Cellblock Set in Sweats)
+4. Source files: Q10 (Sweats copy), Q11 (reactive drafts) and Q12 (Search Console data)
 
 ## Waiting on external systems
 

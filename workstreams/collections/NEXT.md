@@ -2,6 +2,7 @@
 
 ## Do next
 
+0. **When George says "answered":** fetch this branch and read the answers in `QUESTIONS.md` and the files in `inputs/`. Re-read every target value live. Post the exact list of approved edits in the chat and wait for George's typed "go" before saving anything.
 1. **B, B2, C, D**: if George has said yes in chat, apply them exactly as in `artifacts/proposed-changes.md`.
    - Denim (B, B2): use the Shopify admin UI, collection 688184099159, description HTML view. The Admin API can't see it.
    - Tracksuits (C) and the fit article (D): use the Admin API.
@@ -27,15 +28,11 @@
 
 ## Decisions still required
 
-- Yes or no on B, B2, C and D.
-- Which wash CB1 and CB2 were.
-- Approval of the E drafts.
-- Optional, not in the brief: whether the Cellblock Set should also appear in Sweats. It would need the Sweats smart rule changed to "Type = Sweats OR Title = CELLBLOCK SET". Today the Cellblock Set is only browsable through Sets and ALL.
+All in `QUESTIONS.md`: Q1 to Q6 (approvals), Q7 (CB1/CB2 washes), Q8 (Sets), Q9 (optional Cellblock Set in Sweats).
 
 ## Data still required
 
-- The five project files listed in STATUS.md, Blocker 2
-- `cowork-results/05-search-console.md`
+All in `QUESTIONS.md`: Q10 (Sweats copy), Q11 (reactive drafts), Q12 (Search Console figures).
 
 ## Recommended follow-up date
 
