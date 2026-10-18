@@ -9,8 +9,14 @@ All three live tees are print on demand, but the PDP treats them as stocked good
 - CRX GARMS T-SHIRT has zero stock in every variant and shows **IN STOCK** and **"> Ordered now — leaves tomorrow"**.
 - CROOKS EXPRESS TEE White / XS (stock −4) shows the same.
 - CROOKS EXPRESS TEE White / XL (stock 1) shows **"1 LEFT IN SIZE White / XL"**, which is false scarcity on a made-to-order item.
-- Product schema marks all 30 tee variants `InStock` with `handlingTime` 0–2 days. They are not `PreOrder`: tees have no selling plans, and PreOrder only fires for the CROOKS Operations pre-order plan.
+- Product schema marks all 30 tee variants `InStock` with `handlingTime` 0–2 days. They are not `PreOrder`: the tees carry only the old ReStock "preorder" plan, which the schema deliberately ignores, and PreOrder fires only for the CROOKS Operations (`clive-preorders`) plan.
 - The 14 draft T-shirt week tees are set up identically and will publish with the same lines.
+
+**Ownership:** turning tee inventory tracking off is item D2 in `cowork/product-data`, which is the only workstream allowed to write products and inventory. Two things are not yet in its plan:
+- the `made-to-order` tag
+- the 14 draft tees
+
+Its plan also expects tee schema to move "from PreOrder to InStock". It is already InStock on all 30 live variants (Rich Results Test, 16 Oct).
 
 **Evidence:**
 - Admin API, 18 Oct, on `crooks-express-t-shirt`, `crx-garms-t-shirt` and `crxst-rz-t-shirt`:
@@ -200,11 +206,23 @@ It confirms the schema programme is live and valid. The set bug only matters if 
 ## Finding 8 — Pre-order notice links to a cancellation policy that doesn't exist
 
 **Finding:**
-With a pre-order in the bag, both cart and checkout show Shopify's deferred-purchase consent text: "…I agree to the cancellation policy and authorize you to charge my payment method…". No cancellation or subscription policy is set. `/policies/subscription-policy` returns 404, and the cart's "cancellation policy" text links nowhere. It doesn't appear for tees, which have no selling plans.
+With a pre-order in the bag, both cart and checkout show Shopify's deferred-purchase consent text: "…I agree to the cancellation policy and authorize you to charge my payment method…". No cancellation or subscription policy is set. `/policies/subscription-policy` returns 404, and the cart's "cancellation policy" text links nowhere.
+
+The notice seen came from the Pink Sweats' `clive-preorders` plan. Tee-only carts most likely don't get it:
+- the tees' ReStock plan is optional (`requires_selling_plan: false`)
+- the PDP form posts only the variant `id` (`sections/crooks-exhibit-record.liquid`, `assets/crooks-record.js`)
+- no ReStock app embed is enabled in `config/settings_data.json`
+- the CROOKS Operations block only attaches its own plan
+
+**Not tested with a tee in the cart.** This differs from `cowork/product-data` Finding 7, which expects the ReStock plan to trigger the notice on tee orders. Removing the ReStock plan is still worthwhile cleanup.
 
 **Evidence:**
 - Cart and checkout with PINK CONVICT SWEATS XL (pre-order, "expected to dispatch by 31 October"): screenshots `40-…`, `41-…`.
 - Admin API `shopPolicies` has no subscription/cancellation policy.
+- Storefront `/products/<handle>.js`, 18 Oct:
+  - each tee has one selling plan group (`app_id: ReStock`, plan "preorder"), with `requires_selling_plan: false`
+  - `pink-crsdr-joggers` has both `clive-preorders` and ReStock
+- The Admin API's `sellingPlanGroupsCount` returns 0 for these products, apparently because it only counts the connector's own groups. Read selling plans from the storefront JSON, not that field.
 
 **Why it matters:**
 Shoppers are asked to agree to a policy they can't read. That's a consumer-law and chargeback risk on every pre-order.

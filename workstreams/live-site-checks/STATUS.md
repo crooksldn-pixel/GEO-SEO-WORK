@@ -2,7 +2,7 @@
 
 **Branch:** cowork/live-site-checks  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 16:45 BST  
+**Last updated:** 18 Oct 2026, 16:42 BST  
 **Priority:** P1  
 **Overall status:** READY TO IMPLEMENT
 
@@ -27,6 +27,8 @@ The audit ran on 16 Oct. Key facts were re-checked on 18 Oct:
 There are 10 findings with evidence in `FINDINGS.md`; two are P1 (tees showing false stock and dispatch; the pre-ticked consent box). The full 18-item register with owners is in [`artifacts/live-site-checks-report-2026-10-16.md`](artifacts/live-site-checks-report-2026-10-16.md).
 
 **Nothing has been fixed.** One item, the mobile popup, already has a fix built and staged in the held, unpublished "Claude P1 fixes" theme by the 09-performance workstream. No other finding is staged anywhere.
+
+The tee fix belongs to `cowork/product-data`: its item D2, turning off tee inventory tracking, already waits on George's yes. This workstream adds two asks to it: the `made-to-order` tag, and the 14 draft tees.
 
 The held theme is a full copy of live as of 16 Oct, so publishing it after any live theme edit would revert that edit. Theme-side fixes therefore wait on a decision about how to ship (see `NEXT.md`). Policy and product-data fixes don't, and can go ahead now.
 
@@ -72,7 +74,7 @@ Nothing currently running.
 
 ## Next actions
 
-1. Tag all 17 tees (3 live, 14 draft) `made-to-order` and untrack POD inventory, before the T-shirt week drafts publish (product data).
+1. Tag all 17 tees (3 live, 14 draft) `made-to-order` and untrack POD inventory, before the T-shirt week drafts publish. Owner: `cowork/product-data` (extends its D2). George's yes on D2 is already requested there.
 2. Turn off checkout marketing preselect (George, Shopify settings).
 3. Align UK delivery time to Tracked 48 = 2–3 working days and Tracked 24 = 1–2, across policies, FAQ, Terms, the PDP custody block and schema `transitTime` (theme editor, Shopify policies, theme code).
 4. Cut Mida's load (sample or exclude the homepage) and scope the Shopify Forms embed; re-measure homepage INP in 28 days (apps).

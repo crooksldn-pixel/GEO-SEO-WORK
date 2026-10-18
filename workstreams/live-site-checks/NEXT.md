@@ -3,10 +3,11 @@
 ## Do next
 
 1. **Tees: stop the false stock and dispatch claims.** Do this before any T-shirt week tee is published.
-   - Tag all 17 T-Shirts products `made-to-order`: the 3 active ones (`crooks-express-t-shirt`, `crx-garms-t-shirt`, `crxst-rz-t-shirt`) and the 14 drafts tagged `t-shirt-week`.
-   - Turn off "Track quantity" on their variants.
+   - **Owner:** `cowork/product-data`, the only workstream allowed to write products and inventory. Its item D2 already covers turning tracking off on the 30 live tee variants, pending George's yes.
+   - This workstream asks product-data to add two things to that plan:
+     - **(a)** Tag all 17 T-Shirts products `made-to-order`: the 3 active ones (`crooks-express-t-shirt`, `crx-garms-t-shirt`, `crxst-rz-t-shirt`) and the 14 drafts tagged `t-shirt-week`. The tag is what switches the PDP from "IN STOCK / leaves tomorrow" to the made-to-order line.
+     - **(b)** Extend D2 to the 14 draft tees.
    - Then re-open a tee PDP and confirm "IN STOCK", "Ordered now — leaves tomorrow" and "1 LEFT" are gone.
-   - Owner: product-data workstream / George.
 2. **Checkout consent.** Turn off preselect for the email marketing box (Settings → Checkout → Marketing options). Check by opening checkout with any item: "Keep me updated." should start unticked. Owner: George.
 3. **One delivery-time wording.** UK delivery is free from £30 by Royal Mail Tracked 48 (2–3 working days), and free Tracked 24 (1–2 working days) from £80. Under £30, Tracked 48 is £3 and Tracked 24 is £4.99. In-stock orders placed by 18:00 Mon–Sat leave the same day; tees are printed to order; pre-orders leave on the date shown.
    - Apply it to: shipping, refund and contact policies; FAQ (`templates/page.faq.json`); Terms (`templates/page.terms.json`); the PDP custody blocks (`templates/product.json`, `templates/product.crooks.json`); and the status bar.
@@ -32,6 +33,7 @@
 - **Don't put a number in the tee made-to-order line until George confirms the POD lead time.** The theme default "9–16 days" is not a CROOKSLDN figure.
 - **Don't fill `crooks.origin`.** It renders in the PDP "Origin" row, and the brand rule is no manufacturing origin in consumer copy. Merchant Center origin, if needed, belongs in the feed (03-merchant-feed).
 - **Don't add `aggregateRating`.** There is one 1.0★ Judge.me review on one tee.
+- **Don't write products, variants or inventory from this workstream.** `cowork/product-data` owns them.
 
 ## Decisions still required
 
@@ -40,11 +42,12 @@
 - Shopify Forms vs Omnisend as the single signup stack (George).
 - Cancellation policy wording for pre-orders (George).
 - When to lift the hold on "Claude P1 fixes" (George).
-- **Repository (orchestrator):** the repo had no `main` when this branch was pushed. This branch, like `cowork/geo-measurement`, is a root branch with no shared history. GitHub currently shows `cowork/geo-measurement` as the default branch. Create `main`, then merge workstream branches with `--allow-unrelated-histories` or rebase them onto `main`.
+- **Repository (orchestrator):** this branch is rebased onto `main` (3905e37, the README commit). `cowork/geo-measurement` and `cowork/product-data` were pushed before `main` existed. Check whether they still need rebasing, and whether the repo's default branch is set to `main`.
 
 ## Data still required
 
 - POD lead time (above).
+- One test cart holding only a tee, read at checkout, to confirm the deferred-purchase notice does not appear. Do it once George allows a test add-to-cart. It decides whether Finding 8 affects tee orders at all.
 - Post-fix CrUX homepage INP, mobile.
 - `ctc_shown` / `ctc_run` / signup rate per 1,000 homepage sessions, after the staged popup ships.
 
