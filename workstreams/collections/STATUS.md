@@ -88,10 +88,10 @@ Every open question is in **`QUESTIONS.md`** (Q1 to Q12), with an answer line un
 
 ## Next actions
 
-1. Apply B, B2, C and D on George's yes. Verify each one on the live page and log it in CHANGES.md.
+1. Apply whichever of B, B2, C and D are approved in QUESTIONS.md, once George types "go" in chat. Verify each one on the live page and log it in CHANGES.md.
 2. Apply A once the 01 file arrives: confirmed weights plus the fit link, which also removes "made in Portugal" from Sweats.
 3. After Search Console: redirect the 5 archived 404s (4 tees → `/collections/tees`, the duffle → `/collections/accessories`) and set `seo.hidden` on `/collections/frontpage`.
-4. Fix the crossed CB1/CB2 jorts redirects once the washes are confirmed.
+4. Fix whichever CB1/CB2 redirect pair Q7 shows is wrong.
 5. Publish E once approved.
 
 ## Expected impact
