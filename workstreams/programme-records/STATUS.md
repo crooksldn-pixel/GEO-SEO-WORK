@@ -1,32 +1,37 @@
 # Workstream: Programme records (change log, master queue, status report)
 
-> **18 Oct 2026, 17:03 UTC — George answered the consolidated decision pack.** His answers for this workstream are in [ANSWERS.md](ANSWERS.md) and override the open questions and George-blockers below. Anything not answered there is parked and blocks nothing. Project files are on `cowork/project-files-import`. Re-read live values before any write: some approved changes were applied on 18 Oct (change-log C-009 onward).
-
 **Branch:** cowork/programme-records  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 17:20 UK  
+**Last updated:** 18 Oct 2026, 20:45 BST  
 **Priority:** P1  
-**Overall status:** BLOCKED
+**Overall status:** WAITING ON EXTERNAL
 
 ## Objective
 
-Keep the programme's single record. That means `change-log.md` (every live change with a metric, a baseline, and review dates at 4 and 8 weeks), `master-queue.md` (the status of every queued item) and `status-report-2026-10-16.md` (dated updates for George). This is the only session that edits those three files. Other workstreams report on their own `cowork/*` branches, and this session merges their results into the record.
+Keep the programme's single record. That means `change-log.md` (every live change with a metric, a baseline, and review dates at 4 and 8 weeks), `master-queue.md` (the status of every queued item) and `status-report-2026-10-16.md` (dated updates for George). This is the only session that edits those three files. Other workstreams log their changes on their own `cowork/*` branches, and this session merges them into the record.
 
 ## Current state
 
-No record file has been edited. The three record files and `workstreams/10-measurement.md` are in the Project folder (`/mnt/project-files/seo/`). This session can't reach that folder, and nor can the other Cowork sessions. Issue #1 asks for the files.
+The records are in [`records/`](../../records/) on this branch, and they're current to 20:50 BST on 18 Oct. George answered on 18 Oct ([ANSWERS.md](ANSWERS.md)). The files came from `cowork/project-files-import` (`1c98fb3`), were committed verbatim first (`2ce51cc`), and every edit since is its own commit.
 
-The repo now has `main` (README only) and nine workstream branches: `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks`, `cowork/search-console`, `cowork/merchant-center`, `cowork/outreach` and this one. The GitHub default branch is still `cowork/geo-measurement`, because that branch was pushed before `main` existed.
-
-All eight other branches were reviewed by 17:15. None reports a live change, so none adds a change-log entry. Their status for the master queue, and nine cross-workstream notes, are in [artifacts/merge-register.md](artifacts/merge-register.md). Note 5 matters for Q36: Search Console has no data for 23 Jul – 14 Oct 2026.
+All four briefed tasks are done. What's next depends on other workstreams logging live changes, and on the review dates (13 and 15 Nov, then 11 and 13 Dec).
 
 ## Completed
 
-- Audited: searched for the record files in this session's workspace, on George's linked Mac (no folder connected), in Google Drive and in every `crooksldn-pixel` GitHub repo. They weren't found anywhere this session can reach.
-- Set up the repo: created `main` with a README describing the branch rules (George approved this on 18 Oct).
-- Opened issue #1 for the missing record files. Added a comment that gathers the other workstreams' missing Project files into the same issue.
-- Read `cowork/geo-measurement`: it holds the 16 Oct 2026 UK GEO panel baseline. This is the first captured GEO measurement in the programme (see FINDINGS, Finding 4).
-- Reviewed `cowork/geo-measurement`, `cowork/product-data`, `cowork/authority-research`, `cowork/collections`, `cowork/live-site-checks`, `cowork/search-console`, `cowork/merchant-center` and `cowork/outreach` for change-log entries. None has a live change. Recorded the commits reviewed, the master-queue status for each, and the cross-workstream notes in `artifacts/merge-register.md`.
+- **Q36:** Metric, Baseline value and review dates at 4 and 8 weeks on every live entry. That's C-001, C-002, C-006, C-007 and C-WS02-1, plus C-009, which went live on 18 Oct. C-003, C-004, C-005 and C-008 are marked not live. The old scores are labelled as historical, not evidence.
+- **Master queue:**
+  - done rows marked from the change log;
+  - parked rows set to "Parked (George)", per `owner-decisions-2026-10-18.md`;
+  - the Orderify row reads "keep; customers use it for order edits";
+  - every status brought up to date from the eleven workstream branches.
+- **Merge:**
+  - IMP-1 to IMP-8 (international markets, shipping, HS codes), TP-1 and TP-2 (Trustpilot), and PD-1 to PD-7 (product data) added to the change log;
+  - the other eight branches record no live change;
+  - three 18 Oct changes nobody logged are recorded under Outside changes, from this session's Admin reads and other branches' findings: the new live theme, the password lock and the T-shirt Week tees.
+
+  Branch commits read are in [artifacts/merge-register.md](artifacts/merge-register.md).
+- **Status report:** a dated 18 Oct Update at the top, covering what went live, what was measured, and George's 10 remaining actions. Questions answered in owner-decisions aren't repeated.
+- Earlier: created `main` with a README, and opened issue #1.
 
 ## Currently working on
 
@@ -34,33 +39,26 @@ All eight other branches were reviewed by 17:15. None reports a live change, so 
 
 ## Blockers
 
-### Blocker 1 — Record files not reachable (issue #1)
-
-**Blocking:** Q36 (adding metric, baseline and review dates to C-001, C-002, C-006, C-007 and C-WS02-1, and marking C-003, C-004, C-005 and C-008 not live), the master-queue tidy-up, merging workstream changes, and the status-report update  
-**Needs:** `change-log.md`, `master-queue.md`, `status-report-2026-10-16.md` and `workstreams/10-measurement.md`, committed to this branch under `records/` or attached to the records chat  
-**From:** George  
-**Severity:** P1  
-**Can work around it?:** No  
-**Workaround:** None. Editing from memory or chat summaries would put unverified deploy dates and baselines into the record.
+None.
 
 ## Waiting on George
 
-All of it is in [WAITING-ON-GEORGE.md](WAITING-ON-GEORGE.md), with a default for every decision. In short:
+1. Set the GitHub default branch to `main` (Settings > General > Default branch).
 
-1. The four record files, plus anything in `cowork-results/` (issue #1).
-2. Six decisions (Q36 metric, Search Console baseline wording, parked rows, where records live, answers given since 16 Oct, page-copy owner). Each has a default.
-3. Switch the repo's default branch to `main`.
+The programme's other George actions are listed once, in the status report's 18 Oct Update.
 
 ## Waiting on external systems
 
-- More workstreams pushing their branches. There's no theme branch yet, and search-console hasn't pushed its STATUS or FINDINGS.
+- Workstreams logging the changes they make next. Expected entries: the next live-theme publish, the collections Sweats/Denim changes, redirects and contact page, the live-site-checks policies, the Merchant Center duplicate delete and seller name, and George's own admin actions.
+- The store reopening after the 18 Oct password lock (date not recorded).
+- The 14 Nov Search Console read (`cowork/search-console`), which feeds the 4-week reviews.
 
 ## Next actions
 
-1. Q36 in `change-log.md`. For C-001, C-002, C-006, C-007 and C-WS02-1, add Metric, Baseline value (the Shopify 90-day baseline from `10-measurement.md`, or "no baseline: Search Console pending"), and Review at 4 weeks and Review at 8 weeks counted from each deploy date. Mark C-003, C-004, C-005 and C-008 not live.
-2. `master-queue.md`: mark done whatever the change log shows as done, mark parked items "Parked (George)", and change the Orderify row to "keep; customers use it for order edits".
-3. Merge each `cowork/*` branch's `CHANGES.md` into `change-log.md` as new entries, and update queue status to match. Record the 16 Oct GEO panel as the GEO baseline.
-4. Add a dated Update section at the top of the status report: what went live, what was measured, and George's remaining actions.
+1. Merge each newly logged live change into the change log, with its Q36 fields.
+2. Record the reopen date when it's known, and keep lock days out of every review.
+3. 4-week reviews: Fri 13 Nov (the 16 Oct entries) and Sun 15 Nov (the 18 Oct entries), using search-console's 14 Nov read and Shopify.
+4. 8-week reviews: Fri 11 Dec and Sun 13 Dec.
 
 ## Expected impact
 

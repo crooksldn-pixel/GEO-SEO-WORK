@@ -2,7 +2,9 @@
 
 This lists each workstream branch reviewed for the change log. Only work a branch's `CHANGES.md` marks LIVE becomes a change-log entry. PREPARED and STAGED work goes into the master queue as a status instead.
 
-## Merged 18 Oct 2026, 20:30 BST, into `records/`
+## Merged 18 Oct 2026, 20:30–20:50 BST, into `records/`
+
+Re-read at 20:50: product-data (`462bc18`) logged 7 live changes, which are merged as PD-1 to PD-7. Outreach (`d5e942c`) created 2 Gmail drafts; they're prepared, not sent, and recorded in the queue as Q27. Theme-editor (`a32dcfa`) has still made no change, and notes the footer and tee wording are live through other sessions.
 
 | Branch | Commit read | Live changes | Merged as |
 |---|---|---|---|

@@ -1,56 +1,21 @@
 # Waiting on George: programme records
 
-**Last updated:** 18 Oct 2026, 17:20 UK
+**Last updated:** 18 Oct 2026, 20:45 BST
 
-This is everything the records session needs from you. Answer it, then send **answered** in the records chat.
+Everything below was answered on 18 Oct (see [ANSWERS.md](ANSWERS.md)) and has been applied in `records/`. One item is still open:
 
-You can answer in any of these ways:
-- Commit the files under `records/` on `cowork/programme-records`, and the answers in `workstreams/programme-records/ANSWERS.md`.
-- Comment on issue #1.
-- Paste the answers into the records chat.
+- **12.** In GitHub, go to Settings > General > Default branch and change it to `main`. It's still `cowork/geo-measurement`, and this session can't change repo settings.
 
-Already answered, so not asked again: the repo stays public (18 Oct), and the records session set up `main` with your OK (18 Oct).
+The programme-wide list of George's remaining actions is in the 18 Oct Update at the top of `records/status-report-2026-10-16.md`.
 
-## A. Files (these block Q36, the queue tidy-up, the merge and the status update)
+## How the answers were applied
 
-Commit them exactly as they are now in the Project folder `seo/`, without tidying first. I need the current text.
-
-| # | File in the Project | Put it at |
+| # | Answer | Applied as |
 |---|---|---|
-| 1 | `change-log.md` | `records/change-log.md` |
-| 2 | `master-queue.md` | `records/master-queue.md` |
-| 3 | `status-report-2026-10-16.md` | `records/status-report-2026-10-16.md` |
-| 4 | `workstreams/10-measurement.md` | `records/workstreams/10-measurement.md` |
-| 5 | everything in `cowork-results/` | `records/cowork-results/` (if the folder is empty, say so) |
-
-Easier option: commit the whole `seo/` folder as it is to a new branch, `cowork/project-files-import`, cut from `main`. I'll read my files from there. The same import also unblocks other workstreams that need files from that folder:
-- product-data needs `05-reactive-drafts.md`, `assets/README.md` and the photos;
-- collections needs `01-collections-internal-linking.md`, `05-reactive-drafts.md`, `05-query-map.md` and `p1-collection-audit-2026-10-16.md`;
-- authority-research and outreach need `07-authority.md` and `07-directory-submission-pack.md`.
-
-## B. Decisions (if you don't answer, I'll use the default shown)
-
-**6. Q36 metric.** Suppose `change-log.md` and `10-measurement.md` don't name a metric for a live entry. Can I set one from the entry's own target, for example "UK organic clicks to /collections/sweats (Search Console)", and label it "metric set by records"?  
-*Default:* yes.
-
-**7. Search Console baseline.** Search Console has no data for 23 Jul – 14 Oct 2026 (see `cowork/search-console`). For entries with no Shopify 90-day baseline, there are two options:
-- write only your 16 Oct wording, "no baseline: Search Console pending";
-- also add the nearest Search Console figure (21 Jan – 22 Jul 2026), labelled "pre-gap, not like-for-like".
-
-*Default:* your wording only.
-
-**8. Parked rows.** Which master-queue rows become "Parked (George)"?  
-*Default:* rows the queue already marks parked or on hold, plus P1 theme copy (on hold) and the About page (not approved). Rows for things you have already decided (reviews hidden, samples declined, Orderify kept) are marked with the decision, not parked.
-
-**9. Where the edited records live.**  
-*Default:* on `cowork/programme-records` under `records/`. The main chat copies them back to the Project folder or merges them when it chooses. Nothing goes to `main` from me.
-
-**10. Questions already answered since 16 Oct.** The status-report Update must not repeat questions you've answered. If the main chat holds answers given after the 16 Oct report that aren't written in any of the files above, list them in `ANSWERS.md`.  
-*Default:* I treat a question as answered only where the four files or a workstream branch show it as answered.
-
-**11. Owner for site page copy.** crooksldn.com/pages/contact says "run out of London" (from `cowork/authority-research`), and no workstream owns page copy.  
-*Default:* recorded in the queue as "owner unassigned".
-
-## C. Physical action (no default)
-
-**12.** In GitHub, go to Settings > General > Default branch and change it to `main`. It is still `cowork/geo-measurement` because that branch was pushed first, and this session can't change repo settings.
+| 1–5 Files | Imported to `cowork/project-files-import`; `cowork-results/` doesn't exist | Copied verbatim to `records/` (`2ce51cc`) |
+| 6 Q36 metric | Default: yes | Only IMP-1 to IMP-8 needed a metric set by records; it's labelled as such |
+| 7 Search Console baseline | George's wording only | "no baseline: Search Console pending" used for Search Console metrics. Shopify and Merchant Center metrics state their own baseline, or say none exists and why |
+| 8 Parked rows | Default parking | `owner-decisions-2026-10-18.md` is the source of truth, and it lists review display and samples/seeding as parked. So Q19 and Q28 show the decision and are marked Parked (George) |
+| 9 Where records live | This branch | `records/` |
+| 10 Answers since 16 Oct | In owner-decisions | Not repeated in the status report |
+| 11 Page-copy owner | Collections | Contact-page copy routed to collections (decision #13) |
