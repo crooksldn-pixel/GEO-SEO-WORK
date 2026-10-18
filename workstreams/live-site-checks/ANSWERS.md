@@ -18,3 +18,16 @@ Before any write, re-read the live value: some approved changes were applied on 
 - **Q8 P1 theme:** stays on HOLD. Instead, George approved fixes directly on the live theme after a backup, one change at a time, validated (owner decision #7).
 - **Q9 Test cart:** dropped (ReStock plans are being removed anyway).
 - Tee stock tracking is off on the 3 live tees (change-log C-009).
+
+## Update 18 Oct 2026, 18:50 UTC: George's go, and who does what now
+
+George typed **go** at 18:45 UTC for the approved store batch. The project thread's store writes are still refused by its own permission check, so **this Cowork chat now carries out the items below**. George's reply "answered" in this chat is his go for them. Re-read live values before each write, change one thing at a time, read it back, and log it in `project-files/seo/change-log.md` (or this branch's CHANGES.md).
+
+**Do now**
+1. Shipping policy: tees printed to order and dispatched within 2–3 working days; Tracked 24 typically 1–2 and Tracked 48 typically 2–3 working days after dispatch, stated as estimated delivery aims, not guaranteed dates, which can occasionally take longer.
+2. Refund/terms: add the pre-order cancellation policy as drafted in `artifacts/proposed-copy.md` §B.
+3. Remove any same-day or next-day promise for tees wherever it appears outside the theme (FAQ, policies, pages).
+4. Re-check live pages after theme-editor's copy is published.
+
+**George does by hand:** untick the pre-ticked checkout box.
+**No decision outstanding for this chat.**
