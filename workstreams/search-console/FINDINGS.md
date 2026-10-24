@@ -106,6 +106,8 @@ Sitelinks are what every brand searcher sees. A "PRODUCTS" link to a duplicate l
 
 **Confidence:** Medium (two days of data).
 
+**Update 24 Oct:** /collections/frontpage is still indexed (URL Inspection) and still a brand sitelink, on 30–127 impressions a day (Finding 15). It has no robots meta and is still in the sitemap, so the approved `seo.hidden` hasn't been applied yet.
+
 **Recommended action:**
 Noindex /collections/frontpage, or unpublish it and 301 it to /collections/new. Leave /collections/all. tees-1, /search and /cart will drop out on recrawl. Give /collections a meta description; it has none. Suggested owner: collections.
 
@@ -118,6 +120,8 @@ Noindex /collections/frontpage, or unpublish it and 301 it to /collections/new. 
 Live sitemap fetch (16 and 18 Oct), Sitemaps report (39 discovered pages, up from 38), URL Inspection on 16 and 18 Oct.
 
 The article is published (collections audit: 16 Oct 13:10 UTC), has no robots meta, and is linked from /blogs/news and the blog's Atom feed. So Google will find it when it next crawls /blogs/news. It just isn't in the sitemap yet.
+
+**Update 24 Oct:** the article now sits in a new `sitemap_articles_1.xml`, and Google read the sitemap index on 23 Oct (54 pages discovered, up from 39). URL Inspection on 24 Oct still says "URL is unknown to Google", which should change at the next crawl. /collections/outerwear is still "Discovered – currently not indexed".
 
 **Why it matters:**
 The article is the mapped URL for fit and size intent, and today the only way in is a page Google rarely visits (/blogs/news had 2 impressions in six months).
@@ -149,6 +153,8 @@ Five more 404s had impressions or Googlebot hits but **aren't on the collections
 
 **Why it matters:**
 It gives collections task F its go-ahead evidence. The Tesco pair carries real, growing demand; the rest are small but are lost visits and crawl noise.
+
+**Update 24 Oct:** T-shirt Week republished four of the five archived tees on 18 Oct at 18:27: /products/3-clives-tee, evil-clive-tee, og-crook-tee and broadcast-tee now return 200. They need no redirect, and old impressions can come back to them. Still 404 on 24 Oct: large-duffle-bag, both Tesco tee URLs (approved redirect not made yet), joggas-1 and the two 2005-drop pink CRSDR URLs. The Index report (Finding 14) adds low-value 404s last crawled in August: double-agent-balaclava, untitled-nov28_15-42, poster-v2, clive-s-cash-sticker-pack and /collections/all/products/joggas-1. These are optional redirects.
 
 **Confidence:** High.
 
@@ -227,21 +233,91 @@ It avoids two sessions editing the same theme snippet, and it unblocks collectio
 **Recommended action:**
 The orchestrator routes Findings 3 and 9 to the theme route in live-site-checks' NEXT.md, and Findings 5–8 to collections.
 
-## Finding 13 — The whole store has been password-locked since the evening of 18 Oct
+## Finding 13 — The store was password-locked for about 23 hours, 18–19 Oct
 
 **Finding:**
-At 20:09 and 20:11 BST on 18 Oct, every storefront URL tested returned 302 → /password, with or without a Googlebot user agent: /, /collections/tees, /collections/outerwear, /blogs/news/convict-vs-cellblock-fit, /products/crooks-express-t-shirt, every archived product URL and /collections/frontpage. `/sitemap.xml` returns 404. The password page has the title "CROOKSLDN" and no robots meta. The live theme is now named "CROOKSLDN — live 18 Oct + evening fixes". Between 16:30 and 17:05 BST the same day, the same URLs returned their normal pages, so the lock started after about 17:05 BST. Nothing in the programme records (change log, owner decisions, workstream branches) mentions it.
+Shopify password protection locked the whole store from about 18:15 BST on Sun 18 Oct to about 17:00 BST on Mon 19 Oct. While locked, every URL returned 302 → /password, Googlebot included, and `/sitemap.xml` returned 404. On 24 Oct at 10:01 BST the store was open: pages return 200 and the sitemap is back.
+
+How the window was fixed:
+- Search Console Crawl stats: Googlebot's last normal page fetch before the lock was 18 Oct 18:12; its 302s cluster from 18 Oct 18:00–18:59 through 19 Oct 16:00–16:59; it fetched /password itself on 19 Oct at 03:35 and 04:20; its first normal page fetch after was 19 Oct 18:12 (/products/pink-set).
+- `curl`: open at 16:30–17:05 BST on 18 Oct, locked at 20:09 and 20:11 BST, open on 24 Oct 10:01 BST.
+- `cowork/theme-editor` FINDINGS 9: Admin API `passwordProtection.enabled = true` at 20:14 BST on 18 Oct.
+- Crawl stats times are taken as UK time; they fit the curl and Admin API readings.
+
+The lock overlapped the T-shirt Week launch: 14 tees were published at 18:27 BST on 18 Oct. 19 Oct had the most clicks of the week (155), most of them while the store was locked.
 
 **Evidence:**
-`curl` status checks on 18 Oct (16:30–17:05 BST open; 20:09 and 20:11 BST locked). Earlier pattern from `gsc_uk_16m_dates.csv` and the project's `10-measurement.md`: the store was locked before the May and July drops, and /password then collected brand-search impressions.
+Crawl stats (OK 200 and Moved temporarily 302 drill-downs, read 24 Oct), `curl` on 18 and 24 Oct, the theme-editor branch, `artifacts/gsc-exports/gsc_uk_2026-10-15_to_22_dates.csv`.
 
 **Why it matters:**
-- Brand searches now land on a password page, as on the May and July drop days.
-- Google can't crawl anything: not the new /collections/outerwear, not the fit article, not the approved redirects or the hidden /collections/frontpage. The next sitemap fetch will fail.
-- If the lock lasts more than a few days, already-indexed pages can start dropping out.
-- It falls inside the first post-deploy measurement window (16–22 Oct), so that window can't be read as an SEO before/after.
+Search Console credits a click to the URL shown in results, not to where the shopper landed, so the lock doesn't show in Performance data: 19 Oct looks like a good day even though most clicks hit a password page. Treat 18 Oct (evening) and 19 Oct (until ~17:00) as lock days in every comparison. A lock of under a day is unlikely to have cost indexing.
 
-**Confidence:** High for the lock and its timing window. Unknown whether it's intentional; probably the T-shirt Week launch, but not confirmed.
+**Confidence:** High for the window, to within about an hour at each end. Not known whether the lock was deliberate; nobody recorded it.
 
 **Recommended action:**
-George confirms it's intentional and when the store reopens. Leave lock days out of every like-for-like comparison and label them in each read. After reopening, re-run URL Inspection on the new and redirected URLs; don't request indexing while the store is locked. Checked again by the scheduled run on 20 Oct.
+Label 18–19 Oct as lock days in every review (already done in the exports), and have programme-records log the reopen time. If future drops use a lock, record it in the change log beforehand, with times, so measurement can leave it out.
+
+## Finding 14 — Index baseline (Indexing > Pages, report dated 16 Oct): 43 pages indexed, 800 not indexed
+
+**Finding:**
+The report finished processing between 18 and 24 Oct. Its snapshot is dated 16 Oct, so it predates the lock and T-shirt Week.
+
+| Reason | Pages | What they are |
+|---|---|---|
+| Excluded by 'noindex' tag | 328 | 314 set-product variant URLs with `?variant&country&currency` (set pages are noindexed by design), customer login URLs, /collections/sets |
+| Alternative page with proper canonical tag | 322 | 286 product URLs with `?country&currency&variant`, 22 `?variant`, 14 search-tracking `?_pos&_sid&_ss` |
+| Blocked by robots.txt | 78 | Shop login (`/services/login_with_shop/authorize`), customer account pages on friendsof.crooksldn.com, cart endpoints |
+| Page with redirect | 24 | http:// and www. hosts, /password, old cb1/cb2 handles, the hyrdocuff typo handle |
+| Not found (404) | 22 | large-duffle-bag, evil-clive-tee and 3-clives-tee (both live again since 18 Oct), joggas-1, double-agent-balaclava, untitled-nov28_15-42, poster-v2, clive-s-cash-sticker-pack, some old variant URLs |
+| Server error (5xx) | 1 | /products/3-clives-tee (crawled 10 Sep; live again since 18 Oct) |
+| Crawled – currently not indexed | 25 | Theme JS files, set variant URLs, collection .atom feeds, /agents.md |
+
+Indexed (43): the homepage, 9 store pages and policies, /collections, /search and /cart, 10 collections (including frontpage, all, and the 301'd denim-1, sweats-1, tees-1), and 21 products (including black-set, which is now noindexed).
+
+**Evidence:**
+`artifacts/gsc-exports/gsc_index_reasons_2026-10-16_snapshot.csv`, `artifacts/gsc-exports/gsc_indexed_pages_2026-10-16_snapshot.csv`.
+
+**Why it matters:**
+- **639 of the 800** are parameter copies of product pages; 600 of those are Shopify Markets `?country&currency&variant` URLs. They aren't indexed, so they do no ranking harm, but they take crawl. They're also the same kind of URL that outputs a non-GBP price (Finding 9).
+- Nothing important is blocked or erroring. The real gaps are /collections/outerwear and the fit article (not indexed yet, Finding 7) and the stale entries (/cart, /search, the three -1 collections, black-set), which will drop on recrawl.
+- /collections/frontpage and /collections/all are indexed (Finding 6).
+
+**Confidence:** High.
+
+**Recommended action:**
+No action on noindex, canonical or robots: they're working as designed. The currency-URL fix in Finding 9 (theme) also reduces this crawl. Re-read the report on 14 Nov.
+
+## Finding 15 — First week after the gap (15–22 Oct): no clean SEO read yet
+
+**Finding:**
+UK, web, 15–22 Oct: 650 clicks, 1,520 impressions, CTR 42.8%, average position 3.6. Day labels:
+
+| Day | Clicks | Impr | Pos | Label |
+|---|---|---|---|---|
+| 15 Oct | 37 | 152 | 5.2 | anchor (only full pre-deploy day) |
+| 16 Oct | 49 | 143 | 4.1 | deploy day |
+| 17 Oct | 48 | 130 | 4.2 | open, post-deploy |
+| 18 Oct | 52 | 176 | 4.6 | tees launched 18:27; locked from ~18:15 |
+| 19 Oct | 155 | 275 | 3.1 | locked until ~17:00; T-shirt Week |
+| 20–22 Oct | 94–111/day | 198–224 | 2.8–3.1 | T-shirt Week |
+
+Only 16–17 Oct are clean post-deploy days: two days against a one-day anchor. That isn't evidence of anything.
+
+What can be recorded:
+- **"crooks"**: position 4.7–6.2 on open days (Jan–Jul average 7.0; Apr–Jul 8.7). It falls in launch week, so it isn't attributable.
+- **Product clusters still land on the homepage.** For "joggers" queries, Google now shows a block of site links (tracksuits 45 impr, /collections 43, frontpage 26, black-joggers 22, sweats 19, v2-baggies 19, all at position 1.0), but all 25 clicks went to the homepage. Jeans, jorts and tees had too little volume to read.
+- **"tesco" queries had zero impressions** this week (238 in Jan–Jul).
+- **Non-branded:** "550gsm hoodie" got 1 click at position 3.0 on **/collections/sweats**, the first non-branded click on record to a mapped collection. "water reactive windbreaker" had 7 impressions at 4.9 on the HydroCuff page. Smaller: lfn jeans (3), prisoner grey tracksuit (2), prison sweatpants, dark blue washed jorts, grey jorts. Genuinely non-branded commercial total: 1 click, 17 impressions in 8 days, against 187 impressions in 183 days in Jan–Jul.
+- **Brand sitelinks:** /collections/frontpage still shows on 30–127 impressions a day; it hasn't been hidden yet (Finding 6).
+- Two Merchant Center free-listing URLs (`utm_content=sag_organic`) now appear in web results for black-joggers and v2-baggies.
+
+**Evidence:**
+`artifacts/gsc-exports/gsc_uk_2026-10-15_to_22_*.csv` (queries, pages, dates, query-crooks, page-frontpage, query_page_breakdowns).
+
+**Why it matters:**
+It sets the record for the first post-deploy week and shows why it can't be used as a before/after. The non-branded signals are tiny but point at the right URLs (sweats for 550gsm, HydroCuff for water-reactive).
+
+**Confidence:** High for the figures. None of it is evidence of an SEO change.
+
+**Recommended action:**
+The first clean 7-day window is 26 Oct – 1 Nov (after T-shirt Week), readable around 3 Nov. The 14 Nov scheduled read covers 16 Oct – 12 Nov with lock and launch days labelled.

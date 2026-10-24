@@ -25,3 +25,28 @@ Not applicable.
 
 **Expected metric:**
 Not applicable.
+
+## 20–24 Oct 2026 — No changes made
+
+**State:** No live change
+
+**Affected:**
+- None. The scheduled 20 Oct and 24 Oct checks (run together on 24 Oct) were read-only: Search Console reports, URL Inspection (indexed view only, no live tests) and `curl` status checks.
+
+**Before:**
+Not applicable.
+
+**After:**
+Not applicable.
+
+**Reason:**
+This workstream is research only.
+
+**Target:**
+Not applicable.
+
+**Validation:**
+No "Request indexing" was clicked and nothing on the Sitemaps page was touched. The Sitemaps report still lists one sitemap (https://crooksldn.com/sitemap.xml, submitted 16 Oct, last read 23 Oct).
+
+**Expected metric:**
+Not applicable.

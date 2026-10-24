@@ -201,3 +201,14 @@ Two structured-data issues worth fixing:
 | shippingDetails overstates free shipping | Live test: Organization `shippingDetails` → `shippingRate 0.00 GBP`, no order threshold. Store policy is free UK shipping **over £30**. | Make shippingDetails reflect the real rate below £30, or drop it and rely on Merchant Center shipping settings. | P2 | Medium-high | theme (tell merchant-center) |
 
 Shopping reports (to 23 Jul): Product snippets 6 valid / 0 invalid; Merchant listings 40 valid / 0 invalid. "Improve item appearance" lists missing hasMerchantReturnPolicy, missing shippingDetails, invalid GTIN, missing description — each at 0 items at last update.
+
+## 8. Update 24 Oct 2026 (scheduled checks for 20 and 24 Oct, run together)
+
+Details in FINDINGS 13–15; exports in `gsc-exports/` (files named `2026-10-15_to_22` and `*_2026-10-16_snapshot`).
+
+- **Password lock:** about 18:15 BST on 18 Oct to about 17:00 BST on 19 Oct, timed from Crawl stats. Open on 24 Oct. Treat 18–19 Oct as lock days.
+- **Index baseline** (report dated 16 Oct): 43 indexed, 800 not indexed. 639 of the 800 are parameter copies of product pages (600 of them Markets `?country&currency`). /cart, /search, the three -1 collections and black-set are still indexed and will drop on recrawl.
+- **15–22 Oct, UK:** 650 clicks, 1,520 impressions, position 3.6. Only 16–17 Oct are clean post-deploy days, so there's no SEO read yet. First non-branded click to a mapped collection: "550gsm hoodie" → /collections/sweats at position 3. "water reactive windbreaker" had 7 impressions at 4.9 on HydroCuff. "joggers" searches now show a block of collection and product links, but every click went to the homepage.
+- **Still to do by collections:** both Tesco tee URLs are 404 (redirects not made); /collections/frontpage is still indexed and a sitelink. Four archived tees came back live with T-shirt Week (3-clives, evil-clive (Money Clive), og-crook, broadcast) and need no redirect.
+- **Google:** /collections/outerwear is "Discovered – currently not indexed". The fit article is in `sitemap_articles_1.xml` (sitemap read 23 Oct, 54 pages) but still unknown to Google.
+- **First clean window:** 26 Oct – 1 Nov. Next scheduled read: 14 Nov.

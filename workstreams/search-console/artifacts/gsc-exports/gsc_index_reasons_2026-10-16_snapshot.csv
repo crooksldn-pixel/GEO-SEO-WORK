@@ -1,0 +1,8 @@
+Reason,Source,Pages,What the example URLs are
+Excluded by noindex tag,Website,328,314 set-product variant URLs with ?variant&country&currency; 10 customer login URLs; 3 ?variant; /collections/sets
+Alternative page with proper canonical tag,Website,322,286 product URLs with ?country&currency&variant; 22 ?variant; 14 ?_pos&_sid&_ss (search tracking)
+Blocked by robots.txt,Website,78,"59 /services/login_with_shop/authorize; 9 friendsof.crooksldn.com/orders; 7 friendsof.crooksldn.com/profile; /cart/change, /cart/update, /sf_private_access_tokens"
+Page with redirect,Website,24,http:// and www. hosts; /password; old cb1/cb2 jorts and jeans handles and their parameter URLs; /products/hyrdocuff-windbreaker (typo handle)
+Not found (404),Website,22,"large-duffle-bag (+variant, +utm); evil-clive-tee (+variant, +utm; live again since 18 Oct); 3-clives-tee parameter URLs; /collections/all/products/joggas-1; joggas-1; double-agent-balaclava (+variant); untitled-nov28_15-42; poster-v2; clive-s-cash-sticker-pack; variant URLs of crooks-express, convict-hoodie-1, v1-hoodie; /cdn"
+Server error (5xx),Website,1,/products/3-clives-tee (crawled 10 Sep; live again since 18 Oct)
+Crawled - currently not indexed,Google systems,25,"theme JS assets, set-product variant URLs, collection .atom feeds, /agents.md"

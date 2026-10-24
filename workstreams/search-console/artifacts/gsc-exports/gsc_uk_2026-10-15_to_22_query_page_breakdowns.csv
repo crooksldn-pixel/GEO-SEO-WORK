@@ -1,0 +1,24 @@
+Filter,Page,Clicks,Impressions,Position
+query contains joggers,https://crooksldn.com/,25,47,1.0
+query contains joggers,https://crooksldn.com/collections/tracksuits,0,45,1.0
+query contains joggers,https://crooksldn.com/collections,0,43,1.0
+query contains joggers,https://crooksldn.com/collections/frontpage,0,26,1.0
+query contains joggers,https://crooksldn.com/products/black-joggers,0,22,1.0
+query contains joggers,https://crooksldn.com/collections/sweats,0,19,1.0
+query contains joggers,https://crooksldn.com/products/v2-baggies,0,19,1.0
+query contains joggers,https://crooksldn.com/products/pink-crsdr-joggers,0,5,2.8
+query contains jeans,https://crooksldn.com/,3,6,5.3
+query contains jeans,https://crooksldn.com/collections,0,2,1.0
+query contains jeans,https://crooksldn.com/collections/denim,0,2,6.0
+query contains jeans,https://crooksldn.com/collections/frontpage,0,1,1.0
+query contains jeans,https://crooksldn.com/products/blue-wash-yard-jeans,0,1,2.0
+query contains jeans,https://crooksldn.com/products/og-jeans,0,1,10.0
+query contains jorts,https://crooksldn.com/products/blue-wash-yard-jorts,0,1,3.0
+query contains jorts,https://crooksldn.com/products/grey-wash-yard-jorts,0,1,23.0
+query contains shirt,https://crooksldn.com/,0,3,4.7
+query contains shirt,https://crooksldn.com/products/v1-hoodie,0,2,25.5
+query contains shirt,https://crooksldn.com/products/charcoal-cellblock-crewneck,0,1,2.0
+query contains shirt,https://crooksldn.com/products/convict-hoodie-1,0,1,60.0
+query contains tesco,(no rows),0,0,
+query contains reactive,https://crooksldn.com/products/hydrocuff-windbreaker,0,7,4.9
+query contains 550gsm,https://crooksldn.com/collections/sweats,1,1,3.0
