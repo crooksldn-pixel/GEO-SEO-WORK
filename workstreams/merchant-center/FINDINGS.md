@@ -232,3 +232,44 @@ High.
 - Use `artifacts/gmc-supplemental-tee-handling-GB.tsv`, built from the 20:22 export: 90 GB tee variants, handling 2–3 days, transit per owner decision #3, label `print-on-demand`.
 - Re-build it when new tees join the feed.
 - Pass the cap-colour gap to product-data.
+
+## Finding 10 — 29 Oct: the UK feed is clean again; the gaps are international links and UK shipping parity
+
+**Finding:**
+- **The password lock is gone.** All 306 GB offers carry a link again, and each has "unisex" / "adult", a colour and a description.
+- **UK disapprovals:** one variant. The White/Red 12-pack of MotionTec Socks has "Mismatched product price".
+- **"Invalid business name" has cleared.** "No Google Ads account linked" is the only account issue left.
+- **International labels:** across all 56, the same 76 variants have no link, giving 4,256 "Missing product page" offers. These are:
+  - the 4 sets
+  - the Pink and Black Convict hoodies
+  - the MotionTec socks
+  - the Cellblock shorts and crewneck
+  - the Puffa
+  
+  This drives the 4.4K "not approved".
+- **UK shipping in the feed has changed** since 16 Oct:
+  - Tracked 48 is £0.00 on every order.
+  - Tracked 24 is £4.99, free from £50.
+  - The live shipping policy page still says standard £3 with free UK shipping over £30, and Tracked 24 free over £80.
+- **Unchanged:**
+  - the 10 `CROOKSRELEASESEPT` duplicates are still live
+  - tee handling is still 0 days
+  - the "30 more products" auto-add banner still says 2 Nov
+  - GTIN is still 8 variants
+
+**Evidence:**
+- [artifacts/check-2026-10-29.md](artifacts/check-2026-10-29.md).
+- Overview counters on 29 Oct: approved 12.3K, limited 700, not approved 4.4K.
+- The setup and policy issues page.
+- `/policies/shipping-policy`, read 29 Oct 09:06 GMT.
+
+**Why it matters:**
+George's Q4 rule is met, so he stays opted in. A Shopping shipping price that differs from the policy page can draw a "Mismatched shipping" warning, and it confuses customers. The international link gap removes those products from Shopping outside the UK.
+
+**Confidence:**
+High on the data. Not known whether the free Tracked 48 is a deliberate offer, or why international markets drop links for those 76 variants. One possible cause is a Markets product-availability setting.
+
+**Recommended action:**
+- **George:** confirm the UK shipping offer. If it's deliberate, update the policy page; if not, restore the Shopify rates.
+- **`cowork/international-markets-pricing`:** check why those 76 variants have no URL in international Markets.
+- **This workstream:** check what auto-add brought in, on 3 Nov.

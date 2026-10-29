@@ -12,7 +12,7 @@ Session: Merchant Center only. Nothing changed in Shopify. Nothing saved in Merc
 | B. Invalid-GTIN attribute rules | Can't be done as written; not needed now | No Attribute rules on Shopify's Merchant API sources, and no GTIN issue live. See FINDINGS 2. |
 | C. Shipping check | Done | £3 and free from £30 match. Handling is 0 days; free tiers say 2–4 days; cut-off is 12:00 AM. See FINDINGS 3. |
 | D. Tee handling time and shipping_label | Approved; waiting on George's yes in chat | 2–3 days (owner decision #1). The file `gmc-supplemental-tee-handling-GB.tsv` is ready, for 90 GB tee variants. |
-| E. Re-check and opt-in call | Scheduled | 29 Oct 09:00 GMT reminder in the Cowork chat. |
+| E. Re-check and opt-in call | Done, 29 Oct | **Stay opted in.** The UK is clean. See the section below. |
 | F. Titles and is_bundle | Proposals below | is_bundle is already "yes" on all 4 sets. |
 
 ## Account snapshot
@@ -36,7 +36,39 @@ Issues on 18 Oct, by type:
 
 Account issues: "Invalid business name" (CROOKSLDN, shown as crooksldn.com), and "No Google Ads account linked", which is expected.
 
-## Opt-in reading as of 18 Oct (provisional; decided 29 Oct)
+## Task E — 29 Oct 2026 opt-in call
+
+**Call: stay opted in. No action needed. Opting in is the default; the opt-out deadline is 1 Nov.**
+
+George's rule (Q4): stay in if the 29 Oct export is clean in the UK, otherwise opt out by 1 Nov.
+
+| | 16 Oct | 18 Oct 20:24 (store locked) | 29 Oct |
+|---|---|---|---|
+| Total offers | 18.6K | 17.5K | 17.5K |
+| Approved | 17.7K | — | 12.3K |
+| Limited | 739 | — | 700 |
+| Not approved | 77 | 17.4K not showing | 4.4K |
+| GB offers with a product link | 244 / 244 | 0 / 306 | **306 / 306** |
+| UK disapprovals | Cream Cap (1 variant) | everything | **1 variant: MotionTec Socks White/Red 12pc, "Mismatched product price"** |
+
+The UK evidence ([check-2026-10-29.md](check-2026-10-29.md)):
+- All 306 GB offers have a link, "unisex" / "adult", colour and description.
+- No GB offer has "Missing product page", "Invalid checkout URL" or "Generic landing page".
+- The only UK issue is one sock pack's price.
+- The password lock is gone: Shopify is sending links again.
+- The business-name issue has cleared. "No Google Ads account linked" is the only account issue left, and it's expected.
+
+Where the 4.4K "not approved" sit, all outside the UK:
+- In each of the 56 international feed labels, 76 variants (the sets, the Pink and Black hoodies, the socks, the shorts, the Puffa and the crewneck) are sent with **no link**. Total: 4,256 offers.
+- That's the international Markets setup, not the UK feed. It's for `cowork/international-markets-pricing` to look at.
+
+Open items that don't change the call:
+- The 10 `CROOKSRELEASESEPT` duplicates are still live. Archiving them waits on George's yes typed in this chat.
+- Tee handling time is still 0 days. The supplemental source waits on the same yes.
+- **UK shipping in the feed changed.** Tracked 48 now goes out at £0.00 on every order, and Tracked 24 is £4.99, free from £50. The shipping policy page still says "standard £3, free over £30; Tracked 24 £4.99, free over £80". If the free shipping is a deliberate offer, update the policy page to match; if not, the Shopify shipping rates need putting back. That's Shopify's side, not Merchant Center's.
+- Auto-add on 2 Nov will add "30 more products from crooksldn.com". They can't be inspected beforehand (FINDINGS 7). Accepted under George's rule; check what arrived on 3 Nov.
+
+## Opt-in reading as of 18 Oct (superseded by the 29 Oct call above)
 
 - **Core feed:** all 25 Shopify products are approved for the UK, apart from the Cream Cap, which product-data item A is pulling. On feed cleanliness alone, that points to **stay opted in**.
 - **Against:** the auto-add adds products that aren't in any data source. Pulling the cap from the Google channel makes it a candidate again (FINDINGS 7), and the 30 products Google found can't be inspected before they're added.
@@ -94,4 +126,4 @@ The archive of the 10 duplicates and the tee supplemental are approved, but this
 
 ## Next check
 
-Thu 29 Oct 2026 (task E). The opt-out deadline is Sun 1 Nov, and auto-add starts Mon 2 Nov.
+Tue 3 Nov 2026: list what auto-add brought in on 2 Nov, check for duplicates of Shopify items, and confirm UK disapprovals are still at or near zero.

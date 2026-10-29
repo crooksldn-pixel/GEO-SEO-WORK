@@ -2,9 +2,9 @@
 
 **Branch:** cowork/merchant-center  
 **Owner:** Cowork session  
-**Last updated:** 18 Oct 2026, 20:45 BST  
-**Priority:** P0 (store password lock has emptied Shopping) / P1 otherwise  
-**Overall status:** BLOCKED
+**Last updated:** 29 Oct 2026, 09:15 GMT  
+**Priority:** P2  
+**Overall status:** WAITING ON EXTERNAL
 
 ## Objective
 
@@ -12,13 +12,18 @@ Get the CROOKSLDN Google Merchant Center account (5860086407) clean enough for G
 
 ## Current state
 
-George's answers are in [ANSWERS.md](ANSWERS.md). One of the three approved Merchant Center writes is live: business name "Crooks LDN". The other two were refused by this session's own permission check, because the approval sits in a repo file. Each needs George's yes typed in this Cowork chat:
-- archive the 10 `CROOKSRELEASESEPT` duplicates
-- add the GB tee handling-time file
+**29 Oct opt-in call: stay opted in** (George's Q4 rule). The UK feed is clean:
+- all 306 GB offers have links, gender, age group, colour and description
+- the only UK disapproval is one sock pack's price
+- the password lock that emptied Shopping on 18 Oct is gone
+- "Invalid business name" has cleared since the change to "Crooks LDN"
 
-**The store is password-locked**, since about 17:05–20:00 BST on 18 Oct. Shopify's sync at about 20:05 BST arrived with no product links. By 20:24, 17.4K of 17.5K offers were "Not showing on Google" (FINDINGS 8). Nothing in Merchant Center can fix this. It clears after the store reopens and Shopify re-syncs.
+See [artifacts/04-merchant-center.md](artifacts/04-merchant-center.md), section "Task E".
 
-Product-data's writes have landed in the feed: gender, age group, Puffa colour, titles, weights. The tees changed to 30 variants each at £20, and three caps are live with images (FINDINGS 9).
+Still open:
+- The 10 `CROOKSRELEASESEPT` duplicates and the tee handling-time supplemental both wait on George's yes typed in this chat. Both are approved in ANSWERS.md.
+- The UK shipping sent by Shopify (free Tracked 48; Tracked 24 free from £50) no longer matches the shipping policy page (FINDINGS 10).
+- Outside the UK, 76 variants per label are sent without links, so 4.4K offers are not approved. That's for international-markets-pricing.
 
 ## Completed
 
@@ -34,7 +39,7 @@ Product-data's writes have landed in the feed: gender, age group, Puffa colour, 
   
   A copy is in George's Downloads folder for the upload.
 - **Diagnosed:** the password lock is what emptied the feed (FINDINGS 8).
-- **Scheduled:** 29 Oct 09:00 GMT re-check reminder in this chat.
+- **Done, 29 Oct (task E):** re-exported, compared and made the call: stay opted in. See [artifacts/check-2026-10-29.md](artifacts/check-2026-10-29.md).
 
 ## Currently working on
 
@@ -42,45 +47,33 @@ Nothing currently running. Waiting on George.
 
 ## Blockers
 
-### Blocker 1 — Store password lock
-
-**Blocking:** every Shopping and free listing; the meaning of the 29 Oct check  
-**Needs:** the lock taken off when George is ready (Shopify > Online Store > Preferences)  
-**From:** George  
-**Severity:** P0  
-**Can work around it?:** No  
-**Workaround:** —
-
-### Blocker 2 — Two approved writes need George's yes in this chat
+### Blocker 1 — Two approved writes need George's yes in this chat
 
 **Blocking:** archiving the 10 duplicates (Q1); tee handling time (Q3, task D)  
 **Needs:** George types, in this Cowork chat: "yes, archive the 10 CROOKSRELEASESEPT products and add the GB tee handling-time supplemental source"  
 **From:** George  
-**Severity:** P1  
+**Severity:** P2  
 **Can work around it?:** No  
 **Workaround:** —
 
 ## Waiting on George
 
-1. Is the password lock deliberate, and when does it come off?
-2. A typed yes in this chat for the two Merchant Center writes in Blocker 2.
+1. A typed yes in this chat for the two Merchant Center writes (Blocker 1).
+2. Is the free UK Tracked 48 / Tracked 24 free-from-£50 offer deliberate? If yes, update the shipping policy page; if no, restore the Shopify rates (FINDINGS 10).
 
 ## Waiting on external systems
 
-- Shopify re-sync with links after the store reopens.
-- Google re-review of the business name, usually within a few days.
+- Google's auto-add on 2 Nov.
 
 ## Next actions
 
-1. On George's typed yes: archive the 10 duplicates. Read back that "Data source: Merchant Center" shows 0 active.
-2. On the same yes: add the supplemental source, link it to the GB Shopify source only, then verify on 2–3 tee items that handling shows 2–3 days and the label is set.
-3. Within 24 hours of the store reopening: re-export and confirm `link` on all GB offers and disapprovals back to baseline.
-4. 29 Oct: the opt-in call, by George's rule (Q4).
-5. When the 14 T-shirt Week tees join the feed, add their GB variant IDs to the handling-time file.
+1. **3 Nov:** list what auto-add brought in, flag any duplicates of Shopify items, and confirm UK disapprovals are still about 0.
+2. **On George's typed yes:** archive the 10 duplicates, and add the GB tee handling-time supplemental. Rebuild the file from a fresh export first. Re-check the variant IDs (tees are back to £25). Also copy the UK shipping prices Shopify is sending at the time: the file still carries £3 Tracked 48, and on 29 Oct the feed sends £0.00.
+3. **When the 14 T-shirt Week tees appear in the GB feed:** add them to the supplemental file.
 
 ## Expected impact
 
-**Commercial:** Very high while the lock is on. Every listing is down.  
-**SEO:** Medium  
+**Commercial:** Medium. The UK listings are live again; the remaining gains are the international links and accurate tee handling.  
+**SEO:** Low  
 **GEO:** Medium  
-**Confidence:** High on the diagnosis; medium on how fast listings recover after reopening.
+**Confidence:** High
